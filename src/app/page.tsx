@@ -67,8 +67,8 @@ export default function Home() {
   <HiringProcess />
   <Image
   className="dark:invert w-full h-auto"
-  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67eceaa92bab401ae3f7c353_pexels-googledeepmind-17486101.jpg"
-  alt="Next.js logo"
+  src="https://cdn.prod.website-files.com/64a8329f0200796d9bea1ec9/66f9ad07f72f96ab850feb41_barrel-web-online-flaship.jpg"
+  alt="shopify developer in USA"
   width={1080}
   height={58}
   priority
