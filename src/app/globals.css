@@ -16,12 +16,31 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #b43737;
   }
 }
 
 body {
-  background: var(--background);
+  background: #fafafa;
   color: var(--foreground);
   font-family: var(--font-geist-sans), sans-serif;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+/* Apply Geist Sans to all text */
+body {
+  font-family:  sans-serif;
 }

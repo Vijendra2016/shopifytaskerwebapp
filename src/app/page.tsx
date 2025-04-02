@@ -3,15 +3,49 @@ import HiringProcess from "./components/Hiringprocess";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center min-h-screen p-4 sm:p-20 gap-8">
+    <div className="flex flex-col items-center min-h-screen p-2 sm:p-2 gap-8">
   <main className="flex flex-col gap-8 w-full text-center sm:text-left">
+  <section className="relative w-full h-[80vh]">
+      {/* Background Image */}
+      <Image
+        className="absolute inset-0 w-full h-full object-cover"
+        src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67eced430ff1ff13480c2186_testbannervidi.png"
+        alt="Banner Image"
+        layout="fill"
+        priority
+      />
+
+      {/* Overlay Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black/50">
+        <h1 className="text-3xl md:text-5xl font-medium">Shopify talent,on demand.</h1>
+        <p className="mt-2 text-lg md:text-xl">pay only after your task is completed to your satisfaction.
+        Shopify Developer | Shopify Expert | Marketer |Designers</p>
+        <button className="mt-4 px-6 py-3 bg-black border-2 border-white hover:bg-gray-800 text-white font-semibold rounded-xl shadow-lg transition-all duration-300">
+  Create your task
+</button>
+
+
+       
+      </div>
+    </section>
+  <section>
+  <div className="services flex flex-col items-center justify-center h-full text-center text-black px-6 py-12">
+  <h2 className="text-2xl md:text-3xl font-medium">
+    ShopifyTasker works with brands across the following core services:
+  </h2>
+  <p className="mt-4  md:text-xl max-w-3xl text-gray-600 text-gray-600 mt-2">
+    At ShopifyTasker, we collaborate with brands to deliver outstanding results across our core service offerings. Our team of skilled developers and marketers work closely with you to ensure success in every possible way. We pride ourselves on providing exceptional outcomes tailored to your unique business needs.
+  </p>
+</div>
+
+  </section>
   <HiringProcess />
   <Image
   className="dark:invert w-full h-auto"
-  src="https://dutchcargobike.com.au/cdn/shop/articles/Untitled_3000_x_2000_px-740510.png?v=1736760671&width=1500"
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67eceaa92bab401ae3f7c353_pexels-googledeepmind-17486101.jpg"
   alt="Next.js logo"
   width={1080}
-  height={508}
+  height={58}
   priority
 />
 
@@ -27,106 +61,46 @@ export default function Home() {
       Freelance hiring - <span className="text-green-800">fixed</span>
     </h3>
 
-    <Image
-  className="dark:invert w-full h-auto"
-  src="https://dutchcargobike.com.au/cdn/shop/articles/Untitled_3000_x_2000_px-740510.png?v=1736760671&width=1500"
-  alt="Next.js logo"
-  width={1080}
-  height={508}
-  priority
-/>
+    
 
-<Image
-  className="dark:invert w-full h-auto"
-  src="https://dutchcargobike.com.au/cdn/shop/articles/Untitled_3000_x_2000_px-740510.png?v=1736760671&width=1500"
-  alt="Next.js logo"
-  width={1080}
-  height={508}
-  priority
-/>
+<section className="py-18 pt-30 pb-30 bg-black text-center overflow-hidden">
+      <h2 className="text-2xl md:text-3xl font-semibold text-white">
+      Trusted by brands
+      </h2>
+      <div className="relative w-full mt-8 overflow-hidden">
+        <div className="flex space-x-8 animate-marquee whitespace-nowrap">
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
 
-<Image
-  className="dark:invert w-full h-auto"
-  src="https://dutchcargobike.com.au/cdn/shop/articles/Untitled_3000_x_2000_px-740510.png?v=1736760671&width=1500"
-  alt="Next.js logo"
-  width={1080}
-  height={508}
-  priority
-/>
-<Image
-  className="dark:invert w-full h-auto"
-  src="https://dutchcargobike.com.au/cdn/shop/articles/Untitled_3000_x_2000_px-740510.png?v=1736760671&width=1500"
-  alt="Next.js logo"
-  width={1080}
-  height={508}
-  priority
-/>
+           {/* Duplicate the logos for seamless looping */}
+           <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+      {/* Duplicate the logos for seamless looping */}
+      <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
+
+        </div>
+      </div>
+    </section>
 
 
-    <div className="flex flex-col sm:flex-row gap-4 w-full">
-      <a
-        className="w-full sm:w-auto px-5 py-3 bg-black text-white rounded-md text-center"
-        href="#"
-      >
-        Deploy Now
-      </a>
-      <a
-        className="w-full sm:w-auto px-5 py-3 border border-black rounded-md text-center"
-        href="#"
-      >
-        Read Docs
-      </a>
-    </div>
+    
   </main>
 
       
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      
     </div>
   );
 }
