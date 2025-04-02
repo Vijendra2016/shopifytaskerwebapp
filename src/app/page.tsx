@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
-import { motion } from "framer-motion";
 
 
 export default function Home() {
