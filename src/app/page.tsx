@@ -40,7 +40,7 @@ export default function Home() {
   <div className="services flex flex-col items-center justify-center h-full text-center text-black px-6 py-12">
   
   <h2 className="text-2xl md:text-3xl font-medium">
-    ShopifyTasker works with brands across the following core services:
+    ShopifyTasker works with brands across the following core services :
   </h2>
   <p className="mt-4  md:text-xl max-w-3xl text-gray-600 text-gray-600 mt-2">
     At ShopifyTasker, we collaborate with brands to deliver outstanding results across our core service offerings. Our team of skilled developers and marketers work closely with you to ensure success in every possible way. We pride ourselves on providing exceptional outcomes tailored to your unique business needs.
