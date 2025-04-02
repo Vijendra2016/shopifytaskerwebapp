@@ -10,27 +10,33 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
-          <Link
-  href="/"
-  className="text-2xl font-bold text-black italic border border-black px-4 py-1"
->
-  ShopifyTasker
-</Link>
+  <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
+    <div className="flex justify-between h-16 items-center">
+      {/* Logo */}
+      <Link
+        href="/"
+        className="text-2xl font-bold text-black italic border border-black px-4 py-1"
+      >
+        ShopifyTasker
+      </Link>
 
+      {/* Desktop Menu */}
+      <div className="hidden md:flex space-x-8 items-center">
+        <Link href="/" className="text-gray-700 hover:text-black">Home</Link>
+        <Link href="/about" className="text-gray-700 hover:text-black">How it works</Link>
+        <Link href="/services" className="text-gray-700 hover:text-black">Services</Link>
+        <Link href="/contact" className="text-gray-700 hover:text-black">Pricing</Link>
+        <Link href="/" className="text-gray-700 hover:text-black">Recounce</Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-black">Home</Link>
-            <Link href="/about" className="text-gray-700 hover:text-black">How its work</Link>
-            <Link href="/services" className="text-gray-700 hover:text-black">Services</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-black">Pricing</Link>
-            <Link href="/" className="text-gray-700 hover:text-black">Recounce</Link>
+        <Link
+          href="/contact"
+          className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
+        >
+          Hire us
+        </Link>
+      </div>
+    
 
-            <Link href="/contact" className="text-gray-700 hover:text-black">Contact</Link>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
