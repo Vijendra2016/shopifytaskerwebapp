@@ -33,25 +33,12 @@ export default function Home() {
        
       </div>
     </section>
-    <motion.div 
-    initial={{ opacity: 0 }} 
-    animate={{ opacity: 1 }} 
-    transition={{ duration: 1 }}
-  >
-    Hello, World!
-  </motion.div>
+    
 
   
   <section>
   <div className="services flex flex-col items-center justify-center h-full text-center text-black px-6 py-12">
-  <motion.h2 
-       initial={{ opacity: 0 }}
-       animate={{ opacity: 1 }}
-       transition={{ duration: 2, delay: 0.5 }}
-      className="text-2xl md:text-3xl font-medium"
-    >
-      ShopifyTasker works with brands across the following core services:
-    </motion.h2>
+  
   <h2 className="text-2xl md:text-3xl font-medium">
     ShopifyTasker works with brands across the following core services:
   </h2>

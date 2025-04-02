@@ -4,7 +4,9 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-12 px-6">
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
         {/* Column 1 */}
         <div className="flex flex-col space-y-2">
           <Link href="/" className="underline">home</Link>
@@ -65,12 +67,14 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Chatbox Placeholder */}
-        <div className="bg-white text-black px-3 py-2 rounded-md shadow-md text-xs">
-          <span className="font-semibold">get started</span>
-          <p>Welcome to StoreTasker! Ready to start your first project?</p>
-        </div>
+        
       </div>
+      <div className="flex justify-center items-center m-screen text-center">
+  <h1 className="text-2xl md:text-2xl font-medium italic " >
+    #Your on-demand Shopify Developer
+  </h1>
+</div>
+
     </footer>
   );
 }
