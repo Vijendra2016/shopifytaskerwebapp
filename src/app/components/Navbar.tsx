@@ -22,11 +22,11 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-8 items-center">
-        <Link href="/" className="text-gray-700 hover:text-black">Home</Link>
-        <Link href="/about" className="text-gray-700 hover:text-black">How it works</Link>
-        <Link href="/services" className="text-gray-700 hover:text-black">Services</Link>
-        <Link href="/contact" className="text-gray-700 hover:text-black">Pricing</Link>
-        <Link href="/" className="text-gray-700 hover:text-black">Recounce</Link>
+        <Link href="/" className="text-black hover:text-green">Home</Link>
+        <Link href="/about" className="text-black hover:text-green">How it works</Link>
+        <Link href="/services" className="text-black hover:text-green">Services</Link>
+        <Link href="/contact" className="text-black hover:text-green">Pricing</Link>
+        <Link href="/" className="text-black hover:text-green">case studies</Link>
 
         <Link
           href="/contact"
