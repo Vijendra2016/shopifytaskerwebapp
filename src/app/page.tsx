@@ -6,12 +6,22 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src="https://dutchcargobike.com.au/cdn/shop/articles/Untitled_3000_x_2000_px-740510.png?v=1736760671&width=1500"
           alt="Next.js logo"
-          width={180}
-          height={38}
+          width={1080}
+          height={508}
           priority
         />
+
+        <h1 className="text-8xl font-medium tracking-tight font-[family-name:var(--font-geist-sans)]">ShopifyTasker </h1>
+
+        <h2 className="text-3xl font-medium tracking-tight font-[family-name:var(--font-geist-sans)]">We are top rated shopify developer and expert based in india </h2>
+
+<h3 className="text-2xl font-medium tracking-tigh  text-yellow-500	">Freelance hiring -<span className="text-green-800" >fixed</span> </h3>
+<p>1.
+Tell us what you
+need done
+Projects and retainers big and small. Kick off your first project in under 3 min.</p>
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
