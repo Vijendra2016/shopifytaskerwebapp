@@ -1,5 +1,9 @@
+"use client";  // For Next.js App Router
+
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
+import { motion } from "framer-motion";
+
 
 export default function Home() {
   return (
@@ -14,6 +18,7 @@ export default function Home() {
         layout="fill"
         priority
       />
+      
 
       {/* Overlay Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black/50">
@@ -28,8 +33,25 @@ export default function Home() {
        
       </div>
     </section>
+    <motion.div 
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }} 
+    transition={{ duration: 1 }}
+  >
+    Hello, World!
+  </motion.div>
+
+  
   <section>
   <div className="services flex flex-col items-center justify-center h-full text-center text-black px-6 py-12">
+  <motion.h2 
+       initial={{ opacity: 0 }}
+       animate={{ opacity: 1 }}
+       transition={{ duration: 2, delay: 0.5 }}
+      className="text-2xl md:text-3xl font-medium"
+    >
+      ShopifyTasker works with brands across the following core services:
+    </motion.h2>
   <h2 className="text-2xl md:text-3xl font-medium">
     ShopifyTasker works with brands across the following core services:
   </h2>
@@ -38,7 +60,24 @@ export default function Home() {
   </p>
 </div>
 
+
   </section>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center pl-20 pr-20">
+    <div className="details">
+  <h1 className="text-2xl md:text-6xl font-medium">Get up to 3.5x more data about them</h1>
+  <p>At ShopifyTasker, we collaborate with brands to deliver outstanding results across our core service offerings. Our team of skilled developers and marketers work closely with you to ensure success in every possible way. We pride ourselves on providing exceptional outcomes tailored to your unique business needs.
+</p>
+</div>
+<Image
+  className="dark:invert w-full h-auto"
+  src="https://cdn.prod.website-files.com/66ffe2174aa8e8d5661c2708%2F67288b2fb22e7ee7c157fe73_home%205050%201-poster-00001.jpg"
+  alt="Next.js logo"
+  width={1080}
+  height={58}
+  priority
+/>
+        </div>
   <HiringProcess />
   <Image
   className="dark:invert w-full h-auto"
@@ -49,18 +88,7 @@ export default function Home() {
   priority
 />
 
-    <h1 className="text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight">
-      ShopifyTasker
-    </h1>
-
-    <h2 className="text-xl sm:text-3xl font-medium tracking-tight">
-      We are top-rated Shopify developers based in India
-    </h2>
-
-    <h3 className="text-lg sm:text-2xl font-medium text-yellow-500">
-      Freelance hiring - <span className="text-green-800">fixed</span>
-    </h3>
-
+   
     
 
 <section className="py-18 pt-30 pb-30 bg-black text-center overflow-hidden">

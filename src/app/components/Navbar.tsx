@@ -13,9 +13,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-gray-900">
-            ShopifyTasker
-          </Link>
+          <Link
+  href="/"
+  className="text-2xl font-bold text-black italic border border-black px-4 py-1"
+>
+  ShopifyTasker
+</Link>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
