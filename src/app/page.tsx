@@ -18,18 +18,23 @@ export default function Home() {
       />
       
 
-      {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white bg-black/50">
-        <h1 className="text-3xl md:text-5xl font-medium">Shopify talent,on demand.</h1>
-        <p className="mt-2 text-lg md:text-xl">pay only after your task is completed to your satisfaction.
-        Shopify Developer | Shopify Expert | Marketer |Designers</p>
-        <button className="mt-4 px-6 py-3 bg-black border-2 border-white hover:bg-gray-800 text-white font-semibold rounded-xl shadow-lg transition-all duration-300">
-  Create your task
-</button>
+      <div className="absolute inset-0 bg-black/50"></div>
 
-
+  {/* Overlay Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+    <h1 className="text-3xl md:text-6xl font-extralight	">
+      Easy and Affordable way to hire <br /> Shopify expert developers
+    </h1>
+    <p className="mt-2 text-lg md:text-xl">
+      Pay only after your task is completed to your satisfaction. <br />
+      Shopify Developer | Shopify Expert | Marketer | Designers
+    </p>
+    <button className="mt-4 px-6 py-3 bg-black border-2 border-white hover:bg-gray-800 text-white font-semibold rounded-xl shadow-lg transition-all duration-300">
+      Create task
+    </button>
+  </div>
        
-      </div>
+      
     </section>
     
 
@@ -73,7 +78,6 @@ export default function Home() {
   priority
 />
 
-  <VideoSection />
     
 
 <section className="py-18 pt-30 pb-30 bg-black text-center overflow-hidden">
