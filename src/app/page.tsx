@@ -42,12 +42,11 @@ export default function Home() {
 
   
   <section>
-  <div className="services flex flex-col items-center justify-center h-full text-center text-black px-6 py-12">
-  
-  <h2 className="text-2xl md:text-3xl font-medium">
-    ShopifyTasker works with brands across the following core services :
+  <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
+  <h2 className="text-3xl md:text-6xl font-thin leading-tight">
+    ShopifyTasker works with brands across the following core services:
   </h2>
-  <p className="mt-4  md:text-xl max-w-3xl text-gray-600 text-gray-600 mt-2">
+  <p >
     At ShopifyTasker, we collaborate with brands to deliver outstanding results across our core service offerings. Our team of skilled developers and marketers work closely with you to ensure success in every possible way. We pride ourselves on providing exceptional outcomes tailored to your unique business needs.
   </p>
 </div>
@@ -57,7 +56,10 @@ export default function Home() {
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center pl-20 pr-20">
     <div className="details">
-  <h1 className="text-2xl md:text-6xl font-medium">Get up to 3.5x more data about them</h1>
+      <br></br>
+      <br></br>
+      <br></br>
+  <h1 className="text-2xl md:text-3xl font-thin">Shoify Development Tasks</h1>
   <p>At ShopifyTasker, we collaborate with brands to deliver outstanding results across our core service offerings. Our team of skilled developers and marketers work closely with you to ensure success in every possible way. We pride ourselves on providing exceptional outcomes tailored to your unique business needs.
 </p>
 </div>

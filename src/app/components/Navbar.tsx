@@ -4,7 +4,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi"; // For mobile menu toggle
+import { TfiAlignLeft, TfiClose  } from "react-icons/tfi";
+
+import { TfiArrowRight } from "react-icons/tfi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +41,7 @@ export default function Navbar() {
           href="/contact"
           className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
         >
-          Create Task!
+          Create Task <TfiArrowRight/>
         </Link>
       </div>
     
@@ -50,7 +52,7 @@ export default function Navbar() {
             className="md:hidden text-2xl"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <FiX /> : <FiMenu />}
+            {isOpen ? <TfiClose />  : <TfiAlignLeft />}
           </button>
         </div>
 
