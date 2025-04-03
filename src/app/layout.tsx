@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Topbar from "./components/Annocmentbar";
 
+import Head from "next/head";
 
 
 
@@ -28,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
+      <Head>
+        <meta name="theme-color" content="#3498db" />
+      </Head>
       <Navbar />
       <Topbar/>
       <body

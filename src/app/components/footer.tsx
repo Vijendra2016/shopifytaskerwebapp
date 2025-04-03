@@ -86,8 +86,8 @@ export default function Footer() {
         
         
         
-  <h1 className="text-2xl md:text-2xl font-medium italic " >
-    #Your on-demand Shopify Developer test
+  <h1 className="text-2xl md:text-6xl font-thin italic " >
+    #Your on-demand Shopify Developer 
   </h1>
   
         
