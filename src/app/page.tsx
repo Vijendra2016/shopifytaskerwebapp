@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
-
+import VideoSection from "./components/testvideo";
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen p-2 sm:p-2 gap-8">
@@ -73,7 +73,7 @@ export default function Home() {
   priority
 />
 
-   
+  <VideoSection />
     
 
 <section className="py-18 pt-30 pb-30 bg-black text-center overflow-hidden">
