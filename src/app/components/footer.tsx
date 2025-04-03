@@ -1,11 +1,22 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-12 px-6">
-
+        <div className="footer-logo  w-full">
+         <Image
+          className="dark:invert w-full h-auto"
+          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ee05feb6ce7c89fe4deabf_blackgackground.png"
+          alt="shopify developer in USA"
+          width={1080}
+          height={58}
+          priority
+        />
+       </div>     
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        
 
         {/* Column 1 */}
         <div className="flex flex-col space-y-2">
@@ -55,6 +66,7 @@ export default function Footer() {
 
       {/* Social Icons */}
       <div className="flex items-center justify-between mt-10">
+        
         <div className="flex space-x-4">
           <a href="#" target="_blank" rel="noopener noreferrer">
             <FaFacebookF className="w-5 h-5" />
@@ -70,9 +82,16 @@ export default function Footer() {
         
       </div>
       <div className="flex justify-center items-center m-screen text-center">
+     
+        
+        
+        
   <h1 className="text-2xl md:text-2xl font-medium italic " >
-    #Your on-demand Shopify Developer
+    #Your on-demand Shopify Developer test
   </h1>
+  
+        
+  
 </div>
 
     </footer>

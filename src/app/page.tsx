@@ -3,7 +3,6 @@
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
 
-
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen p-2 sm:p-2 gap-8">

@@ -2,6 +2,7 @@
 
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi"; // For mobile menu toggle
 
@@ -15,9 +16,15 @@ export default function Navbar() {
       {/* Logo */}
       <Link
         href="/"
-        className="text-2xl font-bold text-black italic border border-black px-4 py-1"
+        className="text-2xl font-bold text-black italic  px-4 py-1"
       >
-        ShopifyTasker
+        <Image
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ee08a8039daf3cb014d3dc_Newshopifytaskerlogo.png" // Replace with your actual image path
+      alt="ShopifyTasker Logo"
+      width={200} // Adjust width as needed
+      height={50} // Adjust height as needed
+      className="h-auto"
+    />
       </Link>
 
       {/* Desktop Menu */}
@@ -32,7 +39,7 @@ export default function Navbar() {
           href="/contact"
           className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
         >
-          Hire us
+          Create Task!
         </Link>
       </div>
     
