@@ -2,12 +2,11 @@
 
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
-import VideoSection from "./components/testvideo";
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen p-2 sm:p-2 gap-8">
   <main className="flex flex-col gap-8 w-full text-center sm:text-left">
-  <section className="relative w-full h-[80vh]">
+  <section className="relative w-full h-[100vh]">
       {/* Background Image */}
       <Image
         className="absolute inset-0 w-full h-full object-cover"
@@ -18,6 +17,7 @@ export default function Home() {
       />
       
 
+
       <div className="absolute inset-0 bg-black/50"></div>
 
   {/* Overlay Content */}
@@ -25,8 +25,10 @@ export default function Home() {
     <h1 className="text-3xl md:text-6xl font-extralight	">
       Easy and Affordable way to hire <br /> Shopify expert developers
     </h1>
-    <p className="mt-2 text-lg md:text-xl">
-      Pay only after your task is completed to your satisfaction. <br />
+    <p className="mt-2 text-lg md:text-lg">
+    Affordable help for your Shopify & Shopify Plus store. Simple pricing, no upfront payment.<br />
+    Payment is required only upon successful completion of your task to your satisfaction <br />
+
       Shopify Developer | Shopify Expert | Marketer | Designers
     </p>
     <button className="mt-4 px-6 py-3 bg-black border-2 border-white hover:bg-gray-800 text-white font-semibold rounded-xl shadow-lg transition-all duration-300">
