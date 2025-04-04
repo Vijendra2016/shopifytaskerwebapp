@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
+import PricingTable from "./components/pricingtable";
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen p-2 sm:p-2 gap-8">
@@ -104,6 +105,7 @@ export default function Home() {
   
 </div>
   <HiringProcess />
+  <PricingTable/>
   <Image
   className="dark:invert w-full h-auto"
   src="https://cdn.prod.website-files.com/64a8329f0200796d9bea1ec9/66f9ad07f72f96ab850feb41_barrel-web-online-flaship.jpg"

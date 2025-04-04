@@ -34,7 +34,7 @@ export default function Navbar() {
         <Link href="/" className="text-black hover:text-green-600">Home</Link>
         <Link href="/how-this-work" className="text-black hover:text-green-600">How it works</Link>
         <Link href="/services" className="text-black hover:text-green-600">Services</Link>
-        <Link href="/contact" className="text-black hover:text-green">Pricing</Link>
+        <Link href="/cost-to-hire-shopify-expert" className="text-black hover:text-green">Pricing</Link>
         <Link href="/" className="text-black hover:text-green">case studies</Link>
 
         <Link
