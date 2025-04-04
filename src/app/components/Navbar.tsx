@@ -37,7 +37,7 @@ export default function Navbar() {
         <Link href="/cost-to-hire-shopify-expert" className="text-black hover:text-green">Pricing</Link>
         <Link href="/shopify-tasker-reviews" className="text-black hover:text-green">Reviews</Link>
         <Link
-          href="/contact"
+          href="/create-task"
           className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
         >
           Create Task <TfiArrowRight/>
@@ -64,7 +64,7 @@ export default function Navbar() {
             <Link href="/cost-to-hire-shopify-expert" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Pricing</Link>
             <Link href="/shopify-tasker-reviews" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Reviews</Link>
 
-            <Link href="/cost-to-hire-shopify-expert" className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center" onClick={() => setIsOpen(false)}>Create Task <TfiArrowRight/></Link>
+            <Link href="/create-task" className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center" onClick={() => setIsOpen(false)}>Create Task <TfiArrowRight/></Link>
 
           
            

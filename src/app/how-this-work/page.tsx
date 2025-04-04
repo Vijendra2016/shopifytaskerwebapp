@@ -22,8 +22,8 @@ export default function About() {
       <p className="text-lg text-gray-600 mt-4">
       We are a team of experienced Shopify developers, designers, and eCommerce experts passionate about helping businesses succeed online. From small startups to established brands, we provide tailored Shopify solutions to bring your vision to life.
       </p>
-      
-    
+      <iframe src="https://app.youform.com/forms/wennyuv2" loading="lazy" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe> 
+
     </main>
   );
 }
