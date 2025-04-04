@@ -33,10 +33,9 @@ export default function Navbar() {
       <div className="hidden md:flex space-x-8 items-center">
         <Link href="/" className="text-black hover:text-green-600">Home</Link>
         <Link href="/how-this-work" className="text-black hover:text-green-600">How it works</Link>
-        <Link href="/services" className="text-black hover:text-green-600">Services</Link>
+        <Link href="/shopify-expert-services" className="text-black hover:text-green-600">Services</Link>
         <Link href="/cost-to-hire-shopify-expert" className="text-black hover:text-green">Pricing</Link>
-        <Link href="/" className="text-black hover:text-green">case studies</Link>
-
+        <Link href="/shopify-tasker-reviews" className="text-black hover:text-green">Reviews</Link>
         <Link
           href="/contact"
           className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
