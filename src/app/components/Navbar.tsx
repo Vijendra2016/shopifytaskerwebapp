@@ -59,9 +59,15 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 border-t">
             <Link href="/" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/about" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>About</Link>
-            <Link href="/services" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Services</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link href="/how-this-work" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>How it works </Link>
+            <Link href="/shopify-expert-services" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Services</Link>
+            <Link href="/cost-to-hire-shopify-expert" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Pricing</Link>
+            <Link href="/shopify-tasker-reviews" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Reviews</Link>
+
+            <Link href="/cost-to-hire-shopify-expert" className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center" onClick={() => setIsOpen(false)}>Create Task <TfiArrowRight/></Link>
+
+          
+           
           </div>
         )}
       </div>
