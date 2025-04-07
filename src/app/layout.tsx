@@ -9,6 +9,7 @@ import Head from "next/head";
 
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,9 +17,11 @@ const geistSans = Geist({
 
 
 
+
 export const metadata: Metadata = {
-  title: "ShopifyTasker | Best Shopify Developer in India for High-Performance Stores",
-  description: "Hire top-rated Shopify developers in India to build, optimize, and scale your online store. Expert Shopify solutions for seamless eCommerce growth.",
+  title: "ShopifyTasker: Get Shopify Tasks Done by Top-Rated Shopify Shopify Experts",
+  description:
+  "ShopifyTasker connects you with trusted Shopify experts for theme customization, store design, speed optimization, and ongoing support. Reliable help for every Shopify project—big or small.",
 };
 
 

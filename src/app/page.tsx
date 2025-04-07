@@ -1,8 +1,15 @@
 "use client";  // For Next.js App Router
+import type { Metadata } from "next";
 
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
 import PricingTable from "./components/pricingtable";
+export const metadata: Metadata = {
+  title: "ShopifyTasker: Get Shopify Tasks Done by Top-Rated Shopify Shopify Experts",
+  description:
+  "ShopifyTasker connects you with trusted Shopify experts for theme customization, store design, speed optimization, and ongoing support. Reliable help for every Shopify project—big or small.",
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen p-2 sm:p-2 gap-8">
