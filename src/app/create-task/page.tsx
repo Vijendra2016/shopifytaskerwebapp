@@ -10,7 +10,7 @@ export default function About() {
   return (
     <main className="container mx-auto px-4 py-10 text-center pt-20">
       
-      <iframe src="https://app.youform.com/forms/wennyuv2" loading="lazy" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe> 
+      <h1 className="text-2xl md:text-6xl font-medium">Easy and Affordable way to hire shopify expert developers</h1>
 
     </main>
   );
