@@ -6,8 +6,7 @@ import Footer from "./components/footer";
 import Topbar from "./components/Annocmentbar";
 import FooterQuote from "./components/footerquote";
 import Head from "next/head";
-
-
+import { Analytics } from "@vercel/analytics/react"
 
 
 const geistSans = Geist({
@@ -41,9 +40,11 @@ export default function RootLayout({
         className={`${geistSans.variable}  antialiased`}
       >
         {children}
+
       </body>
       <FooterQuote/>
       <Footer />
+      <Analytics/>
       
     </html>
   );
