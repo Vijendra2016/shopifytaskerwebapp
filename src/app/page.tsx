@@ -1,6 +1,4 @@
 "use client";  // For Next.js App Router
-import Image from "next/image";
-import HiringProcess from "./components/Hiringprocess"; 
 import ClientTell from "./components/Clienttel";
 import MotionFadeIn from './components/motion/MotionFadeIn';
 
