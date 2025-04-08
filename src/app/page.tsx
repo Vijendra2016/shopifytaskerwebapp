@@ -2,7 +2,6 @@
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
 import ClientTell from "./components/Clienttel";
-import FooterQuote from "./components/footerquote";
 
 export default function Home() {
   return (
