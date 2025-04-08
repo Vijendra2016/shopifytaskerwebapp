@@ -12,7 +12,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
+    <nav className="bg-black shadow-md w-full fixed top-0 left-0 z-50">
   <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
     <div className="flex justify-between h-16 items-center">
       {/* Logo */}
@@ -31,14 +31,14 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-8 items-center">
-        <Link href="/" className="text-black hover:text-green-600">Home</Link>
-        <Link href="/how-this-work" className="text-black hover:text-green-600">How it works</Link>
-        <Link href="/shopify-expert-services" className="text-black hover:text-green-600">Services</Link>
-        <Link href="/cost-to-hire-shopify-expert" className="text-black hover:text-green">Pricing</Link>
-        <Link href="/shopify-tasker-reviews" className="text-black hover:text-green">Reviews</Link>
+        <Link href="/" className="text-white hover:text-white">Home</Link>
+        <Link href="/how-this-work" className="text-white hover:text-white">How it works</Link>
+        <Link href="/shopify-expert-services" className="text-white hover:text-white">Services</Link>
+        <Link href="/cost-to-hire-shopify-expert" className="text-white hover:text-white">Pricing</Link>
+        <Link href="/shopify-tasker-reviews" className="text-white hover:text-white">Reviews</Link>
         <Link
           href="/create-task"
-          className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
+          className="bg-white text-black border border-white px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
         >
           Create Task <TfiArrowRight/>
         </Link>

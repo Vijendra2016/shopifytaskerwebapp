@@ -2,6 +2,8 @@
 
 import { Metadata } from "next";
 import MotionFadeIn from '../components/motion/MotionFadeIn';
+import FooterQuote from "../components/footerquote";
+
 
 export const metadata: Metadata = {
   title: "shopify expert services",
@@ -18,6 +20,7 @@ export default function howitswork() {
       </MotionFadeIn>
        
     <p>Commercial Shopify themes </p>
+    <FooterQuote />
     </main>
   );
 }

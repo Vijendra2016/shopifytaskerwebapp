@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Topbar from "./components/Annocmentbar";
-
+import FooterQuote from "./components/footerquote";
 import Head from "next/head";
 
 
@@ -42,6 +42,7 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <FooterQuote/>
       <Footer />
       
     </html>

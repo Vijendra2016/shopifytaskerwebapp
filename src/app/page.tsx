@@ -2,6 +2,7 @@
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
 import ClientTell from "./components/Clienttel";
+import FooterQuote from "./components/footerquote";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         layout="fill"
         priority
       />
-      
+
       
 
 
@@ -106,17 +107,7 @@ export default function Home() {
   
 </div>
   <HiringProcess />
-  <ClientTell/>
-  <Image
-  className="dark:invert w-full h-auto"
-  src="https://cdn.prod.website-files.com/64a8329f0200796d9bea1ec9/66f9ad07f72f96ab850feb41_barrel-web-online-flaship.jpg"
-  alt="shopify developer in USA"
-  width={1080}
-  height={58}
-  priority
-/>
-
-    
+  <ClientTell/>   
 
 
 
