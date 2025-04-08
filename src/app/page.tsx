@@ -1,7 +1,6 @@
 "use client";  // For Next.js App Router
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
-import PricingTable from "./components/pricingtable";
 import ClientTell from "./components/Clienttel";
 
 export default function Home() {
@@ -17,6 +16,7 @@ export default function Home() {
         layout="fill"
         priority
       />
+      
       
 
 
