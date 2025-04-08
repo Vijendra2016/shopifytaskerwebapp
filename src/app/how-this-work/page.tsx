@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import MotionFadeIn from '../components/motion/MotionFadeIn';
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <main className="container mx-auto px-4 py-10 text-center pt-20">
+      <MotionFadeIn delay={0.2}>
       <h1 className="text-2xl md:text-6xl font-medium">Easy and Affordable way to hire shopify expert developers</h1>
+
+            </MotionFadeIn>
       <p className="text-lg text-gray-600 mt-4">
         We provide expert Shopify development, customization, and support to help you grow your online store.
       </p>

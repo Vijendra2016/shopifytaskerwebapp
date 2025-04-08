@@ -1,9 +1,8 @@
 "use client";  // For Next.js App Router
-
 import Image from "next/image";
 import HiringProcess from "./components/Hiringprocess"; 
 import PricingTable from "./components/pricingtable";
-
+import ClientTell from "./components/Clienttel";
 
 export default function Home() {
   return (
@@ -107,7 +106,7 @@ export default function Home() {
   
 </div>
   <HiringProcess />
-  <PricingTable/>
+  <ClientTell/>
   <Image
   className="dark:invert w-full h-auto"
   src="https://cdn.prod.website-files.com/64a8329f0200796d9bea1ec9/66f9ad07f72f96ab850feb41_barrel-web-online-flaship.jpg"
@@ -119,37 +118,7 @@ export default function Home() {
 
     
 
-<section className="py-18 pt-30 pb-30 bg-black text-center overflow-hidden">
-      <h2 className="text-2xl md:text-3xl font-semibold text-white">
-      Trusted by brands
-      </h2>
-      <div className="relative w-full mt-8 overflow-hidden">
-        <div className="flex space-x-8 animate-marquee whitespace-nowrap">
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
 
-           {/* Duplicate the logos for seamless looping */}
-           <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-      {/* Duplicate the logos for seamless looping */}
-      <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-          <img src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png" alt="Dollar Shave Club" className="h-12" />
-
-        </div>
-      </div>
-    </section>
 
 
     
