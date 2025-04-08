@@ -48,7 +48,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-2xl"
+            className="md:hidden text-2xl text-white "
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <TfiClose />  : <TfiAlignLeft />}
@@ -57,12 +57,12 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 border-t">
-            <Link href="/" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/how-this-work" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>How it works </Link>
-            <Link href="/shopify-expert-services" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Services</Link>
-            <Link href="/cost-to-hire-shopify-expert" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Pricing</Link>
-            <Link href="/shopify-tasker-reviews" className="text-gray-700 hover:text-black" onClick={() => setIsOpen(false)}>Reviews</Link>
+          <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 border-t h-screen justify-center px-4 bg-black">
+          <Link href="/" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link href="/how-this-work" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>How it works </Link>
+            <Link href="/shopify-expert-services" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Services</Link>
+            <Link href="/cost-to-hire-shopify-expert" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Pricing</Link>
+            <Link href="/shopify-tasker-reviews" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Reviews</Link>
 
             <Link href="/create-task" className="bg-black text-white border border-black px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center" onClick={() => setIsOpen(false)}>Create Task <TfiArrowRight/></Link>
 
