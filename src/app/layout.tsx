@@ -6,6 +6,8 @@ import Footer from "./components/footer";
 import Topbar from "./components/Annocmentbar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
+import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 const geistSans = Geist({
@@ -30,6 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+            <GoogleTagManager gtmId="G-RH64BGD6GT" />
+
       <Head>
         <meta name="theme-color" content="#3498db" />
       </Head>
@@ -46,7 +50,7 @@ export default function RootLayout({
       <Footer />
       <Analytics/>
       </body>
-      
+      <GoogleAnalytics gaId="G-RH64BGD6GT" />
       
     </html>
   );
