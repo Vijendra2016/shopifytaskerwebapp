@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Topbar from "./components/Annocmentbar";
-import FooterQuote from "./components/footerquote";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
 
@@ -34,17 +33,20 @@ export default function RootLayout({
       <Head>
         <meta name="theme-color" content="#3498db" />
       </Head>
-      <Navbar />
-      <Topbar/>
+      
       <body
         className={`${geistSans.variable}  antialiased`}
       >
+
+<Navbar />
+<Topbar/>
         {children}
 
-      </body>
-      <FooterQuote/>
+        
       <Footer />
       <Analytics/>
+      </body>
+      
       
     </html>
   );

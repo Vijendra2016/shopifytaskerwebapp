@@ -14,10 +14,11 @@ const FooterQuote = () => {
           Whether it’s design, development, or troubleshooting, we handle it—so you can focus on growing your business.
         </p>
         <div className="text-xl mt-4 text-white/80 flex items-center space-x-2">
-  <span>★★★★★</span>
-  <span>4.9 out of 5 (200+ reviews)</span>
+        <span  >★★★★★</span>
+        <span>4.9 out of 5 (200+ reviews)</span>
 </div>
       </div>
+
 
       <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 z-10">
         <button className="bg-white text-[#001172] px-6 py-3 rounded-md font-medium shadow-md hover:bg-gray-100 transition">
