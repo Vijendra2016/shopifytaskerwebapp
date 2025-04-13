@@ -21,12 +21,13 @@ export default function Navbar() {
         className="text-6xl font-bold text-black italic  px-4 py-1"
       >
         <Image
-      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ee08a8039daf3cb014d3dc_Newshopifytaskerlogo.png" // Replace with your actual image path
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbcdd5db493a47b8982ee6_Shopifytaskernewlogovidinew%20(1).png" // Replace with your actual image path
       alt="ShopifyTasker Logo"
       width={200} // Adjust width as needed
       height={50} // Adjust height as needed
       className="h-auto"
     />
+    
       </Link>
 
       {/* Desktop Menu */}

@@ -4,20 +4,22 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-[#f8f8f8] text-2xl text-black py-12 px-6">
-      <div className="footer-logo w-full pb-20">
+      
+
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="footer-logo  pb-10">
         <Image
           className="dark:invert w-full h-auto"
-          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbc81c0276e79ad61c0764_whitebackgrond-Photoroom.png"
+          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbcdd5db493a47b8982ee6_Shopifytaskernewlogovidinew%20(1).png"
           alt="shopify developer in USA"
-          width={900}
-          height={50}
+          width={200}
+          height={30}
           priority
         />
       </div>
-
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {/* Column 1 */}
         <div className="flex flex-col space-y-2">
+        
           <h6 className=" underline text-xl md:text-1xl font-thin">About</h6>
           <Link href="/" className="underline">about us</Link>
           <Link href="/how-it-works">how it works</Link>
