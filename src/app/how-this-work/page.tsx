@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import MotionFadeIn from '../components/motion/MotionFadeIn';
-import MotionTypewriter from "../components/motion/MotionWriting";
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -18,10 +17,7 @@ export default function About() {
 
        
       
-<MotionTypewriter delay={0.5} speed={30} className="text-lg">
- <h1>Easy and Affordable way to hire shopify expert developers
- </h1>
-</MotionTypewriter>
+
 <br>
 </br>
 <br>
