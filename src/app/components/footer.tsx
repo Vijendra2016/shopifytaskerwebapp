@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#00246B] text-2xl text-white py-12 px-6">
+    <footer className="bg-[#f8f8f8] text-2xl text-white py-12 px-6">
       <div className="footer-logo w-full pb-20">
         <Image
           className="dark:invert w-full h-auto"
           src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbc81c0276e79ad61c0764_whitebackgrond-Photoroom.png"
           alt="shopify developer in USA"
-          width={1080}
-          height={58}
+          width={900}
+          height={50}
           priority
         />
       </div>
