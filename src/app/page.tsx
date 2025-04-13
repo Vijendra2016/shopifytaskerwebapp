@@ -10,7 +10,7 @@ export default function Home() {
   <main className="flex flex-col gap-8 w-full text-center sm:text-left">
     <section className="bg-[#CADCFC]">
     <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
-<h2 className="text-8xl md:text-9xl Black ">Shopify talent,on demand.</h2>
+<h2 className="text-lg md:text-9xl Black ">Shopify talent,on demand.</h2>
 </div>
     </section>
   

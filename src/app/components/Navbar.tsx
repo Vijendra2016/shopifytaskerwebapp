@@ -61,7 +61,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             className="md:hidden text-4xl text-black"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(!isOpen)} aria-label="Open menu"
           >
             {isOpen ? <TfiClose />  : <TfiAlignLeft />}
           </button>

@@ -20,7 +20,7 @@ export default function Footer() {
         {/* Column 1 */}
         <div className="flex flex-col space-y-2">
         
-          <h6 className=" underline text-xl md:text-1xl font-thin">About</h6>
+          <h6 className="underline text-xl md:text-1xl font-thin">About</h6>
           <Link href="/" className="underline">about us</Link>
           <Link href="/how-it-works">how it works</Link>
           <Link href="/experts">our expert</Link>
