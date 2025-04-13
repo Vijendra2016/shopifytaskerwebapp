@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-logo w-full pb-20">
         <Image
           className="dark:invert w-full h-auto"
-          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ee05feb6ce7c89fe4deabf_blackgackground.png"
+          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbc81c0276e79ad61c0764_whitebackgrond-Photoroom.png"
           alt="shopify developer in USA"
           width={1080}
           height={58}

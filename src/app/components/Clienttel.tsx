@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const ClientTell = () =>  {
     return (
-        <div className="container  min-h-[90vh] bg-black mx-auto px-4 py-18">
+        <div className="container  min-h-[90vh] bg-[#CADCFC] mx-auto px-4 py-18">
             <h2 className="text-2xl md:text-3xl font-semibold text-white">
       Trusted by brands
       </h2>
