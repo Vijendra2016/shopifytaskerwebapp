@@ -35,6 +35,8 @@ export default function Footer() {
           <Link href="/start-project">Custom app development</Link>
           <Link href="/reviews">Checkout extension Development</Link>
           <Link href="/expert-login">Retainer</Link>
+          <Link href="/shopify-small-task">shopify small tasks</Link>
+
           
         </div>
 
