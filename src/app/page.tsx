@@ -51,10 +51,10 @@ export default function Home() {
   <div className="w-full h-half">
     <Image
       className="w-full h-half object-cover"
-      src="https://cdn.prod.website-files.com/64a8329f0200796d9bea1ec9/66f9ad07f72f96ab850feb41_barrel-web-online-flaship.jpg"
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fba5d00276e79ad605e790_Ontology_Core_1.png"
       alt="Shopify Development"
-      width={250}
-      height={250}
+      width={1200}
+      height={650}
       priority
     />
   </div>

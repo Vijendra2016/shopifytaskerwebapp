@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "shopify small tasks by shopify expert | Top Rated Developer",
   description:
@@ -14,6 +14,8 @@ export default function pricing() {
         </h2>
     <p>Commercial Shopify themes & apps are great for lower level merchants.  But not for big brands.  You can’t share a design with another company by using a template.  You just can’t.  You need a custom build, created around your brand.  Each and every pixel needs to be yours.  Design.  Development.  100% unique.
 </p>
+
+
 
 
 
