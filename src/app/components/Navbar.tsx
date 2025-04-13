@@ -12,13 +12,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#CADCFC]  text-2xl w-full fixed top-0 left-0 z-50">
+    <nav className="bg-[#CADCFC] text-lg w-full fixed top-0 left-0 z-50">
   <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
     <div className="flex justify-between h-16 items-center">
       {/* Logo */}
       <Link
         href="/"
-        className="text-6xl font-bold text-black italic  px-4 py-1"
+        className="text-1xl font-bold text-black italic  px-4 py-1"
       >
         <Image
       src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbcdd5db493a47b8982ee6_Shopifytaskernewlogovidinew%20(1).png" // Replace with your actual image path
@@ -27,7 +27,7 @@ export default function Navbar() {
       height={50} // Adjust height as needed
       className="h-auto"
     />
-    
+
       </Link>
 
       {/* Desktop Menu */}

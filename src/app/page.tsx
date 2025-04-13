@@ -6,7 +6,7 @@ import ClientTell from "./components/Clienttel";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center min-h-screen p-2 sm:p-2 gap-8">
+    <div className="flex flex-col items-center min-h-screen  gap-8">
   <main className="flex flex-col gap-8 w-full text-center sm:text-left">
     <section className="bg-[#CADCFC]">
     <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
@@ -86,15 +86,7 @@ export default function Home() {
   
 </div>
   
-  <Image
-  className="dark:invert w-full h-auto"
-  src="https://cdn.prod.website-files.com/64a8329f0200796d9bea1ec9/66f9ad07f72f96ab850feb41_barrel-web-online-flaship.jpg"
-  alt="shopify developer in USA"
-  width={1080}
-  height={58}
-  priority
-/>
-
+ 
     
 
 < ClientTell />

@@ -2,7 +2,7 @@
 
 import { Metadata } from "next";
 import MotionFadeIn from '../components/motion/MotionFadeIn';
-import FooterQuote from "../components/footerquote";
+import ClientTell from "../components/Clienttel";
 
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function howitswork() {
       </MotionFadeIn>
        
     <p>Commercial Shopify themes </p>
-    <FooterQuote />
+<ClientTell />    
     </main>
   );
 }

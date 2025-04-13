@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import MotionFadeIn from '../components/motion/MotionFadeIn';
+import ClientTell from "../components/Clienttel";
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -26,7 +27,7 @@ export default function About() {
       <p className="text-lg text-gray-600 mt-4">
       We are a team of experienced Shopify developers, designers, and eCommerce experts passionate about helping businesses succeed online. From small startups to established brands, we provide tailored Shopify solutions to bring your vision to life.
       </p>
-
+ <ClientTell />
     </main>
   );
 }
