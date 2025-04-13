@@ -32,6 +32,14 @@ export default function Home() {
     {/* Service 1 */}
     <div className="flex flex-col bg-[#CADCFC] items-center text-center p-6 ">
       <h3 className="text-lg font-regular md:text-3xl ">Custom Development</h3>
+      <Image
+      className="w-full h-half object-cover"
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbeb9998c2ae38fe52ad18_pexels-pixabay-159299.jpg"
+      alt="Shopify Development"
+      width={500}
+      height={250}
+      priority
+    />
       <p className="text-sm text-gray-600 mt-2">We provide fully customized Shopify solutions tailored to your business goals. Whether you need a bespoke theme, unique store functionality, or seamless third-party integrations, our team ensures your store operates smoothly and efficiently. </p>
     </div>
 
@@ -91,6 +99,14 @@ export default function Home() {
 
 < ClientTell />
 
+<section>
+<div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
+  <h3 className="text-3xl md:text-6xl font-regular ">
+    How its work</h3>
+  <p >
+Our Process is simple submit your task , within 5 hours we will be back to you with proper quotion , if we needed there is more information  we need we will be arrange dicover call</p>
+  </div>
+</section>
     
   </main>
 
