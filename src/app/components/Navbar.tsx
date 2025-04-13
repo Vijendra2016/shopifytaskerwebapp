@@ -59,7 +59,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-2xl text-white "
+            className="md:hidden text-4xl text-black"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <TfiClose />  : <TfiAlignLeft />}
@@ -68,7 +68,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 border-t h-screen justify-center px-4 bg-black">
+          <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 border-t h-screen justify-center px-4 bg-[#CADCFC]">
           <Link href="/" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/how-this-work" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>How it works </Link>
             <Link href="/shopify-expert-services" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Services</Link>
