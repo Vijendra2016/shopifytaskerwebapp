@@ -103,8 +103,9 @@ export default function Home() {
 <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
   <h3 className="text-3xl md:text-6xl font-regular ">
     How its work</h3>
-  <p >
-Our Process is simple submit your task , within 5 hours we will be back to you with proper quotion , if we needed there is more information  we need we will be arrange dicover call</p>
+  <p >It's simple — just submit your task, and within 5 hours, you'll hear back from us with a detailed quote. If we need any additional information, we'll arrange a quick discovery call to understand your requirements better.
+
+</p>
   </div>
 </section>
     
