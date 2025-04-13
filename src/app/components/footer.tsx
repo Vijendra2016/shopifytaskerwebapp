@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f8f8f8] text-2xl text-black py-12 px-6">
+    <footer className="bg-[#f8f8f8] text-lg text-black py-12 px-6">
       
 
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -57,6 +57,37 @@ export default function Footer() {
          <div className="flex flex-col space-y-2">
           <h6 className=" underline text-3xl text-xl font-thin">Headless Shopify Development</h6>
           <Link href="/become-expert">Shopify Hyrogen Store Setup</Link>
+          <Link href="/partner">Shopify Headless Store Managment</Link>
+          <Link href="/start-project">start a project</Link>
+          <Link href="/reviews">public reviews</Link>
+          <Link href="/expert-login">expert login</Link>
+          <Link href="/partner-login">partner login</Link>
+          <Link href="/customer-login">customer login</Link>
+        </div>
+        <div className="flex flex-col space-y-2">
+          <h6 className=" underline text-3xl text-xl font-thin">Headless Shopify Development</h6>
+          <Link href="/become-expert">Shopify Hyrogen Store Setup</Link>
+          <Link href="/partner">Shopify Headless Store Managment</Link>
+          <Link href="/start-project">start a project</Link>
+          <Link href="/reviews">public reviews</Link>
+          <Link href="/expert-login">expert login</Link>
+          <Link href="/partner-login">partner login</Link>
+          <Link href="/customer-login">customer login</Link>
+        </div>
+        <div className="flex flex-col space-y-2">
+          <h6 className=" underline text-3xl text-xl font-thin">Platform Migration</h6>
+          <Link href="/become-expert">Wordpress to Shopify Migration</Link>
+          <Link href="/partner">Salesfoce to Shopify Plus</Link>
+          <Link href="/start-project">Squarespace to shopify</Link>
+          <Link href="/reviews">Square to shopify</Link>
+          <Link href="/expert-login">Maganto to Shopify</Link>
+          <Link href="/partner-login">Nw</Link>
+          <Link href="/customer-login">customer login</Link>
+        </div>
+
+        <div className="flex flex-col space-y-2">
+          <h6 className=" underline text-3xl text-xl font-thin">Theme Customization & Update Service</h6>
+          <Link href="/become-expert">Impact theme Customization & Update</Link>
           <Link href="/partner">Shopify Headless Store Managment</Link>
           <Link href="/start-project">start a project</Link>
           <Link href="/reviews">public reviews</Link>
