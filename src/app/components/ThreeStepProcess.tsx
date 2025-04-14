@@ -11,17 +11,17 @@ const steps: Step[] = [
   {
     title: "1. Share Your Task",
     description:
-      "Need a design tweak, a feature added, or a layout fixed? Just tell us what you're looking for — no task is too small or too big.",
+      "Need a design tweak, a feature added, or a layout fixed? Just tell us what you are looking for — no task is too small or too big.",
     icon: <TfiAlignLeft className="w-6 h-6" />,
   },
   {
     title: "2. Get a Quote",
     description:
-      "We’ll take a look and send you a fair, upfront quote. No hidden fees, no surprises. Just approve when you're ready.",
+      "We will take a look and send you a fair, upfront quote. No hidden fees, no surprises. Just approve when you ready.",
     icon: <TfiClose className="w-6 h-6" />,
   },
   {
-    title: "3. Sit Back, We’ve Got It",
+    title: "3. Sit Back, We Got It",
     description:
       "Our Shopify experts jump in and get it done — fast, clean, and exactly how you imagined.",
     icon: <TfiArrowCircleRight className="w-6 h-6" />,
