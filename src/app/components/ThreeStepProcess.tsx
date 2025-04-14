@@ -15,6 +15,7 @@ const steps: Step[] = [
     icon: <TfiAlignLeft className="w-6 h-6" />,
   },
   {
+    
     title: "2. Get a Quote",
     description:
       "We will take a look and send you a fair, upfront quote. No hidden fees, no surprises. Just approve when you ready.",
