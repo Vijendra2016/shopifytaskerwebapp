@@ -1,5 +1,4 @@
 import React from "react";
-import { TfiAlignLeft, TfiClose, TfiArrowCircleRight } from "react-icons/tfi";
 
 type Step = {
   title: string;
