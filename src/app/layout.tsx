@@ -3,12 +3,11 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
-import Topbar from "./components/Annocmentbar";
 import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
-
+import Topbar from "./components/Annocmentbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,13 +40,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable}  antialiased`}
       >
+       <Topbar/>
+        <Navbar />
 
-<Navbar />
-<Topbar/>
+
+
         {children}
 
         
       <Footer />
+      
       <Analytics/>
       </body>
       <GoogleAnalytics gaId="G-RH64BGD6GT" />

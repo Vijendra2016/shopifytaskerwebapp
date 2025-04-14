@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Topbar() {
   return (
-    <div className="text-sm text-gray-700">
+    <div className=" bg-[#a5f1cb] ">
       <h6>
-        Get your Shopify tasks done with confidence – pay only after completion.{" "}
+      Pay only after your task is completed to your satisfaction.
         <Link href="/" className="font-medium hover:text-black">
           Create your task now.
         </Link>
