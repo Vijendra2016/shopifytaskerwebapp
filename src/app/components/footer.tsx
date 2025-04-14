@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col space-y-2">
-          <h6 className=" underline text-base font-thin">Theme Customization & Update Service</h6>
+          <h6 className=" text-xl md:text-lg text-base font-regular">Theme Customization & Update Service</h6>
           <Link href="/become-expert">Impact theme Customization & Update</Link>
           <Link href="/partner">Shopify Headless Store Managment</Link>
           <Link href="/start-project">start a project</Link>

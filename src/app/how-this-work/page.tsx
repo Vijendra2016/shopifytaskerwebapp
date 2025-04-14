@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import MotionFadeIn from '../components/motion/MotionFadeIn';
 import ClientTell from "../components/Clienttel";
 import ThreeStepProcess from "../components/ThreeStepProcess"
+import Image from 'next/image';
+
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
   description:
@@ -10,9 +12,31 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="container mx-auto px-4 py-10 text-center pt-20">
+    <main className="container mx-auto px-4 py-10 text-center pt-0">
+
+<section className="w-full h-[300px] md:h-[500px] relative">
+  <Image
+    src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fc9f7e47c0d2d2a6db58c2_Frame_1__1_.png" // Replace with actual URL
+    alt="Shopify Tasker Banner"
+    fill
+    className="object-cover"
+    priority
+  />
+  <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
+    <h1 className="text-white text-3xl md:text-5xl font-bold">
+      Get Your Shopify Tasks Done, Fast
+    </h1>
+    <p className="text-white text-base md:text-lg mt-4 max-w-xl">
+      Design tweaks, custom features, or store setup — handled by pros.
+    </p>
+    <button className="mt-6 px-6 py-2 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
+      Request a Quote
+    </button>
+  </div>
+</section>
+
       <MotionFadeIn delay={0.2}>
-      <h1 className="text-2xl md:text-6xl font-medium">Custom Shopify Tweaks, Made Easy      </h1>
+      <h1 className="text-2xl md:text-6xl font-medium  pt-20">Custom Shopify Tweaks, Made Easy      </h1>
 
             </MotionFadeIn>
 
@@ -25,7 +49,7 @@ export default function About() {
 </p>
 <br>
 </br>
-      <p className="text-lg text-gray-600 mt-4">
+      <p className="text-sm text-black mt-4">
       1. Share Your Task
 Need a design tweak, a feature added, or a layout fixed? Just tell us what you re looking for — no task is too small or too big.
 
