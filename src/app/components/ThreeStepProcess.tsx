@@ -35,9 +35,7 @@ const ThreeStepProcess: React.FC = () => {
               key={index}
               className="bg-gray-50 rounded-2xl p-6 shadow hover:shadow-lg transition-all"
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600 mb-4 mx-auto">
-                {step.icon}
-              </div>
+              
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {step.title}
               </h3>
