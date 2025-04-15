@@ -8,6 +8,8 @@ type FormData = {
   name: string;
   email: string;
   message: string;
+  url: string;
+  tasktitle:string; 
 };
 
 export default function Contact() {
@@ -15,6 +17,8 @@ export default function Contact() {
     name: '',
     email: '',
     message: '',
+    url: '',  
+    tasktitle:'',
   });
   const [status, setStatus] = useState<string>('');
 
@@ -33,8 +37,8 @@ export default function Contact() {
     });
 
     if (res.ok) {
-      setStatus('Task Created !');
-      setFormData({ name: '', email: '', message: '' });
+      setStatus('Task Created ! we will be back to you withing 1-2 hours with proper details about task');
+      setFormData({ name: '', email: '',url:'', tasktitle:'', message: '' });
     } else {
       setStatus('Failed to send message.');
     }
@@ -57,7 +61,7 @@ export default function Contact() {
   </div>
     <form onSubmit={handleSubmit} className="w-full mx-auto p-6  pt-30 bg-gray ">
     <div className="mb-6">
-      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+      <label htmlFor="name" className="block text-xl font-medium italic text-black mb-1">Name</label>
       <input
         id="name"
         name="name"
@@ -65,12 +69,12 @@ export default function Contact() {
         onChange={handleChange}
         placeholder="Name"
         required
-        className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+        className="w-full px-4 py-2 border border-black rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
       />
     </div>
   
     <div className="mb-6">
-      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+      <label htmlFor="email" className="block text-xl font-medium text-black italic  mb-1">Email</label>
       <input
         id="email"
         name="email"
@@ -82,9 +86,31 @@ export default function Contact() {
         className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
       />
     </div>
+    <div className="mb-6">
+  <label htmlFor="url" className="block text-xl font-medium text-black italic  mb-1">Shopify Store URL(Optional)</label>
+  <input
+    id="url"
+    name="url"
+    value={formData.url}
+    onChange={handleChange}
+    placeholder="example.com"
+    className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+  />
+</div>
+<div className="mb-6">
+  <label htmlFor="tasktitle" className="block text-xl font-medium text-black italic  mb-1">Project / Task Title</label>
+  <input
+    id="tasktitle"
+    name="tasktitle"
+    value={formData.tasktitle}
+    onChange={handleChange}
+    placeholder="Need to add new fuction / need theme update"
+    className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+  />
+</div>
   
     <div className="mb-6">
-      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Project/Task Description</label>
+      <label htmlFor="message" className="block text-lg italic font-medium text-black mb-1">Project/Task Description</label>
       <textarea
         id="message"
         name="message"
@@ -92,7 +118,7 @@ export default function Contact() {
         onChange={handleChange}
         placeholder="Describe your project/Task in Brief"
         required
-        className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none h-32 resize-none"
+        className="w-full px-4 py-2 border border-black rounded-md shadow-sm focus:ring-2 focus:ring-green-500 focus:border-blue-500 outline-none h-32 resize-none"
       />
     </div>
   
