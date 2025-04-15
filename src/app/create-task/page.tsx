@@ -43,21 +43,46 @@ export default function Contact() {
   return (
     
     <form onSubmit={handleSubmit}>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <input name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
-      <br></br>
-      <br></br>
-      <input name="email" type="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
-      <br></br>
-      <br></br>
-      <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required />
-      <br></br><br></br>
-      <button type="submit">Send</button>
-      <p>{status}</p>
-    </form>
+  <br /><br /><br /><br />
+
+  <label htmlFor="name">Name</label><br />
+  <input
+    id="name"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    placeholder="Name"
+    required
+  />
+  <br /><br />
+
+  <label htmlFor="email">Email</label><br />
+  <input
+    id="email"
+    name="email"
+    type="email"
+    value={formData.email}
+    onChange={handleChange}
+    placeholder="Email"
+    required
+  />
+  <br /><br />
+
+  <label htmlFor="message">Message</label><br />
+  <textarea
+    id="message"
+    name="message"
+    value={formData.message}
+    onChange={handleChange}
+    placeholder="Message"
+    required
+  />
+  <br /><br />
+
+  <button type="submit">Send</button>
+  <p>{status}</p>
+</form>
+
   );
 }
 
