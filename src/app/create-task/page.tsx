@@ -47,7 +47,7 @@ export default function Contact() {
     <h1 className="text-2xl md:text-3xl font-light">Interested?</h1>
     <br>
     </br>
-    <h2 className="text-2xl md:text-3xl font-light">Test our service. It's free!    </h2>
+    <h2 className="text-2xl md:text-3xl font-light"> Create your task   </h2>
     <p className="mt-4">
     It is simple — just submit your task, and within 5 hours, you will hear back from us with a detailed quote. If we need any additional information, we will arrange a quick discovery call to understand your requirements better.
 
