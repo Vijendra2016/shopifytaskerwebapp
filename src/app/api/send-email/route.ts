@@ -1,4 +1,3 @@
-// File: src/app/api/send-email/route.ts
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
@@ -28,8 +27,13 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
-  } catch (error: any) {
-    console.error('Email error:', error.message);
-    return NextResponse.json({ message: 'Failed to send email', error: error.message }, { status: 500 });
+
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('Email error:', error.message);
+      return NextResponse.json({ message: 'Failed to send email', error: error.message }, { status: 500 });
+    }
+
+    return NextResponse.json({ message: 'Failed to send email', error: 'Unknown error' }, { status: 500 });
   }
 }
