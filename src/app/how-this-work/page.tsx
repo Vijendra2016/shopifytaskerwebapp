@@ -3,6 +3,8 @@ import MotionFadeIn from '../components/motion/MotionFadeIn';
 import ClientTell from "../components/Clienttel";
 import ThreeStepProcess from "../components/ThreeStepProcess"
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -29,9 +31,11 @@ export default function About() {
     <p className="text-white text-base md:text-lg mt-4 max-w-xl">
       Design tweaks, custom features, or store setup — handled by pros.
     </p>
+    <Link href="/create-task">
     <button className="mt-6 px-6 py-2 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
       Request a Quote
     </button>
+    </Link>
   </div>
 </section>
 
