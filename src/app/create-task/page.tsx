@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-
+import ClientTell from '../components/Clienttel';
 
 
 type FormData = {
@@ -45,7 +45,7 @@ export default function Contact() {
   };
 
   return (
-    
+    <div className='taskpage'>
 <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] items-center gap-8 px-10">
 <div className="text-center lg:text-left">
     <h1 className="text-2xl md:text-3xl font-light">Interested?</h1>
@@ -59,7 +59,8 @@ export default function Contact() {
     </p>
     
   </div>
-    <form onSubmit={handleSubmit} className="w-full mx-auto p-6  pt-30 bg-gray ">
+    <form onSubmit={handleSubmit} className="w-full mx-auto p-6  pt-15 pb-15 bg-[#f8f8f8] ">
+      <h3 className="block text-3xl font-medium italic text-black mb-1 pb-5"> Get a free Quote. Tasks start from $20!</h3>
     <div className="mb-6">
       <label htmlFor="name" className="block text-xl font-medium italic text-black mb-1">Name</label>
       <input
@@ -83,7 +84,7 @@ export default function Contact() {
         onChange={handleChange}
         placeholder="Email"
         required
-        className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+        className="w-full px-4 py-2 border border-black rounded-md   focus:black outline-none"
       />
     </div>
     <div className="mb-6">
@@ -93,8 +94,8 @@ export default function Contact() {
     name="url"
     value={formData.url}
     onChange={handleChange}
-    placeholder="example.com"
-    className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+    placeholder="yourstore.com"
+    className="w-full px-4 py-2 border border-black rounded-md   focus:black outline-none"
   />
 </div>
 <div className="mb-6">
@@ -105,7 +106,7 @@ export default function Contact() {
     value={formData.tasktitle}
     onChange={handleChange}
     placeholder="Need to add new fuction / need theme update"
-    className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+    className="w-full px-4 py-2 border border-black rounded-md   focus:black outline-none"
   />
 </div>
   
@@ -118,7 +119,7 @@ export default function Contact() {
         onChange={handleChange}
         placeholder="Describe your project/Task in Brief"
         required
-        className="w-full px-4 py-2 border border-black rounded-md shadow-sm focus:ring-2 focus:ring-green-500 focus:border-blue-500 outline-none h-32 resize-none"
+        className="w-full px-4 py-2 border border-black rounded-md   focus:black outline-none"
       />
     </div>
   
@@ -132,6 +133,10 @@ export default function Contact() {
       {status && <p className="text-green-600 text-sm">{status}</p>}
     </div>
   </form>
+
+  
+  </div>
+  <ClientTell/>
   </div>
 
   );
