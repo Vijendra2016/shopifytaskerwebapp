@@ -25,8 +25,9 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: process.env.GMAIL_USER,
-      subject: `New message from ${name}`,
-      html: `<p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong><br/>${message}</p>`,
+      subject: `Shopify Tasker new task created `,
+      html: `<p>
+      <strong>Name:</strong> ${name}</p><P><strong>Email:</strong> ${email}</p><p><strong>Message:</strong><br/>${message}</p>`,
     });
 
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
