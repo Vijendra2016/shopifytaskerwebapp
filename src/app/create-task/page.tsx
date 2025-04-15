@@ -1,15 +1,63 @@
-import { Metadata } from "next";
+'use client';
 
-export const metadata: Metadata = {
-  title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
-  description:
-    "Learn more about ShopifyTasker, a trusted name in Shopify development. We help businesses build, customize, and scale their online stores effectively.",
+import { useState } from 'react';
+
+
+
+type FormData = {
+  name: string;
+  email: string;
+  message: string;
 };
 
-export default function About() {
+export default function Contact() {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [status, setStatus] = useState<string>('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('Sending...');
+
+    const res = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      setStatus('Message sent!');
+      setFormData({ name: '', email: '', message: '' });
+    } else {
+      setStatus('Failed to send message.');
+    }
+  };
+
   return (
-    <main className="container mx-auto px-4 py-10 text-center pt-20">
-    <h1 className="text-3xl md:text-6xl font-regular">Fair prices No Hidden Fees</h1>
-</main>
+    
+    <form onSubmit={handleSubmit}>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <input name="name" value={formData.name} onChange={handleChange} placeholder="Name" required />
+      <br></br>
+      <br></br>
+      <input name="email" type="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
+      <br></br>
+      <br></br>
+      <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message" required />
+      <br></br><br></br>
+      <button type="submit">Send</button>
+      <p>{status}</p>
+    </form>
   );
 }
+
