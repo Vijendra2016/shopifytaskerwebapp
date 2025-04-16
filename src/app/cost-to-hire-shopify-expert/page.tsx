@@ -14,6 +14,16 @@ export default function pricing() {
         <p>Consistent and predictable rates across our team of in-house Shopify experts. Whether it a quick fix or a full-scale project, you always get transparent, reliable pricing. Request free quotes anytime or choose pre-paid hourly bundles to save and stay in control of your budget.
 
 </p>
+<h2>$20
+
+per hour 
+
+Best for small and large project needs without an urgent deadline.</h2>
+<h2>$30
+
+per hour 
+
+Best for small and large project needs  an urgent deadline.</h2>
     </main>
   );
 }
