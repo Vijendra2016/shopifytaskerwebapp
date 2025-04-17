@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ClientTell from "./components/Clienttel";
-
+import TestimonialCard from "./components/TestimonialCard";
 
 
 
@@ -113,6 +113,7 @@ export default function Home() {
 
   </div>
 </section>
+<TestimonialCard/>
     
   </main>
 
