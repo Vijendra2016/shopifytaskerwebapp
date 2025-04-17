@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import CenteredSlider from "../components/CenteredSlider";
+import TestimonialCard from "../components/TestimonialCard";
 export const metadata: Metadata = {
   title: "Cost to hire shopify expert",
   description:
@@ -27,6 +28,7 @@ Best for small and large project needs without an urgent deadline.</h2>
 per hour 
 
 Best for small and large project needs  an urgent deadline.</h2>
+<TestimonialCard />
     </main>
   );
 }
