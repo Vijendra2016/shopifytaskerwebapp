@@ -14,7 +14,7 @@ const testimonials = [
     logo:
       'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68008a90a4c1bef400fc2c2b_image%20(2).png',
     link: 'https://www.slumberpod.com/',
-    service: 'Squarespace to shopify migration',
+    service: 'Squarespace to Shopify Migration',
     location: 'USA'
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     image: 'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67860b0fa33a316e9682321f_Entropy%20Team%20Images%2001.jpg',
     logo: 'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680098c193c3a69c8e3e2a3b_blacktie.png',
     link: 'https://www.blacktiecbd.net',
-    service: 'Squarespace to shopify migration',
+    service: 'Shopify On-going Support',
     location: 'USA'
   },
   {
@@ -36,7 +36,7 @@ const testimonials = [
     image: 'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6800a384fb924b0148b4d0d6_mad.jpeg',
     logo: 'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6800a4dfa301a04d362e041b_shopboxuk.png',
     link: 'https://shopboxd.co.uk/',
-    service: 'Shopify custom Task & support',
+    service: 'Shopify Development & Support',
     location: 'UK'
   },
 ];
@@ -79,7 +79,7 @@ const TestimonialCardGrid = () => {
               {new URL(testimonial.link).host}
               <TfiArrowTopRight className="ml-2" />
             </a>
-            <span className="inline-flex items-center bg-pink-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-400 transition">{testimonial.service}</span>
+            <span className="inline-flex items-center bg-blue-100 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400 transition">{testimonial.service}</span>
             <span className="inline-flex  ">
   <TiLocation className="mr-1" />
   {testimonial.location}
