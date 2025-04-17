@@ -32,22 +32,33 @@ export async function POST(req: NextRequest) {
     });
 
     await transporter.sendMail({
-        from: process.env.EMAIL_USER,
-        to: email,
-        subject: 'Thanks for submitting your task!',
-        html: `
-          <p>Hi ${name},</p>
-          <p>Thanks for submitting your task. We’ve received your request and will get back to you within 5 hours.</p>
-          <p>Here’s a summary of what you submitted:</p>
-          <ul>
+      from: process.env.EMAIL_USER,
+      to: email,
+      subject: 'Thanks for submitting your task!',
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #fafafa;">
+          <h2 style="color: #2c3e50;">Hi ${name},</h2>
+          
+          <p style="font-size: 16px; color: #333;">
+            Thanks for submitting your task. We’ve received your request and will get back to you within <strong>5 hours</strong>.
+          </p>
+          
+          <p style="font-size: 16px; color: #333;">Here’s a summary of what you submitted:</p>
+          
+          <ul style="font-size: 16px; color: #333; padding-left: 20px;">
             <li><strong>Website:</strong> ${url || 'Not provided'}</li>
             <li><strong>Message:</strong> ${message}</li>
           </ul>
-          <p>We'll be in touch soon!</p>
-          <p>— Your Team at ShopifyTasker</p>
-        `,
-      });
-
+          
+          <p style="font-size: 16px; color: #333;">We'll be in touch soon!</p>
+          
+          <p style="font-size: 16px; color: #2c3e50; margin-top: 30px;">
+            — Your Team at <strong>ShopifyTasker</strong>
+          </p>
+        </div>
+      `,
+    });
+    
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
 
   } catch (error: unknown) {
