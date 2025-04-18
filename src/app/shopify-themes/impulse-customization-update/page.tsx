@@ -39,11 +39,11 @@ export default function Pricing() {
         </h1>
         
         <p className="text-lg text-gray-700 mb-6 text-center">
-          Running your store on the Impulse theme and need to make it your own? You're in the right place.
+          Running your store on the Impulse theme and need to make it your own? Your are in the right place.
         </p>
         
         <p className="text-base text-gray-800 mb-4">
-          Whether you're looking to fine-tune the layout, update the design, improve performance, or add custom features — we've got you covered. Our team specializes in working with Shopify's Impulse theme to deliver fast, reliable, and on-brand customizations that actually convert.
+          Whether your are looking to fine-tune the layout, update the design, improve performance, or add custom features — we got you covered. Our team specializes in working with  Impulse shopify theme to deliver fast, reliable, and on-brand customizations that actually convert.
         </p>
         
         <p className="text-base text-gray-800 mb-4">
@@ -51,7 +51,7 @@ export default function Pricing() {
         </p>
         
         <p className="text-base text-gray-800 mb-8">
-          We don't do generic. Every Shopify store is unique, and our goal is to make your version of Impulse reflect that — whether you're just starting out or scaling fast.
+          Every Shopify store is unique, and our goal is to make your version of Impulse reflect that — whether you are just starting out or scaling fast.
         </p>
         
         <h2 id="customization" className="text-2xl font-semibold mt-10 mb-4">💡 What We Can Help With:</h2>
@@ -65,12 +65,12 @@ export default function Pricing() {
         
         <h2 id="updates" className="text-2xl font-semibold mb-4">🤝 Why Work With Us?</h2>
         <p className="text-base text-gray-800 mb-12">
-          We're Shopify theme pros who know Impulse inside and out. No guesswork, no bloated code — just clean, efficient solutions tailored to your brand.
+          We are Shopify theme pros who know Impulse inside and out. No guesswork, no bloated code — just clean, efficient solutions tailored to your brand.
         </p>
         
         <h2 id="performance" className="text-2xl font-semibold mb-4">⚡ Performance Optimization</h2>
         <p className="text-base text-gray-800 mb-12">
-          We'll make your Impulse theme run lightning fast with our performance tuning, ensuring you don't lose sales due to slow page loads or mobile issues.
+          We make your Impulse theme run lightning fast with our performance tuning, ensuring you do not  lose sales due to slow page loads or mobile issues.
         </p>
         
         <h2 id="testimonials" className="text-2xl font-semibold mb-6 text-center">What Our Clients Say</h2>
