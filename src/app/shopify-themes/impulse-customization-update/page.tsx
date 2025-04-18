@@ -10,20 +10,15 @@ export const metadata: Metadata = {
 
 export default function Pricing() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen ">
       {/* Left Sidebar */}
-      <aside className="hidden md:block w-64 bg-gray-50 p-6 border-r border-gray-200 pt-10">
-        <div className="sticky top-10">
-          <h3 className="font-semibold text-lg mb-4">Our Services</h3>
-          <nav className="space-y-2">
-            <a href="#customization" className="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Theme Customization</a>
-            <a href="#updates" className="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Theme Updates</a>
-            <a href="#performance" className="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Performance Optimization</a>
-            <a href="#themetweak" className="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Impulse theme tweaks</a>
-
-            <a href="#testimonials" className="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Client Testimonials</a>
-            <a href="#quote" className="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Request a Quote</a>
-          </nav>
+      <aside className="hidden md:block w-64 bg-black  p-6 border-r border-gray-200 pt-20">
+        <div className="sticky top-40">
+        <div className="bg-green-50 rounded-lg border border-green-100 p-5">
+            <h3 className="font-semibold text-green-800 mb-2">Did you know?</h3>
+            <p className="text-sm text-green-700 mb-3">Well-optimized Impulse themes can load up to 40% faster, significantly improving conversion rates.</p>
+            <p className="text-xs text-green-600">Based on our client performance data</p>
+          </div>
           
           <div className="mt-8 p-4 bg-pink-300 rounded-lg border border-blue-100">
             <h4 className="font-medium text-white-800 mb-2">Need urgent help?</h4>
@@ -86,9 +81,9 @@ export default function Pricing() {
       </main>
 
       {/* Right Sidebar */}
-      <aside className="hidden lg:block w-64 bg-gray-50 p-6 border-l border-gray-200">
+      <aside className="hidden lg:block w-64 bg-black p-6 border-l border-gray-200 pt-20">
         <div className="sticky top-6">
-          <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-5 mb-6">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-5 mb-6 ">
             <h3 className="font-semibold text-lg mb-3">Quick Quote</h3>
             <p className="text-sm text-gray-600 mb-4">Need a ballpark figure? Common services start at:</p>
             <ul className="space-y-3 text-sm">
@@ -105,7 +100,7 @@ export default function Pricing() {
                 <span className="font-medium">$449</span>
               </li>
             </ul>
-            <a href="#quote" className="mt-4 inline-block text-sm font-medium text-blue-600 hover:text-blue-800">Get exact pricing →</a>
+            <a href="#quote" className="mt-4 inline-block text-sm font-medium bg-green-300 text-black px-4 py-2 rounded-full text-lg font-medium hover:bg-pink-400 transition">Get exact pricing →</a>
           </div>
           
           <div className="bg-green-50 rounded-lg border border-green-100 p-5">
@@ -113,7 +108,11 @@ export default function Pricing() {
             <p className="text-sm text-green-700 mb-3">Well-optimized Impulse themes can load up to 40% faster, significantly improving conversion rates.</p>
             <p className="text-xs text-green-600">Based on our client performance data</p>
           </div>
+
+          
         </div>
+
+        
       </aside>
     </div>
   );
