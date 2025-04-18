@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import TestimonialCard from "@/app/components/TestimonialCard";
+import QuoteRequestForm from "@/app/components/QuoteRequestForm";
 
 export const metadata: Metadata = {
   title: "Impulse Theme Customization & Update Services | Shopify Experts",
@@ -76,96 +77,12 @@ export default function Pricing() {
         <h2 id="testimonials" className="text-2xl font-semibold mb-6 text-center">What Our Clients Say</h2>
         <div className="mb-12">
           <TestimonialCard />
+
         </div>
         
+        <QuoteRequestForm />
         {/* Quote Request Form */}
-        <div id="quote" className="bg-gray-50 p-8 rounded-lg border border-gray-200 mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-center">Request a Quote</h2>
-          <form className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="name">Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" 
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="email">Email</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" 
-                  placeholder="your@email.com"
-                  required
-                />
-              </div>
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="storeUrl">Shopify Store URL</label>
-              <input 
-                type="url" 
-                id="storeUrl" 
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" 
-                placeholder="https://your-store.myshopify.com"
-              />
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="serviceType">Service Type</label>
-              <select 
-                id="serviceType" 
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                required
-              >
-                <option value="">Select a service</option>
-                <option value="customization">Theme Customization</option>
-                <option value="update">Theme Update</option>
-                <option value="performance">Performance Optimization</option>
-                <option value="other">Other (please specify)</option>
-              </select>
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="details">Project Details</label>
-              <textarea 
-                id="details" 
-                rows={4} 
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" 
-                placeholder="Tell us about your project requirements"
-                required
-              ></textarea>
-            </div>
-            
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="budget">Estimated Budget (USD)</label>
-              <select 
-                id="budget" 
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-              >
-                <option value="">Select budget range</option>
-                <option value="below-500">Below $500</option>
-                <option value="500-1000">$500 - $1,000</option>
-                <option value="1000-2000">$1,000 - $2,000</option>
-                <option value="above-2000">Above $2,000</option>
-                <option value="not-sure">Not sure / Need consultation</option>
-              </select>
-            </div>
-            
-            <div className="mt-4">
-              <button 
-                type="submit" 
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
-              >
-                Submit Quote Request
-              </button>
-            </div>
-          </form>
-        </div>
+        
       </main>
 
       {/* Right Sidebar */}
