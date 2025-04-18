@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import QuoteRequestForm from "@/app/components/QuoteRequestForm";
-
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "Impulse Theme Customization & Update Services | Shopify Experts",
   description:
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function Pricing() {
   return (
     <div className="flex min-h-screen ">
+        
       {/* Left Sidebar */}
       <aside className="hidden md:block w-64 bg-black  p-6 border-r border-gray-200 pt-20">
         <div className="sticky top-40">
@@ -30,13 +31,26 @@ export default function Pricing() {
 
       {/* Main Content */}
       <main className="flex-1 container mx-auto px-4 py-16 max-w-4xl">
+          
+          
+
+              
         <h1 className="text-4xl font-semibold mb-6 text-center">
           Impulse Theme Customization & Update Services
         </h1>
+
         
         <p className="text-lg text-gray-700 mb-6 text-center">
           Running your store on the Impulse theme and need to make it your own? Your are in the right place.
         </p>
+        <Image
+                className="w-full h-half object-cover"
+                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6802343c7aef14f4179fc9c6_Penny%C2%AE%20Skateboards%20Australia%20Official%20Store%20%E2%80%93%20Penny%20Skateboards.png"
+                alt="Shopify Development"
+                width={500}
+                height={250}
+                priority
+              />
         
         <p className="text-base text-gray-800 mb-4">
           Whether your are looking to fine-tune the layout, update the design, improve performance, or add custom features — we got you covered. Our team specializes in working with  Impulse shopify theme to deliver fast, reliable, and on-brand customizations that actually convert.
@@ -77,6 +91,17 @@ export default function Pricing() {
         
         <QuoteRequestForm />
         {/* Quote Request Form */}
+
+        <h4>Top Website Buidl on Impulse Theme </h4>
+        <Image
+                className="w-full h-half object-cover"
+                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6802343c7aef14f4179fc9c6_Penny%C2%AE%20Skateboards%20Australia%20Official%20Store%20%E2%80%93%20Penny%20Skateboards.png"
+                alt="Shopify Development"
+                width={500}
+                height={250}
+                priority
+              />
+        
         
       </main>
 
@@ -114,6 +139,8 @@ export default function Pricing() {
 
         
       </aside>
+      
     </div>
+    
   );
 }

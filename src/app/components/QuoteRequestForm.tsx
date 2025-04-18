@@ -77,7 +77,7 @@ export default function QuoteRequestForm() {
 
   return (
     <div id="quote" className="bg-black p-8 rounded-3xl border border-gray-200 mb-12">
-      <h2 className="text-2xl font-semibold mb-6 text-center">Request a Quote</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-black text-center">Request a Quote</h2>
       
       {submitStatus.success ? (
         <div className="bg-green-50 border border-green-200 text-green-800 p-4 rounded-md mb-6">
