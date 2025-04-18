@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import QuoteRequestForm from "@/app/components/QuoteRequestForm";
 import Image from "next/image";
+import { TfiArrowTopRight } from 'react-icons/tfi';
+
 export const metadata: Metadata = {
   title: "Impulse Theme Customization & Update Services | Shopify Experts",
   description:
@@ -92,15 +94,146 @@ export default function Pricing() {
         <QuoteRequestForm />
         {/* Quote Request Form */}
 
-        <h4>Top Website Buidl on Impulse Theme </h4>
+        <h3 className="text-2xl font-semibold mb-6 text-center">
+  Top Website Built on Impulse Theme
+</h3>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  {/* Card 1 */}
+  <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+    <Image
+      className="w-full h-80 object-cover"
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6802343c7aef14f4179fc9c6_Penny%C2%AE%20Skateboards%20Australia%20Official%20Store%20%E2%80%93%20Penny%20Skateboards.png"
+      alt="Penny Skateboards"
+      width={800}
+      height={1000}
+      priority
+    />
+    <div className="p-4">
+      <h4 className="text-xl font-semibold mb-2">Penny Skateboards</h4>
         <Image
-                className="w-full h-half object-cover"
-                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6802343c7aef14f4179fc9c6_Penny%C2%AE%20Skateboards%20Australia%20Official%20Store%20%E2%80%93%20Penny%20Skateboards.png"
-                alt="Shopify Development"
-                width={500}
-                height={250}
-                priority
-              />
+                      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680258e985a94d3934ef39c6_penny-black.png"
+                      alt="Penny Skateboards"
+                      width={150}
+                      height={80}
+                    />
+      <p className="text-gray-700 pt-10">
+        Well-optimized Impulse themes can load up to 40% faster, significantly improving conversion rates.
+      </p>
+       <a
+                    href="https://au.pennyskateboards.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-pink-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-400 transition"
+                  >
+                 au.pennyskateboards.com
+                    <TfiArrowTopRight className="ml-2" />
+                  </a>
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+  <Image
+      className="w-full h-80 object-cover"
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68025ad507dbe49f1564d13c_whiteOak.jpg"
+      alt="Penny Skateboards"
+      width={800}
+      height={1000}
+      priority
+    />
+    <div className="p-4">
+      <h4 className="text-xl font-semibold mb-2 pb-5">White Oak Pastures</h4>
+      <Image
+                      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68025c62cd17ec1168665c90_White%20Oak%20Pastures%20logo.png"
+                      alt="Penny Skateboards"
+                      width={150}
+                      height={80}
+                    />
+      <p className="text-gray-700 pt-5">
+        Well-optimized Impulse themes can load up to 40% faster, significantly improving conversion rates.
+      </p>
+      <a
+                    href="https://whiteoakpastures.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-pink-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-400 transition"
+                  >
+                whiteoakpastures.com
+                    <TfiArrowTopRight className="ml-2" />
+                  </a>
+    </div>
+  </div>
+</div>
+
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
+  {/* Card 1 */}
+  <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+    <Image
+      className="w-full h-80 object-cover"
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6802343c7aef14f4179fc9c6_Penny%C2%AE%20Skateboards%20Australia%20Official%20Store%20%E2%80%93%20Penny%20Skateboards.png"
+      alt="Penny Skateboards"
+      width={800}
+      height={1000}
+      priority
+    />
+    <div className="p-4">
+      <h4 className="text-xl font-semibold mb-2">Penny Skateboards</h4>
+        <Image
+                      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680258e985a94d3934ef39c6_penny-black.png"
+                      alt="Penny Skateboards"
+                      width={150}
+                      height={80}
+                    />
+      <p className="text-gray-700 pt-10">
+        Well-optimized Impulse themes can load up to 40% faster, significantly improving conversion rates.
+      </p>
+       <a
+                    href="https://au.pennyskateboards.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-pink-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-400 transition"
+                  >
+                 au.pennyskateboards.com
+                    <TfiArrowTopRight className="ml-2" />
+                  </a>
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+  <Image
+      className="w-full h-80 object-cover"
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68025ad507dbe49f1564d13c_whiteOak.jpg"
+      alt="Penny Skateboards"
+      width={800}
+      height={1000}
+      priority
+    />
+    <div className="p-4">
+      <h4 className="text-xl font-semibold mb-2 pb-5">White Oak Pastures</h4>
+      <Image
+                      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68025c62cd17ec1168665c90_White%20Oak%20Pastures%20logo.png"
+                      alt="Penny Skateboards"
+                      width={150}
+                      height={80}
+                    />
+      <p className="text-gray-700 pt-5">
+        Well-optimized Impulse themes can load up to 40% faster, significantly improving conversion rates.
+      </p>
+      <a
+                    href="https://whiteoakpastures.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-pink-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-400 transition"
+                  >
+                whiteoakpastures.com
+                    <TfiArrowTopRight className="ml-2" />
+                  </a>
+    </div>
+  </div>
+</div>
         
         
       </main>
