@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import ClientTell from '../components/Clienttel';
-
+import TestimonialCardGrid from '../components/TestimonialCardGrid';
 
 type FormData = {
   name: string;
@@ -136,6 +136,7 @@ export default function Contact() {
 
   
   </div>
+  <TestimonialCardGrid/>
   <ClientTell/>
   </div>
 
