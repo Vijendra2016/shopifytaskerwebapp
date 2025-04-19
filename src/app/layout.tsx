@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Topbar from "./components/Annocmentbar";
+import WelcomeCard from "./components/WelcomeCard";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,7 @@ export default function RootLayout({
       <Footer />
       
       <Analytics/>
+      <WelcomeCard/>
       </body>
       <GoogleAnalytics gaId="G-RH64BGD6GT" />
       
