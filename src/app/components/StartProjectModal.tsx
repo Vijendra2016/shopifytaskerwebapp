@@ -145,8 +145,8 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
             <>
               
               <h3 className="text-4xl font-bold mb-2">Brief Details of Task  </h3>
-              <p className="mb-4 text-gray-600">
-              Share a few key details about your project, and we'll analyze the requirements and get back to you with a personalized quote and timeline.
+              <p className="mb-4 text-sm text-gray-600">
+              Share a few key details about your project, and we  analyze the requirements and get back to you with a personalized quote and timeline.
 
 
               </p>
