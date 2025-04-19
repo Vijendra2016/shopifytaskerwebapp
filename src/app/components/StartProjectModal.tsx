@@ -19,7 +19,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
         </button>
         <h2 className="text-3xl font-bold mb-2">Get Started</h2>
         <p className="mb-4 text-gray-600">
-          It only takes a few minutes to kick off your first project. Then we’ll introduce you to an e-commerce expert in our network.
+          It only takes a few minutes to kick off your first project. Then we introduce you to an e-commerce expert in our network.
         </p>
         <label className="block mb-2 font-semibold">Your website</label>
         <input
