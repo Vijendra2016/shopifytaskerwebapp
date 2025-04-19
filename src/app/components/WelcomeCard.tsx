@@ -16,7 +16,7 @@ export default function WelcomeCard() {
     <>
       <div
         onClick={handleCardClick}
-        className="fixed bottom-4 left-4 bg-black border shadow-lg p-4 rounded-xl z-40 max-w-sm cursor-pointer"
+        className="fixed bottom-4 left-2 bg-black border shadow-lg p-4 rounded-xl z-40 max-w-sm cursor-pointer"
       >
         <p className="text-white text-lg mb-2">
         Kickstart your first project with confidence
