@@ -35,7 +35,8 @@ export default function RootLayout({
             <GoogleTagManager gtmId="G-RH64BGD6GT" />
 
       <Head>
-        <meta name="theme-color" content="#3498db" />
+        <meta name="theme-color" content="#000000" />
+
       </Head>
       
       <body
