@@ -187,7 +187,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="px-4 py-2 cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300"
+                  className="px-4 py-2 cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300 flex items-center"
                 >
                  <TiArrowLeft />
                  Back
@@ -247,7 +247,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="px-4 py-2  cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300"
+                  className="px-4 py-2  cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300 flex items-center"
                 > <TiArrowLeft />
 
                   Back
