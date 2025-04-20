@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { TiArrowRight } from "react-icons/ti";
+import { TiArrowLeft } from "react-icons/ti";
+
 
 type FormData = {
   name: string;
@@ -185,14 +187,15 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="px-4 py-2 bg-gray-200 text-black rounded-md hover:bg-gray-300"
+                  className="px-4 py-2 cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300"
                 >
-                  Back
+                 <TiArrowLeft />
+                 Back
                 </button>
                 <button
                   type="button"
                   onClick={() => setStep(3)}
-                  className="px-8 text-lg py-2 bg-green-300 text-black rounded-md hover:bg-blue-700 transition-colors flex items-center"
+                  className="px-8  cursor-pointer text-lg py-2 bg-green-300 text-black rounded-md hover:bg-blue-700 transition-colors flex items-center"
                 >
                   <span>Next</span>
                   <span className="text-3xl "><TiArrowRight /></span>
@@ -244,13 +247,14 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="px-4 py-2 bg-gray-200 text-black rounded-md hover:bg-gray-300"
-                >
+                  className="px-4 py-2  cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300"
+                > <TiArrowLeft />
+
                   Back
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-2 bg-green-300 text-black rounded-md hover:bg-blue-700 transition-colors flex items-center"
+                  className="px-4  cursor-pointer py-2 bg-green-300 text-black rounded-md hover:bg-blue-700 transition-colors flex items-center"
                 >
                   <span>Submit Task</span>
                   <TfiArrowTopRight className="ml-2" />
