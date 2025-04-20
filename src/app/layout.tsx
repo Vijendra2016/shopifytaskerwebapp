@@ -20,8 +20,8 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "ShopifyTasker: Get Shopify Tasks Done by Top-Rated Shopify Shopify Experts",
-  description:
-  "ShopifyTasker connects you with trusted Shopify experts for theme customization, store design, speed optimization, and ongoing support. Reliable help for every Shopify project—big or small.",
+  description: "ShopifyTasker connects you with trusted Shopify experts for theme customization, store design, speed optimization, and ongoing support. Reliable help for every Shopify project—big or small.",
+  themeColor: '#d9e1eb',
 };
 
 

@@ -5,6 +5,7 @@ import ThreeStepProcess from "../components/ThreeStepProcess"
 import Image from 'next/image';
 import Link from 'next/link';
 import TestimonialCard from "../components/TestimonialCard";
+import HowItWorks from "../components/HowitsWork";
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -66,7 +67,7 @@ We ll take a look and send you a fair, upfront quote. No hidden fees, no surpris
 3. Sit Back, We ve Got It
 Our Shopify experts jump in and get it done — fast, clean, and exactly how you imagined.
           </p>
-
+        <HowItWorks/>
 <TestimonialCard/>
 <ThreeStepProcess />
  <ClientTell />
