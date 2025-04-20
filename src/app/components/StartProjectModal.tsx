@@ -67,7 +67,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-end z-50">
         
       <div className="w-full md:w-[700px] h-full bg-white p-6 overflow-y-auto relative">
-        <button className="absolute top-2 right-2 text-lg" onClick={onClose}>
+        <button className="absolute cursor-pointer top-2 right-2 text-lg" onClick={onClose}>
           ✕ close
         </button>
 
@@ -266,6 +266,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
               <h2 className="text-4xl font-bold mb-4">🎉 Task Submitted!</h2>
               <p className="text-gray-600 mb-6">
                 We review your project and get back to you within 5 hours with quote and timeline .
+                🔒 Secure — No payment required until task is complete.
               </p>
               <button
                 onClick={() => {
