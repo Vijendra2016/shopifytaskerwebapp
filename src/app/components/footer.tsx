@@ -21,12 +21,12 @@ export default function Footer() {
         <div className="flex flex-col space-y-2">
         
           <h6 className="underline text-base md:text-1xl font-thin">About</h6>
-          <Link href="/" className="underline">about us</Link>
+          <Link href="/" className="underline">who we are</Link>
           <Link href="/how-it-works">how it works</Link>
-          <Link href="/experts">our expert</Link>
+          <Link href="/experts">our tech stack</Link>
           <Link href="/customers">reviews</Link>
           <Link href="/pricing">pricing</Link>
-          <Link href="/support">support</Link>
+          <Link href="/support">contact</Link>
         </div>
 
         {/* Column 2 */}
@@ -49,30 +49,20 @@ export default function Footer() {
           <Link href="/partner">Shopify App Development</Link>
           <Link href="/start-project">Shopify Hydrogen</Link>
           <Link href="/reviews">public reviews</Link>
-          <Link href="/expert-login">expert login</Link>
-          <Link href="/partner-login">partner login</Link>
-          <Link href="/customer-login">customer login</Link>
+          
         </div>
          {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
          <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
           <Link href="/become-expert">Shopify Hyrogen Store Setup</Link>
           <Link href="/partner">Shopify Headless Store Managment</Link>
-          <Link href="/start-project">start a project</Link>
-          <Link href="/reviews">public reviews</Link>
-          <Link href="/expert-login">expert login</Link>
-          <Link href="/partner-login">partner login</Link>
-          <Link href="/customer-login">customer login</Link>
+          
         </div>
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
           <Link href="/become-expert">Shopify Hyrogen Store Setup</Link>
           <Link href="/partner">Shopify Headless Store Managment</Link>
-          <Link href="/start-project">start a project</Link>
-          <Link href="/reviews">public reviews</Link>
-          <Link href="/expert-login">expert login</Link>
-          <Link href="/partner-login">partner login</Link>
-          <Link href="/customer-login">customer login</Link>
+          
         </div>
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Platform Migration</h6>
@@ -81,8 +71,7 @@ export default function Footer() {
           <Link href="/start-project">Squarespace to shopify</Link>
           <Link href="/reviews">Square to shopify</Link>
           <Link href="/expert-login">Maganto to Shopify</Link>
-          <Link href="/partner-login">Nw</Link>
-          <Link href="/customer-login">customer login</Link>
+          
         </div>
 
         <div className="flex flex-col space-y-2">
@@ -90,10 +79,7 @@ export default function Footer() {
           <Link href="/shopify-themes/impulse-customization-update">Impulse theme Customization & Update</Link>
           <Link href="/partner">Shopify Headless Store Managment</Link>
           <Link href="/start-project">start a project</Link>
-          <Link href="/reviews">public reviews</Link>
-          <Link href="/expert-login">expert login</Link>
-          <Link href="/partner-login">partner login</Link>
-          <Link href="/customer-login">customer login</Link>
+          
         </div>
       </div>
     </footer>
