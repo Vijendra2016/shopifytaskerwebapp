@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ClientTell from "./components/Clienttel";
 import PromoGrid from "./components/PromoGrid";
-
+import TestimonialCardGrid from "./components/TestimonialCardGrid";
 
 
 
@@ -114,6 +114,8 @@ export default function Home() {
 
   </div>
 </section>
+<TestimonialCardGrid />
+
 
   </main>
 
