@@ -13,11 +13,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 const [showModal, setShowModal] = useState(false);
 
-const handleCardClick = (e: React.MouseEvent) => {
-    // prevent nested button click from re-triggering
-    if ((e.target as HTMLElement).closest("button")) return;
-    setShowModal(true);
-  };
+
   
 
   return (
