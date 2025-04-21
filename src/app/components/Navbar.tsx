@@ -5,11 +5,20 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { TfiAlignLeft, TfiClose  } from "react-icons/tfi";
-
 import { TfiArrowRight } from "react-icons/tfi";
+
+import StartProjectModal from "./StartProjectModal";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+const [showModal, setShowModal] = useState(false);
+
+const handleCardClick = (e: React.MouseEvent) => {
+    // prevent nested button click from re-triggering
+    if ((e.target as HTMLElement).closest("button")) return;
+    setShowModal(true);
+  };
+  
 
   return (
     <nav className="bg-[#CADCFC] text-lg w-full fixed top-0 left-0 z-50">
@@ -48,15 +57,17 @@ export default function Navbar() {
         <Link href="/shopify-tasker-reviews" className="text-black hover:text-white">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         Reviews</Link>
-        <Link
-          href="/create-task"
-          className="bg-white text-black border border-white px-4 py-1.5 rounded-md hover:bg-white hover:text-black transition flex items-center"
-        >
-          Create Task <TfiArrowRight/>
-        </Link>
+        
+
+         <button
+                  onClick={() => setShowModal(true)}
+                  className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-400 transition"
+                  >
+                 Create Task <TfiArrowRight/>
+                </button>
       </div>
     
-
+<StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
 
           {/* Mobile Menu Button */}
           <button
@@ -65,6 +76,7 @@ export default function Navbar() {
           >
             {isOpen ? <TfiClose />  : <TfiAlignLeft />}
           </button>
+          
         </div>
 
         {/* Mobile Menu */}

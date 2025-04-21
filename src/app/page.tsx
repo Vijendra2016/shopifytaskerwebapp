@@ -31,8 +31,7 @@ export default function Home() {
 
   </section>
   <PromoGrid />
-  <PromoGrid />
-
+  
 
   <div className="py-16 ">
 
@@ -106,7 +105,6 @@ export default function Home() {
     
 
 < ClientTell />
-<PromoGrid />
 <section>
 <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
   <h3 className="text-3xl md:text-6xl font-regular ">
@@ -116,9 +114,7 @@ export default function Home() {
 
   </div>
 </section>
-<PromoGrid />
-<PromoGrid />
-<PromoGrid />
+
   </main>
 
       
