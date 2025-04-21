@@ -15,7 +15,7 @@ const WhyShopifyTasker = () => {
     <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 lg:py-20 max-w-7xl mx-auto">
       {/* Left: Text content */}
       <div className="lg:w-1/2 text-center lg:text-left space-y-6">
-        <h2 className="text-3xl sm:text-lg font-semibold text-gray-800">
+        <h2 className="text-lg sm:text-3XL font-semibold text-gray-800">
           Why ShopifyTasker –{' '}
           <span className="text-green-300">
             {text}
@@ -39,7 +39,7 @@ const WhyShopifyTasker = () => {
       {/* Right: Image */}
       <div className="lg:w-1/2 mb-10 lg:mb-0 flex justify-center">
         <Image
-          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67860b0fa33a316e968231bd_Stack%20Images%2003.jpg" // place your image in /public/images/
+          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6805e4d90c84d966fe2fda46_SHOPIFYTASKERTEAMNEWVIDI.png" // place your image in /public/images/
           alt="Why ShopifyTasker"
           width={800}
           height={800}
