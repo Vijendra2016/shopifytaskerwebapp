@@ -9,6 +9,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Topbar from "./components/Annocmentbar";
 import WelcomeCard from "./components/WelcomeCard";
+import { Viewport } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,9 @@ const geistSans = Geist({
 });
 
 
-
+export const viewport: Viewport = {
+  themeColor: 'black',
+}
 
 export const metadata: Metadata = {
   title: "ShopifyTasker: Get Shopify Tasks Done by Top-Rated Shopify Shopify Experts",
