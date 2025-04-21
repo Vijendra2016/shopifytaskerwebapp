@@ -25,7 +25,7 @@ export default function WelcomeCard() {
         Easy Pricing No Upfront Payment.  </p>
         <button
           onClick={() => setShowModal(true)}
-          className=" cursor-pointer inline-flex items-center bg-green-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400 transition"
+          className=" cursor-pointer inline-flex items-center bg-green-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400  transition"
         >
           Get Started 
           <TfiArrowTopRight className="ml-2" />
