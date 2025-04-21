@@ -2,7 +2,7 @@ import Image from "next/image";
 import ClientTell from "./components/Clienttel";
 import PromoGrid from "./components/PromoGrid";
 import TestimonialCardGrid from "./components/TestimonialCardGrid";
-
+import WhyShopifyTasker from "./components/WhyShopifyTasker";
 
 
 export default function Home() {
@@ -73,36 +73,9 @@ export default function Home() {
 </div>
 
   
-
-<div className="grid grid-cols-1 lg:grid-cols-[75%_25%] items-center gap-8 px-10">
-  {/* Text Content - 20% */}
-  <div className="w-full h-half">
-    <Image
-      className="w-full h-half object-cover"
-      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fba5d00276e79ad605e790_Ontology_Core_1.png"
-      alt="Shopify Development"
-      width={1200}
-      height={650}
-      priority
-    />
-  </div>
-  <div className="text-center lg:text-left">
-    <h1 className="text-2xl md:text-3xl font-light">Shopify Development Tasks</h1>
-    <p className="mt-4">
-      At ShopifyTasker, we collaborate with brands to deliver outstanding results across our core service offerings. 
-      Our team of skilled developers and marketers work closely with you to ensure success in every possible way. 
-      We pride ourselves on providing exceptional outcomes tailored to your unique business needs.
-    </p>
-    <button className="mt-4 px-6 py-3 bg-black border-2 border-white hover:bg-gray-800 text-white font-semibold rounded-xl shadow-lg transition-all duration-300">
-      Create task
-    </button>
-  </div>
-
-  
-</div>
   
  
-    
+    < WhyShopifyTasker />
 
 < ClientTell />
 <section>

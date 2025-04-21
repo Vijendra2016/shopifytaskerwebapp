@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import TestimonialCard from "../components/TestimonialCard";
 import HowItWorks from "../components/HowitsWork";
+import WhyShopifyTasker from "../components/WhyShopifyTasker";
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -72,6 +73,7 @@ Our Shopify experts jump in and get it done — fast, clean, and exactly how you
 <TestimonialCard/>
 <ThreeStepProcess />
  <ClientTell />
+ <WhyShopifyTasker/>
     </main>
   );
 }
