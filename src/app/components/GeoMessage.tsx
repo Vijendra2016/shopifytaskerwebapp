@@ -9,9 +9,8 @@ const GeoMessage = () => {
   useEffect(() => {
     const fetchLocation = async () => {
       try {
-        const res = await fetch("https://ipwho.is/?fields=city");
+        const res = await fetch("https://ipinfo.io/json?token=3eb3f909a65aed");
         const data = await res.json();
-        if (!data.success) throw new Error("IP lookup failed");
         setCity(data.city);
       } catch (err) {
         console.error("Location fetch error:", err);
