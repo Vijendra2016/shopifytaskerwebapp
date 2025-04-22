@@ -36,6 +36,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/shopify-developer-near-me/newyork`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/shopify-developer-near-me/los-angeles-ca`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/shopify-developer-near-me`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
     // 👉 Add more pages here as needed
   ]
 }
