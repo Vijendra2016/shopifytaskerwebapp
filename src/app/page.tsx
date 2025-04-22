@@ -3,14 +3,12 @@ import ClientTell from "./components/Clienttel";
 import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
 import GeoMessage from "./components/GeoMessage";
-import ExitIntentModal from "./components/ExitIntentModal";
 
 
 export default function Home() {
   return (
     
     <div className="flex flex-col items-center min-h-screen  gap-8">
-            <ExitIntentModal />
 
   <main className="flex flex-col gap-8 w-full text-center sm:text-left">
     <section className="bg-[#CADCFC]">

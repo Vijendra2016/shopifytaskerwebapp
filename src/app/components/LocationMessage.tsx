@@ -44,13 +44,13 @@ const LocationMessage = () => {
   
       default:
         return city
-          ? `Leaving already? If you're in ${city}, ${country}, we can offer same-day Shopify consultation at lower rates.`
-          : "Leaving already? Get Shopify help at lower cost — only pay after the work is done.";
+          ? ` If you're in ${city}, ${country}, we can offer same-day Shopify consultation at lower rates.`
+          : "Looking for shopify expert and developer ? Get Shopify help at lower cost — only pay after the work is done.";
     }
   };
   
   return (
-    <p className="text-white text-lg font-medium text-center">
+    <p className="text-white text-sm font-medium text-center">
       {LocationMessage()}
     </p>
   );
