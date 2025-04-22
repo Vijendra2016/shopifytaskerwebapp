@@ -3,7 +3,8 @@
 
 import { useState } from "react";
 import useExitIntent from "../hooks/useExitIntent";
-import GeoMessage from "./GeoMessage"; 
+import GeoMessage from "./GeoMessage";
+import Image from "next/image"; 
 const ExitIntentModal = () => {
   const [show, setShow] = useState(false);
 
@@ -22,6 +23,14 @@ const ExitIntentModal = () => {
         >
           ×
         </button>
+        <Image
+                     src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68072b50352ae24c799cbfde_shopify-developer-newyork.png" // Replace with actual URL
+        
+                         alt="shopify developer in los angeles"
+                          width={800}
+                          height={800}
+                          className="object-contain"
+                        />
         <GeoMessage />
         <p className="mt-2 text-sm text-gray-600">
           Book a quick call with one of our Shopify experts before you go!
