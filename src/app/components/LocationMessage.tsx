@@ -29,23 +29,23 @@ const LocationMessage = () => {
     switch (country) {
       case "US":
         return city
-          ? `In ${city}, U.S.? Local Shopify developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery`
-          : "In the U.S.? Local Shopify  developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery!";
+          ? `Looking Shopify developer & expert near ${city}, U.S.? Local Shopify developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery`
+          : "Looking Shopify developer & expert in the U.S.? Local Shopify  developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery!";
   
       case "AU":
         return city
-          ? `In ${city}, Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!`
-          : "In Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!";
+          ? `Looking Shopify developer & expert near ${city}, Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!`
+          : "Looking Shopify developer & expert in Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!";
   
       case "IN":
         return city
-          ? `Based in ${city}, India? Get expert Shopify help at local-friendly rates — no upfront payment needed.`
+          ? `Looking Shopify developer & expert near  ${city}, India? Get expert Shopify help at local-friendly rates — no upfront payment needed.`
           : "Based in India? Get expert Shopify help at local-friendly rates — no upfront payment needed.";
   
       default:
         return city
           ? ` If you're in ${city}, ${country}, we can offer same-day Shopify consultation at lower rates.`
-          : "Looking for shopify expert and developer ? Get Shopify help at lower cost — only pay after the work is done.";
+          : "Looking for shopify expert and developer ? Get Shopify expert help at lower cost — only pay after the work is done.";
     }
   };
   
