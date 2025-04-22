@@ -19,6 +19,7 @@ const WhyShopifyTasker = () => {
           Why ShopifyTasker –{' '}
           <span className="text-green-300">
             {text}
+        
             <Cursor cursorStyle="|" />
           </span>
         </h2>

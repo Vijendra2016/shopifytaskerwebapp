@@ -1,9 +1,7 @@
 import Image from "next/image";
 import ClientTell from "./components/Clienttel";
-import PromoGrid from "./components/PromoGrid";
 import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
-import FashionSlider from "./components/FashionSlider";
 
 
 export default function Home() {
@@ -32,7 +30,6 @@ export default function Home() {
 
   </section>
  
-  <FashionSlider/>  
 
   <div className="py-16 ">
 
