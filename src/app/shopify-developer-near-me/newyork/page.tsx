@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import TestimonialCardGrid from "@/app/components/TestimonialCardGrid";
 export const metadata: Metadata = {
-  title: "Shopify Developer Near Me new york| shopify developer in Newyork",
+  title: "Shopify Developer in New York | Hire Shopify Expert",
   description:
-    "Looking to hire shopify developer in new york ? we can help you with shopify development on very affordable prices.",
+    "Looking to hire a Shopify developer in New York? Our expert team offers affordable Shopify development services tailored to your business needs. Get started today!",
 };
 
 export default function pricing() {
