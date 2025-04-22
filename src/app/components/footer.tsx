@@ -59,9 +59,9 @@ export default function Footer() {
           
         </div>
         <div className="flex flex-col space-y-2">
-          <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
-          <Link href="/become-expert">Shopify Hyrogen Store Setup</Link>
-          <Link href="/partner">Shopify Headless Store Managment</Link>
+          <h6 className=" underline text-base font-thin">Shopify Developer Near Me</h6>
+          <Link href="/shopify-developer-near-me/newyork">New York City</Link>
+          <Link href="/shopify-developer-near-me/los-angeles-ca">Los Angeles</Link>
           
         </div>
         <div className="flex flex-col space-y-2">
