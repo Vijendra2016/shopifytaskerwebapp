@@ -3,6 +3,7 @@ import ClientTell from "./components/Clienttel";
 import PromoGrid from "./components/PromoGrid";
 import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
+import FashionSlider from "./components/FashionSlider";
 
 
 export default function Home() {
@@ -22,16 +23,16 @@ export default function Home() {
   
   <section>
   <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
-  <h2 className="text-3xl md:text-6xl font-regular ">
-    ShopifyTasker works with brands across the following core services:</h2>
-  <p >
-    At ShopifyTasker, we collaborate with brands to deliver outstanding results across our core service offerings. Our team of skilled developers and marketers work closely with you to ensure success in every possible way. We pride ourselves on providing exceptional outcomes tailored to your unique business needs.
-  </p>
+  <h2 className="text-3xl md:text-4xl font-regular ">
+  ShopifyTasker can assist you with the following areas of your Shopify and Shopify Plus store:</h2>
+  <p className="text-gray-600 text-lg">
+  The ShopifyTasker team handles all kinds of tasks on Shopify and Shopify Plus stores. Hire our Shopify developers and experts today
+        </p>
   </div>
 
   </section>
-  <PromoGrid />
-  
+ 
+  <FashionSlider/>  
 
   <div className="py-16 ">
 

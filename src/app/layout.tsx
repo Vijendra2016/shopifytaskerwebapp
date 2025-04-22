@@ -45,7 +45,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable}  antialiased`}
       >
-       <Topbar/>
+
+         <Topbar/>
+      
         <Navbar />
 
 
@@ -54,9 +56,11 @@ export default function RootLayout({
 
         
       <Footer />
+
       
       <Analytics/>
       <WelcomeCard/>
+     
       </body>
       <GoogleAnalytics gaId="G-RH64BGD6GT" />
       

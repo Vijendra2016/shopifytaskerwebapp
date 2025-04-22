@@ -12,9 +12,9 @@ type PromoItem = {
 const PromoGrid = () => {
   const promos: PromoItem[] = [
     {
-      title: "Shopify Store Development",
+      title: "Setup Shopify Store",
       subtitle: "We work on the shopify storeScore exclusive offers, the latest drops, and early access to limited releases! develoment Score exclusive offers, the latest drops, and early access to limited releases!",
-      smalldetails: "We provide fully customized Shopify solutions tailored to your business goals. Whether you need a bespoke theme, unique store functionality, or seamless third-party integrations, our team ensures your store operates smoothly and efficiently.",
+      smalldetails: "We can create your Shopify store using custom or premium themes. We've built and set up over 350 Shopify stores. Hire an experienced Shopify web developer from ShopifyTasker today",
       buttonText: "SHOP NOW",
       imageUrl: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67860b0fa33a316e968231bd_Stack%20Images%2003.jpg",
       bgColor: "bg-sky-400",

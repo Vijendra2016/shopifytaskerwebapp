@@ -52,7 +52,7 @@ export default function About() {
 
 <br>
 </br>
-<p>With ShopifyTasker, getting expert help for your store is quick, clear, and stress-free.
+<p>We make Shopify tasks simple. Whether you're a busy store owner or just need a quick fix, ShopifyTasker is here to help. Here how it works:
 </p>
 <br>
 </br>
