@@ -2,6 +2,7 @@
 import { TfiArrowTopRight } from 'react-icons/tfi';
 import React, { useState } from "react";
 import StartProjectModal from "./StartProjectModal";
+import GeoMessage from './GeoMessage';
 
 export default function WelcomeCard() {
   const [showModal, setShowModal] = useState(false);
@@ -21,6 +22,7 @@ export default function WelcomeCard() {
         <p className="text-white text-lg mb-2">
         Kickstart your first project with confidence
         </p>
+        <GeoMessage/>
         <p className="text-white text-sm mb-2">
         Easy Pricing No Upfront Payment.  </p>
         <button
