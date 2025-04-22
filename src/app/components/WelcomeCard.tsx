@@ -22,8 +22,7 @@ export default function WelcomeCard() {
         Kickstart your first project with confidence
         </p>
         <LocationMessage/>
-        <p className="text-white text-sm mb-2">
-        Easy Pricing No Upfront Payment.  </p>
+        
         <button
           onClick={() => setShowModal(true)}
           className=" cursor-pointer inline-flex items-center bg-green-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400  transition"

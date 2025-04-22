@@ -50,7 +50,7 @@ const LocationMessage = () => {
   };
   
   return (
-    <p className="text-white text-sm font-medium text-center">
+    <p className="text-white text-sm mb-2">
       {LocationMessage()}
     </p>
   );
