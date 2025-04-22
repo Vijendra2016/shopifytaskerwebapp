@@ -1,31 +1,35 @@
-// components/GeoMessage.tsx
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const GeoMessage = () => {
   const [city, setCity] = useState<string | null>(null);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchLocation = async () => {
       try {
-        const res = await fetch("https://ipapi.co/json/");
+        const res = await fetch("https://ipwho.is/?fields=city");
         const data = await res.json();
+        if (!data.success) throw new Error("IP lookup failed");
         setCity(data.city);
-      } catch (error) {
-        console.error("Failed to fetch location", error);
+      } catch (err) {
+        console.error("Location fetch error:", err);
+        setError(true);
       }
     };
 
     fetchLocation();
   }, []);
 
+  if (error) return null;
+
   return (
-    <div className="p-4 bg-blue-50 rounded-2xl shadow-md text-center text-lg font-medium text-gray-800">
+    <p className="text-gray-800 text-lg font-medium text-center">
       {city
-        ? `Are you looking to hire Shopify developer or expert in ${city}?`
-        : "Are you looking to hire a Shopify developer or expert?"}
-    </div>
+        ? `Leaving already? If you’re in ${city}, we can offer same-day consultation!`
+        : "Leaving already? We can offer same-day Shopify consultation!"}
+    </p>
   );
 };
 
