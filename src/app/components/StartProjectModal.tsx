@@ -77,7 +77,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 1 */}
           {step === 1 && (
             <>
-              <h2 className="text-6xl font-bold mb-2">Lets Start</h2>
+              <h2 className="text-6xl text-black font-bold mb-2">Lets Start</h2>
               <p className="mb-4 text-gray-600">
               It only takes a few clicks to get going. After that, our in-house e-commerce experts will guide you every step of the way.
               </p>

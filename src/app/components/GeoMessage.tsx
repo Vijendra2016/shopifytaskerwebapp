@@ -22,6 +22,7 @@ const GeoMessage = () => {
 
     fetchLocation();
   }, []);
+  
 
   if (error) return null;
 
