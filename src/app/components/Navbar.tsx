@@ -50,7 +50,7 @@ const [showModal, setShowModal] = useState(false);
         <Link href="/cost-to-hire-shopify-expert" className="text-black hover:text-white">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         Pricing</Link>
-        <Link href="/shopify-tasker-reviews" className="text-black hover:text-white">
+        <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank"  className="text-black hover:text-white">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         Reviews</Link>
         

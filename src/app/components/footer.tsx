@@ -24,7 +24,7 @@ export default function Footer() {
           <Link href="/" className="underline">who we are</Link>
           <Link href="/how-it-works">how it works</Link>
           <Link href="/experts">our tech stack</Link>
-          <Link href="/customers">reviews</Link>
+          <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank">reviews</Link>
           <Link href="/pricing">pricing</Link>
           <Link href="/support">contact</Link>
         </div>
