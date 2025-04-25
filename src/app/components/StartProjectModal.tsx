@@ -69,7 +69,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-end z-50">
         
       <div className="w-full md:w-[700px] h-full bg-white p-6 overflow-y-auto relative">
-        <button className="absolute cursor-pointer top-2 right-2 text-lg" onClick={onClose}>
+        <button className="absolute  text-black cursor-pointer top-2 right-2 text-lg" onClick={onClose}>
           ✕ close
         </button>
 
@@ -83,7 +83,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
               </p>
 
               <div className="mb-1">
-                <label htmlFor="url" className="block mb-0.5 font-semibold">
+                <label htmlFor="url" className="block mb-0.5 text-black font-semibold">
                   Shopify Store URL
                 </label>
                 <input
@@ -92,12 +92,12 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                   value={formData.url}
                   onChange={handleChange}
                   placeholder="yourstore.com"
-                  className="w-full border p-2 rounded mb-4"
+                  className="w-full border text-black border-black p-2 rounded mb-4 placeholder-gray-400"
                 />
               </div>
                      
               <div className="mb-4">
-                <label className="block font-semibold mb-2">What type of Task you have ?</label>
+                <label className="block text-black  font-semibold mb-2">What type of Task you have ?</label>
                 <div className="flex flex-wrap gap-2">
                   {[
                     "Shopify Tasks",
@@ -147,14 +147,14 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {step === 2 && (
             <>
               
-              <h3 className="text-4xl font-bold mb-2">Brief Details of Task  </h3>
+              <h3 className="text-4xl font-bold text-black  mb-2">Brief Details of Task  </h3>
               <p className="mb-4 text-sm text-gray-600">
               Share a few key details about your project, and we  analyze the requirements and get back to you with a personalized quote and timeline.
 
 
               </p>
               <div className="mb-1">
-                <label htmlFor="tasktitle" className="block mb-2 font-semibold">
+                <label htmlFor="tasktitle" className="block mb-2 text-black  font-semibold">
                   Project / Task Title
                 </label>
                 <input
@@ -163,12 +163,13 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                   value={formData.tasktitle}
                   onChange={handleChange}
                   placeholder="Need to add new function / need theme update"
-                  className="w-full border p-2 rounded mb-4"
+                  className="w-full border-black border text-black p-2 rounded mb-4 placeholder-gray-400"
+                  
                 />
               </div> 
               
               <div className="mb-1">
-                <label htmlFor="message" className="block mb-2 font-semibold">
+                <label htmlFor="message" className="block text-black mb-2 font-semibold">
                   Project/Task Description
                 </label>
                 <textarea
@@ -178,7 +179,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                   onChange={handleChange}
                   placeholder="Describe your project/task in brief"
                   required
-                  className="w-full h-40 border p-2 rounded mb-4"
+                  className="w-full h-40 border-black text-black border p-2 rounded mb-4 placeholder-gray-400"
                 />
               </div>
 
@@ -207,13 +208,13 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 3 */}
           {step === 3 && (
             <>
-            <h3 className="text-4xl font-bold mb-2">Your Details </h3>
+            <h3 className="text-4xl text-black font-bold mb-2">Your Details </h3>
               <p className="mb-4 text-gray-600 text-sm">
               Expect to hear from us directly via  email.
               </p>
               
               <div className="mb-1">
-                <label htmlFor="name" className="block mb-0.5 font-semibold">
+                <label htmlFor="name" className="block mb-0.5 text-black font-semibold">
                   Your Name
                 </label>
                 <input
@@ -223,12 +224,12 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                   onChange={handleChange}
                   placeholder="Name"
                   required
-                  className="w-full border p-2 rounded mb-4"
+                  className="w-full border text-black p-2 rounded mb-4 border-black placeholder-gray-400"
                 />
               </div>
 
               <div className="mb-1">
-                <label htmlFor="email" className="block mb-0.5 font-semibold">
+                <label htmlFor="email" className="block mb-0.5 text-black font-semibold">
                   Email
                 </label>
                 <input
@@ -239,7 +240,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  className="w-full border p-2 rounded mb-4"
+                  className="w-full border p-2 text-black rounded border-black mb-4 placeholder-gray-400"
                 />
               </div>
 
@@ -267,7 +268,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 4 - Success Message */}
           {step === 4 && (
             <div className="text-center py-20">
-              <h2 className="text-4xl font-bold mb-4">🎉 Task Submitted!</h2>
+              <h2 className="text-4xl text-black font-bold mb-4">🎉 Task Submitted!</h2>
               <p className="text-gray-600 mb-6">
                 We review your project and get back to you within 5 hours with quote and timeline .
                 🔒 Secure — No payment required until task is complete.

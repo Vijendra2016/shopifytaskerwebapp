@@ -2,16 +2,15 @@ import React from "react";
 
 const FooterQuote = () => {
   return (
-    <div className="w-full min-h-[300px] bg-gradient-to-r from-[#000e7c] via-[#001172] to-[#0fe4c9] flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-16 text-white relative overflow-hidden space-y-8 md:space-y-0 md:space-x-8">
+    <div className="w-full min-h-[300px]  bg-blue-300 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-16 text-white relative overflow-hidden space-y-8 md:space-y-0 md:space-x-8">
       <div className="z-10 text-center md:text-left max-w-xl">
-        <h1 className="text-3xl md:text-4xl font-semibold leading-tight">
-          Code. Design. Support.
-          <br />
-          All your Shopify needs—<span className="italic">handled</span>
+        <h1 className="text-3xl md:text-6xl text-black font-semibold leading-tight">
+        Hire affordable Shopify & Shopify Plus help Now
+
         </h1>
-        <p className="mt-4 text-sm md:text-base">
-          From quick fixes to full builds, we’re your go-to Shopify partner.
-          Whether it’s design, development, or troubleshooting, we handle it—so you can focus on growing your business.
+        <p className="mt-4 text-sm md:text-base text-black ">
+          From quick fixes to full builds, we re your go-to Shopify partner.
+          Whether its design, development, or troubleshooting, we handle it—so you can focus on growing your business.
         </p>
         <div className="text-xl mt-4 text-white/80 flex items-center space-x-2">
         <span  >★★★★★</span>
