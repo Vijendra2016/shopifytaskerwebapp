@@ -1,12 +1,15 @@
+"use client";
 
 import { useEffect, useState } from "react";
 import { TfiArrowTopRight } from 'react-icons/tfi';
 import StartProjectModal from "./StartProjectModal";
 import Image from "next/image";
+
 const GeoMessage = () => {
   const [city, setCity] = useState<string | null>(null);
   const [country, setCountry] = useState<string | null>(null);
   const [error, setError] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const fetchLocation = async () => {
@@ -24,7 +27,6 @@ const GeoMessage = () => {
     fetchLocation();
   }, []);
   
-
   if (error) return null;
 
   const getMessage = () => {
@@ -50,50 +52,39 @@ const GeoMessage = () => {
           : " Get Shopify help at lower cost — only pay after the work is done.";
     }
   };
-
-  const [showModal, setShowModal] = useState(false);
-  
-    const handleCardClick = (e: React.MouseEvent) => {
-      // prevent nested button click from re-triggering
-      if ((e.target as HTMLElement).closest("button")) return;
-      setShowModal(true);
-    };
-  
   
   return (
-   
+    <div className="w-full bg-[#5b59eb] flex flex-col items-center gap-4 pt-20 pb-20 text-white">
+      <h6 className="text-white text-3xl lg:text-6xl md:text-5xl font-medium text-center">
+        {getMessage()}
+      </h6>
+      <p className="text-white text-sm lg:text-2xl md:text-2xl text-center pt-5">
+        If you looking for upgrade your Shopify & Shopify Plus Store or setup Shopify store, we handle any task related to Shopify & Shopify Plus,
+        <br></br> go ahead and press on the following button to create task in less than a minute
+      </p>
 
-<div className="w-full bg-[#5b59eb]  flex flex-col items-center gap-4  pt-20 pb-20 text-white ">
-
-    <h6 className="text-white text-3xl  lg:text-6xl md:text-5xl font-medium text-center">
-      {getMessage()}
-    </h6>
-    <p className="text-white text-sm lg:text-2xl md:text-2xl text-center pt-5">If you looking for upgrade your Shopify & Shopify Plus Store or setup Shopify store, we handle any task related to Shopify & Shopify Plus ,
-      <br></br> go ahead and press on the following button to create task in less than a minute</p>
-
-      <button         onClick={() => setShowModal(true)}      
-      className="flex items-center gap-4 bg-black text-white py-6 px-12 lg:px-56  md:px-66 rounded-full hover:bg-indigo-600 transition">     
-            {/* Replace the below div with your logo image */}         
-            <div className="bg-white p-2 rounded">           
-              {/* Example placeholder for logo */}          
-              <Image
-            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67860b0fa33a316e968231d7_Team%20Member%20Image%203.jpg" // make sure this path is correct
+      <button         
+        onClick={() => setShowModal(true)}      
+        className="flex items-center gap-4 bg-black text-white py-6 px-12 lg:px-56 md:px-66 rounded-full hover:bg-indigo-600 transition"
+      >     
+        {/* Replace the below div with your logo image */}         
+        <div className="bg-white p-2 rounded">           
+          {/* Example placeholder for logo */}          
+          <Image
+            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67860b0fa33a316e968231d7_Team%20Member%20Image%203.jpg" 
             alt="Logo"
             width={40}
             height={40}
             className="object-contain"
           /> 
-                 </div>         
-          <span className="text-2xl  lg:text-5xl md:text-3xl font-semibold">Work with us</span>          
-          
-           <TfiArrowTopRight className="ml-2 text-5xl" />       
-           </button>  
+        </div>         
+        <span className="text-2xl lg:text-5xl md:text-3xl font-semibold">Work with us</span>          
+        <TfiArrowTopRight className="ml-2 text-5xl" />       
+      </button>  
       
       <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
-    
   );
-  
 };
 
 export default GeoMessage;
