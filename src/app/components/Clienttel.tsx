@@ -12,8 +12,8 @@ const ClientTell = () =>  {
 
  <Image
       className="object-cover"
-      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787503a333a8b082498d65d_shopify_logos-03_160x%20(1).avif"
-      alt="Shopify Development"
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680adf6805e6630a2653f6ad_go-for-zero.png"
+      alt="go for zero"
       width={80}
       height={80}
       priority
