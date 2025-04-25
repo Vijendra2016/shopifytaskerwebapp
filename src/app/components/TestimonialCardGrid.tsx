@@ -55,7 +55,7 @@ const TestimonialCardGrid = () => {
               alt={testimonial.name}
               width={120}
               height={120}
-              className="rounded-full object-cover border border-black"
+              className="rounded-full object-cover border border-black animate-wiggle animate-infinite"
             />
             <p className="text-gray-800 text-lg">{testimonial.quote}</p>
             <div>

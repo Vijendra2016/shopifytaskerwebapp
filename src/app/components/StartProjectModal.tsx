@@ -77,13 +77,13 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 1 */}
           {step === 1 && (
             <>
-              <h2 className="text-6xl text-black font-bold mb-2">Lets Start</h2>
+              <h2 className="text-6xl text-black font-bold mb-2 text-left">Lets Start</h2>
               <p className="mb-4 text-gray-600">
               It only takes a few clicks to get going. After that, our in-house e-commerce experts will guide you every step of the way.
               </p>
 
               <div className="mb-1">
-                <label htmlFor="url" className="block mb-0.5 text-black font-semibold">
+                <label htmlFor="url" className="block mb-0.5 text-black text-left font-semibold">
                   Shopify Store URL
                 </label>
                 <input
@@ -97,7 +97,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
               </div>
                      
               <div className="mb-4">
-                <label className="block text-black  font-semibold mb-2">What type of Task you have ?</label>
+                <label className="block text-black text-left font-semibold mb-2">What type of Task you have ?</label>
                 <div className="flex flex-wrap gap-2">
                   {[
                     "Shopify Tasks",
@@ -147,14 +147,14 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {step === 2 && (
             <>
               
-              <h3 className="text-4xl font-bold text-black  mb-2">Brief Details of Task  </h3>
-              <p className="mb-4 text-sm text-gray-600">
+              <h3 className="text-4xl font-bold text-black text-left  mb-2">Brief Details of Task  </h3>
+              <p className="mb-4 text-sm text-gray-600 text-left">
               Share a few key details about your project, and we  analyze the requirements and get back to you with a personalized quote and timeline.
 
 
               </p>
               <div className="mb-1">
-                <label htmlFor="tasktitle" className="block mb-2 text-black  font-semibold">
+                <label htmlFor="tasktitle" className="block mb-2  text-left text-black  font-semibold">
                   Project / Task Title
                 </label>
                 <input
@@ -169,7 +169,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
               </div> 
               
               <div className="mb-1">
-                <label htmlFor="message" className="block text-black mb-2 font-semibold">
+                <label htmlFor="message" className="block text-left text-black mb-2 font-semibold">
                   Project/Task Description
                 </label>
                 <textarea
@@ -208,13 +208,13 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 3 */}
           {step === 3 && (
             <>
-            <h3 className="text-4xl text-black font-bold mb-2">Your Details </h3>
-              <p className="mb-4 text-gray-600 text-sm">
+            <h3 className="text-4xl text-black font-bold mb-2 text-left">Your Details </h3>
+              <p className="mb-4 text-gray-600  text-left text-sm">
               Expect to hear from us directly via  email.
               </p>
               
               <div className="mb-1">
-                <label htmlFor="name" className="block mb-0.5 text-black font-semibold">
+                <label htmlFor="name" className="block mb-0.5 text-black text-left font-semibold">
                   Your Name
                 </label>
                 <input
@@ -229,7 +229,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
               </div>
 
               <div className="mb-1">
-                <label htmlFor="email" className="block mb-0.5 text-black font-semibold">
+                <label htmlFor="email" className="block text-left mb-0.5 text-black font-semibold">
                   Email
                 </label>
                 <input
