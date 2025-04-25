@@ -65,7 +65,7 @@ const GeoMessage = () => {
 
       <button         
         onClick={() => setShowModal(true)}      
-        className="flex items-center gap-4 bg-black text-white py-6 px-12 lg:px-56 md:px-66 rounded-full hover:bg-indigo-600 transition"
+        className="flex  duration-300 ease-in items-center gap-4 bg-black text-white py-6 px-12 lg:px-56 md:px-66 rounded-full hover:bg-indigo-600 transition"
       >     
         {/* Replace the below div with your logo image */}         
         <div className="bg-white p-2 rounded">           
@@ -79,7 +79,7 @@ const GeoMessage = () => {
           /> 
         </div>         
         <span className="text-2xl lg:text-5xl md:text-3xl font-semibold">Work with us</span>          
-        <TfiArrowTopRight className="ml-2 text-5xl" />       
+        <TfiArrowTopRight className="ml-2 text-5xl animate-bounce" />       
       </button>  
       
       <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
@@ -87,4 +87,4 @@ const GeoMessage = () => {
   );
 };
 
-export default GeoMessage;
+export default GeoMessage; 
