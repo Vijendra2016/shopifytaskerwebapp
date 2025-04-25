@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import TestimonialCardGrid from "../components/TestimonialCardGrid";
+import GeoMessage from "../components/GeoMessage";
 export const metadata: Metadata = {
   title: "ShopifyTasker Reviews",
   description:
@@ -15,7 +16,7 @@ export default function pricing() {
 
           </p>
 <TestimonialCardGrid/>
-
+<GeoMessage/>
     </main>
   );
 }
