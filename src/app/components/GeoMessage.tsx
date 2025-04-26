@@ -33,17 +33,17 @@ const GeoMessage = () => {
     switch (country) {
       case "US":
         return city
-          ? `In ${city}, U.S.? Local Shopify developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery`
-          : "In the U.S.? Local Shopify  developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery!";
+          ? `Looking shopify expert near ${city}, U.S.? Local Shopify developers typically charge $80 to $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery`
+          : "Looking shopify expert in the U.S.? Local Shopify  developers typically charge $80 to $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery!";
   
       case "AU":
         return city
-          ? `In ${city}, Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!`
-          : "In Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!";
+          ? `Looking shopify expert near ${city}, Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!`
+          : "Looking shopify expert in Australia? Local devs cost $100+/hour — get the same quality from us at $35 AUD/hour, pay later!";
   
       case "IN":
         return city
-          ? `Based in ${city}, India? Get expert Shopify help at local-friendly rates — no upfront payment needed.`
+          ? `Looking shopify developer & expert near ${city}, India? Get expert Shopify help at local-friendly rates — no upfront payment needed.`
           : "Based in India? Get expert Shopify help at local-friendly rates — no upfront payment needed.";
   
       default:
@@ -54,13 +54,13 @@ const GeoMessage = () => {
   };
   
   return (
-    <div className="w-full bg-[#5b59eb] flex flex-col items-center gap-4 pt-20 pb-20 text-white">
-      <h6 className="text-white text-3xl lg:text-6xl md:text-5xl font-medium text-center">
+    <div className="w-full bg-[#5b59eb] flex flex-col items-center gap-2 pr-20 pl-20 pt-20 pb-20 text-white">
+      <h6 className="text-white text-3xl lg:text-5xl md:text-5xl font-medium text-center">
         {getMessage()}
       </h6>
-      <p className="text-white text-sm lg:text-2xl md:text-2xl text-center pt-5">
+      <p className="text-white text-sm lg:text-2xl md:text-2xl text-center pt-5 pb-5">
         If you looking for upgrade your Shopify & Shopify Plus Store or setup Shopify store, we handle any task related to Shopify & Shopify Plus,
-        <br></br> go ahead and press on the following button to create task in less than a minute
+         go ahead and press on the following button to create task in less than a minute.
       </p>
 
       <button         
