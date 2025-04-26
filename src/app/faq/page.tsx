@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import FaqSections from "../components/Faq";
 import GeoMessage from "../components/GeoMessage";
+import VideoPlayer from "../components/Video";
 export const metadata: Metadata = {
   title: "ShopifyTasker Reviews",
   description:
@@ -88,6 +89,8 @@ export default function faq() {
           </p>
           <FaqSections sections={faqSections} />
 <GeoMessage/> 
+
+    <VideoPlayer/>
     </main>
   );
 }
