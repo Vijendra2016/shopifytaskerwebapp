@@ -47,9 +47,9 @@ const [showModal, setShowModal] = useState(false);
         Services
         <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
         </Link>
-        <Link href="/cost-to-hire-shopify-expert" className="text-black hover:text-white">
+        <Link href="/faq" className="text-black hover:text-white">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
-        Pricing</Link>
+        FAQ</Link>
         <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank"  className="text-black hover:text-white">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         Reviews</Link>
