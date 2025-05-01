@@ -44,7 +44,11 @@ const testimonials = [
 const TestimonialCardGrid = () => {
   return (
     <div className="bg-black py-12 px-4 md:px-8">
+      <h2 className="text-4xl md:text-6xl font-thik text-center text-white leading-tight mb-6">
+      Hear from Our Clients
+        </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
@@ -55,7 +59,7 @@ const TestimonialCardGrid = () => {
               alt={testimonial.name}
               width={120}
               height={120}
-              className="rounded-full object-cover border border-black animate-wiggle animate-infinite"
+              className="rounded-full object-cover border border-black "
             />
             <p className="text-gray-800 text-lg">{testimonial.quote}</p>
             <div>
