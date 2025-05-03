@@ -55,7 +55,7 @@ const GeoMessage = () => {
   
   return (
     <div className="w-full bg-[#fefdf9] flex flex-col items-center gap-2 pr-2 pl-2 lg:pr-20 lg:pl-20  md:pr-20 md:pl-20 pt-20 pb-20 text-white">
-      <h6 className="text-black text-3xl lg:text-5xl md:text-5xl font-medium text-center">
+      <h6 className="text-black text-3xl lg:text-5xl md:text-5xl font-bold tracking-tight text-center">
         {getMessage()}
       </h6>
       <p className="text-black text-sm lg:text-2xl md:text-2xl text-center pt-5 pb-5">
