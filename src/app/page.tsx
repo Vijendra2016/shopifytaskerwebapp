@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ClientTell from "./components/Clienttel";
 import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
