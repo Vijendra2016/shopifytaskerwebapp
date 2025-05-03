@@ -3,22 +3,19 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f8f8f8] text-sm text-black py-12 px-6">
+    <footer className="bg-black  text-sm text-white py-12 px-6">
+        <div className="flex justify-center mb-20">
+      <Image
+            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6815f5f9c4f106f73030c696_file.svg" // Replace with your actual image path
+            alt="ShopifyTasker Logo"
+            width={1200} // Adjust width as needed
+            height={250} // Adjust height as needed
+            className="h-auto"
+          />
       
-      
-
-      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <div className="footer-logo  pb-10">
-        <Image
-          className="dark:invert w-full h-auto"
-          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbcdd5db493a47b8982ee6_Shopifytaskernewlogovidinew%20(1).png"
-          alt="shopify developer in USA"
-          width={200}
-          height={30}
-          priority
-        />
       </div>
-        {/* Column 1 */}
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+       
         <div className="flex flex-col space-y-2">
         
           <h6 className="underline text-base md:text-1xl font-thin">About</h6>
