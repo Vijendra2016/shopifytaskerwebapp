@@ -12,7 +12,7 @@ const testimonials = [
     image:
       'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6800863ad16a29c277021afe_1678553503844.jpeg',
     logo:
-      'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68008a90a4c1bef400fc2c2b_image%20(2).png',
+      'https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68160d39a8c242923b5db0f0_Slumberpod-logo-main%20(2).png',
     link: 'https://www.slumberpod.com/',
     service: 'Squarespace to Shopify Migration',
     location: 'USA'
@@ -52,7 +52,7 @@ const TestimonialCardGrid = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl p-6 shadow-xl flex flex-col items-center text-center space-y-4"
+            className="bg-black border  border-cyan-400 rounded-3xl p-6 shadow-xl flex flex-col items-center text-center space-y-4"
           >
             <Image
               src={testimonial.image}
@@ -61,10 +61,10 @@ const TestimonialCardGrid = () => {
               height={120}
               className="rounded-full object-cover border border-black "
             />
-            <p className="text-gray-800 text-lg">{testimonial.quote}</p>
+            <p className="text-gray-100 text-lg">{testimonial.quote}</p>
             <div>
-              <p className="text-black font-semibold">{testimonial.name}</p>
-              <p className="text-sm text-black">{testimonial.role}</p>
+              <p className="text-gray-100 font-semibold">{testimonial.name}</p>
+              <p className="text-sm text-gray-100">{testimonial.role}</p>
             </div>
             {testimonial.logo && (
               <Image
@@ -84,7 +84,7 @@ const TestimonialCardGrid = () => {
               <TfiArrowTopRight className="ml-2" />
             </a>
             <span className="inline-flex items-center bg-blue-100 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400 transition">{testimonial.service}</span>
-            <span className="inline-flex  ">
+            <span className="inline-flex text-sm text-gray-100 ">
   <TiLocation className="mr-1" />
   {testimonial.location}
 </span>
