@@ -14,7 +14,7 @@ const services = [
   },
   {
     id: "02",
-    title: "Shopify Theme Customization & Update",
+    title: "Custom Theme Development",
     description:
       "The ShopifyTasker team helps keep your store fresh and functional with quick theme updates and custom tweaks—whether its design changes, new features, or just making things run smoother.",
   },
