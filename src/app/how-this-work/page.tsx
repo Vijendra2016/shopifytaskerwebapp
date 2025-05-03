@@ -8,6 +8,7 @@ import TestimonialCard from "../components/TestimonialCard";
 import HowItWorks from "../components/HowitsWork";
 import WhyShopifyTasker from "../components/WhyShopifyTasker";
 import GeoMessage from "../components/GeoMessage";
+import ShopifyFeatures from "../components/VidiTest";
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -74,7 +75,9 @@ Our Shopify experts jump in and get it done — fast, clean, and exactly how you
 <TestimonialCard/>
 <ThreeStepProcess />
  <ClientTell />
+ <ShopifyFeatures/>
  <WhyShopifyTasker/>
+ 
  <GeoMessage/>
     </main>
   );

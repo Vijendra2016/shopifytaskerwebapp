@@ -17,7 +17,7 @@ const services = [
   },
 ];
 
-const ServicesSection: React.FC = () => {
+const ShopifytaskerServices: React.FC = () => {
   return (
     <section className="px-6 py-16 bg-white text-black">
       {/* Scrolling title effect */}
@@ -52,4 +52,4 @@ const ServicesSection: React.FC = () => {
   );
 };
 
-export default ServicesSection;
+export default ShopifytaskerServices;

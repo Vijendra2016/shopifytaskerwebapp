@@ -4,6 +4,7 @@ import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
 import GeoMessage from "./components/GeoMessage";
 import WhySwitchSection from "./components/whysection";
+import ShopifytaskerServices from "./components/ShopifytaskerServices";
 
 export default function Home() {
   return (
@@ -20,9 +21,13 @@ export default function Home() {
 
 
 </div>
+
     </section>
+    <ShopifytaskerServices />
   
   <section>
+   
+
   <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
   <h2 className="text-3xl md:text-4xl font-regular ">
   ShopifyTasker can assist you with the following areas of your Shopify and Shopify Plus store:</h2>
@@ -91,7 +96,6 @@ export default function Home() {
 
 <TestimonialCardGrid />
 <GeoMessage />
-
 
   </main>
 

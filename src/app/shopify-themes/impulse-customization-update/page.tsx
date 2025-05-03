@@ -3,7 +3,7 @@ import TestimonialCard from "@/app/components/TestimonialCard";
 import QuoteRequestForm from "@/app/components/QuoteRequestForm";
 import Image from "next/image";
 import { TfiArrowTopRight } from 'react-icons/tfi';
-
+import GeoMessage from "@/app/components/GeoMessage";
 export const metadata: Metadata = {
   title: "Impulse Theme Customization & Update Services | Shopify Experts",
   description:
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 export default function Pricing() {
   return (
+    <div className="newtest">
     <div className="flex min-h-screen ">
         
       {/* Left Sidebar */}
@@ -274,6 +275,10 @@ export default function Pricing() {
       </aside>
       
     </div>
+    <GeoMessage/>
+    
+    </div>
+    
     
   );
 }
