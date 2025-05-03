@@ -24,13 +24,13 @@ const WhySwitchSection: React.FC = () => {
       };
     
   return (
-    <section className="bg-green-300 text-white py-16 pt-30 pb-30 px-6 md:px-20 relative overflow-hidden">
+    <section className=" bg-teal-500 text-white py-16 pt-30 pb-30 px-6 md:px-20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="mb-10 md:mb-0 md:w-1/2">
           <span className="bg-lime-400 text-black animate-pulse animate-infinite  text-sm font-semibold px-3 py-1 rounded-md inline-block mb-4">
             Hire Top Rated Shopify Developer
           </span>
-          <h2 className="text-4xl md:text-6xl text-black font-thik  leading-tight mb-6">
+          <h2 className="text-4xl md:text-6xl text-white font-thik  leading-tight mb-6">
           Hire a Shopify expert <br />for your business<br /><span className="text-white">stress-free.</span>
           </h2>
           <p onClick={handleCardClick} className="text-lime-400  cursor-pointer underline font-semibold hover:text-lime-300 transition">

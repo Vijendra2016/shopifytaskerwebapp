@@ -11,12 +11,12 @@ export default function Home() {
     <div className="flex flex-col items-center min-h-screen  gap-8">
 
   <main className="flex flex-col  w-full text-center sm:text-left">
-    <section className="bg-[#CADCFC]">
+    <section className="bg-black">
     <div className="services flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
-<h2 className="text-3xl md:text-9xl Black font-medium ">Shopify talent,on demand.</h2>
-<h3 className="text-lg md:text-5xl Black "> No upfront payment required </h3>
-<h4 className="text-lg md:text-4xl Black "> <span className="bg-[#a5f1cb]">Pay only after</span> your task is completed to your satisfaction. </h4>
-<h4 className="text-lg md:text-3xl Black "> 10 Years experience in shopify ecosystem </h4>
+<h2 className="text-3xl md:text-9xl text-white font-medium ">Shopify talent,on demand.</h2>
+<h3 className="text-lg md:text-5xl text-white "> No upfront payment required </h3>
+<h4 className="text-lg md:text-4xl text-white"> <span className="bg-[#a5f1cb]">Pay only after</span> your task is completed to your satisfaction. </h4>
+<h4 className="text-lg md:text-3xl text-white "> 10 Years experience in shopify ecosystem </h4>
 
 
 </div>

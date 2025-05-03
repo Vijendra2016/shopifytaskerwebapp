@@ -54,11 +54,11 @@ const GeoMessage = () => {
   };
   
   return (
-    <div className="w-full bg-[#5b59eb] flex flex-col items-center gap-2 pr-2 pl-2 lg:pr-20 lg:pl-20  md:pr-20 md:pl-20 pt-20 pb-20 text-white">
-      <h6 className="text-white text-3xl lg:text-5xl md:text-5xl font-medium text-center">
+    <div className="w-full bg-cyan-400 flex flex-col items-center gap-2 pr-2 pl-2 lg:pr-20 lg:pl-20  md:pr-20 md:pl-20 pt-20 pb-20 text-white">
+      <h6 className="text-black text-3xl lg:text-5xl md:text-5xl font-medium text-center">
         {getMessage()}
       </h6>
-      <p className="text-white text-sm lg:text-2xl md:text-2xl text-center pt-5 pb-5">
+      <p className="text-black text-sm lg:text-2xl md:text-2xl text-center pt-5 pb-5">
         If you looking for upgrade your Shopify & Shopify Plus Store or setup Shopify store, we handle any task related to Shopify & Shopify Plus,
          go ahead and press on the following button to create task in less than a minute.
       </p>
