@@ -19,7 +19,7 @@ const services = [
 
 const ShopifytaskerServices: React.FC = () => {
   return (
-    <section className="px-6 py-16 bg-white text-black">
+    <div className="px-6 py-16 bg-white text-black">
       {/* Scrolling title effect */}
       <div className="overflow-hidden">
         <div className="flex whitespace-nowrap text-6xl font-extrabold animate-marquee">
@@ -48,7 +48,7 @@ const ShopifytaskerServices: React.FC = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
