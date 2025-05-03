@@ -12,7 +12,7 @@ const WhyShopifyTasker = () => {
   })
 
   return (
-    <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 lg:py-20 max-w-7xl mx-auto">
+    <section className=" bg-[#fefdf9] flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 lg:py-20 max-w-7xl mx-auto">
       {/* Left: Text content */}
       <div className="lg:w-1/2 text-center lg:text-left space-y-6">
         <h2 className="text-lg sm:text-3XL font-semibold text-gray-800">

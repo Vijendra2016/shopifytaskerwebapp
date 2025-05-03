@@ -68,7 +68,7 @@ const [showModal, setShowModal] = useState(false);
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-4xl text-black"
+            className="md:hidden text-4xl text-white"
             onClick={() => setIsOpen(!isOpen)} aria-label="Open menu"
           >
             {isOpen ? <TfiClose />  : <TfiAlignLeft />}
