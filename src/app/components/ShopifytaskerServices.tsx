@@ -5,7 +5,7 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 const services = [
   {
     id: "01",
-    title: "Brand Strategy",
+    title: "Shopify & Shopify Plus Task",
     description:
       "We delve deep into understanding your target audience and competitive landscape. With this insight, we craft compelling brand stories, defining your values and messaging.",
   },
