@@ -17,7 +17,7 @@ const [showModal, setShowModal] = useState(false);
   
 
   return (
-    <nav className="bg-[#CADCFC] text-lg w-full fixed top-0 left-0 z-50">
+    <nav className="bg-black text-lg w-full fixed top-0 left-0 z-50">
   <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
     <div className="flex justify-between h-16 items-center">
       {/* Logo */}
@@ -25,8 +25,9 @@ const [showModal, setShowModal] = useState(false);
         href="/"
         className="text-1xl font-bold text-black italic  px-4 py-1"
       >
+        
         <Image
-      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbcdd5db493a47b8982ee6_Shopifytaskernewlogovidinew%20(1).png" // Replace with your actual image path
+      src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6815f5f9c4f106f73030c696_file.svg" // Replace with your actual image path
       alt="ShopifyTasker Logo"
       width={200} // Adjust width as needed
       height={50} // Adjust height as needed
@@ -37,17 +38,17 @@ const [showModal, setShowModal] = useState(false);
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-8 items-center">
-        <Link href="/" className="text-black hover:text-white">Home
+        <Link href="/" className="text-white text-lg font-extrabold hover:text-white">Home
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         </Link>
-        <Link href="/how-this-work" className="text-black hover:text-white">How it works
+        <Link href="/how-this-work" className="text-white text-lg font-extrabold hover:text-white">How it works
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         </Link>
-        <Link href="/shopify-expert-services" className="text-black hover:text-white">
+        <Link href="/shopify-expert-services" className="text-white text-lg font-extrabold">
         Services
         <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
         </Link>
-        <Link href="/faq" className="text-black hover:text-white">
+        <Link href="/faq" className="text-white text-lg font-extrabold">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         FAQ</Link>
         <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank"  className="text-black hover:text-white">
