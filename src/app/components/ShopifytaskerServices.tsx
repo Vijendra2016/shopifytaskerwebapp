@@ -52,7 +52,7 @@ const ShopifytaskerServices: React.FC = () => {
   return (
 
     
-    <div className="px-30 py-16 bg-black text-white">
+    <div className="px-6 md:px-30 py-16 bg-black text-white">
       {/* Scrolling title effect */}
       <div className="overflow-hidden">
         <div className="flex whitespace-nowrap text-6xl font-extrabold animate-marquee">
