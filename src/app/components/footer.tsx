@@ -3,15 +3,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-sm text-black py-12 px-6">
+    <footer className="bg-[#f8f8f8] text-sm text-black py-12 px-6">
       
-      <Image
-            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6815f5f9c4f106f73030c696_file.svg" // Replace with your actual image path
-            alt="ShopifyTasker Logo"
-            width={1000} // Adjust width as needed
-            height={250} // Adjust height as needed
-            className="h-auto"
-          />
       
 
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

@@ -38,27 +38,27 @@ const [showModal, setShowModal] = useState(false);
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-8 items-center">
-        <Link href="/" className="text-white text-lg font-extrabold hover:text-white">Home
+        <Link href="/" className="text-white text-lg font-medium hover:text-white">Home
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         </Link>
-        <Link href="/how-this-work" className="text-white text-lg font-extrabold hover:text-white">How it works
+        <Link href="/how-this-work" className="text-white text-lg font-medium hover:text-white">How it works
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         </Link>
-        <Link href="/shopify-expert-services" className="text-white text-lg font-extrabold">
+        <Link href="/shopify-expert-services" className="text-white text-lg font-medium">
         Services
         <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
         </Link>
-        <Link href="/faq" className="text-white text-lg font-extrabold">
+        <Link href="/faq" className="text-white text-lg font-medium">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         FAQ</Link>
-        <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank"  className="text-black hover:text-white">
+        <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank"  className="text-white text-lg font-medium">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         Reviews</Link>
         
 
          <button
                   onClick={() => setShowModal(true)}
-                  className=" cursor-pointer inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-400  hover:text-black transition"
+                  className=" cursor-pointer inline-flex items-center bg-blue-400 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-green-400  hover:text-black transition"
                   >
                  Create Task <TfiArrowRight/>
                 </button>
@@ -78,7 +78,7 @@ const [showModal, setShowModal] = useState(false);
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 border-t h-screen justify-center px-4 bg-[#CADCFC]">
+          <div className="md:hidden flex flex-col space-y-4 mt-4 pb-4 border-t h-screen justify-center px-4 bg-black">
           <Link href="/" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/how-this-work" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>How it works </Link>
             <Link href="/shopify-expert-services" className="text-white hover:text-black" onClick={() => setIsOpen(false)}>Services</Link>
