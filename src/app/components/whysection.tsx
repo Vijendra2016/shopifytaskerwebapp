@@ -33,8 +33,8 @@ const WhySwitchSection: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tight text-black leading-tight mb-6">
           Hire a Shopify expert <br />for your business<br /><span className="text-white bg-black">stress-free.</span>
           </h2>
-          <p onClick={handleCardClick} className="text-lime-400  cursor-pointer underline font-semibold hover:text-lime-300 transition">
-            Make the move today →
+          <p onClick={handleCardClick} className="text-white text-2xl  cursor-pointer  font-bold hover:text-cyan-300 transition">
+           <span className="bg-black ">Make the move today → </span>
           </p>
         </div>
 
