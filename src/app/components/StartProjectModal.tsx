@@ -103,8 +103,8 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                     "Shopify Tasks",
                     "shopify Theme udpate",
                     "Shopify Store Development",
-                    "Shopify Theme Update",
-                    "Shopify Plus's Task ",
+                    "Store speed optimization",
+                    "Shopify Plus's Task",
                     "Shopify SEO",
                     "Shopify Support Retainer",
                     "Shopify App Configuration"
