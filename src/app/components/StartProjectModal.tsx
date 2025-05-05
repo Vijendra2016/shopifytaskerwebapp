@@ -114,7 +114,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                       className={`cursor-pointer px-4 py-2 rounded border transition-all ${
                         formData.taskselect === label
                           ? "bg-black text-white border-black"
-                          : "bg-white text-black border-black"
+                          : "bg-[#fefdf9] text-black border-black"
                       }`}
                     >
                       <input
