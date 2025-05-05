@@ -16,7 +16,7 @@ export default function howitswork() {
   return (
     <main className=" bg-black flex flex-col  pt-20 w-full text-center ">
         <MotionFadeIn delay={0.2}>
-        <h1 className="text-3xl md:text-6xl  pb-20 font-regular text-white tracking-tight">Shopify Expert Services</h1>
+        <h1 className="text-3xl md:text-6xl  pb-20 font-bold uppercase text-white tracking-tight">Shopify Expert Services</h1>
       </MotionFadeIn>
        <ShopifytaskerServices/>
   
