@@ -80,7 +80,14 @@ const GeoMessage = () => {
         </div>         
         <span className="text-2xl lg:text-5xl md:text-3xl  font-semibold ">Work with us</span>          
         <TfiArrowTopRight className="ml-2 text-5xl animate-jump animate-infinite" />       
-      </button>  
+      </button> 
+      <Image
+            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68183d299128df529d5bfa26_footernewimage.png" 
+            alt="Logo"
+            width={140}
+            height={140}
+            className="object-contain animate-fade-right animate-infinite"
+          />  
       <Image
             src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680baca7a144a823c527edf7_shopifytasker-review.png" 
             alt="Logo"
