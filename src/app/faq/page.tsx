@@ -81,12 +81,9 @@ const faqSections = [
 
 export default function faq() {
   return (
-    <main className=" mx-auto px-1 py-0 text-center pt-20" >
-        <h1 className="text-3xl md:text-6xl font-regular">We Have Answers  </h1>
-       <p className="text-xl font-light text-gray-900 mb-4">
-       ShopifyTasker is highly praised for its reliable and efficient services, offering expert help with store setup, optimization, and marketing. Users appreciate its quick turnaround and excellent customer support
-
-          </p>
+    <main className="bg-black mx-auto px-1 py-0 text-center pt-20" >
+        <h1 className="text-3xl md:text-6xl font-regular text-white">Frequently Asked Questions </h1>
+      
           <FaqSections sections={faqSections} />
 <GeoMessage/> 
 

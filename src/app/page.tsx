@@ -36,7 +36,7 @@ export default function Home() {
 < ClientTell />
 <section className="bg-[#fefdf9] min-h-100">
 <div className="services  flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
-  <h3 className="text-3xl text-black md:text-6xl font-regular ">
+  <h3 className="text-3xl text-black md:text-6xl font-bold tracking-tight ">
     How its work</h3>
   
     <p className="text-3xl text-black tracking-tight">It is simple — just submit your task, and within 5 hours, you will hear back from us with a detailed quote. If we need any additional information, we will arrange a quick discovery call to understand your requirements better.</p>

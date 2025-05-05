@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 
 export default function howitswork() {
   return (
-    <main className="flex flex-col  mt-20 w-full text-center ">
+    <main className=" bg-black flex flex-col  pt-20 w-full text-center ">
         <MotionFadeIn delay={0.2}>
-        <h1 className="text-3xl md:text-6xl  pb-20 font-regular">Shopify Expert Services</h1>
+        <h1 className="text-3xl md:text-6xl  pb-20 font-regular text-white tracking-tight">Shopify Expert Services</h1>
       </MotionFadeIn>
        <ShopifytaskerServices/>
   
