@@ -3,10 +3,21 @@ import Image from "next/image";
 const ClientTell = () =>  {
     return (
         <div className="container  min-h-[30vh] bg-black mx-auto px-4 py-18">
-            <h2 className="text-2xl md:text-3xl font-semibold text-white text-center pb-5">
-      Trusted by brands
-      </h2>
-      <p className="text-lg text-center font-semibold  text-white">Built on quality, proven by experience.</p>
+          <div className="services  flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
+  <h3 className="text-3xl text-white tracking-tight md:text-6xl font-regular ">
+  Chosen by brands of every size
+  </h3>
+  
+    <p className="text-lg text-white tracking-tight">
+    From emerging startups to global retailers, ShopifyTasker empowers hundreds of Shopify and Shopify Plus stores with expert design, development, and marketing services. Whether you are a solopreneur or an established enterprise, our clients lead in competitive markets across the globe.
+
+
+      </p>
+
+  </div>
+
+
+
       <div className="max-w-screen-lg mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 py-10 px-4 sm:px-8">
     
 
