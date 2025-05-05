@@ -65,7 +65,7 @@ const GeoMessage = () => {
 
       <button         
         onClick={() => setShowModal(true)}      
-        className="flex  duration-300  ease-in items-center gap-4 bg-black text-white py-6 px-12 lg:px-56 md:px-66 rounded-full hover:bg-indigo-600 transition"
+        className="flex cursor-pointer duration-300  ease-in items-center gap-4 bg-black text-white py-6 px-12 lg:px-56 md:px-66 rounded-full hover:bg-teal-500 transition"
       >     
         {/* Replace the below div with your logo image */}         
         <div className="bg-white p-2 rounded">           
