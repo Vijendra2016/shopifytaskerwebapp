@@ -6,9 +6,9 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 const TestimonialCard = () => {
   return (
     <div className="bg-black min-h-auto flex items-center justify-center p-6">
-      <div className="bg-white rounded-3xl flex flex-col md:flex-row items-center p-8 shadow-xl max-w-4xl w-full gap-8">
+      <div className="bg-teal-500 rounded-3xl   border  border-black flex flex-col md:flex-row items-center p-8 shadow-xl max-w-4xl w-full gap-8">
         
-        <Image           className="w-48 h-48 rounded-full object-cover border-1 border-black"
+        <Image           className="w-48 h-48 rounded-full object-cover border-2 border-cyan-400"
 
                       src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6800863ad16a29c277021afe_1678553503844.jpeg"
                       alt="Shopify Development"
