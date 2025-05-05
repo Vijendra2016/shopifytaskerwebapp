@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
+
 
 interface Step {
   number: number;
@@ -33,7 +35,7 @@ const HowItWorks: React.FC = () => {
   return (
     <section className="bg-black text-white py-16 px-4">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl md:text-6xl text-white font-bold tracking-tight mb-4">How's ShopifyTasker work</h1>
+        <h1 className="text-3xl md:text-6xl text-white font-bold tracking-tight mb-4"> ShopifyTasker work process</h1>
         <p className="text-lg text-white  tracking-tight  mb-16">
           Our process is simple 
         </p>
@@ -43,9 +45,11 @@ const HowItWorks: React.FC = () => {
             <React.Fragment key={step.number}>
               <div className="col-span-1 flex flex-col items-center text-center max-w-xs mx-auto">
                 <div className="relative mb-6">
-                  <img
+                  <Image
                     src="https://cdn.prod.website-files.com/6104b3a7e4a13d0c0b88c2db/6104b3a7e4a13d2abe88c2f4_Circle%20Wave%2001.svg"
                     alt="circle wave"
+                    width={96}
+                    height={96}
                     className="w-24 h-24"
                   />
                   <div className="absolute inset-0 flex items-center justify-center font-bold text-white text-8xl">
@@ -59,13 +63,15 @@ const HowItWorks: React.FC = () => {
               {/* Insert arrow after step 1 and 2 only */}
               {index < steps.length - 1 && (
                 <div className="col-span-1 flex justify-center">
-                  <img
+                  <Image
                     src={
                       index === 0
                         ? "https://cdn.prod.website-files.com/6104b3a7e4a13d0c0b88c2db/6104b3a7e4a13d58a488c2f3_Arrow%20Next.svg"
                         : "https://cdn.prod.website-files.com/6104b3a7e4a13d0c0b88c2db/6104b3a7e4a13d4bb388c2f5_Arrow%20Next%20Large.svg"
                     }
                     alt="arrow"
+                    width={80}
+                   height={20}
                     className="w-20 md:w-28"
                   />
                 </div>
