@@ -38,17 +38,17 @@ const [showModal, setShowModal] = useState(false);
 
       {/* Desktop Menu */}
       <div className="hidden md:flex space-x-8 items-center">
-        <Link href="/" className="text-white text-lg font-medium hover:text-white">Home
+        <Link href="/" className="text-white text-lg font-medium hover:text-white hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Home
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         </Link>
-        <Link href="/how-this-work" className="text-white text-lg font-medium hover:text-white">How it works
+        <Link href="/how-this-work" className="text-white text-lg font-medium hover:text-white hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">How it works
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         </Link>
-        <Link href="/shopify-expert-services" className="text-white text-lg font-medium">
+        <Link href="/shopify-expert-services" className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">
         Services
         <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
         </Link>
-        <Link href="/faq" className="text-white text-lg font-medium">
+        <Link href="/faq" className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">
         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
         FAQ</Link>
         <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank"  className="text-white text-lg font-medium">
