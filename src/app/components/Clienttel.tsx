@@ -9,7 +9,7 @@ const ClientTell = () =>  {
   </h3>
   
     <p className="text-lg text-white tracking-tight">
-    From ambitious startups to established global brands, ShopifyTasker supports hundreds of Shopify and Shopify Plus stores with hands-on design, development, and marketing services. Whether you're a solo founder or a growing enterprise, our team works closely with you to help your store thrive in competitive markets worldwide.
+    From ambitious startups to established global brands, ShopifyTasker supports hundreds of Shopify and Shopify Plus stores with hands-on design, development, and marketing services. Whether you are a solo founder or a growing enterprise, our team works closely with you to help your store thrive in competitive markets worldwide.
 
 
 
