@@ -82,7 +82,7 @@ const faqSections = [
 export default function faq() {
   return (
     <main className="bg-black mx-auto px-1 py-0 text-center pt-20" >
-        <h1 className="text-3xl md:text-6xl font-bold uppercase  text-white">Frequently Asked Questions </h1>
+        <h1 className="text-3xl md:text-6xl font-bold uppercase tracking-tight  text-white">Frequently Asked Questions </h1>
       
           <FaqSections sections={faqSections} />
 <GeoMessage/> 
