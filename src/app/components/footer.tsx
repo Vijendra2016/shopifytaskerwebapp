@@ -79,6 +79,18 @@ export default function Footer() {
           <Link href="/start-project">start a project</Link>
           
         </div>
+
+        <div className="flex flex-col space-y-2">
+          <h6 className=" text-xl md:text-lg text-base font-regular">Industries</h6>
+          <Link href="/shopify-themes/impulse-customization-update">Hair Extensions</Link>
+          <Link href="/partner">Gym & Fitness</Link>
+          <Link href="/start-project">Fashion</Link>
+          <Link href="/start-project">Health & Wellness</Link>
+
+          
+        </div>
+
+
       </div>
     </footer>
   );
