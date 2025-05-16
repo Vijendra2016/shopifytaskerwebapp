@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import TestimonialCardGrid from "../components/TestimonialCardGrid";
+import HowItWorks from "../components/HowItWorks";
 export const metadata: Metadata = {
-  title: "Shopify Developer Near Me",
+  title: "Shopify Development services for industry ",
   description:
     "Hire freelance shopify developer hourly rate start from $10 per hour",
 };
@@ -22,7 +22,7 @@ export default function pricing() {
         </p>
 
         <h2 className="text-3xl md:text-4xl font-regular">Some of the featured industries we work with</h2>
-<TestimonialCardGrid/>
+<HowItWorks/>
 
     </main>
   );
