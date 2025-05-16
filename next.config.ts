@@ -1,9 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["dutchcargobike.com.au","https://cdn.prod.website-files.com/","cdn.prod.website-files.com" ,"https://cdn-icons-png.flaticon.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'dutchcargobike.com.au',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.prod.website-files.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn-icons-png.flaticon.com',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
 module.exports = nextConfig;
-

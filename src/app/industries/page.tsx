@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import HowItWorks from "../components/HowItWorks";
+import IndustryGrid from "../components/IndustriesGrid";
 export const metadata: Metadata = {
   title: "Shopify Development services for industry ",
   description:
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function pricing() {
   return (
-    <main className="container mx-auto px-4 py-10 text-center pt-20">
+    <main className="container bg-[#fefdf9] mx-auto px-4 py-10 text-center pt-20">
         <h1 className="text-3xl md:text-6xl font-regular">Industries we work  </h1>
       
           <p className="text-gray-600 text-lg">
@@ -22,6 +23,7 @@ export default function pricing() {
         </p>
 
         <h2 className="text-3xl md:text-4xl font-regular">Some of the featured industries we work with</h2>
+        < IndustryGrid/>
 <HowItWorks/>
 
     </main>
