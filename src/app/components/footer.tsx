@@ -81,11 +81,12 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col space-y-2">
-          <h6 className=" text-xl md:text-lg text-base font-regular">Industries</h6>
-          <Link href="/shopify-themes/impulse-customization-update">Hair Extensions</Link>
-          <Link href="/partner">Gym & Fitness</Link>
-          <Link href="/start-project">Fashion</Link>
-          <Link href="/start-project">Health & Wellness</Link>
+        <Link href="/industries" className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Industries</Link>
+
+          <Link href="/industries/hair-extension-shopify-web-design" className="text-white text-sm font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Hair Extensions</Link>
+          <Link href="#">Gym & Fitness</Link>
+          <Link href="#">Fashion</Link>
+          <Link href="#">Health & Wellness</Link>
 
           
         </div>
