@@ -26,7 +26,7 @@ export default function WelcomeCard() {
         
         <button
           onClick={() => setShowModal(true)}
-          className=" cursor-pointer   inline-flex items-center bg-teal-500  text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400  transition"
+          className=" cursor-pointer   inline-flex items-center bg-teal-500  text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500   transition"
         >
           Get Started 
           <TfiArrowTopRight className="ml-2" />
