@@ -18,7 +18,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center text-left cursor-pointer"
       >
-        <span className="text-3xl font-medium">{question}</span>
+        <span className="text-xl  md:text-3xl text-black font-medium">{question}</span>
         <span className="bg-black text-white rounded-full w-8 h-8 flex items-center cursor-pointer justify-center">
           {isOpen ? <TfiMinus size={14} /> : <TfiPlus size={14} />}
         </span>
