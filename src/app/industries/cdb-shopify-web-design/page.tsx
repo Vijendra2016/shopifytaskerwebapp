@@ -17,7 +17,7 @@ const wigFaqs: FAQ[] = [
     answer: 'We provide shopify cdb store design and devlopment , store managment , shopify cdb shopify website support, SEO, Digital marketing'
   },
   {
-    question: 'what your process',
+    question: 'What your process',
     answer: 'Tell us what you need from our side we can do all type of shopify related web development app development on best prices.'
   },
   {
@@ -76,20 +76,20 @@ export default function pricing() {
      <div className="bg-white  shadow p-2 hover:shadow-lg transition-all">
             <div className="relative w-full h-108 mb-4 rounded-md overflow-hidden">
               <Image
-                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68345a773b1765fb446d4c2f_Luxy%20Hair%20Co.png"
-                alt="hair for the life"
+                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/683d8727cc862905567b0411_cdb-shopify-website-example.jpg"
+                alt="cdb website in shopify"
                 
                 width={1280}
                     height={680}
                     className="object-contain "
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">Luxy Hair </h3>
+            <h3 className="text-lg font-semibold mb-2">Sagely Naturals </h3>
             <p className="text-sm text-gray-500 mb-4">
-           Luxy Hair is one of the highest-rated hair extension brands worldwide, known for its premium clip-in extensions. With a focus on quality and confidence-boosting transformations, Luxy Hair makes it easy to elevate your look at home.
+             Sagely Naturals is a wellness brand that offers high-quality, CBD-infused products designed to support everyday health, balance, and relief. Their products are made with plant-based ingredients and are formulated to be safe, effective, and easy to use.
             </p>
             <a
-  href="https://www.luxyhair.com/"
+  href="https://sagelynaturals.com/"
   target="_blank"
   rel="noopener noreferrer"
   className="cursor-pointer inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500  transition"
@@ -101,21 +101,20 @@ export default function pricing() {
        <div className="bg-white  shadow p-2 hover:shadow-lg transition-all">
             <div className="relative w-full h-108 mb-4 rounded-md overflow-hidden">
               <Image
-                    src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/683454c1dbe3f9c518aa4e29_bellamihair.png" 
-                    alt="Logo"
+                    src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/683d8935d5d5038028a8e5c3_be-you-cdb-shopify-website.png" 
+                    alt="Be you cdb shopify website"
                     width={1280}
                     height={680}
                     className="object-contain "
                   /> 
             </div>
-            <h3 className="text-lg font-semibold mb-2">BELLAMI Hair </h3>
+            <h3 className="text-lg font-semibold mb-2">BeYou </h3>
             <p className="text-sm text-gray-500 mb-4">
-             BELLAMI Hair is a leading hair extension brand trusted by professionals and celebrities alike. Known for its high-quality, ready-to-wear clip-in extensions in a wide range of shades, BELLAMI helps customers achieve salon-worthy length, volume, and style from home.
-
+             BeYou is a UK-based CBD brand committed to transparency, quality, and trust. With a focus on zero-THC products, BeYou is trusted by Olympic athletes and everyday users alike.
 
             </p>
             <a
-  href="https://www.bellamihair.com/"
+  href="https://beyoucbd.co.uk/"
   target="_blank"
   rel="noopener noreferrer"
   className="cursor-pointer inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500  transition"
@@ -124,118 +123,16 @@ export default function pricing() {
 </a>
       </div>
 
-       <div className="bg-white  shadow p-2 hover:shadow-lg transition-all">
-            <div className="relative w-full h-108 mb-4 rounded-md overflow-hidden">
-              <Image
-                    src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6834617ab5a8e63228510d0d_Indique%20hair%20extension.png" 
-                    alt="Indique Hair extension website in shopify"
-                    width={1280}
-                    height={680}
-                    className="object-contain "
-                  /> 
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Indique </h3>
-            <p className="text-sm text-gray-500 mb-4">
-
-Indique is a globally recognized hair extension brand offering 100% virgin human hair of premium quality. With over 30 years of industry experience and a strong presence across the U.S. and worldwide, Indique delivers long-lasting, versatile hair trusted by professionals and clients alike.
-
-
-            </p>
-            <a
-  href="https://www.indiquehair.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cursor-pointer inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500  transition"
->
-  Visit Website
-</a>
-      </div>
-      <div className="bg-white  shadow p-2 hover:shadow-lg transition-all">
-            <div className="relative w-full h-108 mb-4 rounded-md overflow-hidden">
-              <Image
-                    src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/683462f26ade823d30e89d8b_The%20Hair%20Shop.png" 
-                    alt="The Hair Shop website in shopify"
-                    width={1280}
-                    height={680}
-                    className="object-contain "
-                  /> 
-            </div>
-            <h3 className="text-lg font-semibold mb-2">The Hair Shop</h3>
-            <p className="text-sm text-gray-500 mb-4">
-The Hair Shop is a pioneer in hair extension innovation, founded by Ryan Tokko. Known for its diverse range of colors, lengths, and textures, the brand is trusted by professionals for its cutting-edge application methods and commitment to quality and inclusivity.
-
-
-
-            </p>
-            <a
-  href="https://thehairshop.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cursor-pointer inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500  transition"
->
-  Visit Website
-</a>
-      </div>
-      <div className="bg-white  shadow p-2 hover:shadow-lg transition-all">
-            <div className="relative w-full h-108 mb-4 rounded-md overflow-hidden">
-              <Image
-                    src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/683467157a2d98c3d28be4d0_SHE%20Hair%20Extensions.png" 
-                    alt="SHE Hair Extensions  website in shopify"
-                    width={1280}
-                    height={680}
-                    className="object-contain "
-                  /> 
-            </div>
-            <h3 className="text-lg font-semibold mb-2">SHE Hair Extensions  </h3>
-            <p className="text-sm text-gray-500 mb-4">
-SHE Hair Extensions, born in Italy, has been crafting premium hair products for over 50 years. As a global leader, the brand is known for its ethically sourced, 100% Remy human hair extensions trusted by professionals worldwide.
-
-
-
-            </p>
-              <a
-  href="https://shehairpro.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cursor-pointer inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500  transition"
->
-  Visit Website
-</a>
-      </div>
-      <div className="bg-white  shadow p-2 hover:shadow-lg transition-all">
-            <div className="relative w-full h-108 mb-4 rounded-md overflow-hidden">
-              <Image
-                    src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6834687e4cc99a40189bec5d_zalahair.png" 
-                    alt="Logo"
-                    width={1280}
-                    height={680}
-                    className="object-contain "
-                  /> 
-            </div>
-            <h3 className="text-lg font-semibold mb-2"> Zala Hair </h3>
-            <p className="text-sm text-gray-500 mb-4">
-Zala Hair Extensions offers ethically sourced, 100% Remy human hair designed to blend seamlessly and style effortlessly. Known for quality and innovation, Zala was named Volumizing Product of the Year in 2023 by the Beauty Awards – a trusted choice for natural, fuller-looking hair.
-
-
-
-            </p>
-              <a
-  href="https://zalahair.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cursor-pointer inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500  transition"
->
-  Visit Website
-</a>
-      </div>
-
+       
+      
+      
       </div>
 
       
       
 </div>
 
- <h3 className="text-3xl font-semibold mb-2"> Most common Question regarding <br></br> CDB shopify website Develoment </h3>
+ <h3 className="text-3xl pt-20  font-semibold mb-2"> Most common Question regarding <br></br> CDB shopify website Develoment </h3>
     <FAQSection faqs={wigFaqs} />
 
            < GeoMessage/>
