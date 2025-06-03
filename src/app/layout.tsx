@@ -10,6 +10,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import Topbar from "./components/Annocmentbar";
 import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
+import dynamic from 'next/dynamic'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
   themeColor: '#d9e1eb',
 };
 
+const CrispWithNoSSR = dynamic(
+    () => import('./components/crisp')
+  )
 
 export default function RootLayout({
   children,
@@ -35,6 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <CrispWithNoSSR />
             <GoogleTagManager gtmId="G-RH64BGD6GT" />
 
       <Head>
