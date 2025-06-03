@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import TestimonialCardGrid from "@/app/components/TestimonialCardGrid";
 import Image from "next/image";
 export const metadata: Metadata = {
-  title: "Shopify Developer in  Santa Clara, C | Hire Shopify Expert",
+  title: "Shopify Developer in  Santa Clara | Hire Shopify Expert",
   description:
     "Looking to hire a Shopify developer in Santa Clara ? Our expert team offers affordable Shopify development services tailored to your business needs. Get started today!",
 };
