@@ -42,7 +42,7 @@ export default function smallTask() {
       What types of small Shopify tasks can ShopifyTasker help with
     </h2>
     <p className="text-lg">
-   ShopifyTasker's shopify developer & experts can take care of any shopify related tasks from quick bug fixes , speed enhancements, home page redesign to shopify theme tweak , shopify theme customization as per your brand , shopify theme new version update 
+   Our shopify developer & experts can take care of any shopify related tasks from quick bug fixes, speed enhancements, home page redesign to shopify theme tweak , shopify theme customization as per your brand , shopify theme new version update 
 
     </p>
   </div>
