@@ -63,6 +63,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.8,
     },
+
+    {
+      url: `${baseUrl}/industries/cdb-shopify-web-design`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+
+     {
+      url: `${baseUrl}/industries/shopify-auto-parts-website-design-development`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
     // 👉 Add more pages here as needed
   ]
 }
