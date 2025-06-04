@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import Image from "next/image";
 export const metadata: Metadata = {
-  title: "shopify small tasks by shopify expert | Top Rated Developer",
+  title: "Shopify Small Tasks by Shopify Expert | Top-Rated Shopify Developer",
   description:
-    "shopify experts small tasks",
+    "From quick fixes to theme tweaks, our top-rated Shopify experts can handle any small task — starting at just $20. Create your first task with us today",
 };
 
 export default function smallTask() {
