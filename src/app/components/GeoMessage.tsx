@@ -78,7 +78,7 @@ const GeoMessage = () => {
             className="object-contain animate-wiggle animate-infinite"
           /> 
         </div>         
-        <span className="text-2xl lg:text-5xl md:text-3xl  font-semibold ">REQUEST FREE QUOTE</span>          
+        <span className="text-xl lg:text-5xl md:text-3xl  font-semibold ">REQUEST FREE QUOTE</span>          
         <TfiArrowTopRight className="ml-2 text-5xl animate-jump animate-infinite" />       
       </button> 
       <Image
