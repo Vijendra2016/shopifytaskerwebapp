@@ -45,9 +45,86 @@ export default function smallTask() {
    Our shopify developer & experts can take care of any shopify related tasks from quick bug fixes, speed enhancements, home page redesign to shopify theme tweak , shopify theme customization as per your brand , shopify theme new version update 
 
     </p>
+
+   
+     
   </div>
 
   
+</section>
+
+<section className="flex flex-col items-center gap-3 px-4 md:px-12 lg:px-20 py-20 text-black">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Card 1 */}
+        <div className="flex flex-col space-y-4">
+        <div className="w-full  flex items-center justify-center">
+            <Image
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6853aa2c855c81d9ecaa8a23_Shopify%20Theme%20Tweak.png"
+  alt="Sponsorships and Integrations"
+  width={500}
+  height={500}
+  className="rounded-md object-cover"
+/>
+
+          </div>
+
+          
+          <h3 className="text-lg  text-black font-semibold leading-snug">
+            Shopify Theme Tweak
+          </h3>
+          <p className="text-black text-sm">
+         Get expert theme adjustments tailored to your brand and business needs.
+Whether it's layout changes, styling fixes, or performance enhancements — we help your store look and function exactly the way you want.
+
+
+          </p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="flex flex-col space-y-4">
+        <div className="w-full  flex items-center justify-center">
+           <Image
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6853acd653e749a12d94680c_Shopify%20Cart%20page.png"
+  alt="Sponsorships and Integrations"
+  width={500}
+  height={500}
+  className="rounded-md object-cover"
+/>
+
+          </div>
+          <h3 className="text-lg font-semibold leading-snug">
+            Enhance Your Cart Page Experience
+          </h3>
+          <p className="text-gray-600 text-sm">
+            Turn casual shoppers into loyal customers with a fully customized cart page.
+We implement smart features to simplify the checkout journey and boost retention.
+          </p>
+        </div>
+
+        {/* Card 3 */}
+        <div className="flex flex-col space-y-4">
+        <div className="w-full  flex items-center justify-center">
+          <Image
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6853a86df0e04d3e473887a4_Shopifysmall%20Task.png"
+  alt="Sponsorships and Integrations"
+  width={500}
+  height={500}
+  
+/>
+
+          </div>
+          <h3 className="text-lg font-semibold leading-snug">
+            Third-Party App Configuration
+
+          </h3>
+          <p className="text-gray-600 text-sm">
+
+Seamless setup and integration of third-party apps to extend your store’s functionality and boost performance.
+
+          </p>
+        </div>
+      </div>
+
 </section>
 
        
