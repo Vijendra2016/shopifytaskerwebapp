@@ -74,7 +74,7 @@ export default function smallTask() {
           </h3>
           <p className="text-black text-sm">
          Get expert theme adjustments tailored to your brand and business needs.
-Whether it's layout changes, styling fixes, or performance enhancements — we help your store look and function exactly the way you want.
+Whether it layout changes, styling fixes, or performance enhancements — we help your store look and function exactly the way you want.
 
 
           </p>
@@ -119,7 +119,7 @@ We implement smart features to simplify the checkout journey and boost retention
           </h3>
           <p className="text-gray-600 text-sm">
 
-Seamless setup and integration of third-party apps to extend your store’s functionality and boost performance.
+Seamless setup and integration of third-party apps to extend your store functionality and boost performance.
 
           </p>
         </div>
