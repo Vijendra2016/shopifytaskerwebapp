@@ -75,6 +75,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.8,
     },
+
+     {
+      url: `${baseUrl}/our-tech-stack`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
+
+     {
+      url: `${baseUrl}/shopify-small-task`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
     // 👉 Add more pages here as needed
   ]
 }

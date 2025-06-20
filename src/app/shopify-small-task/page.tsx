@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import CTAQuote from "../components/Cta-Quote";
+
 export const metadata: Metadata = {
   title: "Shopify Small Tasks by Shopify Expert | Top-Rated Shopify Developer",
   description:
@@ -78,6 +80,7 @@ Whether it layout changes, styling fixes, or performance enhancements — we hel
 
 
           </p>
+          <CTAQuote/>
         </div>
 
         {/* Card 2 */}

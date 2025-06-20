@@ -20,7 +20,7 @@ export default function Footer() {
         
           <h6 className="underline text-base md:text-1xl font-thin">About</h6>
           <Link href="/" className="underline">who we are</Link>
-          <Link href="/how-it-works">how it works</Link>
+          <Link href="/how-this-work">how it works</Link>
           <Link href="/experts">our tech stack</Link>
           <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank">reviews</Link>
           <Link href="/pricing">pricing</Link>
