@@ -21,20 +21,20 @@ export default function Footer() {
           <h6 className="underline text-base md:text-1xl font-thin">About</h6>
           <Link href="/" className="underline">who we are</Link>
           <Link href="/how-this-work">how it works</Link>
-          <Link href="/experts">our tech stack</Link>
+          <Link href="/our-tech-stack">our tech stack</Link>
           <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank">reviews</Link>
-          <Link href="/pricing">pricing</Link>
-          <Link href="/support">contact</Link>
+          <Link href="#">pricing</Link>
+          <Link href="#">contact</Link>
         </div>
 
         {/* Column 2 */}
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base md:text-1xl font-thin">Our Services</h6>
           <Link href="#">store setup and development</Link>
-          <Link href="/partner">Platform migration</Link>
-          <Link href="/start-project">Custom app development</Link>
-          <Link href="/reviews">Checkout extension Development</Link>
-          <Link href="/expert-login">Retainer</Link>
+          <Link href="#">Platform migration</Link>
+          <Link href="#">Custom app development</Link>
+          <Link href="#">Checkout extension Development</Link>
+          <Link href="#">Retainer</Link>
           <Link href="/shopify-small-task">shopify small tasks</Link>
 
           
@@ -43,17 +43,17 @@ export default function Footer() {
         {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
         <div className="flex flex-col space-y-2">
           <h6 className="underline text-base md:text-1xl font-thin">Small Task</h6>
-          <Link href="/become-expert">Shopify Theme tweak</Link>
-          <Link href="/partner">Shopify App Development</Link>
-          <Link href="/start-project">Shopify Hydrogen</Link>
-          <Link href="/reviews">public reviews</Link>
+          <Link href="#">Shopify Theme tweak</Link>
+          <Link href="#">Shopify App Development</Link>
+          <Link href="#">Shopify Hydrogen</Link>
+          <Link href="#">Shopify VA Services</Link>
           
         </div>
          {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
          <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
-          <Link href="/become-expert">Shopify Hyrogen Store Setup</Link>
-          <Link href="/partner">Shopify Headless Store Managment</Link>
+          <Link href="#">Shopify Hyrogen Store Setup</Link>
+          <Link href="#">Shopify Headless Store Managment</Link>
           
         </div>
         <div className="flex flex-col space-y-2">
@@ -64,19 +64,19 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Platform Migration</h6>
-          <Link href="/become-expert">Wordpress to Shopify Migration</Link>
-          <Link href="/partner">Salesfoce to Shopify Plus</Link>
-          <Link href="/start-project">Squarespace to shopify</Link>
-          <Link href="/reviews">Square to shopify</Link>
-          <Link href="/expert-login">Maganto to Shopify</Link>
+          <Link href="#">Wordpress to Shopify Migration</Link>
+          <Link href="#">Salesfoce to Shopify Plus</Link>
+          <Link href="#">Squarespace to shopify</Link>
+          <Link href="#">Square to shopify</Link>
+          <Link href="#">Maganto to Shopify</Link>
           
         </div>
 
         <div className="flex flex-col space-y-2">
           <h6 className=" text-xl md:text-lg text-base font-regular">Theme Customization & Update Service</h6>
           <Link href="/shopify-themes/impulse-customization-update">Impulse theme Customization & Update</Link>
-          <Link href="/partner">Shopify Headless Store Managment</Link>
-          <Link href="/start-project">start a project</Link>
+          <Link href="#">Shopify Headless Store Managment</Link>
+          <Link href="#">start a project</Link>
           
         </div>
 
@@ -84,6 +84,7 @@ export default function Footer() {
         <Link href="/industries" className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Industries</Link>
 
           <Link href="/industries/hair-extension-shopify-web-design" className="text-white text-sm font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Hair Extensions</Link>
+          <Link href="/industries/shopify-auto-parts-website-design-development">Auto Parts</Link>
           <Link href="#">Gym & Fitness</Link>
           <Link href="#">Fashion</Link>
           <Link href="#">Health & Wellness</Link>
