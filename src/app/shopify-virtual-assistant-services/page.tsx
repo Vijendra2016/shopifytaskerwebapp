@@ -3,9 +3,9 @@ import Image from "next/image";
 import GeoMessage from "../components/GeoMessage";
 
 export const metadata: Metadata = {
-  title: "Shopify Expert from india | Top-Rated Freelancer Shopify Developer",
+  title: "Hire Shopify Virtual Assistant | Top-Rated Shopify VA",
   description:
-    "Hire top rated expert shopify developer from most trusted shopify expert developer team",
+    "Hire top expert shopify Virtual Assistant just $5/hr from most trusted shopify expert VA team",
 };
 
 export default function smallTask() {
@@ -73,11 +73,10 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
 
           
           <h3 className="text-lg  text-black font-semibold leading-snug">
-            Order Managment
+            Order Managment by Shopify Virtual Assistant 
           </h3>
           <p className="text-black text-sm">
-         We build Shopify stores that look great, work fast, and help your business grow—customised exactly the way you need.
-
+Our expert Shopify  Virtual Assistant manage administrative tasks like order processing , inventory managment and delivery
           </p>
         
         </div>
@@ -95,7 +94,7 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
 
           </div>
           <h3 className="text-lg font-semibold leading-snug">
-           Shopify Store managment
+           Shopify Store Managment by Shopify Virtual Assistant
           </h3>
           <p className="text-black text-sm">
       Our Expert shopify Virtual assistants provide shopify store managment services thats include theme updates ,small coding , store proformentce.
@@ -120,8 +119,7 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
 
           </h3>
           <p className="text-black text-sm">
-
-Modern eCommerce, powered by Next.js and Shopify.
+      Our shopify expert virtual assistant handle store on page and off page seo, links building and social media managment.
           </p>
         </div>
 
@@ -139,11 +137,11 @@ Modern eCommerce, powered by Next.js and Shopify.
 
           </div>
           <h3 className="text-lg font-semibold leading-snug">
-             Klaviyo
+            Email Marketing  
           </h3>
           <p className="text-black text-sm">
 
-Smarter marketing, powered by Klaviyo. Turn data into personalized emails, automation, and real results.
+Our Shopify virtual assistant can help you with Smarter email marketing, powered by Klaviyo. Turn data into personalized emails, automation, and real results.
 
 
           </p>
@@ -154,8 +152,8 @@ Smarter marketing, powered by Klaviyo. Turn data into personalized emails, autom
         <div className="flex flex-col space-y-4">
         <div className="w-full  flex items-center justify-center">
           <Image
-  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6854f7721a7ab92f393b95e4_Rebuy%20shopify%20development.png"
-  alt="Rebuy Integrations"
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68592ca3239b63c3bbaf1394_Product%20Listing%20shopify%20va.png"
+  alt="Shopify va for product listing"
   width={500}
   height={500}
   
@@ -163,12 +161,11 @@ Smarter marketing, powered by Klaviyo. Turn data into personalized emails, autom
 
           </div>
           <h3 className="text-lg font-semibold leading-snug">
-            Rebuy
+           Product Listing and Managment
 
           </h3>
           <p className="text-black text-sm">
-
-Boost sales with Rebuy. Personalize product recommendations, upsells, and bundles that convert—right where your customers shop.
+ Our shopify virtual assistant can help you with product description, keywords, images optimization and product listing.
           </p>
         </div>
 
@@ -177,21 +174,20 @@ Boost sales with Rebuy. Personalize product recommendations, upsells, and bundle
         <div className="flex flex-col space-y-4">
         <div className="w-full  flex items-center justify-center">
           <Image
-  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6854fa61c1f6a53457682591_Shopify%20Hydrogen%20Development.png"
-  alt="Sponsorships and Integrations"
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68592d96459b1feaac51aad8_Shopify%20customer%20support%20VA.png"
+  alt="store support VA"
   width={500}
   height={500}
   
-/>
+/> 
 
           </div>
           <h3 className="text-lg font-semibold leading-snug">
-            Shopify Hydrogen Development
+           Customer Support
           </h3>
-          <p className="text-gray-600 text-sm">
+          <p className="text-black text-sm">
 
-Build blazing-fast headless storefronts with Hydrogen and modern tech.
-          </p>
+Our shopify virtual assistant manage customer inquiries to resolving complaints, our VA will make sure all your customer get support so they can stay happy and loyal.          </p>
         </div>
 
 

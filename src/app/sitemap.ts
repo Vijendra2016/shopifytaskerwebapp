@@ -87,6 +87,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 0.8,
     },
+
+
+    {
+      url: `${baseUrl}/shopify-virtual-assistant-services`,
+      lastModified: new Date(),
+      priority: 0.8,
+    },
     // 👉 Add more pages here as needed
   ]
 }
