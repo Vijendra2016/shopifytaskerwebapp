@@ -40,7 +40,7 @@ export default function smallTask() {
          <section className="flex flex-col items-center gap-6 px-4 md:px-12 lg:px-10 py-10 text-black">
   <div className="w-full max-w-4xl text-center">
     <h2 className="text-3xl md:text-5xl font-normal mb-4">
-      Reasons Why Hire Our Shopify Virtual Assistants?
+    Why Hire Our Shopify Virtual Assistants?
 
 
     </h2>
@@ -62,8 +62,8 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
         <div className="flex flex-col space-y-4">
         <div className="w-full  flex items-center justify-center">
             <Image
-  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6854f3ab3b2bc9c92a773a97_Shopify%20expert%20team.png"
-  alt="Sponsorships and Integrations"
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6859254eebd1225acd1b36f3_order%20Managment.png"
+  alt="Order managment"
   width={500}
   height={500}
   
@@ -73,7 +73,7 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
 
           
           <h3 className="text-lg  text-black font-semibold leading-snug">
-            Shopify Store Developmet
+            Order Managment
           </h3>
           <p className="text-black text-sm">
          We build Shopify stores that look great, work fast, and help your business grow—customised exactly the way you need.
@@ -86,8 +86,8 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
         <div className="flex flex-col space-y-4">
         <div className="w-full  flex items-center justify-center">
            <Image
-  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6854f4aa336475111c2f40ed_Shopify%20plus%20%20expert%20%20developerteam.png"
-  alt="Sponsorships and Integrations"
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6859264b89a71ed355bae0a7_Store%20Managment.png"
+  alt="Store Managment VA"
   width={500}
   height={500}
 
@@ -95,10 +95,11 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
 
           </div>
           <h3 className="text-lg font-semibold leading-snug">
-           Shopify Plus Development
+           Shopify Store managment
           </h3>
           <p className="text-black text-sm">
-            We build custom Shopify Plus stores designed to scale—fast, flexible, and tailored to fit your growing business needs.
+      Our Expert shopify Virtual assistants provide shopify store managment services thats include theme updates ,small coding , store proformentce.
+
           </p>
         </div>
 
@@ -106,7 +107,7 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
         <div className="flex flex-col space-y-4">
         <div className="w-full  flex items-center justify-center">
           <Image
-  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6854f5ad2876b66d7e7d0938_Next%20js%20shopify%20development.png"
+  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/685927decaa7051a78a95b78_seo%20shopify%20va%20services.png"
   alt="Sponsorships and Integrations"
   width={500}
   height={500}
@@ -115,7 +116,7 @@ Our Shopify VA can help you with shopify store managment on full of efficiency a
 
           </div>
           <h3 className="text-lg font-semibold leading-snug">
-            Next.js (headless or custom builds)
+            Shopify SEO 
 
           </h3>
           <p className="text-black text-sm">
