@@ -46,7 +46,7 @@ export default function Footer() {
           <Link href="#">Shopify Theme tweak</Link>
           <Link href="#">Shopify App Development</Link>
           <Link href="#">Shopify Hydrogen</Link>
-          <Link href="#">Shopify VA Services</Link>
+          <Link href="/shopify-virtual-assistant-services">Shopify VA Services</Link>
           
         </div>
          {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
