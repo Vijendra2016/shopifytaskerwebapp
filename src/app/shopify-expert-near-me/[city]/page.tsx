@@ -76,6 +76,25 @@ export default async function CityPage(props: Props) {
         <p className="mb-4 text-gray-700 leading-relaxed">{cityData.intro}</p>
         <p className="font-semibold text-blue-600">{cityData.cta}</p>
       </section>
+
+<section className="max-w-4xl mx-auto px-4 py-10">
+        <h3 className="text-3xl font-bold mb-4">
+          How do i hire a shopify expert near  {cityData.city} on ShopifyTasker
+
+        </h3>
+        <p className="mb-4 text-gray-700 leading-relaxed">Hire shopify expert on shopifytasker is three step process.
+Click on Get Free Quote 
+Write your project scope 
+Get Submit Project we will be back to you with proper cost .
+</p>
+
+<h3 className="text-3xl font-bold mb-4">
+          Why Hire a shopify expert near  {cityData.city} on ShopifyTasker
+
+        </h3>
+        <p className="font-semibold text-blue-600">we have 10 years experience on shopify ecosystem , we work on real prices not much price like $150/hr our hourly prices is fixed $20 and we dont take any upfront payment .</p>
+      </section>
+
     </main>
   );
 }
