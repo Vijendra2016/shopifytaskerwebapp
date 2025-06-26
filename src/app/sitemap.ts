@@ -2,10 +2,16 @@ import { MetadataRoute } from 'next'
 import path from 'path'
 import { promises as fs } from 'fs'
 
+type City = {
+  slug: string
+  city: string
+  intro: string
+  cta: string
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://shopifytasker.com'
 
-  // ✅ Static URLs
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: new Date(), priority: 1.0 },
     { url: `${baseUrl}/how-this-work`, lastModified: new Date(), priority: 0.8 },
@@ -25,12 +31,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/shopify-virtual-assistant-services`, lastModified: new Date(), priority: 0.8 },
   ]
 
-  // ✅ Load city slugs from JSON
   const filePath = path.join(process.cwd(), 'src/lib/cities.json')
   const file = await fs.readFile(filePath, 'utf-8')
-  const cities = JSON.parse(file)
+  const cities: City[] = JSON.parse(file)
 
-  const cityPages: MetadataRoute.Sitemap = cities.map((c: any) => ({
+  const cityPages: MetadataRoute.Sitemap = cities.map((c) => ({
     url: `${baseUrl}/shopify-expert-near-me/${c.slug}`,
     lastModified: new Date(),
     priority: 0.8,
