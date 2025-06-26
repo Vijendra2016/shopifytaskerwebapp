@@ -33,8 +33,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 
   return {
-    title: `Best ${cityData.city} Shopify Web Design, Development, and Maintenance Agency`,
-    description: cityData.intro,
+    title: `Hire Shopify Expert in ${cityData.city} | ShopifyTasker  `,
+    description:  `Shopify expert in ${cityData.city} prices start from $10/hr,pay after work done`  ,
   };
 }
 
