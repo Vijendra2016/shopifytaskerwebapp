@@ -1,21 +1,12 @@
-import { notFound } from 'next/navigation';
+// ✅ DO NOT DEFINE YOUR OWN `type Props`
+// import the official PageProps type instead:
 import { Metadata } from 'next';
-import cities from '@/lib/cities.json';
+import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import cities from '@/lib/cities.json';
 
-type Props = {
-  params: {
-    city: string;
-  };
-};
-
-// ✅ Used by Next.js to pre-generate static pages
-export async function generateStaticParams() {
-  return cities.map((c) => ({ city: c.slug }));
-}
-
-// ✅ Used to generate SEO metadata
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+// ✅ Use the built-in type `PageProps`
+export async function generateMetadata({ params }: { params: { city: string } }): Promise<Metadata> {
   const cityData = cities.find((c) => c.slug === params.city);
 
   if (!cityData) {
@@ -31,15 +22,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// ✅ Main Page Component — must be async
-export default async function CityPage({ params }: Props) {
+export async function generateStaticParams() {
+  return cities.map((c) => ({ city: c.slug }));
+}
+
+// ✅ Component must be async
+export default async function CityPage({ params }: { params: { city: string } }) {
   const cityData = cities.find((c) => c.slug === params.city);
 
   if (!cityData) return notFound();
 
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-0">
-      {/* HERO SECTION */}
       <section className="relative flex items-center justify-center h-[60vh] md:h-[80vh] overflow-hidden">
         <Image
           src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/685a270f4b652a6b3c6ec851_hustong%20-ca-shopify-developer.jpg"
@@ -62,7 +56,6 @@ export default async function CityPage({ params }: Props) {
         </div>
       </section>
 
-      {/* WHY US SECTION */}
       <section className="flex flex-col items-center gap-6 px-4 md:px-12 lg:px-10 py-10 text-black">
         <div className="w-full max-w-4xl text-center">
           <h2 className="text-3xl md:text-5xl font-normal mb-4">
@@ -74,11 +67,8 @@ export default async function CityPage({ params }: Props) {
         </div>
       </section>
 
-      {/* CITY DETAILS */}
       <div className="max-w-4xl mx-auto px-4 py-6 text-left">
-        <h2 className="text-3xl font-bold mb-4">
-          Shopify Developer in {cityData.city}
-        </h2>
+        <h2 className="text-3xl font-bold mb-4">Shopify Developer in {cityData.city}</h2>
         <p className="mb-4">{cityData.intro}</p>
         <p className="font-semibold">{cityData.cta}</p>
       </div>
