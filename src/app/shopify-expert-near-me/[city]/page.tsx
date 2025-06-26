@@ -1,17 +1,19 @@
-// app/shopify-developer-near-me/[city]/page.tsx
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import cities from '@/lib/cities.json';
 import Image from "next/image";
 
-type Props = {
-  params: { city: string };
-};
+interface PageProps {
+  params: {
+    city: string;
+  };
+}
 
 export async function generateStaticParams() {
   return cities.map((c) => ({ city: c.slug }));
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const cityData = cities.find((c) => c.slug === params.city);
 
   if (!cityData) {
@@ -25,13 +27,12 @@ export async function generateMetadata({ params }: Props) {
     title: `Best ${cityData.city} Shopify Web Design, Development, and Maintenance Agency`,
     description: cityData.intro,
   };
-};
+}
 
-export default function CityPage({ params }: Props) {
+export default function CityPage({ params }: PageProps) {
   const cityData = cities.find((c) => c.slug === params.city);
 
   if (!cityData) return notFound();
-
   return (
       <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-0">
 
@@ -77,7 +78,7 @@ export default function CityPage({ params }: Props) {
           </p>
         
              
-             
+
           </div>
         
           
