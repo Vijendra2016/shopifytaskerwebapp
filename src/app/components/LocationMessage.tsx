@@ -29,8 +29,8 @@ const LocationMessage = () => {
     switch (country) {
       case "US":
         return city
-          ? `Looking Shopify developer & expert near ${city}, U.S.? Local Shopify developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery`
-          : "Looking Shopify developer & expert in the U.S.? Local Shopify  developers typically charge $80 t0 $120/hour — our experts deliver the same quality from just $25/hour, and you pay only after delivery!";
+          ? `Looking Shopify developer & expert near ${city}, U.S.? Local Shopify developers typically charge $80 t0 $120/hr — our experts deliver the same quality from just $20/hr, and you pay only after delivery`
+          : "Looking Shopify developer & expert in the U.S.? Local Shopify  developers typically charge $80 t0 $120/hr — our experts deliver the same quality from just $20/hr, and you pay only after delivery!";
   
       case "AU":
         return city
