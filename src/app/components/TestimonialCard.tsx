@@ -36,7 +36,7 @@ const TestimonialCard = () => {
       rel="noopener noreferrer"
       className="inline-flex items-center bg-pink-300 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-pink-400 transition"
     >
-      processcreative.com.au
+      slubmberpod.com
       <TfiArrowTopRight className="ml-2" />
     </a>
         </div>

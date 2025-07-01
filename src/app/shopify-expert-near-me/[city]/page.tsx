@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import cities from '@/lib/cities.json';
 import CitiesCta from '@/app/components/CitiesCta';
-
+import TestimonialCard from '@/app/components/TestimonialCard';
 type Props = {
   params: Promise<{
     city: string;
@@ -93,8 +93,13 @@ Get Submit Project we will be back to you with proper cost .
           Why Hire a shopify expert near  {cityData.city} on ShopifyTasker
 
         </h3>
+    
         <p className="font-semibold text-blue-600">we have 10 years experience on shopify ecosystem , we work on real prices not much price like $150/hr our hourly prices is fixed $20 and we dont take any upfront payment .</p>
+      
+      
       </section>
+      
+      <TestimonialCard />
 <CitiesCta/>
     </main>
   );
