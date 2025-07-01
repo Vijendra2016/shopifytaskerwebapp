@@ -1,181 +1,23 @@
-"use client";
+import { Metadata } from "next";
+import TestimonialCardGrid from "../components/TestimonialCardGrid";
+export const metadata: Metadata = {
+  title: "shopify website design company",
+  description:
+    "We are top rated shopify website design company, our shopify developer and expert provide you quality work.pay after work done",
+};
 
-import { useState } from "react";
-
-const steps = [
-  {
-    question: "What type of business are you?",
-    options: ["Fashion", "Auto Parts", "CBD", "Other"],
-    field: "businessType",
-  },
-  {
-    question: "What features do you need?",
-    options: ["Design", "Development", "SEO"],
-    multi: true,
-    field: "features",
-  },
-  {
-    question: "What is your store size?",
-    options: ["Small", "Medium", "Large"],
-    field: "storeSize",
-  },
-  {
-    question: "When do you need the project delivered?",
-    options: ["In 1 week", "In 2-4 weeks", "In 1-2 months"],
-    field: "timeline",
-  },
-];
-
-export default function ProjectQuiz() {
-  const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState<any>({});
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [result, setResult] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const totalSteps = steps.length + 1; // +1 for form step
-
-  const handleSelect = (value: string) => {
-    const currentStep = steps[step];
-    if (currentStep.multi) {
-      const prev = answers[currentStep.field] || [];
-      const updated = prev.includes(value)
-        ? prev.filter((v: string) => v !== value)
-        : [...prev, value];
-      setAnswers({ ...answers, [currentStep.field]: updated });
-    } else {
-      setAnswers({ ...answers, [currentStep.field]: value });
-      setTimeout(() => {
-        if (step < steps.length - 1) {
-          setStep(step + 1);
-        } else {
-          setStep(step + 1); // go to form step
-        }
-      }, 300);
-    }
-  };
-
-  const handleNextFromMulti = () => {
-    if (step < steps.length - 1) {
-      setStep(step + 1);
-    } else {
-      setStep(step + 1); // to name/email form
-    }
-  };
-
-  const calculateEstimate = () => {
-    let price = 300;
-    if (answers.storeSize === "Medium") price += 200;
-    if (answers.storeSize === "Large") price += 400;
-    if (Array.isArray(answers.features)) {
-      price += answers.features.length * 150;
-    }
-    if (answers.timeline === "In 1 week") price += 200;
-
-    const min = price;
-    const max = price + 300;
-    setResult(`Hi ${name}, your estimated project cost is $${min} – $${max}`);
-    setSubmitted(true);
-  };
-
-  const restartQuiz = () => {
-    setStep(0);
-    setAnswers({});
-    setResult("");
-    setName("");
-    setEmail("");
-    setSubmitted(false);
-  };
-
-  const progressPercent = Math.round((step / (totalSteps - 1)) * 100);
-
+export default function pricing() {
   return (
-    <div className="bg-white p-8 rounded-xl shadow-xl max-w-xl mx-auto mt-10 text-center">
-      {/* Progress Bar */}
-      <div className="w-full bg-gray-200 h-2 rounded-full mb-6 overflow-hidden">
-        <div
-          className="h-full bg-green-500 transition-all duration-300"
-          style={{ width: `${progressPercent}%` }}
-        />
-      </div>
+    <main className="container mx-auto px-4 py-10 text-center pt-20">
+        <h1 className="text-3xl md:text-6xl font-regular"> Top Rated Shopify Website Design Company</h1>
+      
+          <p className="text-gray-600 text-lg">
+          ShopifyTasker is highly praised for its reliable and efficient services, offering expert help with store setup,
+           optimization, and marketing. Users appreciate its quick turnaround and excellent customer support
 
-      {/* Quiz Complete */}
-      {submitted ? (
-        <div>
-          <div className="text-xl font-bold text-green-700 mb-4">{result}</div>
-          <button
-            onClick={restartQuiz}
-            className="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800"
-          >
-            Restart Quiz
-          </button>
-        </div>
-      ) : step === steps.length ? (
-        <>
-          {/* Name & Email Form */}
-          <h2 className="text-xl font-semibold mb-4">One last step: 👋</h2>
-          <p className="mb-2 text-gray-600">Enter your name and email to view your result:</p>
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full border rounded px-4 py-2 mb-3"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full border rounded px-4 py-2 mb-4"
-          />
-          <button
-            disabled={!name || !email}
-            onClick={calculateEstimate}
-            className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 disabled:opacity-50"
-          >
-            Get My Estimate
-          </button>
-        </>
-      ) : (
-        <>
-          {/* Step Question */}
-          <h2 className="text-xl font-semibold mb-4">
-            {steps[step].question}
-          </h2>
-          <div className="flex flex-wrap justify-center gap-4 mb-6">
-            {steps[step].options.map((option) => {
-              const isSelected = steps[step].multi
-                ? answers[steps[step].field]?.includes(option)
-                : answers[steps[step].field] === option;
-              return (
-                <button
-                  key={option}
-                  onClick={() => handleSelect(option)}
-                  className={`px-6 py-2 rounded-full border font-medium transition ${
-                    isSelected
-                      ? "bg-orange-500 text-white"
-                      : "bg-gray-100 text-gray-800 hover:bg-gray-200"
-                  }`}
-                >
-                  {option}
-                </button>
-              );
-            })}
-          </div>
+        </p>
+<TestimonialCardGrid/>
 
-          {/* Show "Next" only for multi-select */}
-          {steps[step].multi && (
-            <button
-              onClick={handleNextFromMulti}
-              className="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800"
-            >
-              Next
-            </button>
-          )}
-        </>
-      )}
-    </div>
+    </main>
   );
 }
