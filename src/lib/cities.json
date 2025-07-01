@@ -1,64 +1,709 @@
 [
   {
-    "slug": "new-york",
     "city": "New York",
+    "slug": "new-york-ny",
     "state": "NY",
-    "country": "USA",
-    "intro": "Looking for a Shopify expert in New York? We build high-performing eCommerce stores for NYC businesses.",
-    "cta": "Start your project with a trusted Shopify developer in NYC today."
+    "intro": "Looking for a trusted Shopify expert in New York? We build fast, scalable Shopify stores tailored for New York businesses.",
+    "cta": "Hire top Shopify developers in New York. Get your free quote today."
   },
   {
-    "slug": "sydney",
-    "city": "Sydney",
-    "state": "NSW",
-    "country": "Australia",
-    "intro": "Need a Shopify developer in Sydney? We serve eCommerce businesses across New South Wales with tailored store solutions.",
-    "cta": "Book your free Shopify consultation in Sydney."
+    "city": "Los Angeles",
+    "slug": "los-angeles-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Los Angeles? We build fast, scalable Shopify stores tailored for Los Angeles businesses.",
+    "cta": "Hire top Shopify developers in Los Angeles. Get your free quote today."
   },
   {
-    "slug": "parkersburg-wv",
-    "city": "Parkersburg, WV",
-    "state": "WV",
-    "country": "USA",
-    "intro": "Need a Shopify developer in Hire best shopify developer? We serve eCommerce businesses across New South Wales with tailored store solutions.",
-    "cta": "Book your free Shopify consultation in Sydney."
-  }
- ,
+    "city": "Chicago",
+    "slug": "chicago-il",
+    "state": "IL",
+    "intro": "Looking for a trusted Shopify expert in Chicago? We build fast, scalable Shopify stores tailored for Chicago businesses.",
+    "cta": "Hire top Shopify developers in Chicago. Get your free quote today."
+  },
   {
-    "slug": "poinciana-fl",
-    "city": "Poinciana, FL",
-    "state": "FL",
-    "country": "USA",
-    "intro": "Need a Shopify developer in Hire best shopify developer? We serve eCommerce businesses across New South Wales with tailored store solutions.",
-    "cta": "Book your free Shopify consultation in Sydney."
-  }
-  ,
-  {
-    "slug": "buckeye-az",
-    "city": "Buckeye, AZ",
-    "state": "AZ",
-    "country": "USA",
-    "intro": "Need a Shopify developer in Hire best shopify developer? We serve eCommerce businesses across New South Wales with tailored store solutions.",
-    "cta": "Book your free Shopify consultation in Buckeye, AZ."
-  }
-  ,
-  {
-    "slug": "austin-tx",
-    "city": "Austin,TX ",
+    "city": "Houston",
+    "slug": "houston-tx",
     "state": "TX",
-    "country": "USA",
-    "intro": "Need a Shopify developer in Hire best shopify developer? We serve eCommerce businesses across New South Wales with tailored store solutions.",
-    "cta": "Book your free Shopify consultation in Austin,TX."
-  }
-  ,
+    "intro": "Looking for a trusted Shopify expert in Houston? We build fast, scalable Shopify stores tailored for Houston businesses.",
+    "cta": "Hire top Shopify developers in Houston. Get your free quote today."
+  },
   {
-    "slug": "udaipur",
-    "city": "Udaipur Rajstan ",
-    "state": "Rajstan",
-    "country": "India",
-    "intro": "Hire shopify developer",
-    "cta": "Book your free Shopify consultation in Austin,TX."
+    "city": "Phoenix",
+    "slug": "phoenix-az",
+    "state": "AZ",
+    "intro": "Looking for a trusted Shopify expert in Phoenix? We build fast, scalable Shopify stores tailored for Phoenix businesses.",
+    "cta": "Hire top Shopify developers in Phoenix. Get your free quote today."
+  },
+  {
+    "city": "Philadelphia",
+    "slug": "philadelphia-pa",
+    "state": "PA",
+    "intro": "Looking for a trusted Shopify expert in Philadelphia? We build fast, scalable Shopify stores tailored for Philadelphia businesses.",
+    "cta": "Hire top Shopify developers in Philadelphia. Get your free quote today."
+  },
+  {
+    "city": "San Antonio",
+    "slug": "san-antonio-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in San Antonio? We build fast, scalable Shopify stores tailored for San Antonio businesses.",
+    "cta": "Hire top Shopify developers in San Antonio. Get your free quote today."
+  },
+  {
+    "city": "San Diego",
+    "slug": "san-diego-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in San Diego? We build fast, scalable Shopify stores tailored for San Diego businesses.",
+    "cta": "Hire top Shopify developers in San Diego. Get your free quote today."
+  },
+  {
+    "city": "Dallas",
+    "slug": "dallas-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Dallas? We build fast, scalable Shopify stores tailored for Dallas businesses.",
+    "cta": "Hire top Shopify developers in Dallas. Get your free quote today."
+  },
+  {
+    "city": "San Jose",
+    "slug": "san-jose-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in San Jose? We build fast, scalable Shopify stores tailored for San Jose businesses.",
+    "cta": "Hire top Shopify developers in San Jose. Get your free quote today."
+  },
+  {
+    "city": "Austin",
+    "slug": "austin-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Austin? We build fast, scalable Shopify stores tailored for Austin businesses.",
+    "cta": "Hire top Shopify developers in Austin. Get your free quote today."
+  },
+  {
+    "city": "Jacksonville",
+    "slug": "jacksonville-fl",
+    "state": "FL",
+    "intro": "Looking for a trusted Shopify expert in Jacksonville? We build fast, scalable Shopify stores tailored for Jacksonville businesses.",
+    "cta": "Hire top Shopify developers in Jacksonville. Get your free quote today."
+  },
+  {
+    "city": "Fort Worth",
+    "slug": "fort-worth-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Fort Worth? We build fast, scalable Shopify stores tailored for Fort Worth businesses.",
+    "cta": "Hire top Shopify developers in Fort Worth. Get your free quote today."
+  },
+  {
+    "city": "Columbus",
+    "slug": "columbus-oh",
+    "state": "OH",
+    "intro": "Looking for a trusted Shopify expert in Columbus? We build fast, scalable Shopify stores tailored for Columbus businesses.",
+    "cta": "Hire top Shopify developers in Columbus. Get your free quote today."
+  },
+  {
+    "city": "Indianapolis",
+    "slug": "indianapolis-in",
+    "state": "IN",
+    "intro": "Looking for a trusted Shopify expert in Indianapolis? We build fast, scalable Shopify stores tailored for Indianapolis businesses.",
+    "cta": "Hire top Shopify developers in Indianapolis. Get your free quote today."
+  },
+  {
+    "city": "Charlotte",
+    "slug": "charlotte-nc",
+    "state": "NC",
+    "intro": "Looking for a trusted Shopify expert in Charlotte? We build fast, scalable Shopify stores tailored for Charlotte businesses.",
+    "cta": "Hire top Shopify developers in Charlotte. Get your free quote today."
+  },
+  {
+    "city": "San Francisco",
+    "slug": "san-francisco-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in San Francisco? We build fast, scalable Shopify stores tailored for San Francisco businesses.",
+    "cta": "Hire top Shopify developers in San Francisco. Get your free quote today."
+  },
+  {
+    "city": "Seattle",
+    "slug": "seattle-wa",
+    "state": "WA",
+    "intro": "Looking for a trusted Shopify expert in Seattle? We build fast, scalable Shopify stores tailored for Seattle businesses.",
+    "cta": "Hire top Shopify developers in Seattle. Get your free quote today."
+  },
+  {
+    "city": "Denver",
+    "slug": "denver-co",
+    "state": "CO",
+    "intro": "Looking for a trusted Shopify expert in Denver? We build fast, scalable Shopify stores tailored for Denver businesses.",
+    "cta": "Hire top Shopify developers in Denver. Get your free quote today."
+  },
+  {
+    "city": "Oklahoma City",
+    "slug": "oklahoma-city-ok",
+    "state": "OK",
+    "intro": "Looking for a trusted Shopify expert in Oklahoma City? We build fast, scalable Shopify stores tailored for Oklahoma City businesses.",
+    "cta": "Hire top Shopify developers in Oklahoma City. Get your free quote today."
+  },
+  {
+    "city": "Nashville",
+    "slug": "nashville-tn",
+    "state": "TN",
+    "intro": "Looking for a trusted Shopify expert in Nashville? We build fast, scalable Shopify stores tailored for Nashville businesses.",
+    "cta": "Hire top Shopify developers in Nashville. Get your free quote today."
+  },
+  {
+    "city": "El Paso",
+    "slug": "el-paso-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in El Paso? We build fast, scalable Shopify stores tailored for El Paso businesses.",
+    "cta": "Hire top Shopify developers in El Paso. Get your free quote today."
+  },
+  {
+    "city": "Washington",
+    "slug": "washington-dc",
+    "state": "DC",
+    "intro": "Looking for a trusted Shopify expert in Washington? We build fast, scalable Shopify stores tailored for Washington businesses.",
+    "cta": "Hire top Shopify developers in Washington. Get your free quote today."
+  },
+  {
+    "city": "Boston",
+    "slug": "boston-ma",
+    "state": "MA",
+    "intro": "Looking for a trusted Shopify expert in Boston? We build fast, scalable Shopify stores tailored for Boston businesses.",
+    "cta": "Hire top Shopify developers in Boston. Get your free quote today."
+  },
+  {
+    "city": "Las Vegas",
+    "slug": "las-vegas-nv",
+    "state": "NV",
+    "intro": "Looking for a trusted Shopify expert in Las Vegas? We build fast, scalable Shopify stores tailored for Las Vegas businesses.",
+    "cta": "Hire top Shopify developers in Las Vegas. Get your free quote today."
+  },
+  {
+    "city": "Portland",
+    "slug": "portland-or",
+    "state": "OR",
+    "intro": "Looking for a trusted Shopify expert in Portland? We build fast, scalable Shopify stores tailored for Portland businesses.",
+    "cta": "Hire top Shopify developers in Portland. Get your free quote today."
+  },
+  {
+    "city": "Detroit",
+    "slug": "detroit-mi",
+    "state": "MI",
+    "intro": "Looking for a trusted Shopify expert in Detroit? We build fast, scalable Shopify stores tailored for Detroit businesses.",
+    "cta": "Hire top Shopify developers in Detroit. Get your free quote today."
+  },
+  {
+    "city": "Louisville",
+    "slug": "louisville-ky",
+    "state": "KY",
+    "intro": "Looking for a trusted Shopify expert in Louisville? We build fast, scalable Shopify stores tailored for Louisville businesses.",
+    "cta": "Hire top Shopify developers in Louisville. Get your free quote today."
+  },
+  {
+    "city": "Memphis",
+    "slug": "memphis-tn",
+    "state": "TN",
+    "intro": "Looking for a trusted Shopify expert in Memphis? We build fast, scalable Shopify stores tailored for Memphis businesses.",
+    "cta": "Hire top Shopify developers in Memphis. Get your free quote today."
+  },
+  {
+    "city": "Baltimore",
+    "slug": "baltimore-md",
+    "state": "MD",
+    "intro": "Looking for a trusted Shopify expert in Baltimore? We build fast, scalable Shopify stores tailored for Baltimore businesses.",
+    "cta": "Hire top Shopify developers in Baltimore. Get your free quote today."
+  },
+  {
+    "city": "Milwaukee",
+    "slug": "milwaukee-wi",
+    "state": "WI",
+    "intro": "Looking for a trusted Shopify expert in Milwaukee? We build fast, scalable Shopify stores tailored for Milwaukee businesses.",
+    "cta": "Hire top Shopify developers in Milwaukee. Get your free quote today."
+  },
+  {
+    "city": "Albuquerque",
+    "slug": "albuquerque-nm",
+    "state": "NM",
+    "intro": "Looking for a trusted Shopify expert in Albuquerque? We build fast, scalable Shopify stores tailored for Albuquerque businesses.",
+    "cta": "Hire top Shopify developers in Albuquerque. Get your free quote today."
+  },
+  {
+    "city": "Tucson",
+    "slug": "tucson-az",
+    "state": "AZ",
+    "intro": "Looking for a trusted Shopify expert in Tucson? We build fast, scalable Shopify stores tailored for Tucson businesses.",
+    "cta": "Hire top Shopify developers in Tucson. Get your free quote today."
+  },
+  {
+    "city": "Fresno",
+    "slug": "fresno-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Fresno? We build fast, scalable Shopify stores tailored for Fresno businesses.",
+    "cta": "Hire top Shopify developers in Fresno. Get your free quote today."
+  },
+  {
+    "city": "Mesa",
+    "slug": "mesa-az",
+    "state": "AZ",
+    "intro": "Looking for a trusted Shopify expert in Mesa? We build fast, scalable Shopify stores tailored for Mesa businesses.",
+    "cta": "Hire top Shopify developers in Mesa. Get your free quote today."
+  },
+  {
+    "city": "Sacramento",
+    "slug": "sacramento-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Sacramento? We build fast, scalable Shopify stores tailored for Sacramento businesses.",
+    "cta": "Hire top Shopify developers in Sacramento. Get your free quote today."
+  },
+  {
+    "city": "Atlanta",
+    "slug": "atlanta-ga",
+    "state": "GA",
+    "intro": "Looking for a trusted Shopify expert in Atlanta? We build fast, scalable Shopify stores tailored for Atlanta businesses.",
+    "cta": "Hire top Shopify developers in Atlanta. Get your free quote today."
+  },
+  {
+    "city": "Kansas City",
+    "slug": "kansas-city-mo",
+    "state": "MO",
+    "intro": "Looking for a trusted Shopify expert in Kansas City? We build fast, scalable Shopify stores tailored for Kansas City businesses.",
+    "cta": "Hire top Shopify developers in Kansas City. Get your free quote today."
+  },
+  {
+    "city": "Colorado Springs",
+    "slug": "colorado-springs-co",
+    "state": "CO",
+    "intro": "Looking for a trusted Shopify expert in Colorado Springs? We build fast, scalable Shopify stores tailored for Colorado Springs businesses.",
+    "cta": "Hire top Shopify developers in Colorado Springs. Get your free quote today."
+  },
+  {
+    "city": "Miami",
+    "slug": "miami-fl",
+    "state": "FL",
+    "intro": "Looking for a trusted Shopify expert in Miami? We build fast, scalable Shopify stores tailored for Miami businesses.",
+    "cta": "Hire top Shopify developers in Miami. Get your free quote today."
+  },
+  {
+    "city": "Raleigh",
+    "slug": "raleigh-nc",
+    "state": "NC",
+    "intro": "Looking for a trusted Shopify expert in Raleigh? We build fast, scalable Shopify stores tailored for Raleigh businesses.",
+    "cta": "Hire top Shopify developers in Raleigh. Get your free quote today."
+  },
+  {
+    "city": "Omaha",
+    "slug": "omaha-ne",
+    "state": "NE",
+    "intro": "Looking for a trusted Shopify expert in Omaha? We build fast, scalable Shopify stores tailored for Omaha businesses.",
+    "cta": "Hire top Shopify developers in Omaha. Get your free quote today."
+  },
+  {
+    "city": "Long Beach",
+    "slug": "long-beach-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Long Beach? We build fast, scalable Shopify stores tailored for Long Beach businesses.",
+    "cta": "Hire top Shopify developers in Long Beach. Get your free quote today."
+  },
+  {
+    "city": "Virginia Beach",
+    "slug": "virginia-beach-va",
+    "state": "VA",
+    "intro": "Looking for a trusted Shopify expert in Virginia Beach? We build fast, scalable Shopify stores tailored for Virginia Beach businesses.",
+    "cta": "Hire top Shopify developers in Virginia Beach. Get your free quote today."
+  },
+  {
+    "city": "Oakland",
+    "slug": "oakland-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Oakland? We build fast, scalable Shopify stores tailored for Oakland businesses.",
+    "cta": "Hire top Shopify developers in Oakland. Get your free quote today."
+  },
+  {
+    "city": "Minneapolis",
+    "slug": "minneapolis-mn",
+    "state": "MN",
+    "intro": "Looking for a trusted Shopify expert in Minneapolis? We build fast, scalable Shopify stores tailored for Minneapolis businesses.",
+    "cta": "Hire top Shopify developers in Minneapolis. Get your free quote today."
+  },
+  {
+    "city": "Tulsa",
+    "slug": "tulsa-ok",
+    "state": "OK",
+    "intro": "Looking for a trusted Shopify expert in Tulsa? We build fast, scalable Shopify stores tailored for Tulsa businesses.",
+    "cta": "Hire top Shopify developers in Tulsa. Get your free quote today."
+  },
+  {
+    "city": "Tampa",
+    "slug": "tampa-fl",
+    "state": "FL",
+    "intro": "Looking for a trusted Shopify expert in Tampa? We build fast, scalable Shopify stores tailored for Tampa businesses.",
+    "cta": "Hire top Shopify developers in Tampa. Get your free quote today."
+  },
+  {
+    "city": "Arlington",
+    "slug": "arlington-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Arlington? We build fast, scalable Shopify stores tailored for Arlington businesses.",
+    "cta": "Hire top Shopify developers in Arlington. Get your free quote today."
+  },
+  {
+    "city": "New Orleans",
+    "slug": "new-orleans-la",
+    "state": "LA",
+    "intro": "Looking for a trusted Shopify expert in New Orleans? We build fast, scalable Shopify stores tailored for New Orleans businesses.",
+    "cta": "Hire top Shopify developers in New Orleans. Get your free quote today."
+  },
+  {
+    "city": "Wichita",
+    "slug": "wichita-ks",
+    "state": "KS",
+    "intro": "Looking for a trusted Shopify expert in Wichita? We build fast, scalable Shopify stores tailored for Wichita businesses.",
+    "cta": "Hire top Shopify developers in Wichita. Get your free quote today."
+  },
+  {
+    "city": "Cleveland",
+    "slug": "cleveland-oh",
+    "state": "OH",
+    "intro": "Looking for a trusted Shopify expert in Cleveland? We build fast, scalable Shopify stores tailored for Cleveland businesses.",
+    "cta": "Hire top Shopify developers in Cleveland. Get your free quote today."
+  },
+  {
+    "city": "Bakersfield",
+    "slug": "bakersfield-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Bakersfield? We build fast, scalable Shopify stores tailored for Bakersfield businesses.",
+    "cta": "Hire top Shopify developers in Bakersfield. Get your free quote today."
+  },
+  {
+    "city": "Aurora",
+    "slug": "aurora-co",
+    "state": "CO",
+    "intro": "Looking for a trusted Shopify expert in Aurora? We build fast, scalable Shopify stores tailored for Aurora businesses.",
+    "cta": "Hire top Shopify developers in Aurora. Get your free quote today."
+  },
+  {
+    "city": "Anaheim",
+    "slug": "anaheim-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Anaheim? We build fast, scalable Shopify stores tailored for Anaheim businesses.",
+    "cta": "Hire top Shopify developers in Anaheim. Get your free quote today."
+  },
+  {
+    "city": "Honolulu",
+    "slug": "honolulu-hi",
+    "state": "HI",
+    "intro": "Looking for a trusted Shopify expert in Honolulu? We build fast, scalable Shopify stores tailored for Honolulu businesses.",
+    "cta": "Hire top Shopify developers in Honolulu. Get your free quote today."
+  },
+  {
+    "city": "Santa Ana",
+    "slug": "santa-ana-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Santa Ana? We build fast, scalable Shopify stores tailored for Santa Ana businesses.",
+    "cta": "Hire top Shopify developers in Santa Ana. Get your free quote today."
+  },
+  {
+    "city": "Riverside",
+    "slug": "riverside-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Riverside? We build fast, scalable Shopify stores tailored for Riverside businesses.",
+    "cta": "Hire top Shopify developers in Riverside. Get your free quote today."
+  },
+  {
+    "city": "Corpus Christi",
+    "slug": "corpus-christi-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Corpus Christi? We build fast, scalable Shopify stores tailored for Corpus Christi businesses.",
+    "cta": "Hire top Shopify developers in Corpus Christi. Get your free quote today."
+  },
+  {
+    "city": "Lexington",
+    "slug": "lexington-ky",
+    "state": "KY",
+    "intro": "Looking for a trusted Shopify expert in Lexington? We build fast, scalable Shopify stores tailored for Lexington businesses.",
+    "cta": "Hire top Shopify developers in Lexington. Get your free quote today."
+  },
+  {
+    "city": "Stockton",
+    "slug": "stockton-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Stockton? We build fast, scalable Shopify stores tailored for Stockton businesses.",
+    "cta": "Hire top Shopify developers in Stockton. Get your free quote today."
+  },
+  {
+    "city": "Henderson",
+    "slug": "henderson-nv",
+    "state": "NV",
+    "intro": "Looking for a trusted Shopify expert in Henderson? We build fast, scalable Shopify stores tailored for Henderson businesses.",
+    "cta": "Hire top Shopify developers in Henderson. Get your free quote today."
+  },
+  {
+    "city": "Saint Paul",
+    "slug": "saint-paul-mn",
+    "state": "MN",
+    "intro": "Looking for a trusted Shopify expert in Saint Paul? We build fast, scalable Shopify stores tailored for Saint Paul businesses.",
+    "cta": "Hire top Shopify developers in Saint Paul. Get your free quote today."
+  },
+  {
+    "city": "St. Louis",
+    "slug": "st.-louis-mo",
+    "state": "MO",
+    "intro": "Looking for a trusted Shopify expert in St. Louis? We build fast, scalable Shopify stores tailored for St. Louis businesses.",
+    "cta": "Hire top Shopify developers in St. Louis. Get your free quote today."
+  },
+  {
+    "city": "Cincinnati",
+    "slug": "cincinnati-oh",
+    "state": "OH",
+    "intro": "Looking for a trusted Shopify expert in Cincinnati? We build fast, scalable Shopify stores tailored for Cincinnati businesses.",
+    "cta": "Hire top Shopify developers in Cincinnati. Get your free quote today."
+  },
+  {
+    "city": "Pittsburgh",
+    "slug": "pittsburgh-pa",
+    "state": "PA",
+    "intro": "Looking for a trusted Shopify expert in Pittsburgh? We build fast, scalable Shopify stores tailored for Pittsburgh businesses.",
+    "cta": "Hire top Shopify developers in Pittsburgh. Get your free quote today."
+  },
+  {
+    "city": "Greensboro",
+    "slug": "greensboro-nc",
+    "state": "NC",
+    "intro": "Looking for a trusted Shopify expert in Greensboro? We build fast, scalable Shopify stores tailored for Greensboro businesses.",
+    "cta": "Hire top Shopify developers in Greensboro. Get your free quote today."
+  },
+  {
+    "city": "Anchorage",
+    "slug": "anchorage-ak",
+    "state": "AK",
+    "intro": "Looking for a trusted Shopify expert in Anchorage? We build fast, scalable Shopify stores tailored for Anchorage businesses.",
+    "cta": "Hire top Shopify developers in Anchorage. Get your free quote today."
+  },
+  {
+    "city": "Plano",
+    "slug": "plano-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Plano? We build fast, scalable Shopify stores tailored for Plano businesses.",
+    "cta": "Hire top Shopify developers in Plano. Get your free quote today."
+  },
+  {
+    "city": "Lincoln",
+    "slug": "lincoln-ne",
+    "state": "NE",
+    "intro": "Looking for a trusted Shopify expert in Lincoln? We build fast, scalable Shopify stores tailored for Lincoln businesses.",
+    "cta": "Hire top Shopify developers in Lincoln. Get your free quote today."
+  },
+  {
+    "city": "Orlando",
+    "slug": "orlando-fl",
+    "state": "FL",
+    "intro": "Looking for a trusted Shopify expert in Orlando? We build fast, scalable Shopify stores tailored for Orlando businesses.",
+    "cta": "Hire top Shopify developers in Orlando. Get your free quote today."
+  },
+  {
+    "city": "Irvine",
+    "slug": "irvine-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Irvine? We build fast, scalable Shopify stores tailored for Irvine businesses.",
+    "cta": "Hire top Shopify developers in Irvine. Get your free quote today."
+  },
+  {
+    "city": "Newark",
+    "slug": "newark-nj",
+    "state": "NJ",
+    "intro": "Looking for a trusted Shopify expert in Newark? We build fast, scalable Shopify stores tailored for Newark businesses.",
+    "cta": "Hire top Shopify developers in Newark. Get your free quote today."
+  },
+  {
+    "city": "Toledo",
+    "slug": "toledo-oh",
+    "state": "OH",
+    "intro": "Looking for a trusted Shopify expert in Toledo? We build fast, scalable Shopify stores tailored for Toledo businesses.",
+    "cta": "Hire top Shopify developers in Toledo. Get your free quote today."
+  },
+  {
+    "city": "Durham",
+    "slug": "durham-nc",
+    "state": "NC",
+    "intro": "Looking for a trusted Shopify expert in Durham? We build fast, scalable Shopify stores tailored for Durham businesses.",
+    "cta": "Hire top Shopify developers in Durham. Get your free quote today."
+  },
+  {
+    "city": "Chula Vista",
+    "slug": "chula-vista-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Chula Vista? We build fast, scalable Shopify stores tailored for Chula Vista businesses.",
+    "cta": "Hire top Shopify developers in Chula Vista. Get your free quote today."
+  },
+  {
+    "city": "Fort Wayne",
+    "slug": "fort-wayne-in",
+    "state": "IN",
+    "intro": "Looking for a trusted Shopify expert in Fort Wayne? We build fast, scalable Shopify stores tailored for Fort Wayne businesses.",
+    "cta": "Hire top Shopify developers in Fort Wayne. Get your free quote today."
+  },
+  {
+    "city": "Jersey City",
+    "slug": "jersey-city-nj",
+    "state": "NJ",
+    "intro": "Looking for a trusted Shopify expert in Jersey City? We build fast, scalable Shopify stores tailored for Jersey City businesses.",
+    "cta": "Hire top Shopify developers in Jersey City. Get your free quote today."
+  },
+  {
+    "city": "St. Petersburg",
+    "slug": "st.-petersburg-fl",
+    "state": "FL",
+    "intro": "Looking for a trusted Shopify expert in St. Petersburg? We build fast, scalable Shopify stores tailored for St. Petersburg businesses.",
+    "cta": "Hire top Shopify developers in St. Petersburg. Get your free quote today."
+  },
+  {
+    "city": "Laredo",
+    "slug": "laredo-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Laredo? We build fast, scalable Shopify stores tailored for Laredo businesses.",
+    "cta": "Hire top Shopify developers in Laredo. Get your free quote today."
+  },
+  {
+    "city": "Madison",
+    "slug": "madison-wi",
+    "state": "WI",
+    "intro": "Looking for a trusted Shopify expert in Madison? We build fast, scalable Shopify stores tailored for Madison businesses.",
+    "cta": "Hire top Shopify developers in Madison. Get your free quote today."
+  },
+  {
+    "city": "Chandler",
+    "slug": "chandler-az",
+    "state": "AZ",
+    "intro": "Looking for a trusted Shopify expert in Chandler? We build fast, scalable Shopify stores tailored for Chandler businesses.",
+    "cta": "Hire top Shopify developers in Chandler. Get your free quote today."
+  },
+  {
+    "city": "Buffalo",
+    "slug": "buffalo-ny",
+    "state": "NY",
+    "intro": "Looking for a trusted Shopify expert in Buffalo? We build fast, scalable Shopify stores tailored for Buffalo businesses.",
+    "cta": "Hire top Shopify developers in Buffalo. Get your free quote today."
+  },
+  {
+    "city": "Lubbock",
+    "slug": "lubbock-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Lubbock? We build fast, scalable Shopify stores tailored for Lubbock businesses.",
+    "cta": "Hire top Shopify developers in Lubbock. Get your free quote today."
+  },
+  {
+    "city": "Scottsdale",
+    "slug": "scottsdale-az",
+    "state": "AZ",
+    "intro": "Looking for a trusted Shopify expert in Scottsdale? We build fast, scalable Shopify stores tailored for Scottsdale businesses.",
+    "cta": "Hire top Shopify developers in Scottsdale. Get your free quote today."
+  },
+  {
+    "city": "Reno",
+    "slug": "reno-nv",
+    "state": "NV",
+    "intro": "Looking for a trusted Shopify expert in Reno? We build fast, scalable Shopify stores tailored for Reno businesses.",
+    "cta": "Hire top Shopify developers in Reno. Get your free quote today."
+  },
+  {
+    "city": "Glendale",
+    "slug": "glendale-az",
+    "state": "AZ",
+    "intro": "Looking for a trusted Shopify expert in Glendale? We build fast, scalable Shopify stores tailored for Glendale businesses.",
+    "cta": "Hire top Shopify developers in Glendale. Get your free quote today."
+  },
+  {
+    "city": "Gilbert",
+    "slug": "gilbert-az",
+    "state": "AZ",
+    "intro": "Looking for a trusted Shopify expert in Gilbert? We build fast, scalable Shopify stores tailored for Gilbert businesses.",
+    "cta": "Hire top Shopify developers in Gilbert. Get your free quote today."
+  },
+  {
+    "city": "Winston\u2013Salem",
+    "slug": "winston-salem-nc",
+    "state": "NC",
+    "intro": "Looking for a trusted Shopify expert in Winston\u2013Salem? We build fast, scalable Shopify stores tailored for Winston\u2013Salem businesses.",
+    "cta": "Hire top Shopify developers in Winston\u2013Salem. Get your free quote today."
+  },
+  {
+    "city": "North Las Vegas",
+    "slug": "north-las-vegas-nv",
+    "state": "NV",
+    "intro": "Looking for a trusted Shopify expert in North Las Vegas? We build fast, scalable Shopify stores tailored for North Las Vegas businesses.",
+    "cta": "Hire top Shopify developers in North Las Vegas. Get your free quote today."
+  },
+  {
+    "city": "Norfolk",
+    "slug": "norfolk-va",
+    "state": "VA",
+    "intro": "Looking for a trusted Shopify expert in Norfolk? We build fast, scalable Shopify stores tailored for Norfolk businesses.",
+    "cta": "Hire top Shopify developers in Norfolk. Get your free quote today."
+  },
+  {
+    "city": "Chesapeake",
+    "slug": "chesapeake-va",
+    "state": "VA",
+    "intro": "Looking for a trusted Shopify expert in Chesapeake? We build fast, scalable Shopify stores tailored for Chesapeake businesses.",
+    "cta": "Hire top Shopify developers in Chesapeake. Get your free quote today."
+  },
+  {
+    "city": "Garland",
+    "slug": "garland-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Garland? We build fast, scalable Shopify stores tailored for Garland businesses.",
+    "cta": "Hire top Shopify developers in Garland. Get your free quote today."
+  },
+  {
+    "city": "Irving",
+    "slug": "irving-tx",
+    "state": "TX",
+    "intro": "Looking for a trusted Shopify expert in Irving? We build fast, scalable Shopify stores tailored for Irving businesses.",
+    "cta": "Hire top Shopify developers in Irving. Get your free quote today."
+  },
+  {
+    "city": "Hialeah",
+    "slug": "hialeah-fl",
+    "state": "FL",
+    "intro": "Looking for a trusted Shopify expert in Hialeah? We build fast, scalable Shopify stores tailored for Hialeah businesses.",
+    "cta": "Hire top Shopify developers in Hialeah. Get your free quote today."
+  },
+  {
+    "city": "Fremont",
+    "slug": "fremont-ca",
+    "state": "CA",
+    "intro": "Looking for a trusted Shopify expert in Fremont? We build fast, scalable Shopify stores tailored for Fremont businesses.",
+    "cta": "Hire top Shopify developers in Fremont. Get your free quote today."
+  },
+  {
+    "city": "Boise",
+    "slug": "boise-id",
+    "state": "ID",
+    "intro": "Looking for a trusted Shopify expert in Boise? We build fast, scalable Shopify stores tailored for Boise businesses.",
+    "cta": "Hire top Shopify developers in Boise. Get your free quote today."
+  },
+  {
+    "city": "Richmond",
+    "slug": "richmond-va",
+    "state": "VA",
+    "intro": "Looking for a trusted Shopify expert in Richmond? We build fast, scalable Shopify stores tailored for Richmond businesses.",
+    "cta": "Hire top Shopify developers in Richmond. Get your free quote today."
+  },
+  {
+    "city": "Baton Rouge",
+    "slug": "baton-rouge-la",
+    "state": "LA",
+    "intro": "Looking for a trusted Shopify expert in Baton Rouge? We build fast, scalable Shopify stores tailored for Baton Rouge businesses.",
+    "cta": "Hire top Shopify developers in Baton Rouge. Get your free quote today."
+  },
+  {
+    "city": "Spokane",
+    "slug": "spokane-wa",
+    "state": "WA",
+    "intro": "Looking for a trusted Shopify expert in Spokane? We build fast, scalable Shopify stores tailored for Spokane businesses.",
+    "cta": "Hire top Shopify developers in Spokane. Get your free quote today."
+  },
+  {
+    "city": "Des Moines",
+    "slug": "des-moines-ia",
+    "state": "IA",
+    "intro": "Looking for a trusted Shopify expert in Des Moines? We build fast, scalable Shopify stores tailored for Des Moines businesses.",
+    "cta": "Hire top Shopify developers in Des Moines. Get your free quote today."
   }
-
-
 ]

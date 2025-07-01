@@ -29,12 +29,7 @@ const steps = [
 export default function ProjectQuiz() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<any>({});
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [result, setResult] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const totalSteps = steps.length + 1; // +1 for form step
 
   const handleSelect = (value: string) => {
     const currentStep = steps[step];
@@ -46,21 +41,7 @@ export default function ProjectQuiz() {
       setAnswers({ ...answers, [currentStep.field]: updated });
     } else {
       setAnswers({ ...answers, [currentStep.field]: value });
-      setTimeout(() => {
-        if (step < steps.length - 1) {
-          setStep(step + 1);
-        } else {
-          setStep(step + 1); // go to form step
-        }
-      }, 300);
-    }
-  };
-
-  const handleNextFromMulti = () => {
-    if (step < steps.length - 1) {
-      setStep(step + 1);
-    } else {
-      setStep(step + 1); // to name/email form
+      setTimeout(() => setStep(step + 1), 300);
     }
   };
 
@@ -68,79 +49,29 @@ export default function ProjectQuiz() {
     let price = 300;
     if (answers.storeSize === "Medium") price += 200;
     if (answers.storeSize === "Large") price += 400;
-    if (Array.isArray(answers.features)) {
+    if (Array.isArray(answers.features))
       price += answers.features.length * 150;
-    }
     if (answers.timeline === "In 1 week") price += 200;
 
     const min = price;
     const max = price + 300;
-    setResult(`Hi ${name}, your estimated project cost is $${min} – $${max}`);
-    setSubmitted(true);
+    setResult(`Your estimated project cost: $${min} – $${max}`);
   };
 
-  const restartQuiz = () => {
-    setStep(0);
-    setAnswers({});
-    setResult("");
-    setName("");
-    setEmail("");
-    setSubmitted(false);
+  const nextStep = () => {
+    if (step < steps.length - 1) {
+      setStep(step + 1);
+    } else {
+      calculateEstimate();
+    }
   };
-
-  const progressPercent = Math.round((step / (totalSteps - 1)) * 100);
 
   return (
     <div className="bg-white p-8 rounded-xl shadow-xl max-w-xl mx-auto mt-10 text-center">
-      {/* Progress Bar */}
-      <div className="w-full bg-gray-200 h-2 rounded-full mb-6 overflow-hidden">
-        <div
-          className="h-full bg-green-500 transition-all duration-300"
-          style={{ width: `${progressPercent}%` }}
-        />
-      </div>
-
-      {/* Quiz Complete */}
-      {submitted ? (
-        <div>
-          <div className="text-xl font-bold text-green-700 mb-4">{result}</div>
-          <button
-            onClick={restartQuiz}
-            className="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800"
-          >
-            Restart Quiz
-          </button>
-        </div>
-      ) : step === steps.length ? (
-        <>
-          {/* Name & Email Form */}
-          <h2 className="text-xl font-semibold mb-4">One last step: 👋</h2>
-          <p className="mb-2 text-gray-600">Enter your name and email to view your result:</p>
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full border rounded px-4 py-2 mb-3"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full border rounded px-4 py-2 mb-4"
-          />
-          <button
-            disabled={!name || !email}
-            onClick={calculateEstimate}
-            className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 disabled:opacity-50"
-          >
-            Get My Estimate
-          </button>
-        </>
+      {result ? (
+        <div className="text-2xl font-bold text-green-700">{result}</div>
       ) : (
         <>
-          {/* Step Question */}
           <h2 className="text-xl font-semibold mb-4">
             {steps[step].question}
           </h2>
@@ -153,7 +84,7 @@ export default function ProjectQuiz() {
                 <button
                   key={option}
                   onClick={() => handleSelect(option)}
-                  className={`px-6 py-2 rounded-full border font-medium transition ${
+                  className={`px-6 py-2 rounded-full border font-medium ${
                     isSelected
                       ? "bg-orange-500 text-white"
                       : "bg-gray-100 text-gray-800 hover:bg-gray-200"
@@ -164,11 +95,9 @@ export default function ProjectQuiz() {
               );
             })}
           </div>
-
-          {/* Show "Next" only for multi-select */}
           {steps[step].multi && (
             <button
-              onClick={handleNextFromMulti}
+              onClick={nextStep}
               className="mt-4 bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800"
             >
               Next
