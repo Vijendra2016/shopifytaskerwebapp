@@ -2,7 +2,6 @@
 
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import cities from '@/lib/cities.json';
 import CitiesCta from '@/app/components/CitiesCta';
 import TestimonialCard from '@/app/components/TestimonialCard';
