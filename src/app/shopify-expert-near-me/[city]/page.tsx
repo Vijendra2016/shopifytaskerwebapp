@@ -50,25 +50,17 @@ export default async function CityPage(props: Props) {
 
   return (
     <main>
-      <section className="relative h-[60vh] md:h-[80vh] overflow-hidden">
-        <Image
-          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/685a270f4b652a6b3c6ec851_hustong%20-ca-shopify-developer.jpg"
-          alt="Shopify Developer Image"
-          fill
-          sizes="100vw"
-          style={{ objectFit: 'cover' }}
-          priority
-        />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 text-white text-center px-4 flex flex-col justify-center h-full">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Shopify Website Design & Development in {cityData.city}
-          </h1>
-          <p className="text-lg md:text-xl">
-            Hire the best Shopify developer and designer in {cityData.city}.
-          </p>
-        </div>
-      </section>
+
+      <section className="px-6 md:px-30  h-[60vh] md:h-[80vh] py-16 bg-black text-white">
+    <div className="services flex flex-col items-center justify-center text-center text-black ">
+<h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">Hire Shopify Expert in {cityData.city}, {cityData.state}</h1>
+<h3 className="text-lg md:text-3xl text-white  font-medium tracking-tight"> Shopify Website Development | Shopify Tasks | Shopify Retainer | Shopify SEO</h3>
+
+
+</div>
+
+    </section>
+      
 
       <section className="max-w-4xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold mb-4">
