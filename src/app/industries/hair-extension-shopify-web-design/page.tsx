@@ -18,7 +18,7 @@ export default function pricing() {
         <Image
           src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68346a2ebbcad1aabc32d4c8_hair-extension-shopify-web-design.png" // put the file in /public/images
           alt="Hair extensions in different shades"
-          fill             // makes the image cover the parent <section>
+          fill             // makes the image new iamge cover the parent <section>
           sizes="100vw"     // tell Next how wide it can be
           style={{ objectFit: "cover" }}
           priority         // loads this image first
