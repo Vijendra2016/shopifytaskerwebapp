@@ -39,15 +39,15 @@ export default function pricing() {
         </div>
       </section>
       <section className="flex flex-col items-center gap-2 pr-2 pl-2 lg:pr-20 lg:pl-20  md:pr-20 md:pl-20 pt-20 pb-20 text-black">
-        <h2 className="text-3xl md:text-5xl font-regular"> Dedicated & experienced account manager and Shopify website designer for every Hair Extensions project.
+        <h2 className="text-3xl md:text-5xl font-regular"> Dedicated & experienced account manager and Shopify website designer for every Hair Extensions project .
 
 </h2>
       
           <p className="text-black text-lg">
 Enjoy a truly handson build experience: every Hair Extensions store we craft comes with a dedicated project manager who keeps timelines tight and communication clear, plus an expert Shopify designer who tailors the look, feel, and flow of your site to match your brand and boost conversions. 
         </p>
-        <h3  className="text-3xl md:text-5xl font-regular">Best Hair extensions store in Shopify</h3>
-        <p className="text-black text-lg">we gether list of top best hair extension website build in shopify</p>
+        <h3  className="text-3xl md:text-5xl font-regular">Best Hair extensions stores in Shopify</h3>
+        <p className="text-black text-lg">we gether list of top best hair extension website build in shopify, thats real store thats build on shopify</p>
        </section>
         
        <div className="container mx-auto px-4 py-1">
