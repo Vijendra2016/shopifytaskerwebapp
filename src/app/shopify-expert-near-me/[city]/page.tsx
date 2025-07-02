@@ -5,6 +5,9 @@ import type { Metadata } from 'next';
 import cities from '@/lib/cities.json';
 import CitiesCta from '@/app/components/CitiesCta';
 import TestimonialCard from '@/app/components/TestimonialCard';
+import TrustedSection from '@/app/components/TrustedSection';
+import FaqSchema from '@/app/components/FaqSchema';
+
 type Props = {
   params: Promise<{
     city: string;
@@ -46,10 +49,26 @@ export default async function CityPage(props: Props) {
   const cityData = cities.find((c) => c.slug === city);
 
   if (!cityData) return notFound();
+const faqs = [
+  {
+    question: `How do I hire a Shopify expert in ${cityData.city}?`,
+    answer:
+      'Submit your project details via our contact form. Our team will get back to you with a quote and timeline.',
+  },
+  {
+    question: `What services do ShopifyTasker experts offer in ${cityData.city}?`,
+    answer:
+      'We provide Shopify development, theme customization, speed optimization, SEO, and retainer-based support.',
+  },
+  {
+    question: 'What is the hourly rate?',
+    answer: 'Our rate is fixed at $20/hour, with no upfront payment required.',
+  },
+];
 
   return (
     <main>
-
+<FaqSchema faqs={faqs} />
       <section className="px-6 md:px-30  h-[60vh] md:h-[80vh] py-16 bg-black text-white">
     <div className="services flex flex-col items-center justify-center text-center text-black ">
 <h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">Hire Shopify Expert in {cityData.city}, {cityData.state}</h1>
@@ -90,6 +109,7 @@ Get Submit Project we will be back to you with proper cost .
       
       </section>
       
+      <TrustedSection />
       <TestimonialCard />
 <CitiesCta/>
     </main>
