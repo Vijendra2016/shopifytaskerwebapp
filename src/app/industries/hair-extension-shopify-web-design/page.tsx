@@ -47,7 +47,7 @@ export default function pricing() {
 Enjoy a truly handson build experience: every Hair Extensions store we craft comes with a dedicated project manager who keeps timelines tight and communication clear, plus an expert Shopify designer who tailors the look, feel, and flow of your site to match your brand and boost conversions. 
         </p>
         <h3  className="text-3xl md:text-5xl font-regular">Best Hair extensions stores in Shopify</h3>
-        <p className="text-black text-lg">we gether list of top best hair extension website new  build in shopify, thats we buid real store thats build on shopify</p>
+        <p className="text-black text-lg">we gether list  vidi of top best hair extension website new  build in shopify, thats we buid real store thats build on shopify</p>
        </section>
         
        <div className="container mx-auto px-4 py-1">
