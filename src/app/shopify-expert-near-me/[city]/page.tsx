@@ -33,8 +33,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 
   return {
-    title: `Hire Shopify Expert in ${cityData.city} | ShopifyTasker  `,
-    description:  `Shopify expert in ${cityData.city} prices start from $10/hr,pay after work done`  ,
+    title: `Hire  Top Rated Shopify Expert in ${cityData.city} | ShopifyTasker  `,
+    description: `Hire Top Rated Shopify expert in ${cityData.city} prices start from $10/hr,pay after work done`  ,
   };
 }
 
@@ -63,7 +63,7 @@ export default async function CityPage(props: Props) {
 
       <section className="max-w-4xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold mb-4">
-          Shopify Developer in {cityData.city}
+         Why hire  Shopify expert in {cityData.city} from shopifyTasker ?
         </h2>
         <p className="mb-4 text-gray-700 leading-relaxed">{cityData.intro}</p>
         <p className="font-semibold text-blue-600">{cityData.cta}</p>
