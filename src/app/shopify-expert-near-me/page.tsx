@@ -12,7 +12,7 @@ export default function HomePage() {
     <main>
       <section className="text-center">
         <h1 className="w-full text-center text-3xl md:text-8xl font-regular py-18 px-10 bg-black text-white">
-          Shopify Web Designer Experts Nearby
+          Shopify Website Experts Nearby
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 p-10">
           {cities.map((city, index) => (
