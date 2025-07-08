@@ -1,5 +1,11 @@
 import Link from "next/link";
 import cities from "@/lib/cities.json";
+import { Metadata } from "next"
+export const metadata: Metadata = {
+  title: "Top Shopify Web Designers Near You | Local Shopify Experts",
+  description:
+  "Discover top-rated Shopify web designers across the United States. Browse by city to find trusted experts who deliver fast, custom, and conversion-focused eCommerce solutions."
+};
 
 export default function HomePage() {
   return (

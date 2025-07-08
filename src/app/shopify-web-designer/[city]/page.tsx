@@ -35,8 +35,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 
   return {
-    title: `Hire  Top Rated Shopify Expert in ${cityData.city} | ShopifyTasker  `,
-    description: `Hire Top Rated Shopify expert in ${cityData.city} prices start from $10/hr,pay after work done`,
+    title: `Hire  Top Rated Shopify Web Designer in ${cityData.city} | ShopifyTasker  `,
+    description: `Hire Top Rated Shopify Web Designer in ${cityData.city} prices start from $10/hr,pay after work done`,
   };
 }
 
