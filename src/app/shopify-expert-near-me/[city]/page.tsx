@@ -103,7 +103,7 @@ Get Submit Project we will be back to you with proper cost .
 
         </h3>
     
-        <p className="font-semibold text-blue-600"> ttest we have 10 years experience on shopify ecosystem , we work on real prices not much price like $150/hr our hourly prices is fixed $20 and we dont take any upfront payment .</p>
+        <p className="font-semibold text-blue-600"> we have 10 years experience on shopify ecosystem , we work on real prices not much price like $150/hr our hourly prices is fixed $20 and we dont take any upfront payment .</p>
       
       
       </section>

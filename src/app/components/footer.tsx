@@ -54,6 +54,7 @@ export default function Footer() {
           <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
           <Link href="#">Shopify Hyrogen Store Setup</Link>
           <Link href="#">Shopify Headless Store Managment</Link>
+           <Link href="/shopify-web-designer">Shopify Web Designer</Link>
           
         </div>
         <div className="flex flex-col space-y-2">
