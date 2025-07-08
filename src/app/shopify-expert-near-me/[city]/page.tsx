@@ -81,7 +81,7 @@ const faqs = [
       
 
       <section className="max-w-4xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-3xl text-black font-bold mb-4">
          Why hire  Shopify expert in {cityData.city} from shopifyTasker ?
         </h2>
         <p className="mb-4 text-gray-700 leading-relaxed">{cityData.intro}</p>
