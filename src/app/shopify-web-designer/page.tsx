@@ -19,7 +19,7 @@ export default function HomePage() {
             <div key={index} className="p-4">
 <Link
   href={`/shopify-web-designer/${city.slug}`}
-  className="block text-xl font-semibold transition hover:text-[#00bda5]"
+ className="block text-xl font-semibold text-black transition hover:text-[#00bda5]"
 >
   {city.city}, {city.state}
 </Link>

@@ -88,7 +88,7 @@ const faqs = [
       </section>
 
 <section className="max-w-4xl mx-auto px-4 py-10">
-        <h3 className="text-3xl font-bold mb-4">
+        <h3 className="text-3xl text-black font-bold mb-4">
           How do i hire a shopify expert near  {cityData.city} on ShopifyTasker
 
         </h3>
@@ -98,7 +98,7 @@ Write your project scope
 Get Submit Project we will be back to you with proper cost .
 </p>
 
-<h3 className="text-3xl font-bold mb-4">
+<h3 className="text-3xl text-black font-bold mb-4">
           Why Hire a shopify expert near  {cityData.city} on ShopifyTasker
 
         </h3>
