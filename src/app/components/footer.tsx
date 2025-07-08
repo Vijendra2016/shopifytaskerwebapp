@@ -55,6 +55,7 @@ export default function Footer() {
           <Link href="#">Shopify Hyrogen Store Setup</Link>
           <Link href="#">Shopify Headless Store Managment</Link>
            <Link href="/shopify-web-designer">Shopify Web Designer</Link>
+            <Link href="/shopify-expert-near-me">Shopify Expert Near Me</Link>
           
         </div>
         <div className="flex flex-col space-y-2">
