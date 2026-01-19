@@ -90,6 +90,7 @@ export default function Footer() {
           <Link href="#">Gym & Fitness</Link>
           <Link href="#">Fashion</Link>
           <Link href="#">Health & Wellness</Link>
+          <Link href="#">Custom and fine jewelery </Link>
 
           
         </div>
