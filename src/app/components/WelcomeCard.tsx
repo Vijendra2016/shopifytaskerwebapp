@@ -17,9 +17,9 @@ export default function WelcomeCard() {
     <>
       <div
         onClick={handleCardClick}
-        className="fixed bottom-1 righ-2 bg-black border  border-cyan-400 shadow-lg p-4 rounded-xl z-40 max-w-sm cursor-pointer"
+        className="fixed bottom-1 righ-2 bg-black border  border-[#DFF976] shadow-lg p-4 rounded-xl z-40 max-w-sm cursor-pointer"
       >
-        <p className="text-cyan-400 text-lg mb-2">
+        <p className="text-[#DFF976] text-lg mb-2">
         Kickstart your first project with confidence
         </p>
         <LocationMessage/>
