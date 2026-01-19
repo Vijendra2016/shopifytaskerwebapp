@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function CharleStyleSection() {
   return (
-    <section className="bg-black text-white py-12 overflow-hidden">
+    <section className="bg-black text-white pt-50 pb-50  overflow-hidden">
       <div className=" mx-auto px-3 lg:px-12 grid lg:grid-cols-2 gap-8 items-center">
 
         {/* IMAGE STACK */}
@@ -33,7 +33,7 @@ export default function CharleStyleSection() {
 
         {/* TEXT CONTENT */}
         <div>
-          <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">
+          <p className="text-sm  font-light  tracking-widest text-[#ffffff99] mb-4">
             Common Shopify Problems We Solve
           </p>
 
