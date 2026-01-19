@@ -7,6 +7,7 @@ import CitiesCta from "@/app/components/CitiesCta";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import FAQSection, { FAQ } from "@/app/components/FAQSectionind";
 import Link from "next/link";
+import DesignServiceSection from "../DesignServiceSection";
 type Props = {
   params: Promise<{
     city: string;
@@ -82,6 +83,7 @@ export default async function CityPage(props: Props) {
   ];
   return (
     <main>
+       
       <section className="px-6 md:px-30  h-[60vh] md:h-[80vh] py-16 bg-black text-white">
         <div className="services flex flex-col items-center justify-center text-center text-black ">
           <h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">
@@ -95,9 +97,11 @@ export default async function CityPage(props: Props) {
         </div>
       </section>
 
+     <DesignServiceSection/>
+
       <section className="bg-[#fefaf6] py-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-black-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-thin text-black-900 leading-tight">
             Explore our {cityData.city} <br />
             Shopify Expert services
           </h2>
@@ -379,6 +383,7 @@ export default async function CityPage(props: Props) {
           we dont take any upfront payment .
         </p>
       </section>
+       <DesignServiceSection/>
 
       <TestimonialCard />
       <CitiesCta />
