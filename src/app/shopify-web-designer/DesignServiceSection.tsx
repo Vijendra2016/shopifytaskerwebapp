@@ -33,7 +33,7 @@ export default function CharleStyleSection() {
 
         {/* TEXT CONTENT */}
         <div>
-          <p className="text-sm  font-light  tracking-widest text-[#ffffff99] mb-4">
+          <p className="text-sm  font-light  tracking-widest text-[#DFF976] mb-4">
             Common Shopify Problems We Solve
           </p>
 
