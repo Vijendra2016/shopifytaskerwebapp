@@ -1,6 +1,6 @@
 // components/CharleStyleSection.tsx
 import Image from "next/image";
-
+import Link from "next/link";
 export default function CharleStyleSection() {
   return (
     <section className="bg-black text-white py-12 overflow-hidden">
@@ -55,12 +55,12 @@ export default function CharleStyleSection() {
             store performing.
           </p>
 
-          <a
-            href="/services/shopify-support"
-            className="inline-flex items-center gap-3 bg-white text-black px-7 py-3 rounded-full font-medium hover:bg-gray-200 transition"
-          >
-            Explore Support Services →
-          </a>
+          <Link
+  href="/services/shopify-support"
+  className="inline-flex items-center gap-3 bg-white text-black px-7 py-3 rounded-full font-medium hover:bg-gray-200 transition"
+>
+  Explore Support Services →
+</Link>
         </div>
       </div>
     </section>
