@@ -10,6 +10,7 @@ import Link from "next/link";
 import DesignServiceSection from "../DesignServiceSection";
 import MigrationSection from "../MigrationSection";
 import CityPageSchema from "../CityPageSchema";
+import FaqSection from "../FaqSection";
 type Props = {
   params: Promise<{
     city: string;
@@ -108,6 +109,7 @@ export default async function CityPage(props: Props) {
       <MigrationSection />
 
      <DesignServiceSection/>
+     < FaqSection/>
 
       <section className="bg-[#fefaf6] py-16">
         <div className="text-center mb-12">
