@@ -49,18 +49,18 @@ export default function CityFaqSection({ city, state }: Props) {
 
   return (
     <section className="bg-white pt-24 pb-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[0.9fr_2.4fr] gap-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[0.6fr_2.4fr] gap-20">
 
         {/* Left Side */}
         <div>
-          <p className="text-sm tracking-[0.3em] text-gray-500 mb-10 uppercase">
+          <p className="text-sm tracking-[0.3em] text-black mb-10 uppercase">
             FAQs
           </p>
 
-          <h2 className="text-[72px] leading-[1.02] font-light text-black">
-            Shopify <br />
-            web <br />
-            designer <br />
+          <h2 className="text-4xl leading-[1.02] font-light text-black">
+            Hire Shopify
+            Web
+            Designer <br />
             in {city}
           </h2>
         </div>
@@ -68,24 +68,24 @@ export default function CityFaqSection({ city, state }: Props) {
         {/* Right Side */}
         <div>
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-300 py-10">
+            <div key={index} className=" py-2">
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
                 className="w-full flex items-center justify-between text-left"
               >
-                <span className="text-[28px] leading-[1.3] text-black pr-8">
+                <span className="text-[28px] font-thin leading-[1.3] text-black pr-2">
                   {faq.question}
                 </span>
 
-                <span className="text-[34px] font-light text-black">
+                <span className="text-[30px] font-bold text-black">
                   {openIndex === index ? "–" : "+"}
                 </span>
               </button>
 
               {openIndex === index && (
-                <p className="mt-6 text-[18px] text-gray-600 max-w-2xl">
+                <p className="mt-1 text-sm font-thin text-black max-w-2xl">
                   {faq.answer}
                 </p>
               )}
