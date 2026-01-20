@@ -95,7 +95,7 @@ export default async function CityPage(props: Props) {
     faqs={wigFaqs}
   />
        
-      <section className="px-6 md:px-30  h-[60vh] md:h-[80vh] py-16 bg-black text-white">
+      <section className="px-6 md:px-30  h-[60vh] md:h-[80vh] py-30 bg-black text-white">
         <div className="services flex flex-col items-center justify-center text-center text-black ">
           <h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">
             Hire Shopify web designer in {cityData.city}, {cityData.state}

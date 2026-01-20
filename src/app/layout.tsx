@@ -7,7 +7,6 @@ import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
-import Topbar from "./components/Annocmentbar";
 import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
 import dynamic from 'next/dynamic'
@@ -56,7 +55,7 @@ export default function RootLayout({
          {/* ✅ Organization Schema – MUST be inside body */}
         <SchemaOrganization />
 
-         <Topbar/>
+         
       
         <Navbar />
 
