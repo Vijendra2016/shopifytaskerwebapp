@@ -57,7 +57,7 @@ export default function CityFaqSection({ city, state }: Props) {
             FAQs
           </p>
 
-          <h2 className="text-4xl leading-[1.02] font-light text-black">
+          <h2 className="text-4xl leading-tight font-light text-black">
             Hire Shopify
             Web
             Designer <br />
