@@ -59,8 +59,8 @@ export default function CityPageSchema({
       {
         "@type": "Service",
         "@id": `${pageUrl}#service`,
-        name: `Shopify Web Design Services in ${city}, ${state}`,
-        description: `Professional Shopify website design, customization, and development services in ${city}, ${state}.`,
+        name: `Hire Shopify Web Designer in ${city}, ${state}`,
+        description: `Hire a Shopify web designer in ${city}, ${state}. Custom Shopify store design, theme setup, speed optimization, and ongoing Shopify support.`,
         provider: {
           "@id": `${siteUrl}/#organization`,
         },
@@ -72,7 +72,7 @@ export default function CityPageSchema({
             name: state,
           },
         },
-        serviceType: "Shopify Web Design",
+        serviceType: " Hire Shopify Web Designer in ${city}, ${state}",
         url: pageUrl,
       },
 
