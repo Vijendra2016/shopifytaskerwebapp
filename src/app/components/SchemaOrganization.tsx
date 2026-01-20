@@ -7,7 +7,7 @@ export default function SchemaOrganization() {
     "@id": "https://www.shopifytasker.com/#organization",
     name: "ShopifyTasker",
     url: "https://www.shopifytasker.com",
-    logo: "https://www.shopifytasker.com/logo.png",
+    logo: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ee05feb6ce7c89fe4deabf_blackgackground.png",
     sameAs: [
       "https://www.linkedin.com/company/shopifytasker/",
       "https://github.com/ShopifyTasker"
