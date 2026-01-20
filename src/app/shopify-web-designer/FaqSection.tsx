@@ -14,45 +14,46 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20">
+    <section className="bg-white pt-28 pb-20">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-[0.9fr_2.4fr] gap-20">
 
         {/* Left Side */}
-        <div>
-          <p className="text-sm tracking-widest text-gray-500 mb-8">
+        <div className="pt-2">
+          <p className="text-5xl  font-thin  text-black mb-10 uppercase">
             FAQs
           </p>
 
-          <h2 className="text-[72px] leading-[1.05] font-light text-black">
-            Shopify <br />
-            SEO <br />
-            Agency
+          <h2 className="text-[40px] leading-[1.02] font-thin text-black">
+            Why Hire Shopify web designer in Chesapeake, VA
           </h2>
         </div>
 
         {/* Right Side */}
-        <div className="space-y-10">
+        <div>
           {faqs.map((question, index) => (
-            <div key={index} className="border-b border-gray-200 pb-8">
+            <div
+              key={index}
+              className="border-b border-gray-300 py-10"
+            >
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
                 className="w-full flex items-center justify-between text-left"
               >
-                <span className="text-[26px] font-normal text-black">
+                <span className="text-[28px] font-normal text-black pr-8">
                   {question}
                 </span>
 
-                <span className="text-[32px] font-light text-black">
+                <span className="text-[34px] font-light text-black">
                   {openIndex === index ? "–" : "+"}
                 </span>
               </button>
 
-              {/* Hidden answer area (kept for future if needed) */}
+              {/* Optional Answer */}
               {openIndex === index && (
-                <p className="mt-6 text-lg text-gray-600 max-w-xl">
-                  This answer area is ready if you want accordion content later.
+                <p className="mt-6 text-[18px] text-gray-600 max-w-2xl">
+                  Answer text goes here if you want accordion content.
                 </p>
               )}
             </div>
