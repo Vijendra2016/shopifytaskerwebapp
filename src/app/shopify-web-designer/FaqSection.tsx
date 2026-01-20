@@ -3,66 +3,56 @@
 import { useState } from "react";
 
 const faqs = [
-  {
-    question: "What does a Shopify SEO agency do?",
-    answer:
-      "A Shopify SEO agency optimizes your Shopify store to rank higher on search engines. This includes technical SEO, on-page optimization, content strategy, and link building to increase organic traffic and sales.",
-  },
-  {
-    question: "How is Shopify SEO different from SEO on other platforms?",
-    answer:
-      "Shopify SEO focuses on Shopify’s platform-specific structure, Liquid templates, collections, product pages, and app integrations. It requires specialized optimization techniques unique to Shopify.",
-  },
-  {
-    question: "How long does Shopify SEO take to see results?",
-    answer:
-      "Typically, noticeable results appear within 3–6 months, depending on competition, website condition, and content strategy.",
-  },
-  {
-    question: "What is included in your Shopify SEO services?",
-    answer:
-      "Our services include technical SEO audits, keyword research, on-page optimization, content creation, speed optimization, schema setup, and monthly performance tracking.",
-  },
+  "What does a Shopify SEO agency do?",
+  "How is Shopify SEO different from SEO on other platforms?",
+  "How long does Shopify SEO take to see results?",
+  "What is included in your Shopify SEO services?",
+  "Do you work with Shopify Plus brands?",
 ];
 
 export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+    <section className="bg-white py-24">
+      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20">
 
-        {/* Left Title */}
+        {/* Left Side */}
         <div>
-          <p className="text-sm uppercase tracking-wider text-gray-500 mb-6">
+          <p className="text-sm tracking-widest text-gray-500 mb-8">
             FAQs
           </p>
-          <h2 className="text-5xl font-light leading-tight">
-            Shopify <br /> SEO <br /> Agency
+
+          <h2 className="text-[72px] leading-[1.05] font-light text-black">
+            Shopify <br />
+            SEO <br />
+            Agency
           </h2>
         </div>
 
-        {/* Right Accordion */}
-        <div className="space-y-6">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-200 pb-6">
+        {/* Right Side */}
+        <div className="space-y-10">
+          {faqs.map((question, index) => (
+            <div key={index} className="border-b border-gray-200 pb-8">
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="flex justify-between items-center w-full text-left"
+                className="w-full flex items-center justify-between text-left"
               >
-                <span className="text-xl font-medium">
-                  {faq.question}
+                <span className="text-[26px] font-normal text-black">
+                  {question}
                 </span>
-                <span className="text-3xl font-light">
+
+                <span className="text-[32px] font-light text-black">
                   {openIndex === index ? "–" : "+"}
                 </span>
               </button>
 
+              {/* Hidden answer area (kept for future if needed) */}
               {openIndex === index && (
-                <p className="mt-4 text-gray-600 text-lg leading-relaxed">
-                  {faq.answer}
+                <p className="mt-6 text-lg text-gray-600 max-w-xl">
+                  This answer area is ready if you want accordion content later.
                 </p>
               )}
             </div>
