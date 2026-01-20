@@ -8,6 +8,7 @@ import TestimonialCard from "@/app/components/TestimonialCard";
 import FAQSection, { FAQ } from "@/app/components/FAQSectionind";
 import Link from "next/link";
 import DesignServiceSection from "../DesignServiceSection";
+import MigrationSection from "../MigrationSection";
 type Props = {
   params: Promise<{
     city: string;
@@ -96,6 +97,7 @@ export default async function CityPage(props: Props) {
           </h3>
         </div>
       </section>
+      <MigrationSection />
 
      <DesignServiceSection/>
 
