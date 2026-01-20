@@ -11,6 +11,7 @@ import Topbar from "./components/Annocmentbar";
 import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
 import dynamic from 'next/dynamic'
+import SchemaOrganization from "./components/SchemaOrganization";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
 
       <Head>
         <meta name="theme-color" content="#000000" />
+        <SchemaOrganization />
 
       </Head>
       
