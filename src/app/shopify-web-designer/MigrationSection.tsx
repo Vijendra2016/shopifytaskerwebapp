@@ -7,10 +7,9 @@ export default function MigrationSection() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* Left Heading */}
-        <h1 className="text-4xl md:text-5xl font-thin text-black leading-tight">
-          We are a Shopify migration agency, re-platforming stores to Shopify & Shopify Plus.
-        
-        </h1>
+        <h2 className="text-4xl md:text-5xl font-thin text-black leading-tight">
+ShopifyTasker provide best shopify developer         
+        </h2>
 
         {/* Right Content */}
         <div className="space-y-8 text-lg text-gray-900">
