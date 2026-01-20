@@ -23,8 +23,11 @@ export default function CityPageSchema({
         name: `Hire Shopify Web Designer in ${city}, ${state}`,
         description: `Top Rated Shopify Web Designer in ${city}, ${state}. Prices start from $10/hr. Pay after work done.`,
         isPartOf: {
-          "@id": `${siteUrl}/#organization`,
-        },
+  "@type": "WebSite",
+  "@id": "https://www.shopifytasker.com/#website",
+  "url": "https://www.shopifytasker.com",
+  "name": "ShopifyTasker"
+},
       },
 
       // Breadcrumb
