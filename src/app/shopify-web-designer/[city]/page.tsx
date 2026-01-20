@@ -11,6 +11,7 @@ import DesignServiceSection from "../DesignServiceSection";
 import MigrationSection from "../MigrationSection";
 import CityPageSchema from "../CityPageSchema";
 import FaqSection from "../FaqSection";
+import CityFaqSection from "../CityFaqSection";
 type Props = {
   params: Promise<{
     city: string;
@@ -110,6 +111,11 @@ export default async function CityPage(props: Props) {
 
      <DesignServiceSection/>
      < FaqSection/>
+
+     <CityFaqSection 
+  city={cityData.city} 
+  state={cityData.state} 
+/>
 
       <section className="bg-[#fefaf6] py-16">
         <div className="text-center mb-12">
