@@ -6,3 +6,6 @@ https://www.charle.co.uk/services/support-and-maintenance/
 
 Function Inspiration -
 https://www.storetasker.com/
+
+
+Need to create up to 100 pages for industries oriented page need to create.
