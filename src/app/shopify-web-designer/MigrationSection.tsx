@@ -16,7 +16,7 @@ export default function MigrationSection() {
         <div className="space-y-8 text-lg text-gray-900">
 
           <p>
-            Charle is a trusted and experienced Shopify migration agency. We support our merchants to
+            Hire Shopify Web designer and developers  form shopifyTaskeryouis a trusted and experienced Shopify migration agency. We support our merchants to
             migrate or re-platform from{" "}
             <span className="underline underline-offset-4">Magento</span>,{" "}
             <span className="underline underline-offset-4">WooCommerce</span>,{" "}
@@ -38,7 +38,7 @@ export default function MigrationSection() {
             href="/contact"
             className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition"
           >
-            Get In Touch
+           Get the Your free Quotation
             <span className="text-xl">→</span>
           </Link>
 
