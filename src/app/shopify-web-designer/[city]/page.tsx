@@ -9,6 +9,7 @@ import FAQSection, { FAQ } from "@/app/components/FAQSectionind";
 import Link from "next/link";
 import DesignServiceSection from "../DesignServiceSection";
 import MigrationSection from "../MigrationSection";
+import CityPageSchema from "../CityPageSchema";
 type Props = {
   params: Promise<{
     city: string;
@@ -84,6 +85,13 @@ export default async function CityPage(props: Props) {
   ];
   return (
     <main>
+
+      <CityPageSchema
+    city={cityData.city}
+    state={cityData.state}
+    slug={cityData.slug}
+    faqs={wigFaqs}
+  />
        
       <section className="px-6 md:px-30  h-[60vh] md:h-[80vh] py-16 bg-black text-white">
         <div className="services flex flex-col items-center justify-center text-center text-black ">
