@@ -15,31 +15,35 @@ type Props = {
 export default function CityFaqSection({ city, state }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  // ✅ Auto-generated city-specific FAQs
+  // ✅ Human-written, city + state optimized FAQs
   const faqs: CityFaq[] = [
     {
       question: `Why hire a Shopify web designer in ${city}, ${state}?`,
-      answer: `Hiring a local Shopify web designer in ${city} ensures your store is tailored to your market, customers, and business goals.`,
+      answer: `Because your store should feel like it truly belongs in ${city}. We design Shopify websites that reflect your brand, connect with local customers, and build trust from the first click — not just cookie-cutter templates.`,
     },
     {
-      question: `What services does a Shopify web designer in ${city} offer?`,
-      answer: `We provide custom Shopify design, theme customization, SEO optimization, app integrations, and ongoing support for ${city} businesses.`,
+      question: `Can you create a custom Shopify design for my brand?`,
+      answer: `Absolutely. Whether you're launching a new brand or upgrading an existing store in ${city}, ${state}, we craft custom Shopify designs that match your identity, style, and business goals.`,
     },
     {
-      question: `How much does a Shopify website design cost in ${city}?`,
-      answer: `Pricing depends on your project scope. We offer fair, transparent pricing for ${city} businesses with no upfront payment.`,
+      question: `Will my Shopify store be mobile-friendly?`,
+      answer: `Yes. Every Shopify store we design is fully responsive. Your customers in ${city} and across ${state} will enjoy a smooth shopping experience on mobile, tablet, and desktop.`,
     },
     {
-      question: `How long does it take to build a Shopify store in ${city}?`,
-      answer: `Most Shopify projects in ${city} take between 2–6 weeks depending on complexity and feedback cycles.`,
+      question: `Do you redesign existing Shopify stores?`,
+      answer: `Definitely. If your current Shopify store looks outdated or isn’t converting well, we’ll redesign it with modern UI, improved UX, and faster performance — giving your ${city} business a fresh start.`,
     },
     {
-      question: `Do you provide ongoing Shopify support in ${city}?`,
-      answer: `Yes — we offer monthly Shopify maintenance, updates, SEO, and growth support for stores in ${city}.`,
+      question: `Will my Shopify website be optimized for sales?`,
+      answer: `Yes. We design Shopify stores that don’t just look good — they guide visitors toward checkout, improve product discovery, and increase conversions for businesses in ${city}, ${state}.`,
     },
     {
-      question: `Will I own my Shopify store after development?`,
-      answer: `Absolutely. You keep full ownership of your Shopify store, design, and content.`,
+      question: `How long does a Shopify web design project take in ${city}?`,
+      answer: `Most Shopify web design projects take about 2–5 weeks. We follow a clear, collaborative process so your ${city} store launches smoothly and on time.`,
+    },
+    {
+      question: `Do you offer ongoing Shopify support after launch?`,
+      answer: `Yes. We provide continuous Shopify support, updates, and growth assistance for stores in ${city}, ${state}, so your website keeps improving long after launch.`,
     },
   ];
 
@@ -71,7 +75,7 @@ export default function CityFaqSection({ city, state }: Props) {
                 }
                 className="w-full flex items-center justify-between text-left"
               >
-                <span className="text-[28px] text-black pr-8">
+                <span className="text-[28px] leading-[1.3] text-black pr-8">
                   {faq.question}
                 </span>
 
