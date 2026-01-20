@@ -72,7 +72,7 @@ export default function CityPageSchema({
             name: state,
           },
         },
-        serviceType: " Hire Shopify Web Designer in ${city}, ${state}",
+        serviceType: "Hire Shopify Web Designer",
         url: pageUrl,
       },
 
