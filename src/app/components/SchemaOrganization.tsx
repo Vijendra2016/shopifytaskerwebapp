@@ -9,7 +9,7 @@ export default function SchemaOrganization() {
     url: "https://www.shopifytasker.com",
     logo: "https://www.shopifytasker.com/logo.png",
     sameAs: [
-      "https://www.linkedin.com/company/shopifytasker",
+      "https://www.linkedin.com/company/shopifytasker/",
       "https://github.com/ShopifyTasker"
     ],
     contactPoint: {

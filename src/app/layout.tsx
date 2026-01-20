@@ -45,13 +45,16 @@ export default function RootLayout({
 
       <Head>
         <meta name="theme-color" content="#000000" />
-        <SchemaOrganization />
+        
 
       </Head>
       
       <body
         className={`${geistSans.variable}  antialiased`}
       >
+
+         {/* ✅ Organization Schema – MUST be inside body */}
+        <SchemaOrganization />
 
          <Topbar/>
       
