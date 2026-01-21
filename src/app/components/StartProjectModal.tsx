@@ -144,7 +144,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
              <button
   type="button"
   onClick={() => setStep(2)}
-  className="px-8 py-2 text-lg cursor-pointer bg-green-300 text-black rounded-md hover:bg-green-700 transition-colors flex items-center"
+  className="px-8 py-2 text-lg cursor-pointer bg-[#DFF976] text-black rounded-md hover:bg-green-700 transition-colors flex items-center"
 >
   Continue →
 </button>
