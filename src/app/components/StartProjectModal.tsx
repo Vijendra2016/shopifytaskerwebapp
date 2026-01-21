@@ -87,14 +87,14 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {step === 1 && (
             <>
               <h2 className="text-4xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
-              <p className="mb-2  text-lg font-thin text-black">
-Tell us what you need — our in-house Shopify experts <br></br> will send you a free solution & quote within 1 hour.              </p>
+              <p className="mb-2  text-[15px] font-base text-gray-700">
+Tell us what you need — our in-house Shopify experts  will send you a free solution & quote within 1 hour.No upfront payment — billing begins only after successful delivery. </p>
 
               <div className="mb-1">
                 <label htmlFor="url" className="block text-lg text-black text-left font-semibold">
                   Shopify Store URL (Optional)
                 </label>
-                <span className="text-black text-sm font-thin">Don’t have a store yet? No problem — continue</span>
+                <span className="text-gray-700 text-sm font-base">Don’t have a store yet? No problem — continue</span>
                 <input
                   id="url"
                   name="url"
@@ -141,14 +141,13 @@ Tell us what you need — our in-house Shopify experts <br></br> will send you a
               </div>
              
 
-              <button
-                type="button"
-                onClick={() => setStep(2)}
-                className="px-8 py-2  text-lg cursor-pointer float-right bg-green-300 text-black rounded-md hover:bg-green-700 transition-colors flex items-center"
-              >
-                <span>Continue →</span>
-                
-              </button>
+             <button
+  type="button"
+  onClick={() => setStep(2)}
+  className="px-8 py-2 text-lg cursor-pointer bg-green-300 text-black rounded-md hover:bg-green-700 transition-colors flex items-center"
+>
+  Continue →
+</button>
 
              <br>
              </br>
@@ -176,6 +175,8 @@ Tell us what you need — our in-house Shopify experts <br></br> will send you a
       </div>
 
     </div>
+
+    
 
 
             </>
