@@ -79,15 +79,16 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 1 */}
           {step === 1 && (
             <>
-              <h2 className="text-6xl text-black font-bold mb-2 text-left">Lets Start</h2>
+              <h2 className="text-6xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
               <p className="mb-4 text-gray-600">
               It only takes a few clicks to get going. After that, our in-house e-commerce experts will guide you every step of the way.
               </p>
 
               <div className="mb-1">
                 <label htmlFor="url" className="block mb-0.5 text-black text-left font-semibold">
-                  Shopify Store URL
+                  Shopify Store URL (optional)
                 </label>
+                <span>Don’t have a store yet? No problem — continue</span>
                 <input
                   id="url"
                   name="url"
@@ -99,7 +100,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
               </div>
                      
               <div className="mb-4">
-                <label className="block text-black text-left font-semibold mb-2">What type of Task you have ?</label>
+                <label className="block text-black text-left font-semibold mb-2">What type of task do you need help with?</label>
                 <div className="flex flex-wrap gap-2">
                   {[
                     "Shopify Tasks",
