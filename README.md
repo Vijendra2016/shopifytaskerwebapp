@@ -9,3 +9,15 @@ https://www.storetasker.com/
 
 
 Need to create up to 100 pages for industries oriented page need to create.
+
+Idea !-
+Create The tasks like -
+Theme Updates services - List of themes 
+Retension
+Industries services
+Collection 
+CRO
+Marketing
+Klaviyo
+SEO
+Techincal SEO
