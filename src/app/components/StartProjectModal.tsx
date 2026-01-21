@@ -88,7 +88,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
             <>
               <h2 className="text-4xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
               <p className="mb-2  text-lg font-thin text-black">
-Tell us what you need — our in-house Shopify experts will send you a free solution & quote within 1 hour.              </p>
+Tell us what you need — our in-house Shopify experts <br></br> will send you a free solution & quote within 1 hour.              </p>
 
               <div className="mb-1">
                 <label htmlFor="url" className="block text-lg text-black text-left font-semibold">
