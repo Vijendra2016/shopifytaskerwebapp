@@ -4,6 +4,13 @@ import React, { useState } from "react";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { TiArrowRight } from "react-icons/ti";
 import { TiArrowLeft } from "react-icons/ti";
+import { 
+  TiTick, 
+  TiFlash, 
+  TiStarFullOutline, 
+  TiGroup 
+} from "react-icons/ti";
+
 
 
 type FormData = {
@@ -70,7 +77,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
 
       
         
-      <div className="w-full md:w-[700px] h-full bg-[#fefdf9] p-6 overflow-y-auto relative">
+      <div className="w-full md:w-[700px] h-full bg-white p-6 overflow-y-auto relative">
         <button className="absolute  text-black cursor-pointer top-2 right-2 text-lg" onClick={onClose}>
           ✕ close
         </button>
@@ -79,14 +86,13 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 1 */}
           {step === 1 && (
             <>
-              <h2 className="text-6xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
-              <p className="mb-4  text-sm text-black">
-Tell us what you need — our Shopify experts will send you a free solution & quote within 1 hour.
-              </p>
+              <h2 className="text-4xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
+              <p className="mb-2  text-lg font-thin text-black">
+Tell us what you need — our in-house Shopify experts will send you a free solution & quote within 1 hour.              </p>
 
               <div className="mb-1">
-                <label htmlFor="url" className="block mb-0.5 text-black text-left font-semibold">
-                  Shopify Store URL (optional)
+                <label htmlFor="url" className="block text-lg text-black text-left font-semibold">
+                  Shopify Store URL (Optional)
                 </label>
                 <span className="text-black text-sm font-thin">Don’t have a store yet? No problem — continue</span>
                 <input
@@ -99,12 +105,12 @@ Tell us what you need — our Shopify experts will send you a free solution & qu
                 />
               </div>
                      
-              <div className="mb-4">
-                <label className="block text-black text-left font-semibold mb-2">What type of task do you need help with?</label>
+              <div className="mb-2">
+                <label className="block text-black text-lg text-left font-semibold mb-1">What type of task do you need help with?</label>
                 <div className="flex flex-wrap gap-2">
                   {[
                     "Shopify Tasks",
-                    "shopify Theme udpate",
+                    "Shopify Theme udpate",
                     "Shopify Store Development",
                     "Store speed optimization",
                     "Shopify Plus's Task",
@@ -114,10 +120,10 @@ Tell us what you need — our Shopify experts will send you a free solution & qu
                   ].map((label) => (
                     <label
                       key={label}
-                      className={`cursor-pointer px-4 py-2 rounded border transition-all ${
+                      className={`cursor-pointer px-2 py-2 rounded border transition-all ${
                         formData.taskselect === label
                           ? "bg-black text-white border-black"
-                          : "bg-[#fefdf9] text-black border-black"
+                          : "bg-white text-black border-black"
                       }`}
                     >
                       <input
@@ -143,7 +149,37 @@ Tell us what you need — our Shopify experts will send you a free solution & qu
                 <span>Next</span>
                 <span className="text-3xl "><TiArrowRight /></span>
               </button>
+
+             <br>
+             </br>
+
+             <div className="grid grid-cols-2 gap-6 text-sm text-gray-700">
+      
+      <div className="flex items-center gap-3">
+        <TiTick className="text-black text-3xl" />
+        <span>Trusted by 500+ Shopify stores</span>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <TiFlash className="text-black text-3xl" />
+        <span>Avg response time under 1 hour</span>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <TiStarFullOutline className="text-black text-3xl" />
+        <span>10+ years Shopify ecosystem experience</span>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <TiGroup className="text-black text-3xl" />
+        <span>Real in-house team — no freelancers</span>
+      </div>
+
+    </div>
+
+
             </>
+            
           )}
 
           {/* STEP 2 */}
