@@ -88,7 +88,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
                 <label htmlFor="url" className="block mb-0.5 text-black text-left font-semibold">
                   Shopify Store URL (optional)
                 </label>
-                <span>Don’t have a store yet? No problem — continue</span>
+                <span className="text-black text-sm font-thin">Don’t have a store yet? No problem — continue</span>
                 <input
                   id="url"
                   name="url"
