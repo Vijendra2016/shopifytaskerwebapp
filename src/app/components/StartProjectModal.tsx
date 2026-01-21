@@ -146,8 +146,8 @@ Tell us what you need — our in-house Shopify experts will send you a free solu
                 onClick={() => setStep(2)}
                 className="px-8 py-2  text-lg cursor-pointer float-right bg-green-300 text-black rounded-md hover:bg-green-700 transition-colors flex items-center"
               >
-                <span>Next</span>
-                <span className="text-3xl "><TiArrowRight /></span>
+                <span>Continue →</span>
+                
               </button>
 
              <br>
