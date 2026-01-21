@@ -80,8 +80,8 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {step === 1 && (
             <>
               <h2 className="text-6xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
-              <p className="mb-4 text-gray-600">
-              It only takes a few clicks to get going. After that, our in-house e-commerce experts will guide you every step of the way.
+              <p className="mb-4  text-sm text-black">
+Tell us what you need — our Shopify experts will send you a free solution & quote within 1 hour.
               </p>
 
               <div className="mb-1">
