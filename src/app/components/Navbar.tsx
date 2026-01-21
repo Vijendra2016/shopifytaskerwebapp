@@ -58,7 +58,7 @@ const [showModal, setShowModal] = useState(false);
 
          <button
                   onClick={() => setShowModal(true)}
-                  className=" cursor-pointer inline-flex items-center bg-teal-500 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-00  hover:text-black transition"
+                  className=" cursor-pointer inline-flex items-center bg-[#DFF976] text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-00  hover:text-black transition"
                   >
                  Create Task <TfiArrowRight/>
                 </button>
