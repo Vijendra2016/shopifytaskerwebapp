@@ -216,7 +216,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
                   value={formData.tasktitle}
                   onChange={handleChange}
                   placeholder="Need to add new function / need theme update"
-                  className="w-full border-black border text-black p-2 rounded mb-4 placeholder-gray-400"
+                  className="w-full border-black border text-black p-2 rounded mb-4 placeholder-gray-400 placeholder:text-sm"
                   
                 />
               </div> 
@@ -234,7 +234,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
 Where does this change apply? (PDP, cart, checkout, etc.)
 Any links, screenshots, or examples?"
                   required
-                  className="w-full h-40 border-black text-black border p-2 rounded mb-4 placeholder-gray-400"
+                  className="w-full h-40 border-black text-black border p-2 rounded mb-4 placeholder-gray-400 placeholder:text-sm"
                 />
               </div>
 
