@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { TfiArrowTopRight } from "react-icons/tfi";
 import { TiArrowRight } from "react-icons/ti";
 import { TiArrowLeft } from "react-icons/ti";
 import { 
