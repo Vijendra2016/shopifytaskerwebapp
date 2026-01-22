@@ -289,7 +289,7 @@ Any links, screenshots, or examples?"
           onChange={handleChange}
           placeholder="Name"
           required
-          className="w-full border text-black p-3 rounded-md border-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+          className="w-full border text-black p-2 rounded-md border-black placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-black focus:ring-offset-1"
         />
       </div>
 
@@ -309,7 +309,7 @@ Any links, screenshots, or examples?"
           onChange={handleChange}
           placeholder="Email"
           required
-          className="w-full border p-3 text-black rounded-md border-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+          className="w-full border p-2 text-black rounded-md border-black placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-black focus:ring-offset-1"
         />
       </div>
 
