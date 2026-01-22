@@ -36,7 +36,7 @@ const testimonials: Testimonial[] = [
     quote:
       "Quick turnaround and exactly what we needed. Super smooth experience.",
     avatar:
-      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69726ba66d63ab8a78a08484_Todd%20Michael.png",
+      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69726c87209a6f9feca20299_Todd%20Michaelnew.png",
   },
 ];
 
