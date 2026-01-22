@@ -16,7 +16,7 @@ const slides: TrustSlide[] = [
 
 export default function TrustFactsSwiper() {
   return (
-    <div className="trust-swiper w-full rounded-lg overflow-hidden mp-4 px-4 py-3 min-h-[72px]">
+    <div className="trust-swiper w-full rounded-lg overflow-hidden mt-4 px-4 py-3 min-h-[72px]">
       <Swiper
         modules={[Autoplay, A11y]}
         slidesPerView={1}
