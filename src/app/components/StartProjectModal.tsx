@@ -120,7 +120,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
                   ].map((label) => (
                     <label
                       key={label}
-                      className={`cursor-pointer px-2 py-2 rounded border transition-all ${
+                      className={`cursor-pointer px-2 py-2 rounded-full border transition-all ${
                         formData.taskselect === label
                           ? "bg-black text-white border-black"
                           : "bg-white text-black border-black"
