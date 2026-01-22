@@ -105,41 +105,55 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
                 />
               </div>
                      
-              <div className="mb-2">
-                <label className="block text-black text-lg text-left font-semibold mb-1">What type of task do you need help with?</label>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Shopify Tasks",
-                    "Shopify Theme udpate",
-                    "Shopify Store Development",
-                    "Store speed optimization",
-                    "Shopify Plus's Task",
-                    "Shopify SEO",
-                    "Shopify Support Retainer",
-                    "Shopify App Configuration"
-                  ].map((label) => (
-                    <label
-                      key={label}
-                      className={`cursor-pointer px-2 py-2 rounded-full border transition-all ${
-                        formData.taskselect === label
-                          ? "bg-black text-white border-black"
-                          : "bg-white text-black border-black"
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="taskselect"
-                        value={label}
-                        checked={formData.taskselect === label}
-                        onChange={(e) => setFormData({ ...formData, taskselect: e.target.value })}
-                        className="hidden"
-                      />
-                      {label}
-                    </label>
-                  ))}
-                </div>
-              </div>
              
+             
+             <fieldset className="mb-4">
+  <legend className="block text-black text-lg text-left font-semibold mb-2">
+    What type of task do you need help with?
+  </legend>
+
+  <div className="flex flex-wrap gap-3">
+    {[
+      "Shopify Tasks",
+      "Shopify Theme Update",
+      "Shopify Store Development",
+      "Store Speed Optimization",
+      "Shopify Plus Tasks",
+      "Shopify SEO",
+      "Shopify Support Retainer",
+      "Shopify App Configuration",
+    ].map((label) => {
+      const selected = formData.taskselect === label;
+
+      return (
+        <label
+          key={label}
+          className={[
+            "cursor-pointer select-none rounded-full border px-4 py-2 text-sm font-medium transition",
+            "hover:shadow-sm",
+            "focus-within:ring-2 focus-within:ring-black focus-within:ring-offset-2",
+            selected
+              ? "bg-black text-white border-black"
+              : "bg-white text-black border-black/80 hover:bg-black/5",
+          ].join(" ")}
+        >
+          <input
+            type="radio"
+            name="taskselect"
+            value={label}
+            checked={selected}
+            onChange={(e) =>
+              setFormData({ ...formData, taskselect: e.target.value })
+            }
+            className="sr-only"
+          />
+          {label}
+        </label>
+      );
+    })}
+  </div>
+</fieldset>
+
 
              <button
   type="button"
