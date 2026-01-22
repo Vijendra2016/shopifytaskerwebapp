@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { TiArrowRight } from "react-icons/ti";
-import { TiArrowLeft } from "react-icons/ti";
+
 import { 
   TiTick, 
   TiFlash, 
@@ -244,18 +243,18 @@ Any links, screenshots, or examples?"
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="px-4 py-2 cursor-pointer bg-black text-white rounded-md hover:bg-black flex items-center"
+                  className="px-4 py-2 rounded-md border border-black/20 text-black hover:bg-black/5 transition-colors"
                 >
-                 <TiArrowLeft />
-                 Back
+                 
+                ← Back
                 </button>
                 <button
                   type="button"
                   onClick={() => setStep(3)}
                   className="px-8  cursor-pointer text-lg py-2 bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
                 >
-                  <span>Next</span>
-                  <span className="text-3xl "><TiArrowRight /></span>
+                  <span>Next →</span>
+                 
                 </button>
               </div>
 
