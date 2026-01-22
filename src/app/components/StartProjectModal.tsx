@@ -2,14 +2,9 @@
 
 import React, { useState } from "react";
 
-import { 
-  TiTick, 
-  TiFlash, 
-  TiStarFullOutline, 
-  TiGroup 
-} from "react-icons/ti";
 
 
+import TrustFactsSwiper from "./TrustFactsSwiper";
 
 type FormData = {
   name: string;
@@ -164,33 +159,9 @@ No upfront payment. Pay only after successful delivery.
   Continue →
 </button>
 
-             <br>
-             </br>
+<TrustFactsSwiper/>
 
-             <div className="grid grid-cols-2 gap-6 text-sm text-gray-700">
-      
-      <div className="flex items-center gap-3">
-        <TiTick className="text-black text-3xl" />
-        <span>Trusted by 500+ Shopify stores</span>
-      </div>
-
-      <div className="flex items-center gap-3">
-        <TiFlash className="text-black text-3xl" />
-        <span>Avg response time under 1 hour</span>
-      </div>
-
-      <div className="flex items-center gap-3">
-        <TiStarFullOutline className="text-black text-3xl" />
-        <span>10+ years Shopify ecosystem experience</span>
-      </div>
-
-      <div className="flex items-center gap-3">
-        <TiGroup className="text-black text-3xl" />
-        <span>Real in-house team — no freelancers</span>
-      </div>
-
-    </div>
-
+           
     
 
 
@@ -269,6 +240,8 @@ You can also share links or screenshots."
     Many trust us as their long-term Shopify development partner.
   </p>
 </div>
+
+
 
           
             </>
@@ -359,6 +332,8 @@ You can also share links or screenshots."
       </p>
 
       {status && <p className="text-green-600 text-sm mt-4">{status}</p>}
+
+      <TrustFactsSwiper/>
     </div>
   </>
 )}

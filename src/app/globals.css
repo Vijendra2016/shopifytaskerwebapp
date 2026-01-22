@@ -86,3 +86,12 @@ body {
   display: inline-block;
   animation: marquee 20s linear infinite;
 }
+
+
+/* Trust slider: make ALL Swiper layers green */
+.trust-swiper,
+.trust-swiper .swiper,
+.trust-swiper .swiper-wrapper,
+.trust-swiper .swiper-slide {
+  background: #00b67a !important;
+}

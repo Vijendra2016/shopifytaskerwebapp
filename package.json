@@ -24,7 +24,7 @@
     "react-simple-typewriter": "^5.0.1",
     "react-slick": "^0.30.3",
     "schema-dts": "^1.1.5",
-    "swiper": "^11.2.6",
+    "swiper": "^11.2.10",
     "tailwindcss-animated": "^2.0.0"
   },
   "devDependencies": {
