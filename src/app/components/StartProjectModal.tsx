@@ -87,7 +87,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
             <p className="text-xs text-gray-500 mb-2 text-left">Step 1 of 3</p>
               <h2 className="text-4xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
               <p className="mb-2  text-sm font-semibold text-gray-700">
-Tell us what you need — our Shopify experts developer & designer will send a free solution and quote within 1 hour.
+Tell us what you need — our Shopify experts will review your request and respond within 1 hour with next steps.
 No upfront payment. Pay only after successful delivery.
 </p>
 
