@@ -354,11 +354,23 @@ Any links, screenshots, or examples?"
           {/* STEP 4 - Success Message */}
           {step === 4 && (
             <div className="text-center py-20">
-              <h2 className="text-4xl text-black font-bold mb-4">🎉 Task Submitted!</h2>
+              <h3 className="text-2xl font-bold text-black mb-3">
+  Thanks! Your request is in review 🎉
+</h3>
               <p className="text-gray-600 mb-6">
-                We review your project and get back to you within 5 hours with quote and timeline .
-                🔒 Secure — No payment required until task is complete.
-              </p>
+  We’ll review your request and respond within <strong>5 business hours</strong>
+  with a quote and timeline.
+  <br />
+  🔒 Secure process — no payment required until the task is completed.
+</p>
+              {/* Reassurance (optional but makes it feel premium) */}
+      <div className="mb-5 text-sm text-gray-700 space-y-2">
+  <p className="font-semibold text-black">What happens next?</p>
+  <p>• We review your request</p>
+  <p>• You receive a quote and timeline by email</p>
+  <p>• Work begins after your approval</p>
+</div>
+
               <button
                 onClick={() => {
                   setStep(1);
