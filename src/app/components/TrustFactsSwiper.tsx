@@ -28,7 +28,7 @@ export default function TrustFactsSwiper() {
         className="h-full"
       >
         {slides.map((s, idx) => (
-          <SwiperSlide key={idx} className="!h-full !flex !items-center !justify-center">
+          <SwiperSlide key={idx} className="!flex !items-center !justify-center">
             <div className="text-center">
               <div className="text-sm font-semibold text-black">{s.title}</div>
               <div className="mt-1 text-xs text-black">{s.desc}</div>
