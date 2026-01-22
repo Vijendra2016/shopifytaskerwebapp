@@ -76,7 +76,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
 
       
         
-      <div className="w-full md:w-[700px] h-full bg-white p-6 overflow-y-auto relative">
+      <div className="w-full md:w-[700px] h-full bg-white  m-2 border-[3px] border-[#DFF976] p-6 overflow-y-auto relative">
         <button className="absolute  text-black cursor-pointer top-2 right-2 text-lg" onClick={onClose}>
           ✕ close
         </button>
