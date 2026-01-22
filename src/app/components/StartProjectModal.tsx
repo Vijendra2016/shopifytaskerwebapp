@@ -333,7 +333,7 @@ You can also share links or screenshots."
 
       {status && <p className="text-green-600 text-sm mt-4">{status}</p>}
 
-      <TrustFactsSwiper/>
+      
     </div>
   </>
 )}
