@@ -260,7 +260,7 @@ Any links, screenshots, or examples?"
           )}
 
           {/* STEP 3 */}
-{step === 3 && (
+          {step === 3 && (
   <>
     <p className="text-xs text-gray-500 mb-2 text-left">Step 3 of 3</p>
 
@@ -274,32 +274,32 @@ Any links, screenshots, or examples?"
 
     {/* Card container */}
     <div className="rounded-xl border border-black/10 bg-white p-6">
-      {/* Full name */}
+      {/* Name (same field name + id) */}
       <div className="mb-4">
         <label
           htmlFor="name"
           className="block mb-1 text-black text-left text-sm font-semibold"
         >
-          Full name
+          Your Name
         </label>
         <input
           id="name"
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="e.g., John Smith"
+          placeholder="Name"
           required
-          className="w-full border text-black p-3 rounded-md border-black/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+          className="w-full border text-black p-3 rounded-md border-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
         />
       </div>
 
-      {/* Email */}
+      {/* Email (same field name + id) */}
       <div className="mb-4">
         <label
           htmlFor="email"
           className="block text-left mb-1 text-black text-sm font-semibold"
         >
-          Email address
+          Email
         </label>
         <input
           id="email"
@@ -307,20 +307,20 @@ Any links, screenshots, or examples?"
           type="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="you@company.com"
+          placeholder="Email"
           required
-          className="w-full border p-3 text-black rounded-md border-black/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+          className="w-full border p-3 text-black rounded-md border-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
         />
       </div>
 
-      {/* Reassurance bullets */}
+      {/* Reassurance (optional but makes it feel premium) */}
       <div className="mb-5 text-sm text-gray-700 space-y-1">
         <p>✔ No upfront payment</p>
         <p>✔ Free initial review</p>
         <p>✔ We’ll reply with next steps</p>
       </div>
 
-      {/* Footer with CTA + trust */}
+      {/* CTA Footer */}
       <div className="pt-4 border-t border-black/10 flex items-center justify-between">
         <button
           type="button"
@@ -330,6 +330,7 @@ Any links, screenshots, or examples?"
           ← Back
         </button>
 
+        {/* IMPORTANT: still type="submit" so your email send works */}
         <button
           type="submit"
           className="px-5 py-2.5 bg-[#DFF976] text-black rounded-md hover:opacity-90 transition-colors flex items-center font-medium"
