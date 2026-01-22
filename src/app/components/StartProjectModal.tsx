@@ -258,6 +258,18 @@ Any links, screenshots, or examples?"
                   <span className="text-3xl "><TiArrowRight /></span>
                 </button>
               </div>
+
+              <div className="bg-green-50 rounded-lg border border-green-100 p-3 mt-5">
+  <h3 className="font-semibold text-xs text-black ">
+    Why ShopifyTasker
+  </h3>
+  <p className="text-xs text-black leading-relaxed">
+    97% of our clients return for ongoing improvements.  
+    Many trust us as their long-term Shopify development partner.
+  </p>
+</div>
+
+          
             </>
           )}
 
