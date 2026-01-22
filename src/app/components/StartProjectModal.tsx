@@ -263,9 +263,9 @@ Any links, screenshots, or examples?"
           {/* STEP 3 */}
           {step === 3 && (
             <>
-            <h3 className="text-4xl text-black font-bold mb-2 text-left">Your Details </h3>
+            <h3 className="text-4xl text-black font-bold mb-2 text-left">How can we reach you?</h3>
               <p className="mb-4 text-gray-600  text-left text-sm">
-              Expect to hear from us directly via  email.
+We’ll contact you by email with a quote and next steps.
               </p>
               
               <div className="mb-1">
@@ -300,22 +300,17 @@ Any links, screenshots, or examples?"
               </div>
 
               <div className="flex justify-between items-center">
-                <button
-                  type="button"
-                  onClick={() => setStep(2)}
-                  className="px-4 py-2  cursor-pointer bg-black text-white rounded-md hover:bg-black flex items-center"
-                > <TiArrowLeft />
-
-                  Back
-                </button>
+                
                 <button
                   type="submit"
                   className="px-4  cursor-pointer py-2 bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
                 >
-                  <span>Submit Task</span>
-                  <TfiArrowTopRight className="ml-2" />
+                  <span>Submit request →</span>
+                  
                 </button>
+                
               </div>
+              
               {status && <p className="text-green-600 text-sm mt-4">{status}</p>}
             </>
           )}
