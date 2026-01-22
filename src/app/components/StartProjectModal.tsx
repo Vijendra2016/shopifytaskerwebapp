@@ -75,7 +75,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
 
       
         
-      <div className="w-full md:w-[700px] h-full bg-white  md:m-2  p-6 overflow-y-auto relative">
+      <div className="w-full md:w-[500px] h-full bg-white  md:m-2  p-6 overflow-y-auto relative">
         <button className="absolute  text-black cursor-pointer top-2 right-2 text-lg" onClick={onClose}>
           ✕ close
         </button>
@@ -86,8 +86,9 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
             <>
             <p className="text-xs text-gray-500 mb-2 text-left">Step 1 of 3</p>
               <h2 className="text-4xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
-              <p className="mb-2  text-[15px] font-base text-gray-700">
-Tell us what you need — our in-house Shopify experts  will send you a free solution & quote within 1 hour.No upfront payment — billing begins only after successful delivery. </p>
+              <p className="mb-2  text-sm font-semibold text-gray-700">
+Free solution & quote in 1 hour • No upfront payment • Pay after delivery
+</p>
 
               <div className="mb-1">
                 <label htmlFor="url" className="block text-lg text-black text-left font-semibold">
