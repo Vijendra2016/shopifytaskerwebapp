@@ -358,7 +358,7 @@ Any links, screenshots, or examples?"
   Thanks! Your request is in review 🎉
 </h3>
               <p className="text-gray-600 mb-6">
-  We’ll review your request and respond within <strong>5 business hours</strong>
+  We’ll review your request and respond within <strong>1 business hour</strong>
   with a quote and timeline.
   <br />
   🔒 Secure process — no payment required until the task is completed.
