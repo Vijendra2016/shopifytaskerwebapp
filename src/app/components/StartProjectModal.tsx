@@ -158,7 +158,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
              <button
   type="button"
   onClick={() => setStep(2)}
-  className="px-8 py-2 text-lg cursor-pointer bg-[#DFF976] text-black rounded-md hover:bg-green-700 transition-colors flex items-center"
+  className="px-8 py-2 text-lg cursor-pointer bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
 >
   Continue →
 </button>
@@ -242,7 +242,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="px-4 py-2 cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300 flex items-center"
+                  className="px-4 py-2 cursor-pointer bg-black text-white rounded-md hover:bg-black flex items-center"
                 >
                  <TiArrowLeft />
                  Back
@@ -250,7 +250,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
                 <button
                   type="button"
                   onClick={() => setStep(3)}
-                  className="px-8  cursor-pointer text-lg py-2 bg-green-300 text-black rounded-md hover:bg-blue-700 transition-colors flex items-center"
+                  className="px-8  cursor-pointer text-lg py-2 bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
                 >
                   <span>Next</span>
                   <span className="text-3xl "><TiArrowRight /></span>
@@ -302,14 +302,14 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="px-4 py-2  cursor-pointer bg-gray-200 text-black rounded-md hover:bg-gray-300 flex items-center"
+                  className="px-4 py-2  cursor-pointer bg-black text-white rounded-md hover:bg-black flex items-center"
                 > <TiArrowLeft />
 
                   Back
                 </button>
                 <button
                   type="submit"
-                  className="px-4  cursor-pointer py-2 bg-green-300 text-black rounded-md hover:bg-blue-700 transition-colors flex items-center"
+                  className="px-4  cursor-pointer py-2 bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
                 >
                   <span>Submit Task</span>
                   <TfiArrowTopRight className="ml-2" />
