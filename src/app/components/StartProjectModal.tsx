@@ -201,15 +201,14 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
           {step === 2 && (
             <>
               
-              <h3 className="text-4xl font-bold text-black text-left  mb-2">Brief Details of Task  </h3>
-              <p className="mb-4 text-sm text-gray-600 text-left">
-              Share a few key details about your project, and we  analyze the requirements and get back to you with a personalized quote and timeline.
+              <h3 className="text-4xl font-bold text-black text-left  mb-2">How can we help?  </h3>
+              <p className="mb-4 text-lg text-gray-600 text-left">
 
-
+                It takes just a few minutes. Share a few details and we’ll take it from there.
               </p>
               <div className="mb-1">
                 <label htmlFor="tasktitle" className="block mb-2  text-left text-black  font-semibold">
-                  Project / Task Title
+                  Short summary of your request
                 </label>
                 <input
                   id="tasktitle"
@@ -224,14 +223,16 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
               
               <div className="mb-1">
                 <label htmlFor="message" className="block text-left text-black mb-2 font-semibold">
-                  Project/Task Description
+                  Tell us about your project/task
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Describe your project/task in brief"
+                  placeholder="What are you trying to achieve?
+Where does this change apply? (PDP, cart, checkout, etc.)
+Any links, screenshots, or examples?"
                   required
                   className="w-full h-40 border-black text-black border p-2 rounded mb-4 placeholder-gray-400"
                 />
