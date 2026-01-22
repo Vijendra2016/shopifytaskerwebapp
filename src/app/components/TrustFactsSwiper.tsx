@@ -42,7 +42,7 @@ const testimonials: Testimonial[] = [
 
 function RatingStars() {
   return (
-    <div className="relative h-[18px] w-[90px]">
+    <div className="relative h-[12px] w-[70px]">
       <Image
         src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697266398fd7e2e8e1aa48a1_stars-5ratinf.png"
         alt="5 out of 5 stars rating"
@@ -85,7 +85,7 @@ function Avatar({ name, avatar }: { name: string; avatar?: string }) {
 export default function TrustFactsSwiper() {
   return (
     <div className="w-full rounded-lg border border-black/10 bg-white px-4 py-3 mt-2">
-      <div className="mb-2 text-sm font-semibold text-black">
+      <div className="mb-1 text-sm font-semibold text-black">
         What clients say
       </div>
 
