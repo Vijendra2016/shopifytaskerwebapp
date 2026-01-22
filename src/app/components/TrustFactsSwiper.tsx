@@ -28,15 +28,15 @@ const testimonials: Testimonial[] = [
     quote:
       "Shopify Tasker is very prompt, helpful, patient. Explains and takes you through the process. Easily contactable. Used many times now and will continue to do so.",
     avatar:
-      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6972635eee315ebdadf20eaa_dutchcargo.png",
+      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697269e4e802de2dac1ae99f_73x73%20(1).png",
   },
   {
-    name: "Jürgen Heikamp",
-    store: "Founder of Dutch Cargo",
+    name: "Todd Michael",
+    store: "Owner of The Goldsmiths Bench",
     quote:
       "Quick turnaround and exactly what we needed. Super smooth experience.",
     avatar:
-      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6972635eee315ebdadf20eaa_dutchcargo.png",
+      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69726ba66d63ab8a78a08484_Todd%20Michael.png",
   },
 ];
 
@@ -84,7 +84,7 @@ function Avatar({ name, avatar }: { name: string; avatar?: string }) {
 
 export default function TrustFactsSwiper() {
   return (
-    <div className="w-full rounded-lg border border-black/10 bg-white px-4 py-3 mt-4">
+    <div className="w-full rounded-lg border border-black/10 bg-white px-4 py-3 mt-2">
       <div className="mb-2 text-sm font-semibold text-black">
         What clients say
       </div>
