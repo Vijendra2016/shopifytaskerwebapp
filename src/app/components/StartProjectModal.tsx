@@ -76,7 +76,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
 
       
         
-      <div className="w-full md:w-[700px] h-full bg-white  m-2 border-[3px] border-[#DFF976] p-6 overflow-y-auto relative">
+      <div className="w-full md:w-[700px] h-full bg-white  md:m-2  p-6 overflow-y-auto relative">
         <button className="absolute  text-black cursor-pointer top-2 right-2 text-lg" onClick={onClose}>
           ✕ close
         </button>
@@ -85,6 +85,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
           {/* STEP 1 */}
           {step === 1 && (
             <>
+            <p className="text-xs text-gray-500 mb-2 text-left">Step 1 of 3</p>
               <h2 className="text-4xl text-black font-bold mb-2 text-left">Let’s Get Started</h2>
               <p className="mb-2  text-[15px] font-base text-gray-700">
 Tell us what you need — our in-house Shopify experts  will send you a free solution & quote within 1 hour.No upfront payment — billing begins only after successful delivery. </p>
@@ -200,6 +201,7 @@ Tell us what you need — our in-house Shopify experts  will send you a free sol
           {step === 2 && (
             <>
               
+              <p className="text-xs text-gray-500 mb-2 text-left">Step 2 of 3</p>
               <h3 className="text-4xl font-bold text-black text-left  mb-2">How can we help?  </h3>
               <p className="mb-4 text-lg text-gray-600 text-left">
 
