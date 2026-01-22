@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
     name: "Jürgen Heikamp",
     store: "Founder of Dutch Cargo",
     quote:
-      "Vidi helped us a lot with Shopify improvements and SEO. Fast and professional.",
+      "Vidi  from ShopifyTasker helped us a lot with Shopify improvements and SEO. Fast and professional.",
     avatar:
       "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6972635eee315ebdadf20eaa_dutchcargo.png",
   },
