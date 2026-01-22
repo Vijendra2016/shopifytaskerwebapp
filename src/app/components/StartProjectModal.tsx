@@ -102,7 +102,7 @@ No upfront payment. Pay only after successful delivery.
                   value={formData.url}
                   onChange={handleChange}
                   placeholder="yourstore.com"
-                  className="w-full border text-black border-black p-2 rounded mb-4 placeholder-gray-400"
+                  className="w-full border text-black border-black p-2 rounded mb-4 placeholder-gray-400 placeholder:text-sm"
                 />
               </div>
                      
@@ -203,10 +203,10 @@ No upfront payment. Pay only after successful delivery.
             <>
               
               <p className="text-xs text-gray-500 mb-2 text-left">Step 2 of 3</p>
-              <h3 className="text-4xl font-bold text-black text-left  mb-2">How can we help?  </h3>
-              <p className="mb-4 text-lg text-gray-600 text-left">
+              <h3 className="text-4xl font-bold text-black text-left  mb-2">How can we help you?  </h3>
+              <p className="mb-4 text-sm font-semibold text-gray-600 text-left">
 
-                It takes just a few minutes. Share a few details and we’ll take it from there.
+It only takes a few minutes. Share a few details and our Shopify experts will take it from there.
               </p>
               <div className="mb-1">
                 <label htmlFor="tasktitle" className="block mb-2  text-left text-black  font-semibold">
@@ -217,7 +217,7 @@ No upfront payment. Pay only after successful delivery.
                   name="tasktitle"
                   value={formData.tasktitle}
                   onChange={handleChange}
-                  placeholder="Need to add new function / need theme update"
+                  placeholder="What do you need help with? (e.g.  New store setup,theme update, bug fix, speed issue)"
                   className="w-full border-black border text-black p-2 rounded mb-4 placeholder-gray-400 placeholder:text-sm"
                   
                 />
@@ -225,16 +225,16 @@ No upfront payment. Pay only after successful delivery.
               
               <div className="mb-1">
                 <label htmlFor="message" className="block text-left text-black mb-2 font-semibold">
-                  Tell us about your project/task
+                  Tell us about your project/ task
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="What are you trying to achieve?
-Where does this change apply? (PDP, cart, checkout, etc.)
-Any links, screenshots, or examples?"
+                  placeholder="Describe your task in more detail. What are you trying to achieve?
+Where should this apply (product page, cart, checkout)?
+You can also share links or screenshots."
                   required
                   className="w-full h-40 border-black text-black border p-2 rounded mb-4 placeholder-gray-400 placeholder:text-sm"
                 />
