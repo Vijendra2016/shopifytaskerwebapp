@@ -260,59 +260,93 @@ Any links, screenshots, or examples?"
           )}
 
           {/* STEP 3 */}
-          {step === 3 && (
-            <>
-            <h3 className="text-4xl text-black font-bold mb-2 text-left">How can we reach you?</h3>
-              <p className="mb-4 text-gray-600  text-left text-sm">
-We’ll contact you by email with a quote and next steps.
-              </p>
-              
-              <div className="mb-1">
-                <label htmlFor="name" className="block mb-0.5 text-black text-left font-semibold">
-                  Your Name
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Name"
-                  required
-                  className="w-full border text-black p-2 rounded mb-4 border-black placeholder-gray-400"
-                />
-              </div>
+{step === 3 && (
+  <>
+    <p className="text-xs text-gray-500 mb-2 text-left">Step 3 of 3</p>
 
-              <div className="mb-1">
-                <label htmlFor="email" className="block text-left mb-0.5 text-black font-semibold">
-                  Email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="Email"
-                  required
-                  className="w-full border p-2 text-black rounded border-black mb-4 placeholder-gray-400"
-                />
-              </div>
+    <h3 className="text-4xl text-black font-bold mb-2 text-left">
+      How can we reach you?
+    </h3>
 
-              <div className="flex justify-between items-center">
-                
-                <button
-                  type="submit"
-                  className="px-4  cursor-pointer py-2 bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
-                >
-                  <span>Submit request →</span>
-                  
-                </button>
-                
-              </div>
-              
-              {status && <p className="text-green-600 text-sm mt-4">{status}</p>}
-            </>
-          )}
+    <p className="mb-6 text-gray-600 text-left text-sm">
+      We’ll contact you by email with a quote and next steps.
+    </p>
+
+    {/* Card container */}
+    <div className="rounded-xl border border-black/10 bg-white p-6">
+      {/* Full name */}
+      <div className="mb-4">
+        <label
+          htmlFor="name"
+          className="block mb-1 text-black text-left text-sm font-semibold"
+        >
+          Full name
+        </label>
+        <input
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="e.g., John Smith"
+          required
+          className="w-full border text-black p-3 rounded-md border-black/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+        />
+      </div>
+
+      {/* Email */}
+      <div className="mb-4">
+        <label
+          htmlFor="email"
+          className="block text-left mb-1 text-black text-sm font-semibold"
+        >
+          Email address
+        </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="you@company.com"
+          required
+          className="w-full border p-3 text-black rounded-md border-black/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+        />
+      </div>
+
+      {/* Reassurance bullets */}
+      <div className="mb-5 text-sm text-gray-700 space-y-1">
+        <p>✔ No upfront payment</p>
+        <p>✔ Free initial review</p>
+        <p>✔ We’ll reply with next steps</p>
+      </div>
+
+      {/* Footer with CTA + trust */}
+      <div className="pt-4 border-t border-black/10 flex items-center justify-between">
+        <button
+          type="button"
+          onClick={() => setStep(2)}
+          className="px-4 py-2 rounded-md border border-black/20 text-black hover:bg-black/5 transition-colors"
+        >
+          ← Back
+        </button>
+
+        <button
+          type="submit"
+          className="px-5 py-2.5 bg-[#DFF976] text-black rounded-md hover:opacity-90 transition-colors flex items-center font-medium"
+        >
+          <span>Submit request →</span>
+        </button>
+      </div>
+
+      <p className="mt-3 text-xs text-gray-500">
+        🔒 Your information is kept private and used only for this request.
+      </p>
+
+      {status && <p className="text-green-600 text-sm mt-4">{status}</p>}
+    </div>
+  </>
+)}
+
 
           {/* STEP 4 - Success Message */}
           {step === 4 && (
