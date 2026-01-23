@@ -45,11 +45,11 @@ export default function Home() {
   
  
 
-  
+  < WhyShopifyTasker />
   
 <WhySwitchSection/>
 
-    < WhyShopifyTasker />
+   
     
  
 
