@@ -18,7 +18,7 @@ export default function Home() {
       <HeroSearchFirst
         backgroundImageUrl="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/695b5c7a517bcce3c046a407_Homebannerimage.png"
         ctas={[
-          { label: "What's Search-First?", href: "#search-first", variant: "primary" },
+          { label: "Get free estimation", href: "#search-first", variant: "primary" },
           { label: "Explore Services", href: "#services", variant: "secondary" },
         ]}
         stats={{
@@ -31,6 +31,7 @@ export default function Home() {
         }}
       />
    
+   {/* 
     <section className="px-6 md:px-30 py-16 bg-black text-white">
     <div className="services flex flex-col items-center justify-center text-center text-black ">
 <h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">Hire Shopify Expert & Developer,on demand.</h1>
@@ -42,6 +43,8 @@ export default function Home() {
 </div>
 
     </section>
+    */}
+
     <ShopifytaskerServices />
   
   
