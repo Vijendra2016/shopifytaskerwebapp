@@ -32,11 +32,11 @@ export default function Home() {
 <WhySwitchSection/>
 
     < WhyShopifyTasker />
-    <StepsSection />
+    
  
 
 < ClientTell />
-
+<StepsSection />
 
 <TestimonialCardGrid />
 <GeoMessage />
