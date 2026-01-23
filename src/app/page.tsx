@@ -5,12 +5,27 @@ import GeoMessage from "./components/GeoMessage";
 import WhySwitchSection from "./components/whysection";
 import ShopifytaskerServices from "./components/ShopifytaskerServices";
 import StepsSection from "./components/StepsSection";
+import HeroImageSection from "./components/HeroImageSection";
+import HeroSearchFirst from "./components/HeroSearchFirst";
+
 export default function Home() {
   return (
     
     <div className="flex flex-col items-center min-h-screen  gap-8">
 
   <main className="flex flex-col  w-full text-center sm:text-left">
+<HeroSearchFirst
+        eyebrow="Hire Shopify Expert & Developer,on demand."
+        titleTop="The"
+        titleHighlight="Search-First"
+        titleBottom="Shopify Agency"
+        backgroundImageUrl="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/695b5c7a517bcce3c046a407_Homebannerimage.png"
+        ctas={[
+          { label: "What's Search-First?", href: "#search-first", variant: "primary" },
+          { label: "Explore Services", href: "#services", variant: "secondary" },
+        ]}
+      />
+   
     <section className="px-6 md:px-30 py-16 bg-black text-white">
     <div className="services flex flex-col items-center justify-center text-center text-black ">
 <h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">Hire Shopify Expert & Developer,on demand.</h1>
