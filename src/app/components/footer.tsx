@@ -1,13 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
+import GsapMarquee from "./GsapMarquee";
 
 export default function Footer() {
+       
+
   return (
+    
     <footer className="bg-black  text-sm text-white py-12 px-6">
         <div className="flex justify-center mb-20">
       <Image
             src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6815f5f9c4f106f73030c696_file.svg" // Replace with your actual image path
             alt="ShopifyTasker Logo"
+       
             width={1200} // Adjust width as needed
             height={250} // Adjust height as needed
             className="h-auto"
@@ -97,6 +102,7 @@ export default function Footer() {
 
 
       </div>
+       <GsapMarquee />
     </footer>
   );
 }
