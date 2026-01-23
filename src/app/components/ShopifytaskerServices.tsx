@@ -78,9 +78,9 @@ const ShopifytaskerServices: React.FC = () => {
           >
             <div className="flex items-start space-x-4">
                        <div className="mt-4 md:mt-0 md:ml-8 flex animate-jump animate-once text-8xl items-center justify-center w-16 h-16 rounded-full border border-green-300">{service.id}.</div>
-              <div className="text-2xl font-bold">{service.title}</div>
+              <div className="text-xl font-extrabold uppercase text-white/90">{service.title}</div>
             </div>
-            <div className="mt-4 md:mt-0 max-w-xl text-white">
+            <div className="mt-4 md:mt-0 max-w-xl text-sm text-white/90">
               {service.description}
             </div>
             <div   onClick={handleCardClick} className="cursor-pointer mt-4 md:mt-0  text-4xl md:ml-8 flex items-center justify-center w-16 h-16 rounded-full border-2   border-[#DFF976]">
