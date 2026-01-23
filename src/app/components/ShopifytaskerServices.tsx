@@ -53,7 +53,7 @@ const ShopifytaskerServices: React.FC = () => {
 
     
     <div className="px-6 md:px-30 py-16 bg-black text-white">
-      {/* Scrolling title effect */}
+      {/* Scrolling title effect 
       <div className="overflow-hidden">
         <div className="flex whitespace-nowrap text-6xl font-extrabold animate-marquee">
           <span className="mr-10">EXPERTISE</span>
@@ -63,6 +63,12 @@ const ShopifytaskerServices: React.FC = () => {
           
         </div>
       </div>
+      */}
+      <h2 className="whitespace-nowrap text-white/90 text-6xl font-extrabold "> OUR EXPERTISE</h2>
+      <p>We take an integrated approach to digital design, ecommerce, 
+        <br>
+        </br>and technology to help your business navigate the evolving market landscape
+</p>
 
       <div className="mt-12 space-y-12">
         {services.map((service) => (
