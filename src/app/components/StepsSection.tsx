@@ -106,10 +106,11 @@ export default function StepsSection() {
                 <button
                   type="button"
                   onClick={onOpenCreateTask}
-                  className="inline-flex items-center justify-center rounded-full bg-[#DFF976] px-10 py-4 text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition"
+                  className="cursor-pointer inline-flex items-center justify-center rounded-full bg-[#DFF976] px-10 py-4 text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition"
                 >
-                  Create Task
+                 Get a Clear Estimate  →
                 </button>
+                
               </div>
             </div>
           </div>
