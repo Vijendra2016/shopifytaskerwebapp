@@ -23,7 +23,7 @@ export default function Home() {
         ]}
         stats={{
           ratingValue: "4.9",
-          ratingLabel: "Average user rating",
+          ratingLabel: "Average client rating",
           activityValue: "99.2%",
           activityLabel: "Average Project Delivery ",
           opensValue: "10+ Years",
