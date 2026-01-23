@@ -13,16 +13,22 @@ export default function Home() {
     <div className="flex flex-col items-center min-h-screen  gap-8">
 
   <main className="flex flex-col  w-full text-center sm:text-left">
-<HeroSearchFirst
-        eyebrow="Hire Shopify Expert & Developer,on demand."
-        titleTop="The"
-        titleHighlight="Search-First"
-        titleBottom="Shopify Agency"
+
+
+      <HeroSearchFirst
         backgroundImageUrl="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/695b5c7a517bcce3c046a407_Homebannerimage.png"
         ctas={[
           { label: "What's Search-First?", href: "#search-first", variant: "primary" },
           { label: "Explore Services", href: "#services", variant: "secondary" },
         ]}
+        stats={{
+          ratingValue: "4.9",
+          ratingLabel: "Average user rating",
+          activityValue: "75.2%",
+          activityLabel: "Average daily activity",
+          opensValue: "4.2",
+          opensLabel: "Average daily app opens",
+        }}
       />
    
     <section className="px-6 md:px-30 py-16 bg-black text-white">
