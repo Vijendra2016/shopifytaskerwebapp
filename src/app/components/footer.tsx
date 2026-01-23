@@ -102,6 +102,8 @@ export default function Footer() {
 
 
       </div>
+      <br>
+      </br>
        <GsapMarquee />
     </footer>
   );

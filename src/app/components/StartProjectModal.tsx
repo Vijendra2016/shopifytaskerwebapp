@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 
 import TrustFactsSwiper from "./TrustFactsSwiper";
-
+import GsapMarquee from "./GsapMarqueeStart";
 type FormData = {
   name: string;
   email: string;
@@ -162,7 +162,7 @@ No upfront payment. Pay only after successful delivery.
 <TrustFactsSwiper/>
 
            
-    
+   
 
 
             </>
@@ -241,7 +241,7 @@ You can also share links or screenshots."
     Many trust us as their long-term Shopify development partner.
   </p>
 </div>
-
+<GsapMarquee/>
 
 
           
