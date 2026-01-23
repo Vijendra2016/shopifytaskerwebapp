@@ -87,7 +87,7 @@ export default function HeroSearchFirst({
 
   return (
     <section
-      className={`relative isolate overflow-hidden rounded-3xl bg-black text-white ${className}`}
+      className={`relative isolate overflow-hidden  bg-black text-white ${className}`}
     >
       {/* Background image */}
       {bg ? (
@@ -172,7 +172,7 @@ export default function HeroSearchFirst({
                   ${
                     isSecondary
                       ? "bg-white text-black hover:bg-white/90"
-                      : "bg-black/40 text-white ring-1 ring-white/15 hover:bg-black/55"
+                      : " bg-[#DFF976] text-black  ring-1 ring-white/15 hover:bg-black/55"
                   }`}
               >
                 <span>{cta.label}</span>
