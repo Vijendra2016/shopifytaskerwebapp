@@ -24,10 +24,10 @@ export default function Home() {
         stats={{
           ratingValue: "4.9",
           ratingLabel: "Average user rating",
-          activityValue: "75.2%",
-          activityLabel: "Average daily activity",
-          opensValue: "4.2",
-          opensLabel: "Average daily app opens",
+          activityValue: "99.2%",
+          activityLabel: "Average Project Delivery ",
+          opensValue: "10+ Years",
+          opensLabel: " Experience in shopify ecosystem",
         }}
       />
    

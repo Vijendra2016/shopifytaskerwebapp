@@ -66,8 +66,8 @@ export default function HeroSearchFirst({
     ratingLabel: "Average user rating",
     activityValue: "75.2%",
     activityLabel: "Average daily activity",
-    opensValue: "4.2",
-    opensLabel: "Average daily app opens",
+    opensValue: "10+",
+    opensLabel: "10 Years experience in shopify ecosystem",
   },
   ctas = [
     { label: "What's Search-First?", href: "#search-first", variant: "primary" },
