@@ -43,7 +43,7 @@ export default function StepsSection() {
           {/* LEFT */}
           <div className="flex flex-col justify-between min-h-[420px]">
             <span>How it works</span>
-            <h2 className="text-xl leading-[0.95] tracking-tight font-medium sm:text-[56px] lg:text-[64px]">
+            <h2 className="text-[56px] leading-[0.95] tracking-tight font-medium sm:text-[56px] lg:text-[64px]">
               
               
              A simple process. <br />
@@ -69,7 +69,7 @@ export default function StepsSection() {
           <div className="flex flex-col justify-between">
             <p className="text-[16px] sm:text-[17px] leading-relaxed text-black/80 max-w-xl">
               Running your business is hard enough — dealing with developers shouldn’t be. ShopifyTasker makes it easy with fast turnarounds, total control, and payment only when the job’s done right.
-              
+
             </p>
 
             <div className="mt-10">
