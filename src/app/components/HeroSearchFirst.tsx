@@ -53,11 +53,10 @@ function StarRow({ count = 5 }: { count?: number }) {
 }
 
 export default function HeroSearchFirst({
-  eyebrow = "Leading Shopify Agency, UK",
-  titleTop = "The",
-  titleHighlight = "Search-First",
+  eyebrow = "Top Rated Shopify Developer & Designer",
+  
   titleBottom = "Hire Shopify Expert & Developer,on demand",
-  description = "Delivering ecommerce growth by crafting outstanding online buying experiences with experimentation & search-first strategies.",
+  description = "No upfront payment required Pay only after your task is completed to your satisfaction.",
   backgroundImageUrl,
   backgroundImageUrls,
   activeImageIndex = 0,
@@ -112,16 +111,7 @@ export default function HeroSearchFirst({
         ) : null}
 
         <h1 className="font-semibold tracking-tight leading-[1.05]">
-          <span className="block text-4xl md:text-7xl">
-            {titleTop}{" "}
-            <span className="inline-flex items-center gap-3">
-              {/* little mark/icon */}
-              <span className="inline-flex h-10 w-10 md:h-14 md:w-14 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/15">
-                <span className="block h-4 w-4 md:h-5 md:w-5 rotate-45 bg-white/90 rounded-sm" />
-              </span>
-              <span className="text-white">{titleHighlight}</span>
-            </span>
-          </span>
+         
           <span className="block text-4xl md:text-7xl text-white/95">
             {titleBottom}
           </span>
@@ -134,8 +124,8 @@ export default function HeroSearchFirst({
         ) : null}
 
         {/* Stats / Social proof (BEFORE CTA) */}
-        <div className="mt-10 w-full max-w-3xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
+        <div className="mt-10 w-full max-w-3xl rounded-2xl border border-[#DFF976] bg-white/5 backdrop-blur-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#DFF976]">
             {/* Rating */}
             <div className="flex flex-col items-center justify-center px-6 py-5 text-center">
               <StarRow />
@@ -172,7 +162,7 @@ export default function HeroSearchFirst({
                   ${
                     isSecondary
                       ? "bg-white text-black hover:bg-white/90"
-                      : " bg-[#DFF976] text-black  ring-1 ring-white/15 hover:bg-black/55"
+                      : " bg-[#DFF976] text-black  ring-1 ring-white/15 hover:bg-[#DFF976]"
                   }`}
               >
                 <span>{cta.label}</span>
