@@ -64,7 +64,7 @@ const ShopifytaskerServices: React.FC = () => {
         </div>
       </div>
       */}
-      <h2 className="whitespace-nowrap text-white/90 text-6xl font-extrabold "> OUR EXPERTISE</h2>
+      <h2 className="text-white/90 text-4xl md:text-6xl font-extrabold "> OUR EXPERTISE</h2>
       <p>We take an integrated approach to digital design, ecommerce, 
         <br>
         </br>and technology to help your business navigate the evolving market landscape
