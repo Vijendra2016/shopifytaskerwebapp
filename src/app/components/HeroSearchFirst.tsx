@@ -61,14 +61,7 @@ export default function HeroSearchFirst({
   backgroundImageUrl,
   backgroundImageUrls,
   activeImageIndex = 0,
-  stats = {
-    ratingValue: "4.9",
-    ratingLabel: "Average user rating",
-    activityValue: "75.2%",
-    activityLabel: "Average daily activity",
-    opensValue: "10+",
-    opensLabel: "10 Years experience in shopify ecosystem",
-  },
+  
   ctas = [
     { label: "What's Search-First?", href: "#search-first", variant: "primary" },
     { label: "Explore Services", href: "#services", variant: "secondary" },
