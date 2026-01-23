@@ -83,7 +83,7 @@ export default function HeroSearchFirst({
           )}
 
           <h1 className="font-thin tracking-tight leading-[1.05]">
-            <span className="block text-4xl md:text-7xl text-white/95">
+            <span className="block text-4xl md:text-7xl text-white/90">
               {titleBottom}
             </span>
           </h1>
