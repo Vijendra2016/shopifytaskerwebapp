@@ -52,7 +52,7 @@ const TestimonialCardGrid = () => {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-black border  border-cyan-400 rounded-3xl p-6 shadow-xl flex flex-col items-center text-center space-y-4"
+            className="bg-black border  border-[#DFF976] rounded-3xl p-6 shadow-xl flex flex-col items-center text-center space-y-4"
           >
             <Image
               src={testimonial.image}
