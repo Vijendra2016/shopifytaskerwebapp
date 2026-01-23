@@ -46,8 +46,8 @@ export default function StepsSection() {
             <h2 className="text-[56px] leading-[0.95] tracking-tight font-medium sm:text-[56px] lg:text-[64px]">
               
               
-             A simple process. <br />
-             Expert execution.
+             A Simple Process <br />
+             Expert Execution
 
             </h2>
 
