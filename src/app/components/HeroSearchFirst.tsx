@@ -36,22 +36,6 @@ type HeroSearchFirstProps = {
   className?: string;
 };
 
-function StarRow({ count = 5 }: { count?: number }) {
-  return (
-    <div className="mb-2 flex items-center justify-center gap-1">
-      {Array.from({ length: count }).map((_, i) => (
-        <svg
-          key={i}
-          className="h-5 w-5 fill-white"
-          viewBox="0 0 20 20"
-          aria-hidden="true"
-        >
-          <path d="M10 15l-5.878 3.09L5.5 11.545 1 7.41l6.061-.88L10 1l2.939 5.53L19 7.41l-4.5 4.136 1.378 6.545z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
 
 export default function HeroSearchFirst({
   eyebrow = "Top Rated Shopify Developer & Designer",
