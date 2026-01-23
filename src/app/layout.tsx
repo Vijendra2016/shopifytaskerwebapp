@@ -11,7 +11,6 @@ import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
 import dynamic from 'next/dynamic'
 import SchemaOrganization from "./components/SchemaOrganization";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

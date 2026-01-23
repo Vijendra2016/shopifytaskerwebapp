@@ -104,7 +104,7 @@ export default function HeroSearchFirst({
                   key={cta.label}
                   type="button"
                   onClick={onOpenCreateTask}
-                  className={`group inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm md:text-base
+                  className={`group inline-flex cursor-pointer  items-center justify-center gap-2 rounded-full px-6 py-3 text-sm md:text-base
                     transition active:scale-[0.99]
                     ${
                       isSecondary
