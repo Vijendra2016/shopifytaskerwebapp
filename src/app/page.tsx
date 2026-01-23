@@ -23,6 +23,8 @@ export default function Home() {
         ]}
         
       />
+    
+
    
    {/* 
     <section className="px-6 md:px-30 py-16 bg-black text-white">
