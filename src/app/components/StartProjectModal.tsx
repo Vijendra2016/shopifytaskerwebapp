@@ -257,7 +257,7 @@ You can also share links or screenshots."
       How can we reach you?
     </h3>
 
-    <p className="mb-2 text-gray-600 text-left text-sm">
+    <p className="mb-2git text-gray-600 text-left text-sm">
       We’ll contact you by email with a quote and next steps.
     </p>
 
