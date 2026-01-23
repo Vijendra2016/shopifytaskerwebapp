@@ -27,7 +27,7 @@ export default function GsapMarquee() {
   }, []);
 
   return (
-    <section className="w-full overflow-hidden bg-gradient-to-r from-sky-300 via-teal-300 to-yellow-300 py-2">
+    <section className="w-full overflow-hidden bg-white/90 py-2">
       <div
         ref={marqueeRef}
         className="flex whitespace-nowrap will-change-transform"

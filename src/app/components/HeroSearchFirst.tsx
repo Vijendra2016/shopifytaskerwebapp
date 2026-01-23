@@ -75,7 +75,7 @@ export default function HeroSearchFirst({
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/85 via-black/60 to-black/85" />
 
         {/* Content */}
-<div className="mx-auto flex min-h-[450px] max-w-5xl flex-col items-center justify-center px-6 py-10 text-center md:min-h-[520px] md:px-10">
+<div className="mx-auto flex min-h-[550px] max-w-5xl flex-col items-center justify-center px-6 py-10 text-center md:min-h-[620px] md:px-10">
           {eyebrow && (
             <p className="mb-6 text-sm md:text-base text-white/70">
               {eyebrow}
