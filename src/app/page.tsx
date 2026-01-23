@@ -15,7 +15,7 @@ export default function Home() {
     <div className="services flex flex-col items-center justify-center text-center text-black ">
 <h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">Hire Shopify Expert & Developer,on demand.</h1>
 <h3 className="text-lg md:text-5xl text-white  font-medium tracking-tight"> No upfront payment required </h3>
-<h4 className="text-lg md:text-4xl text-white tracking-tight"> <span className="bg-teal-500 text-black">Pay only after</span> your task is completed to your satisfaction. </h4>
+<h4 className="text-lg md:text-4xl text-white tracking-tight"> <span className="bg-[#DFF976] text-black">Pay only after</span> your task is completed to your satisfaction. </h4>
 <h4 className="text-lg md:text-3xl text-white tracking-tight "> 10 Years experience in shopify ecosystem </h4>
 
 
@@ -34,7 +34,7 @@ export default function Home() {
     < WhyShopifyTasker />
 
 < ClientTell />
-<section className="bg-[#fefdf9] min-h-100">
+<section className="bg-[#DFF976] min-h-100">
 <div className="services  flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
   <h3 className="text-3xl text-black md:text-6xl font-bold tracking-tight ">
     How its work</h3>
