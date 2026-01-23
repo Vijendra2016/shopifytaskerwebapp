@@ -5,7 +5,6 @@ import GeoMessage from "./components/GeoMessage";
 import WhySwitchSection from "./components/whysection";
 import ShopifytaskerServices from "./components/ShopifytaskerServices";
 import StepsSection from "./components/StepsSection";
-import HeroImageSection from "./components/HeroImageSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
 
 export default function Home() {
