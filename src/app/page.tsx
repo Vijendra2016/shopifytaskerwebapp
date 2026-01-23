@@ -16,7 +16,7 @@ export default function Home() {
 
 
       <HeroSearchFirst
-        backgroundImageUrl="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69735915890543ad82c6b89a_clem-onojeghuo-HpEDSZukJqk-unsplash.jpg"
+        backgroundImageUrl="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6973b8965bf02fccbc736ecf_tobias-rademacher-NuBvAE6VfSM-unsplash.jpg"
         ctas={[
           { label: "Get free estimation", href: "#search-first", variant: "primary" },
           { label: "Explore Services", href: "#services", variant: "secondary" },
