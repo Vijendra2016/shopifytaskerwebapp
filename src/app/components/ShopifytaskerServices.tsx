@@ -68,7 +68,7 @@ const ShopifytaskerServices: React.FC = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="flex flex-col md:flex-row items-start md:items-center justify-between border-t border-cyan-400 pt-10"
+            className="flex flex-col md:flex-row items-start md:items-center justify-between border-t  border-[#DFF976] pt-10"
           >
             <div className="flex items-start space-x-4">
                        <div className="mt-4 md:mt-0 md:ml-8 flex animate-jump animate-once text-8xl items-center justify-center w-16 h-16 rounded-full border border-green-300">{service.id}.</div>
@@ -77,8 +77,8 @@ const ShopifytaskerServices: React.FC = () => {
             <div className="mt-4 md:mt-0 max-w-xl text-white">
               {service.description}
             </div>
-            <div   onClick={handleCardClick} className="cursor-pointer mt-4 md:mt-0  text-4xl md:ml-8 flex items-center justify-center w-16 h-16 rounded-full border-2  border-blue-500">
-              <TfiArrowTopRight className="text-10xl animate-jump-in animate-infinite" />
+            <div   onClick={handleCardClick} className="cursor-pointer mt-4 md:mt-0  text-4xl md:ml-8 flex items-center justify-center w-16 h-16 rounded-full border-2   border-[#DFF976]">
+              <TfiArrowTopRight className="text-10xl text-[#DFF976] animate-jump-in animate-infinite" />
             </div>
           </div>
         ))}
