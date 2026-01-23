@@ -68,10 +68,8 @@ export default function StepsSection() {
           {/* RIGHT */}
           <div className="flex flex-col justify-between">
             <p className="text-[16px] sm:text-[17px] leading-relaxed text-black/80 max-w-xl">
-              Running a Shopify store shouldn’t mean chasing developers or worrying
-              about upfront payments. At ShopifyTasker, we’ve simplified the
-              process so you can move faster, stay in control, and only pay when
-              the job is done right.
+              Running your business is hard enough — dealing with developers shouldn’t be. ShopifyTasker makes it easy with fast turnarounds, total control, and payment only when the job’s done right.
+              
             </p>
 
             <div className="mt-10">
