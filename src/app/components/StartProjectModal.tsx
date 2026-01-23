@@ -187,6 +187,7 @@ It only takes a few minutes. Share a few details and our Shopify experts will ta
                   id="tasktitle"
                   name="tasktitle"
                   value={formData.tasktitle}
+                  required
                   onChange={handleChange}
                   placeholder="What do you need help with? (e.g.  New store setup,theme update, bug fix, speed issue)"
                   className="w-full border-black border text-black p-2 rounded mb-4 placeholder-gray-400 placeholder:text-sm"
@@ -256,7 +257,7 @@ You can also share links or screenshots."
       How can we reach you?
     </h3>
 
-    <p className="mb-6 text-gray-600 text-left text-sm">
+    <p className="mb-2 text-gray-600 text-left text-sm">
       We’ll contact you by email with a quote and next steps.
     </p>
 

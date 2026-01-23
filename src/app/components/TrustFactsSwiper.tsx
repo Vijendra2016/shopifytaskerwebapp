@@ -85,9 +85,7 @@ function Avatar({ name, avatar }: { name: string; avatar?: string }) {
 export default function TrustFactsSwiper() {
   return (
     <div className="w-full rounded-lg border border-black/10 bg-white px-4 py-3 mt-2">
-      <div className="mb-1 text-sm font-semibold text-black">
-        What clients say
-      </div>
+      
 
       <Swiper
         modules={[Autoplay, A11y]}
@@ -111,7 +109,7 @@ export default function TrustFactsSwiper() {
               <div className="min-w-0 flex-1">
                 <div className="flex items-center justify-between gap-3">
                   <div className="truncate">
-                    <div className="text-sm font-semibold text-black">
+                    <div className="text-xs font-semibold text-black">
                       {t.name}
                     </div>
                     {t.store && (
