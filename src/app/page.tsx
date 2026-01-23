@@ -21,14 +21,7 @@ export default function Home() {
           { label: "Get free estimation", href: "#search-first", variant: "primary" },
           { label: "Explore Services", href: "#services", variant: "secondary" },
         ]}
-        stats={{
-          ratingValue: "4.9",
-          ratingLabel: "Average client rating",
-          activityValue: "99.2%",
-          activityLabel: "Average Project Delivery ",
-          opensValue: "10+ Years",
-          opensLabel: " Experience in shopify ecosystem",
-        }}
+        
       />
    
    {/* 

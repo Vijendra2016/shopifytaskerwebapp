@@ -1,6 +1,7 @@
 // components/HeroSearchFirst.tsx
 import React from "react";
 
+
 type Cta = {
   label: string;
   href: string;
@@ -110,7 +111,7 @@ export default function HeroSearchFirst({
           <p className="mb-6 text-sm md:text-base text-white/70">{eyebrow}</p>
         ) : null}
 
-        <h1 className="font-semibold tracking-tight leading-[1.05]">
+        <h1 className="font-thin tracking-tight leading-[1.05]">
          
           <span className="block text-4xl md:text-7xl text-white/95">
             {titleBottom}
