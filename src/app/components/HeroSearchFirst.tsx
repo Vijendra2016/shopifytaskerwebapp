@@ -123,17 +123,17 @@ export default function HeroSearchFirst({
           </p>
         ) : null}
 
-        {/* Stats / Social proof (BEFORE CTA) */}
+        {/* Stats / Social proof (BEFORE CTA) 
         <div className="mt-10 w-full max-w-3xl rounded-2xl border border-[#DFF976] bg-white/5 backdrop-blur-sm">
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#DFF976]">
-            {/* Rating */}
+           
             <div className="flex flex-col items-center justify-center px-6 py-5 text-center">
               <StarRow />
               <p className="text-lg font-semibold">{stats.ratingValue}</p>
               <p className="text-sm text-white/60">{stats.ratingLabel}</p>
             </div>
 
-            {/* Activity */}
+           
             <div className="flex flex-col items-center justify-center px-6 py-5 text-center">
               <p className="text-3xl font-semibold">{stats.activityValue}</p>
               <p className="mt-1 text-sm text-white/60">
@@ -141,13 +141,14 @@ export default function HeroSearchFirst({
               </p>
             </div>
 
-            {/* App Opens */}
+            
             <div className="flex flex-col items-center justify-center px-6 py-5 text-center">
               <p className="text-3xl font-semibold">{stats.opensValue}</p>
               <p className="mt-1 text-sm text-white/60">{stats.opensLabel}</p>
             </div>
           </div>
         </div>
+        */}
 
         {/* CTA Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
