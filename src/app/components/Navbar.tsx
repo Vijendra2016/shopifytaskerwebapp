@@ -10,7 +10,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  // Optional: prevent background scrolling when menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
@@ -19,6 +18,11 @@ export default function Navbar() {
   }, [isOpen]);
 
   const closeMenu = () => setIsOpen(false);
+
+  const openCreateTask = () => {
+    closeMenu();
+    setShowModal(true);
+  };
 
   return (
     <nav className="bg-black text-lg w-full fixed top-0 left-0 z-50">
@@ -78,6 +82,7 @@ export default function Navbar() {
             </button>
           </div>
 
+          {/* Modal */}
           <StartProjectModal
             isOpen={showModal}
             onClose={() => setShowModal(false)}
@@ -100,7 +105,9 @@ export default function Navbar() {
         className={[
           "md:hidden fixed inset-0 z-40",
           "transition-opacity duration-200",
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none",
         ].join(" ")}
       >
         {/* Backdrop */}
@@ -110,7 +117,7 @@ export default function Navbar() {
           aria-hidden="true"
         />
 
-        {/* Panel (starts below navbar height = 64px) */}
+        {/* Panel */}
         <div
           className={[
             "absolute left-0 right-0 top-16 bg-black border-t border-white/10",
@@ -120,28 +127,36 @@ export default function Navbar() {
           ].join(" ")}
         >
           <div className="flex flex-col gap-4 text-white text-xl">
+            {/* Same links as Desktop */}
             <Link href="/" onClick={closeMenu} className="py-2">
               Home
             </Link>
             <Link href="/how-this-work" onClick={closeMenu} className="py-2">
               How it works
             </Link>
-            <Link href="/shopify-expert-services" onClick={closeMenu} className="py-2">
+            <Link
+              href="/shopify-expert-services"
+              onClick={closeMenu}
+              className="py-2"
+            >
               Services
             </Link>
-            <Link href="/cost-to-hire-shopify-expert" onClick={closeMenu} className="py-2">
-              Pricing
+            <Link href="/faq" onClick={closeMenu} className="py-2">
+              FAQ
             </Link>
-            <Link href="/shopify-tasker-reviews" onClick={closeMenu} className="py-2">
+            <Link
+              href="https://www.trustpilot.com/review/shopifytasker.com"
+              target="_blank"
+              onClick={closeMenu}
+              className="py-2"
+            >
               Reviews
             </Link>
 
+            {/* Mobile Create Task opens the same modal */}
             <button
-              onClick={() => {
-                closeMenu();
-                setShowModal(true);
-              }}
-              className="mt-4 inline-flex items-center justify-center gap-2 bg-[#DFF976] text-black px-5 py-3 rounded-full text-base font-medium"
+              onClick={openCreateTask}
+              className="mt-4 inline-flex items-center justify-center gap-2 bg-[#DFF976] text-black px-5 py-3 rounded-full text-base font-medium hover:opacity-90 transition"
             >
               Create Task <TfiArrowRight />
             </button>
