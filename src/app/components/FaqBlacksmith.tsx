@@ -61,7 +61,7 @@ export default function FaqBlacksmith({
   return (
     <section className="bg-white text-black">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-10">
-        {/* Top bar (optional) */}
+        {/* Top bar 
         <div className="flex items-center justify-between text-xs font-semibold tracking-wide">
           <button
             className="uppercase hover:opacity-70"
@@ -78,9 +78,10 @@ export default function FaqBlacksmith({
             {topRightCta.label}
           </a>
         </div>
+        (optional) */}
 
         {/* Big title */}
-        <h1 className="mt-10 text-4xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
+        <h1 className="mt-10 text-2xl font-semibold tracking-tight sm:text-2xl lg:text-5xl">
           {title}
         </h1>
 

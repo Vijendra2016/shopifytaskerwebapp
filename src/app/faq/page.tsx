@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import GeoMessage from "../components/GeoMessage";
 import FaqBlacksmith from "../components/FaqBlacksmith";
+import Image from "next/image";
 
 
 const faqItems = [
@@ -74,8 +75,39 @@ export const metadata: Metadata = {
 export default function faq() {
   return (
     <main className="bg-black mx-auto  py-0 text-center pt-20" >
-        <h1 className="text-3xl md:text-6xl font-bold uppercase tracking-tight  text-white">Frequently Asked Questions </h1>
-      
+      <section className="relative flex items-center justify-center h-[70vh] md:h-[60vh] overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6974b19b0ddc628c2ecc22c6_bp-miller-QcN42a1Okw4-unsplash.jpg"
+        alt="Dark abstract background"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/65" />
+
+      {/* Subtle vignette / depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/90" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl px-6 text-center">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-white">
+          Answers to all your
+          <br className="hidden sm:block" />
+          questions!
+        </h1>
+
+        <p className="mx-auto mt-6 max-w-3xl text-base md:text-xl leading-relaxed text-white/90">
+          Find answers to all of your most common questions. Our FAQs cover
+          costs, timelines, technical details, and any other general questions
+          you're likely to have.
+        </p>
+      </div>
+    </section>
+
 <FaqBlacksmith
         items={faqItems}
         
