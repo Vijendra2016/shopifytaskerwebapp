@@ -3,6 +3,7 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import StartProjectModal from "./StartProjectModal"; // <-- adjust path if needed
 
 type Service = {
   title: string;
@@ -104,7 +105,11 @@ function pad3(n: number) {
 
 export default function ServicesAtlantiser() {
   const rootRef = useRef<HTMLElement | null>(null);
+
   const [active, setActive] = useState(0);
+
+  // ✅ modal state inside this component
+  const [showModal, setShowModal] = useState(false);
 
   useLayoutEffect(() => {
     if (typeof window === "undefined") return;
@@ -169,10 +174,13 @@ export default function ServicesAtlantiser() {
   }, []);
 
   return (
-    <section
-      ref={rootRef}
-      className="relative bg-neutral-950 text-neutral-50"
-    >
+    <section ref={rootRef} className="relative bg-neutral-950 text-neutral-50">
+      {/* ✅ Modal mounted once (not inside map) */}
+      <StartProjectModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+      />
+
       {/* subtle grid/noise feel */}
       <div
         aria-hidden
@@ -184,15 +192,14 @@ export default function ServicesAtlantiser() {
         }}
       />
 
-      <div className="relative mx-auto max-w-10xl px-4 py-10">
-        {/* Header (bold, agency-like) */}
+      <div className="relative mx-auto max-w-7xl px-4 py-10">
+        {/* Header */}
         <div className="mb-10">
           <div className="flex items-center justify-between gap-6">
             <p className="text-xs font-medium tracking-[0.22em] text-neutral-400">
               SERVICES
             </p>
 
-            {/* Active counter (001/006) */}
             <p className="text-xs font-medium tracking-[0.22em] text-neutral-400">
               {pad3(active + 1)}/{pad3(SERVICES.length)}
             </p>
@@ -232,7 +239,7 @@ export default function ServicesAtlantiser() {
               </div>
 
               <div className="grid gap-10 px-6 py-10 md:grid-cols-12 md:px-10 md:py-12">
-                {/* Left: Title + bullets */}
+                {/* Left */}
                 <div className="md:col-span-7">
                   <h3 className="text-3xl font-semibold tracking-tight md:text-5xl">
                     {s.title}
@@ -254,13 +261,14 @@ export default function ServicesAtlantiser() {
                   </div>
                 </div>
 
-                {/* Right: Description + CTA */}
+                {/* Right */}
                 <div className="md:col-span-5">
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur md:p-7">
                     <p className="text-base leading-relaxed text-neutral-100">
                       {s.description}
                     </p>
 
+                    {/* ✅ Open StartProjectModal */}
                     <button
                       type="button"
                       className="
@@ -270,11 +278,7 @@ export default function ServicesAtlantiser() {
                         transition hover:bg-white/15
                         focus:outline-none focus:ring-2 focus:ring-white/30
                       "
-                      onClick={() => {
-                        // Replace with your own action: open modal, route, etc.
-                        const el = document.getElementById("contact");
-                        el?.scrollIntoView({ behavior: "smooth", block: "start" });
-                      }}
+                      onClick={() => setShowModal(true)}
                     >
                       <span aria-hidden className="text-neutral-300">
                         →
@@ -283,7 +287,7 @@ export default function ServicesAtlantiser() {
                     </button>
                   </div>
 
-                  {/* Side nav dots (optional) */}
+                  {/* Side nav dots */}
                   <div className="mt-8 hidden flex-col gap-3 md:flex">
                     {SERVICES.map((_, idx) => (
                       <button
@@ -293,20 +297,27 @@ export default function ServicesAtlantiser() {
                           const card = document.querySelectorAll<HTMLElement>(
                             "[data-service-card]"
                           )[idx];
-                          card?.scrollIntoView({ behavior: "smooth", block: "start" });
+                          card?.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          });
                         }}
                         className="group flex items-center gap-3 text-left"
                       >
                         <span
                           className={[
                             "h-1.5 w-1.5 rounded-full transition",
-                            idx === active ? "bg-white" : "bg-white/25 group-hover:bg-white/45",
+                            idx === active
+                              ? "bg-white"
+                              : "bg-white/25 group-hover:bg-white/45",
                           ].join(" ")}
                         />
                         <span
                           className={[
                             "text-xs tracking-[0.18em] transition",
-                            idx === active ? "text-white" : "text-neutral-400 group-hover:text-neutral-200",
+                            idx === active
+                              ? "text-white"
+                              : "text-neutral-400 group-hover:text-neutral-200",
                           ].join(" ")}
                         >
                           {pad3(idx + 1)}
@@ -317,12 +328,10 @@ export default function ServicesAtlantiser() {
                 </div>
               </div>
 
-              {/* bottom rail */}
               <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10" />
             </article>
           ))}
 
-          {/* small spacer so last card can settle */}
           <div className="h-8" />
         </div>
       </div>
