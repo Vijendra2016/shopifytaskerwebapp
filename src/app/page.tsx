@@ -6,6 +6,7 @@ import WhySwitchSection from "./components/whysection";
 import ShopifytaskerServices from "./components/ShopifytaskerServices";
 import StepsSection from "./components/StepsSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
+import ServicesPinned from "./components/ServicesPinned";
 
 export default function Home() {
   return (
@@ -41,6 +42,7 @@ export default function Home() {
     */}
 
     <ShopifytaskerServices />
+    <ServicesPinned />
   
   <StepsSection />
  
