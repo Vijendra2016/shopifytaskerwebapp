@@ -44,16 +44,16 @@ const SERVICES: Service[] = [
   {
     title: "Custom Theme Development",
     description:
-      "The digital face of your brand — crafted to captivate, connect, and leave a mark on every visitor.",
+      "A conversion-focused Shopify experience — tailor-made to reflect your brand, scale with your business, and perform flawlessly across devices.",
     bullets: [
-      "UX Design",
-      "Interactive UI Design",
-      "Information Architecture",
-      "Custom Web Development",
-      "Scroll Based Animations & 3D",
-      "Editorial Design & CMS",
-      "Performance Optimization",
-      "Website Maintenance & Support",
+       "Shopify UX & Conversion Design",
+    "Custom Liquid Theme Development",
+    "Advanced Variant & Product Logic",
+    "Metafields & Dynamic Content Architecture",
+    "Performance & Core Web Vitals Optimization",
+    "Headless & App-Integrated Builds",
+    "Accessibility & Cross-Device Testing",
+    "Ongoing Theme Maintenance & Support",
     ],
   },
   {
