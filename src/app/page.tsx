@@ -42,10 +42,9 @@ export default function Home() {
 
     <ShopifytaskerServices />
   
-  
+  <StepsSection />
  
 
-  < WhyShopifyTasker />
   
 <WhySwitchSection/>
 
@@ -54,8 +53,9 @@ export default function Home() {
  
 
 < ClientTell />
-<StepsSection />
 
+< WhyShopifyTasker />
+  
 <TestimonialCardGrid />
 <GeoMessage />
 
