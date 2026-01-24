@@ -6,6 +6,7 @@ import WhySwitchSection from "./components/whysection";
 import ShopifytaskerServices from "./components/ShopifytaskerServices";
 import StepsSection from "./components/StepsSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
+import BrandsMarquee from "./components/BrandsMarquee";
 
 export default function Home() {
   return (
@@ -23,7 +24,16 @@ export default function Home() {
         ]}
         
       />
-    
+    <BrandsMarquee
+  brands={[
+    { src: '/logos/intel.svg', alt: 'Intel' },
+    { src: '/logos/youtube.svg', alt: 'YouTube' },
+    { src: '/logos/netlify.svg', alt: 'Netlify' },
+    { src: '/logos/amazon.svg', alt: 'Amazon' },
+    { src: '/logos/ford.svg', alt: 'Ford' },
+    { src: '/logos/samsung.svg', alt: 'Samsung' },
+  ]}
+/>
 
    
    {/* 

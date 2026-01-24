@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { TfiAlignLeft, TfiClose, TfiArrowRight } from "react-icons/tfi";
 import StartProjectModal from "./StartProjectModal";
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -39,6 +38,7 @@ export default function Navbar() {
               priority
             />
           </Link>
+          
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
