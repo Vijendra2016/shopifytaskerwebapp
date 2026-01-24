@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <nav className="bg-black text-lg w-full fixed top-0 left-0 z-50">
       <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-14 items-center">
           {/* Logo */}
           <Link href="/" className="px-4 py-1" onClick={closeMenu}>
             <Image
@@ -44,32 +44,32 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-8 items-center">
             <Link
               href="/"
-              className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition"
+              className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition"
             >
               Home
             </Link>
             <Link
               href="/how-this-work"
-              className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition"
+              className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition"
             >
               How it works
             </Link>
             <Link
               href="/shopify-expert-services"
-              className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition"
+              className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition"
             >
               Services
             </Link>
             <Link
               href="/faq"
-              className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition"
+              className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition"
             >
               FAQ
             </Link>
             <Link
               href="https://www.trustpilot.com/review/shopifytasker.com"
               target="_blank"
-              className="text-white text-lg font-medium"
+              className="text-white text-sm font-bold"
             >
               Reviews
             </Link>
