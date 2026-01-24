@@ -13,18 +13,18 @@ type Service = {
 
 const SERVICES: Service[] = [
   {
-    title: "Brand Strategy",
+    title: "Shopify & Shopify Plus Task",
     description:
-      "Your brand’s compass. It defines purpose, sharpens positioning, and ensures every decision resonates while driving growth.",
+      "On-demand Shopify expertise to build, optimize, and scale your store—covering everything from custom themes to advanced integrations.",
     bullets: [
-      "Research & Insights",
-      "Go-to-Market Strategy (GTM)",
-      "Brand Architecture",
-      "Purpose, Mission, Vision",
-      "Value Proposition",
-      "Communication Strategy",
-      "Verbal Identity",
-      "Naming",
+      "Custom Theme Development",
+    "Shopify Plus Customization",
+    "Liquid & Section Development",
+    "App & API Integrations",
+    "Checkout & Cart Customization",
+    "Performance Optimization",
+    "Store Setup & Migration",
+    "Ongoing Support & Enhancements",
     ],
   },
   {
@@ -32,13 +32,14 @@ const SERVICES: Service[] = [
     description:
       "The visual heartbeat of your brand: a distinct language that turns heads, stirs hearts, and makes you unforgettable.",
     bullets: [
-      "Logotype & Symbol Design",
-      "Typography & Color Systems",
-      "Brand Book & Guidelines",
-      "Illustrations & 3D Visuals",
-      "Motion Graphics & Storytelling",
-      "Art Direction",
-      "Packaging Design",
+      "Custom Theme Development",
+    "Shopify Plus Customization",
+    "Liquid & Section Development",
+    "App & API Integrations",
+    "Checkout & Cart Customization",
+    "Performance Optimization",
+    "Store Setup & Migration",
+    "Ongoing Support & Enhancements",
     ],
   },
   {
@@ -206,7 +207,7 @@ export default function ServicesAtlantiser() {
           </div>
 
           <h2 className="mt-5 max-w-4xl text-balance text-3xl font-semibold tracking-tight md:text-5xl">
-            Full-service studio to transform brands & digital experiences.
+            On-demand Shopify designers & developers for growing brands.
           </h2>
 
           <div className="mt-6 h-px w-full bg-white/10" />
