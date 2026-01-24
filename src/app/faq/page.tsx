@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import FaqSections from "../components/Faq";
 import GeoMessage from "../components/GeoMessage";
 import FaqBlacksmith from "../components/FaqBlacksmith";
 
@@ -143,15 +142,15 @@ const faqSections = [
 
 export default function faq() {
   return (
-    <main className="bg-black mx-auto px-1 py-0 text-center pt-20" >
+    <main className="bg-black mx-auto  py-0 text-center pt-20" >
         <h1 className="text-3xl md:text-6xl font-bold uppercase tracking-tight  text-white">Frequently Asked Questions </h1>
       
 <FaqBlacksmith
         items={faqItems}
-        topRightCta={{ label: "CREATE TASK", href: "/create-task" }}
+        
       />
 
-    <FaqSections sections={faqSections} />
+   
       <GeoMessage/> 
 
     
