@@ -51,8 +51,7 @@ function EyeIcon({ open }: { open: boolean }) {
 export default function FaqBlacksmith({
   items,
   title = "FAQ - YOUR QUESTIONS",
-  topLeftLabel = "MENU",
-  topRightCta = { label: "SUBMIT MY PROJECT", href: "/contact" },
+  
 }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(0); // default first open
 

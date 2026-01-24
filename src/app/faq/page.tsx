@@ -102,8 +102,8 @@ export default function faq() {
 
         <p className="mx-auto mt-6 max-w-3xl text-base md:text-xl leading-relaxed text-white/90">
           Find answers to all of your most common questions. Our FAQs cover
-          costs, timelines, technical details, and any other general questions
-          you're likely to have.
+          about us, timelines, technical details, and any other general questions
+          you likely to have.
         </p>
       </div>
     </section>
