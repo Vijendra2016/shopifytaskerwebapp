@@ -3,7 +3,6 @@ import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
 import GeoMessage from "./components/GeoMessage";
 import WhySwitchSection from "./components/whysection";
-import ShopifytaskerServices from "./components/ShopifytaskerServices";
 import StepsSection from "./components/StepsSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
 import ServicesPinned from "./components/ServicesPinned";
@@ -41,7 +40,7 @@ export default function Home() {
     </section>
     */}
 
-    <ShopifytaskerServices />
+
     <ServicesPinned />
 
   
