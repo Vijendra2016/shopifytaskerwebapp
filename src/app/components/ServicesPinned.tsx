@@ -276,7 +276,7 @@ export default function ServicesAtlantiser() {
                     {/* ✅ Open StartProjectModal */}
                     <button
                       type="button"
-                      className="
+                      className=" cursor-pointer 
                         mt-6 inline-flex items-center gap-3
                         rounded-full border border-white/15 bg-white/10
                         px-5 py-2.5 text-sm font-medium text-neutral-50
