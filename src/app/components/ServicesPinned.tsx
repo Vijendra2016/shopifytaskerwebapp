@@ -42,7 +42,7 @@ const SERVICES: Service[] = [
     ],
   },
   {
-    title: "Website",
+    title: "Custom Theme Development",
     description:
       "The digital face of your brand — crafted to captivate, connect, and leave a mark on every visitor.",
     bullets: [
@@ -241,7 +241,7 @@ export default function ServicesAtlantiser() {
               <div className="grid gap-10 px-6 py-10 md:grid-cols-12 md:px-10 md:py-12">
                 {/* Left */}
                 <div className="md:col-span-7">
-                  <h3 className="text-3xl font-semibold tracking-tight md:text-5xl">
+                  <h3 className="text-3xl  text-white/90 uppercase  font-extrabold tracking-tight md:text-3xl">
                     {s.title}
                   </h3>
 
