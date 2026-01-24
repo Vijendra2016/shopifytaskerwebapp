@@ -1,7 +1,22 @@
 import { Metadata } from "next";
 import FaqSections from "../components/Faq";
 import GeoMessage from "../components/GeoMessage";
+import FaqBlacksmith from "../components/FaqBlacksmith";
 
+
+const faqItems = [
+  {
+    question: "What is ShopifyTasker and what do you do?",
+    answer:
+      "We provide Shopify design and development on demand—handling tasks like theme updates, custom sections, integrations, and store improvements.",
+  },
+  {
+    question: "How fast can you deliver?",
+    answer:
+      "Most tasks are completed within 24–72 hours depending on complexity. Urgent requests can be prioritized.",
+  },
+  // ...
+];
 export const metadata: Metadata = {
   title: "ShopifyTasker Reviews",
   description:
@@ -84,8 +99,13 @@ export default function faq() {
     <main className="bg-black mx-auto px-1 py-0 text-center pt-20" >
         <h1 className="text-3xl md:text-6xl font-bold uppercase tracking-tight  text-white">Frequently Asked Questions </h1>
       
-          <FaqSections sections={faqSections} />
-<GeoMessage/> 
+<FaqBlacksmith
+        items={faqItems}
+        topRightCta={{ label: "CREATE TASK", href: "/create-task" }}
+      />
+
+    <FaqSections sections={faqSections} />
+      <GeoMessage/> 
 
     
     </main>
