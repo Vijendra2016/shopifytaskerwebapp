@@ -43,6 +43,7 @@ export default function Home() {
 
     <ShopifytaskerServices />
     <ServicesPinned />
+
   
   <StepsSection />
  

@@ -184,7 +184,7 @@ export default function ServicesAtlantiser() {
         }}
       />
 
-      <div className="relative mx-auto max-w-6xl px-4 py-20">
+      <div className="relative mx-auto max-w-10xl px-4 py-10">
         {/* Header (bold, agency-like) */}
         <div className="mb-10">
           <div className="flex items-center justify-between gap-6">
