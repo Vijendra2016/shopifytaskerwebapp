@@ -42,30 +42,47 @@ export default function GsapMarquee() {
 function MarqueeContent() {
   return (
     <div className="marquee-item flex items-center gap-12 pr-12">
-      <span className="text-sm font-medium text-black">
-        AI-Enhanced Shopify Development
+      <span className="text-sm uppercase  font-bold  text-black">
+       Shopify Expert
       </span>
 
-      <span className="font-bold text-sm text-black">SHOPIFY EXPERT</span>
-
-      <span className="font-semibold text-sm text-black">
-       AI-Enhanced WooCommerce Development
+<span className="text-sm font-bold   uppercase  text-black">
+       Shopify Designer 
       </span>
 
-      <span className="font-bold text-xl text-black">WOOCOMMERCE EXPERT</span>
-
-
-      <span className="font-semibold text-sm text-black">
-        B2B Commerce
+<span className="text-sm font-bold uppercase   text-black">
+       Shopify Developer 
+      </span>
+<span className="text-sm font-bold uppercase  text-black">
+       Shopify Plus Developer
       </span>
 
-      <span className="font-bold text-sm text-black">Shopify plus Developer</span>
-
-      <span className="font-semibold text-sm text-black">
-        D2C Commerce
+<span className="text-sm font-bold uppercase  text-black">
+       Shopify B2B
+      </span>
+      
+      <span className="text-sm uppercase  font-bold  text-black">
+       Shopify Expert
       </span>
 
-      <span className="font-bold text-xl text-black">COMMERCETASKER</span>
+<span className="text-sm font-bold   uppercase  text-black">
+       Shopify Designer 
+      </span>
+
+<span className="text-sm font-bold uppercase   text-black">
+       Shopify Developer 
+      </span>
+<span className="text-sm font-bold uppercase  text-black">
+       Shopify Plus Developer
+      </span>
+
+<span className="text-sm font-bold uppercase  text-black">
+       Shopify B2B
+      </span>
+      
+      
+
+      
     </div>
   );
 }
