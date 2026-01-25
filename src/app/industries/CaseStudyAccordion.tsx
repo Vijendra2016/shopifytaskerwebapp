@@ -1,0 +1,109 @@
+export default function CaseStudySection() {
+  return (
+    <section className="border-b border-black font-sans">
+
+      {/* TOP SECTION */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+
+          {/* LEFT BIG TITLE */}
+          <h1 className="text-6xl font-bold tracking-tight">
+         Shopify Health Wellness Website Design and development 
+          </h1>
+
+          {/* RIGHT ABOUT */}
+          <div>
+            <p className="text-sm uppercase tracking-widest mb-4">
+              About
+            </p>
+
+            <p className="text-xl leading-relaxed font-medium">
+             We design and develop Shopify experiences for Health & Wellness brands that want more than just an online store. By merging strategy, design, and technology,
+              we build digital storefronts that earn trust, showcase products, and fuel long-term growth.
+            </p>
+          </div>
+
+        </div>
+
+       
+        
+
+      </div>
+
+      {/* DIVIDER */}
+      <div className="border-t border-black"></div>
+
+      {/* BOTTOM SECTION */}
+      <div className="max-w-7xl mx-auto px-6 py-14">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+
+          {/* INDUSTRY */}
+          <div>
+            <p className="text-sm uppercase tracking-widest mb-3">
+              Industry
+            </p>
+            <p className="text-2xl font-semibold">
+              Wirtschaft & Tourismus
+            </p>
+          </div>
+
+          {/* SERVICES */}
+          <div className="md:col-span-2 grid grid-cols-2 gap-16">
+
+            {/* STRATEGY */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-5">strategy</h3>
+              <ul className="space-y-2 text-lg">
+                <li>Research & Insights</li>
+                <li>Markenstrategie & Beratung</li>
+                <li>Markenpositionierung</li>
+                <li>Brand Story</li>
+                <li>Naming</li>
+              </ul>
+            </div>
+
+            {/* IDENTITY */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-5">identity</h3>
+              <ul className="space-y-2 text-lg">
+                <li>Corporate Design</li>
+                <li>Logogestaltung</li>
+                <li>Typografie & Farbkonzept</li>
+                <li>Visuelles Storytelling</li>
+                <li>Brandbook & Brand Guidelines</li>
+              </ul>
+            </div>
+
+            {/* EXPERIENCE */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-5">experience</h3>
+              <ul className="space-y-2 text-lg">
+                <li>Accessibility</li>
+                <li>Web Design</li>
+                <li>User Research</li>
+                <li>Design Systems</li>
+                <li>User Experience Design</li>
+                <li>User Interface Design</li>
+                <li>Visual Prototyping</li>
+              </ul>
+            </div>
+
+            {/* TECHNOLOGY */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-5">technology</h3>
+              <ul className="space-y-2 text-lg">
+                <li>CMS (Craft, Webflow, Contentful)</li>
+                <li>Web Development</li>
+                <li>Infrastructure & Hosting</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
