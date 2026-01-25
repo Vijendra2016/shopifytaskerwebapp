@@ -1,6 +1,6 @@
 export default function CaseStudySection() {
   return (
-    <section className="border-b border-black font-sans">
+    <section className="border-b border-black font-sans text-black">
 
       {/* TOP SECTION */}
       <div className="max-w-7xl mx-auto px-6 py-16">

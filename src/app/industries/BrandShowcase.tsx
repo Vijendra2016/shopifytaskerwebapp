@@ -21,13 +21,13 @@ export default function BrandShowcase({
   subtitle = "Inspiration from high-performing Shopify health and wellness stores.",
 }: Props) {
   return (
-    <section className="py-14 bg-gray-50">
+    <section className="py-14 bg-black text-white/90">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section Heading */}
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold">{title}</h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-3 text-white max-w-2xl mx-auto">
             {subtitle}
           </p>
         </div>

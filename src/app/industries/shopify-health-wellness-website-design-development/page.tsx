@@ -82,6 +82,28 @@ export default function IndustryPage() {
       description: "High-converting supplement funnel.",
       features: ["Video storytelling", "Bundles"],
     },
+     {
+      name: "Huelb",
+      url: "https://huel.com",
+      image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg",
+      description: "Nutrition-first meal replacement brand.",
+      features: ["Subscriptions", "Ingredient transparency"],
+    },
+    {
+      name: "RitualF",
+      url: "https://ritual.com",
+      image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg",
+      description: "Vitamin brand with storytelling.",
+      features: ["Minimal design", "Sticky CTA"],
+    },
+    {
+      name: "AG1b",
+      url: "https://athleticgreens.com",
+      image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg",
+      description: "High-converting supplement funnel.",
+      features: ["Video storytelling", "Bundles"],
+    },
+
   ]}
 />
 
