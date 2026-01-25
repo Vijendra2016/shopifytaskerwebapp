@@ -6,6 +6,13 @@ import ImageGallery from "../ImageGallery";
 import SplitSection from "../SplitSection";
 import Features from "../Features";
 import CaseStudyAccordion from "../CaseStudyAccordion";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+  description: 
+    "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
+};
+
 
 
 export default function IndustryPage() {
