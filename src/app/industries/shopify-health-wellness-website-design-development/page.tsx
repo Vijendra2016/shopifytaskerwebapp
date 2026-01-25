@@ -7,6 +7,7 @@ import SplitSection from "../SplitSection";
 import Features from "../Features";
 import CaseStudyAccordion from "../CaseStudyAccordion";
 import { Metadata } from "next";
+import GeoMessage from "@/app/components/GeoMessage";
 export const metadata: Metadata = {
   title: "Health & Wellness Shopify Store Design, Redesign & Migration",
   description: 
@@ -56,7 +57,7 @@ export default function IndustryPage() {
         ]}
       />
 
-     
+     <GeoMessage/>
     </>
   );
 }
