@@ -12,7 +12,7 @@ export default function IndustryPage() {
   return (
     <>
       <Hero
-        title="Shopify Health Wellness Website Design and development"
+        title="Health & Wellness Shopify Website Design & Development | ShopifyTasker"
         subtitle="High-performance eCommerce solutions for Health Wellness brands"
         image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg"
       />

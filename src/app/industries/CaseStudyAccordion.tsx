@@ -57,48 +57,51 @@ We help Health & Wellness brands grow with conversion-focused Shopify solutions
             <div>
               <h3 className="text-2xl font-semibold mb-5">strategy</h3>
               <ul className="space-y-2 text-lg">
-                <li>Research & Insights</li>
-                <li>Markenstrategie & Beratung</li>
-                <li>Markenpositionierung</li>
-                <li>Brand Story</li>
-                <li>Naming</li>
+                <li>Brand & Store Research</li>
+                <li>Market & Competitor Analysis</li>
+                <li>Conversion Strategy Planning</li>
+                <li>Store Architecture & UX Planning</li>
+                <li>Growth Roadmap Consulting</li>
               </ul>
             </div>
 
             {/* IDENTITY */}
             <div>
-              <h3 className="text-2xl font-semibold mb-5">identity</h3>
-              <ul className="space-y-2 text-lg">
-                <li>Corporate Design</li>
-                <li>Logogestaltung</li>
-                <li>Typografie & Farbkonzept</li>
-                <li>Visuelles Storytelling</li>
-                <li>Brandbook & Brand Guidelines</li>
-              </ul>
+              <h3 className="text-2xl font-semibold text-black mb-5">identity</h3>
+              <ul className="space-y-2  text-black text-lg">
+  <li>Health & Wellness Brand Positioning</li>
+  <li>Logo & Visual Identity Setup</li>
+  <li>Typography & Color Systems</li>
+  <li>Product & Lifestyle Visual Direction</li>
+  <li>Brand Guidelines for Consistency</li>
+</ul>
+
             </div>
 
             {/* EXPERIENCE */}
             <div>
-              <h3 className="text-2xl font-semibold mb-5">experience</h3>
-              <ul className="space-y-2 text-lg">
-                <li>Accessibility</li>
-                <li>Web Design</li>
-                <li>User Research</li>
-                <li>Design Systems</li>
-                <li>User Experience Design</li>
-                <li>User Interface Design</li>
-                <li>Visual Prototyping</li>
-              </ul>
+              <h3 className="text-2xl  text-black font-semibold mb-5">experience</h3>
+              <ul className="space-y-2 text-black  text-lg">
+  <li>Mobile-First Store Design</li>
+  <li>High-Converting Product Pages</li>
+  <li>Smooth Checkout Experience</li>
+  <li>Accessibility & Speed Optimization</li>
+  <li>Trust & Credibility Building Elements</li>
+</ul>
+
             </div>
 
             {/* TECHNOLOGY */}
             <div>
-              <h3 className="text-2xl font-semibold mb-5">technology</h3>
-              <ul className="space-y-2 text-lg">
-                <li>CMS (Craft, Webflow, Contentful)</li>
-                <li>Web Development</li>
-                <li>Infrastructure & Hosting</li>
-              </ul>
+              <h3 className="text-2xl  text-black  font-semibold mb-5">technology</h3>
+              <ul className="space-y-2  text-black  text-lg">
+  <li>Shopify Store Development</li>
+  <li>Custom Theme & Section Building</li>
+  <li>App Integrations & Automation</li>
+  <li>Subscription & Membership Setup</li>
+  <li>Performance & SEO Optimization</li>
+</ul>
+
             </div>
 
           </div>
