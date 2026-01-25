@@ -44,7 +44,7 @@ export default function IndustryPage() {
       <SplitSection
         title="Built for Performance"
         text="Lightning-fast storefronts optimized for SEO, CRO and mobile."
-        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69759cf5d41af8667e35d0fc_poko-skincare-fJ0fQhYEHAE-unsplash%20(1).jpg"
+        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg"
       />
 
       <Features

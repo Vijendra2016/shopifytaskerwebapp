@@ -16,7 +16,7 @@ export default function SplitSection({
 }: SplitProps) {
   return (
     <section className="py-20 px-6">
-      <div className={`max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center ${reverse ? "md:flex-row-reverse" : ""}`}>
+      <div className={`max-w-8xl mx-auto grid md:grid-cols-2 gap-12 items-center ${reverse ? "md:flex-row-reverse" : ""}`}>
         <div>
           <h3 className="text-3xl font-semibold">{title}</h3>
           <p className="mt-4 text-gray-600">{text}</p>
@@ -24,9 +24,9 @@ export default function SplitSection({
         <Image
           src={image}
           alt={title}
-          width={600}
-          height={500}
-          className="rounded-xl"
+          width={800}
+          height={800}
+          
         />
       </div>
     </section>
