@@ -8,9 +8,9 @@ export default function CaseStudySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
           {/* LEFT BIG TITLE */}
-          <h1 className="text-6xl  text-black  font-bold tracking-tight">
-         Shopify Health Wellness Website Design and development 
-          </h1>
+          <h2 className="text-3xl md:text-4xl text-black  font-bold tracking-tight">
+       Custom Shopify Stores for Health & Wellness Brands that Convert & Retain Customer
+          </h2>
 
           {/* RIGHT ABOUT */}
           <div>
