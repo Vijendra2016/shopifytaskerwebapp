@@ -48,6 +48,13 @@ export default function CaseStudySection() {
             <h2 className="text-2xl text-black   font-semibold">
 We help Health & Wellness brands grow with conversion-focused Shopify solutions
   </h2>
+           
+           <p className="text-lg max-w-3xl">
+  Whether you launching a new health & wellness brand, upgrading an existing
+  store, or migrating to Shopify — we design, develop, and optimize Shopify
+  experiences that build trust, increase repeat revenue, and scale with your growth.
+</p>
+
           </div>
 
           {/* SERVICES */}
@@ -57,11 +64,12 @@ We help Health & Wellness brands grow with conversion-focused Shopify solutions
             <div>
               <h3 className="text-2xl text-black   font-semibold mb-5">strategy</h3>
               <ul className="space-y-2 text-black   text-lg">
-                <li>Brand & Store Research</li>
-                <li>Market & Competitor Analysis</li>
-                <li>Conversion Strategy Planning</li>
-                <li>Store Architecture & UX Planning</li>
-                <li>Growth Roadmap Consulting</li>
+                 <li>Brand & Store Research for Health & Wellness</li>
+  <li>Market & Competitor Analysis</li>
+  <li>Conversion & Retention Strategy Planning</li>
+  <li>Store Architecture & UX Planning</li>
+  <li>Migration & Replatforming Strategy</li>
+  <li>Growth Roadmap & Monthly Retainer Planning</li>
               </ul>
             </div>
 
@@ -82,11 +90,12 @@ We help Health & Wellness brands grow with conversion-focused Shopify solutions
             <div>
               <h3 className="text-2xl  text-black font-semibold mb-5">experience</h3>
               <ul className="space-y-2 text-black  text-lg">
-  <li>Mobile-First Store Design</li>
-  <li>High-Converting Product Pages</li>
-  <li>Smooth Checkout Experience</li>
-  <li>Accessibility & Speed Optimization</li>
-  <li>Trust & Credibility Building Elements</li>
+   <li>New Shopify Store Design & Build</li>
+  <li>Shopify Store Redesign & UX Upgrade</li>
+  <li>High-Converting Product & Funnel Pages</li>
+  <li>Subscription & Replenishment Experience</li>
+  <li>Mobile-First & Speed Optimization</li>
+  <li>Conversion Rate Optimization (CRO)</li>
 </ul>
 
             </div>
@@ -95,11 +104,12 @@ We help Health & Wellness brands grow with conversion-focused Shopify solutions
             <div>
               <h3 className="text-2xl  text-black  font-semibold mb-5">technology</h3>
               <ul className="space-y-2  text-black  text-lg">
-  <li>Shopify Store Development</li>
+  <li>Shopify & Shopify Plus Development</li>
+  <li>Migration from WooCommerce, Magento or Custom Platforms</li>
   <li>Custom Theme & Section Building</li>
-  <li>App Integrations & Automation</li>
-  <li>Subscription & Membership Setup</li>
-  <li>Performance & SEO Optimization</li>
+  <li>App Integrations & Store Automation</li>
+  <li>Dedicated Shopify Developer Support</li>
+  <li>Monthly Maintenance & Growth Retainers</li>
 </ul>
 
             </div>
