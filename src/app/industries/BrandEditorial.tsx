@@ -31,15 +31,20 @@ export default function BrandEditorial({ brands }: Props) {
         {brands.map((brand, index) => (
           <div key={index} className="space-y-6">
 
-            {/* Featured Image */}
-            <div className="relative w-full h-[800px] overflow-hidden ">
-              <Image
-                src={brand.image}
-                alt={brand.name}
-                fill
-                className="object-cover"
-              />
-            </div>
+           {/* Featured Image */}
+<div className="relative w-full h-[400px] md:h-[600px] lg:h-[800px] overflow-hidden ">
+  
+
+   <Image
+          src={brand.image}
+          alt={brand.name}
+          width={1200}
+          height={800}
+          className="w-full h-auto object-contain rounded-md"
+        />
+
+</div>
+
 
             {/* Text Content */}
             <div className="max-w-3xl">

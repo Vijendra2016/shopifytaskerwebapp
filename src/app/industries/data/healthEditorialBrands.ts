@@ -16,7 +16,7 @@ export const healthEditorialBrands = [
   {
     name: "AG1",
     url: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg",
-    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg",
+    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697662f65259031cc0ee3be3_testimage.jpeg",
     description:
       "AG1’s Shopify experience focuses on conversion-led landing pages, educational video content, and subscription-first checkout flows.",
     features: [
