@@ -19,8 +19,9 @@ export default function CaseStudySection() {
             </p>
 
             <p className="text-xl leading-relaxed font-medium">
-             We design and develop Shopify experiences for Health & Wellness brands that want more than just an online store. By merging strategy, design, and technology,
-              we build digital storefronts that earn trust, showcase products, and fuel long-term growth.
+             
+             We design and develop Shopify experiences specifically for Health & Wellness brands that want more than just a store. By combining strategy, clean and calming design, and conversion-driven development, we help wellness companies build trust, delight customers, and grow online revenue. From responsive mobile-first design to
+              optimized product pages and seamless checkout, every store we build is crafted to increase engagement and sales.
             </p>
           </div>
 

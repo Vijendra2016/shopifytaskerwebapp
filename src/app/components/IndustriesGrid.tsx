@@ -19,7 +19,7 @@ const industries: Industry[] = [
   {
     title: "Health and wellness",
     tags: " shopify store development for wellness brands",
-    url: "/industries/nordic-design",
+    url: "/industries/shopify-health-wellness-website-design-development",
     image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/682719eda8c781d89c98050d_heath-and-wellness-shopify-website-development.png",
   },
    {
