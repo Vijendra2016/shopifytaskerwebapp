@@ -9,6 +9,8 @@ import CaseStudyAccordion from "../CaseStudyAccordion";
 import { Metadata } from "next";
 import GeoMessage from "@/app/components/GeoMessage";
 import BrandShowcase from "../BrandShowcase";
+import BrandEditorial from "../BrandEditorial";
+import { healthEditorialBrands } from "../data/healthEditorialBrands";
 export const metadata: Metadata = {
   title: "Health & Wellness Shopify Store Design, Redesign & Migration",
   description: 
@@ -106,7 +108,7 @@ export default function IndustryPage() {
 
   ]}
 />
-
+ <BrandEditorial brands={healthEditorialBrands} />
 
      <GeoMessage/>
     </>
