@@ -13,7 +13,7 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
       <div className=" mx-auto px-6">
         
         {/* Image Box */}
-        <div className="relative h-[70vh] rounded-2xl overflow-hidden">
+        <div className="relative h-[70vh]  overflow-hidden">
           
           {/* Image */}
           <Image
