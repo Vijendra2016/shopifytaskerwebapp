@@ -94,7 +94,7 @@ export default function Footer() {
           <Link href="/industries/shopify-auto-parts-website-design-development">Auto Parts</Link>
           <Link href="#">Gym & Fitness</Link>
           <Link href="#">Fashion</Link>
-          <Link href="#">Health & Wellness</Link>
+          <Link href="/industries/shopify-health-wellness-website-design-development">Health & Wellness</Link>
           <Link href="#">Custom and fine jewelery </Link>
 
           
