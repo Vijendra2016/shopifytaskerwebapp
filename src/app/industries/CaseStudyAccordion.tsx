@@ -8,14 +8,14 @@ export default function CaseStudySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
           {/* LEFT BIG TITLE */}
-          <h1 className="text-6xl font-bold tracking-tight">
+          <h1 className="text-6xl  text-black  font-bold tracking-tight">
          Shopify Health Wellness Website Design and development 
           </h1>
 
           {/* RIGHT ABOUT */}
           <div>
             <p className="text-sm uppercase tracking-widest mb-4">
-              About
+              what we do 
             </p>
 
             <p className="text-xl text-black leading-relaxed font-medium">
@@ -42,12 +42,12 @@ export default function CaseStudySection() {
 
           {/* INDUSTRY */}
           <div>
-            <p className="text-sm uppercase tracking-widest mb-3">
+            <p className="text-sm text-black  uppercase tracking-widest mb-3">
               Our services 
             </p>
-            <p className="text-2xl font-semibold">
+            <h2 className="text-2xl text-black   font-semibold">
 We help Health & Wellness brands grow with conversion-focused Shopify solutions
-  </p>
+  </h2>
           </div>
 
           {/* SERVICES */}
@@ -55,8 +55,8 @@ We help Health & Wellness brands grow with conversion-focused Shopify solutions
 
             {/* STRATEGY */}
             <div>
-              <h3 className="text-2xl font-semibold mb-5">strategy</h3>
-              <ul className="space-y-2 text-lg">
+              <h3 className="text-2xl text-black   font-semibold mb-5">strategy</h3>
+              <ul className="space-y-2 text-black   text-lg">
                 <li>Brand & Store Research</li>
                 <li>Market & Competitor Analysis</li>
                 <li>Conversion Strategy Planning</li>
