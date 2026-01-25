@@ -42,11 +42,11 @@ export default function CaseStudySection() {
           {/* INDUSTRY */}
           <div>
             <p className="text-sm uppercase tracking-widest mb-3">
-              Industry
+              Our services 
             </p>
             <p className="text-2xl font-semibold">
-              Wirtschaft & Tourismus
-            </p>
+We help Health & Wellness brands to following service      
+  </p>
           </div>
 
           {/* SERVICES */}
