@@ -14,7 +14,7 @@ export default function IndustryPage() {
       <Hero
         title="Shopify Health Wellness Website Design and development"
         subtitle="High-performance eCommerce solutions for Health Wellness brands"
-        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69759cf5d41af8667e35d0fc_poko-skincare-fJ0fQhYEHAE-unsplash%20(1).jpg"
+        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg"
       />
 
 <CaseStudyAccordion/>
