@@ -25,4 +25,16 @@ export const healthEditorialBrands = [
       "Subscription optimization",
     ],
   },
+  {
+    name: "Liquid IV",
+    url: "https://www.liquid-iv.com/",
+    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697662f65259031cc0ee3be3_testimage.jpeg",
+    description:
+      "Liquid IV is a collection of science-based functional beverages that can allegedly hydrate faster than water alone. The brand was acquired by Unilever in 2020.Products contain curated performance ingredient blends to aid energy, sleep and immune support. Every serving is powered by the science of Cellular Transport Technology (CTT) to deliver hydration and other ingredients rapidly into the bloodstream.",
+    features: [
+      "Landing-page funnels",
+      "Video storytelling",
+      "Subscription optimization",
+    ],
+  },
 ];
