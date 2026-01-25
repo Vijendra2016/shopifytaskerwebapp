@@ -63,7 +63,7 @@ export default function BrandEditorial({ brands }: Props) {
               <p className="mt-3 text-gray-700 font-semibold leading-relaxed">Standout store features:</p>
 
               {brand.features && (
-                <ul className="mt-4 list-disc list-inside text-gray-700 space-y-1">
+                <ul className="mt-2 list-disc list-inside text-gray-700 space-y-1">
                   {brand.features.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
