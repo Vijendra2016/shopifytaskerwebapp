@@ -94,7 +94,7 @@ export default function faq() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl px-6 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight text-white">
+        <h1 className="text-3xl md:text-3xl lg:text-4xl  uppercase font-extrabold tracking-tight text-white"> 
           Answers to all your
           <br className="hidden sm:block" />
           questions!
