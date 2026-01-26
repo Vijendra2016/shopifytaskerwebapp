@@ -19,6 +19,23 @@ const nextConfig = {
       },
     ],
   },
+
+  // ✅ Redirect www → non-www
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.shopifytasker.com',
+          },
+        ],
+        destination: 'https://shopifytasker.com/:path*',
+        permanent: true, // 301 redirect
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
