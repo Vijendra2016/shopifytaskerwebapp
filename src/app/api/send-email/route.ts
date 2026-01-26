@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
+import mjml2html from "mjml";
 
-// ✅ Helpers to prevent broken HTML / injection + keep new lines
 const escapeHtml = (s: string) =>
   s
     .replace(/&/g, "&amp;")
@@ -13,6 +13,122 @@ const escapeHtml = (s: string) =>
 
 const nl2br = (s: string) => s.replace(/\r?\n/g, "<br/>");
 
+function renderMjml({
+  name,
+  url,
+  tasktitle,
+  message,
+}: {
+  name: string;
+  url: string;
+  tasktitle: string;
+  message: string;
+}) {
+  const year = new Date().getFullYear();
+
+  // ✅ Put your logo URL here (must be publicly accessible)
+  const logoUrl =
+    "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbcdd5db493a47b8982ee6_Shopifytaskernewlogovidinew%20(1).png";
+
+  // Monday-like MJML: soft bg, centered card, logo, big headline, hero block
+  const mjml = `
+<mjml>
+  <mj-head>
+    <mj-preview>We received your request and will get back to you within 5 hours.</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Inter, Arial, sans-serif" />
+      <mj-text color="#111827" font-size="16px" line-height="24px" />
+      <mj-button font-weight="700" border-radius="10px" />
+    </mj-attributes>
+    <mj-style>
+      .card { border: 1px solid #E5E7EB; border-radius: 16px; }
+      .muted { color: #6B7280; }
+      .headline { font-size: 40px; line-height: 44px; font-weight: 800; letter-spacing: -0.5px; }
+      .subhead { font-size: 16px; line-height: 24px; color:#374151; }
+      .label { font-size: 13px; color:#6B7280; font-weight:700; text-transform: uppercase; letter-spacing: .06em; }
+      .table td { padding: 12px 14px; font-size: 14px; line-height: 20px; }
+      .table .k { background: #F9FAFB; font-weight: 700; width: 160px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#F3F4F6">
+    <!-- Outer spacing -->
+    <mj-section padding="28px 12px">
+      <mj-column width="600px">
+
+        <!-- Brand -->
+        <mj-image src="${logoUrl}" alt="ShopifyTasker" width="140px" align="left" padding="0 0 12px 0" />
+        <mj-text css-class="muted" font-size="12px" padding="0 0 16px 0">
+          Task received • Confirmation
+        </mj-text>
+
+        <!-- Card -->
+        <mj-wrapper css-class="card" background-color="#FFFFFF" padding="22px">
+          <mj-text css-class="headline" padding="4px 0 10px 0">
+            Thanks for submitting your task
+          </mj-text>
+
+          <mj-text css-class="subhead" padding="0 0 18px 0">
+            Hi <b>${name}</b>,<br/>
+            We’ve received your request and will get back to you within <b>5 hours</b>.
+          </mj-text>
+
+          <!-- Optional hero image (replace with your own) -->
+          <mj-image
+            padding="0 0 18px 0"
+            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ef6c2866f369a5062fca06_Shopifytasker%20review.png"
+            alt="We’re on it"
+            border-radius="14px"
+          />
+
+          <mj-text css-class="label" padding="0 0 10px 0">Summary</mj-text>
+
+          <mj-table css-class="table" cellpadding="0" cellspacing="0" width="100%" border="0">
+            <tr>
+              <td class="k">Website</td>
+              <td>${url}</td>
+            </tr>
+            <tr>
+              <td class="k">Task title</td>
+              <td>${tasktitle}</td>
+            </tr>
+            <tr>
+              <td class="k" style="vertical-align:top;">Message</td>
+              <td>${message}</td>
+            </tr>
+          </mj-table>
+
+          <mj-button
+            background-color="#111827"
+            color="#FFFFFF"
+            href="https://shopifytasker.com"
+            padding="18px 0 0 0"
+          >
+            Visit ShopifyTasker
+          </mj-button>
+
+          <mj-text padding="16px 0 0 0" color="#374151">
+            We’ll be in touch soon!<br/>
+            <b style="color:#111827;">— Your Team at ShopifyTasker</b>
+          </mj-text>
+        </mj-wrapper>
+
+        <mj-text align="center" font-size="12px" color="#6B7280" padding="14px 0 0 0">
+          © ${year} ShopifyTasker • Reply to this email if you need help
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
+`;
+
+  const { html, errors } = mjml2html(mjml, { validationLevel: "soft" });
+  if (errors?.length) console.warn("MJML warnings:", errors);
+
+  return html;
+}
+
 export async function POST(req: NextRequest) {
   const body = await req.json();
   const { name, email, url, tasktitle, message } = body;
@@ -20,6 +136,13 @@ export async function POST(req: NextRequest) {
   if (!name || !email || !message) {
     return NextResponse.json({ message: "Missing fields" }, { status: 400 });
   }
+
+  // ✅ escape + preserve new lines (important)
+  const safeName = escapeHtml(name);
+  const safeEmail = escapeHtml(email);
+  const safeUrl = escapeHtml(url || "Not provided");
+  const safeTitle = escapeHtml(tasktitle || "Not provided");
+  const safeMsg = nl2br(escapeHtml(message));
 
   try {
     const transporter = nodemailer.createTransport({
@@ -32,165 +155,43 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // ✅ Safe values for HTML
-    const safeName = escapeHtml(name || "there");
-    const safeEmail = escapeHtml(email || "");
-    const safeUrl = escapeHtml(url || "Not provided");
-    const safeTitle = escapeHtml(tasktitle || "Not provided");
-    const safeMessage = nl2br(escapeHtml(message || ""));
-
-    // ✅ 1) Admin email (to you) - DON'T spoof from customer email (better deliverability)
+    // ✅ 1) Admin email (simple, different subject to avoid Gmail threading confusion)
     await transporter.sendMail({
       from: `ShopifyTasker <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_USER,
       replyTo: `"${name}" <${email}>`,
-      subject: `Shopify Tasker new task created for ${tasktitle || "Untitled"}`,
-      html: `
-        <p><strong>Name:</strong> ${safeName}</p>
-        <p><strong>Email:</strong> ${safeEmail}</p>
-        <p><strong>Task / Project Title:</strong> ${safeTitle}</p>
-        <p><strong>URL:</strong> ${safeUrl}</p>
-        <p><strong>Message:</strong><br/>${safeMessage}</p>
-      `,
+      subject: `🔔 New task: ${tasktitle || "Untitled"}`,
+      text: `New Task Received
+
+Name: ${name}
+Email: ${email}
+Website: ${url || "Not provided"}
+Task title: ${tasktitle || "Not provided"}
+
+Message:
+${message}
+`,
     });
 
-    // ✅ 2) Customer confirmation email (improved "monday-like" look)
-    const customerHtml = `<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="x-apple-disable-message-reformatting" />
-    <title>Thanks for submitting your task</title>
-  </head>
-
-  <body style="margin:0; padding:0; background:#f3f4f6;">
-    <!-- Preheader -->
-    <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">
-      We received your request and will get back to you within 5 hours.
-    </div>
-
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f4f6;">
-      <tr>
-        <td align="center" style="padding:24px 12px;">
-
-          <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px;">
-            <!-- Brand -->
-            <tr>
-              <td style="padding:0 6px 12px 6px;">
-                <div style="font-family:Arial, sans-serif; font-size:18px; font-weight:800; color:#111827;">
-                  ShopifyTasker
-                </div>
-                <div style="font-family:Arial, sans-serif; font-size:12px; color:#6b7280; margin-top:4px;">
-                  Task received • Confirmation
-                </div>
-              </td>
-            </tr>
-
-            <!-- Card -->
-            <tr>
-              <td style="background:#ffffff; border:1px solid #e5e7eb; border-radius:14px; padding:26px 22px;">
-                <div style="font-family:Arial, sans-serif; color:#111827;">
-                  <div style="font-size:28px; line-height:34px; font-weight:800; margin:0 0 10px 0;">
-                    Thanks for submitting your task
-                  </div>
-
-                  <div style="font-size:16px; line-height:24px; color:#374151; margin:0 0 16px 0;">
-                    Hi <b>${safeName}</b>,<br/>
-                    We’ve received your request and will get back to you within <b>5 hours</b>.
-                  </div>
-
-                  <div style="font-size:14px; font-weight:700; color:#6b7280; margin:0 0 10px 0;">
-                    Summary
-                  </div>
-
-                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                         style="border:1px solid #e5e7eb; border-radius:12px; border-collapse:separate; overflow:hidden;">
-                    <tr>
-                      <td style="padding:12px 14px; background:#fafafa; width:160px; font-family:Arial, sans-serif; font-size:14px; font-weight:700; border-bottom:1px solid #e5e7eb;">
-                        Website
-                      </td>
-                      <td style="padding:12px 14px; font-family:Arial, sans-serif; font-size:14px; border-bottom:1px solid #e5e7eb;">
-                        ${safeUrl}
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td style="padding:12px 14px; background:#fafafa; width:160px; font-family:Arial, sans-serif; font-size:14px; font-weight:700; border-bottom:1px solid #e5e7eb;">
-                        Task title
-                      </td>
-                      <td style="padding:12px 14px; font-family:Arial, sans-serif; font-size:14px; border-bottom:1px solid #e5e7eb;">
-                        ${safeTitle}
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <td style="padding:12px 14px; background:#fafafa; width:160px; vertical-align:top; font-family:Arial, sans-serif; font-size:14px; font-weight:700;">
-                        Message
-                      </td>
-                      <td style="padding:12px 14px; font-family:Arial, sans-serif; font-size:14px; line-height:20px;">
-                        ${safeMessage || "—"}
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- Optional CTA -->
-                  <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:18px;">
-                    <tr>
-                      <td style="background:#111827; border-radius:10px;">
-                        <a href="https://shopifytasker.com"
-                           style="display:inline-block; padding:12px 16px; font-family:Arial, sans-serif; font-size:14px; font-weight:700; color:#ffffff; text-decoration:none;">
-                          Visit ShopifyTasker
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <div style="font-size:14px; line-height:22px; color:#374151; margin-top:16px;">
-                    We’ll be in touch soon!<br/>
-                    <b style="color:#111827;">— Your Team at ShopifyTasker</b>
-                  </div>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Footer -->
-            <tr>
-              <td align="center" style="padding:14px 6px 0 6px;">
-                <div style="font-family:Arial, sans-serif; font-size:12px; color:#6b7280;">
-                  © ${new Date().getFullYear()} ShopifyTasker • Reply to this email if you need help
-                </div>
-              </td>
-            </tr>
-
-          </table>
-
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>`;
+    // ✅ 2) Customer email (MJML modern design)
+    const html = renderMjml({
+      name: safeName,
+      url: safeUrl,
+      tasktitle: safeTitle,
+      message: safeMsg,
+    });
 
     await transporter.sendMail({
       from: `ShopifyTasker <${process.env.GMAIL_USER}>`,
       to: email,
       subject: "Thanks for submitting your task!",
-      html: customerHtml,
+      html,
     });
 
     return NextResponse.json({ message: "Email sent successfully" }, { status: 200 });
   } catch (error: unknown) {
-    if (error instanceof Error) {
-      console.error("Email error:", error.message);
-      return NextResponse.json(
-        { message: "Failed to send email", error: error.message },
-        { status: 500 }
-      );
-    }
-
-    return NextResponse.json(
-      { message: "Failed to send email", error: "Unknown error" },
-      { status: 500 }
-    );
+    const msg = error instanceof Error ? error.message : "Unknown error";
+    console.error("Email error:", msg);
+    return NextResponse.json({ message: "Failed to send email", error: msg }, { status: 500 });
   }
 }
