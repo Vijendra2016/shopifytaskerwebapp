@@ -26,11 +26,12 @@ function renderMjml({
 }) {
   const year = new Date().getFullYear();
 
-  // ✅ Put your logo URL here (must be publicly accessible)
   const logoUrl =
     "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67fbcdd5db493a47b8982ee6_Shopifytaskernewlogovidinew%20(1).png";
 
-  // Monday-like MJML: soft bg, centered card, logo, big headline, hero block
+  const heroUrl =
+    "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ef6c2866f369a5062fca06_Shopifytasker%20review.png";
+
   const mjml = `
 <mjml>
   <mj-head>
@@ -52,17 +53,14 @@ function renderMjml({
   </mj-head>
 
   <mj-body background-color="#F3F4F6">
-    <!-- Outer spacing -->
     <mj-section padding="28px 12px">
       <mj-column width="600px">
 
-        <!-- Brand -->
-        <mj-image src="${logoUrl}" alt="ShopifyTasker" width="140px" align="left" padding="0 0 12px 0" />
+        <mj-image src="${logoUrl}" alt="ShopifyTasker" width="150px" align="left" padding="0 0 12px 0" />
         <mj-text css-class="muted" font-size="12px" padding="0 0 16px 0">
           Task received • Confirmation
         </mj-text>
 
-        <!-- Card -->
         <mj-wrapper css-class="card" background-color="#FFFFFF" padding="22px">
           <mj-text css-class="headline" padding="4px 0 10px 0">
             Thanks for submitting your task
@@ -73,10 +71,9 @@ function renderMjml({
             We’ve received your request and will get back to you within <b>5 hours</b>.
           </mj-text>
 
-          <!-- Optional hero image (replace with your own) -->
           <mj-image
             padding="0 0 18px 0"
-            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ef6c2866f369a5062fca06_Shopifytasker%20review.png"
+            src="${heroUrl}"
             alt="We’re on it"
             border-radius="14px"
           />
@@ -137,9 +134,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ message: "Missing fields" }, { status: 400 });
   }
 
-  // ✅ escape + preserve new lines (important)
   const safeName = escapeHtml(name);
-  const safeEmail = escapeHtml(email);
   const safeUrl = escapeHtml(url || "Not provided");
   const safeTitle = escapeHtml(tasktitle || "Not provided");
   const safeMsg = nl2br(escapeHtml(message));
@@ -155,7 +150,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    // ✅ 1) Admin email (simple, different subject to avoid Gmail threading confusion)
+    // Admin email (plain text)
     await transporter.sendMail({
       from: `ShopifyTasker <${process.env.GMAIL_USER}>`,
       to: process.env.GMAIL_USER,
@@ -173,7 +168,7 @@ ${message}
 `,
     });
 
-    // ✅ 2) Customer email (MJML modern design)
+    // Customer email (MJML)
     const html = renderMjml({
       name: safeName,
       url: safeUrl,
@@ -192,6 +187,9 @@ ${message}
   } catch (error: unknown) {
     const msg = error instanceof Error ? error.message : "Unknown error";
     console.error("Email error:", msg);
-    return NextResponse.json({ message: "Failed to send email", error: msg }, { status: 500 });
+    return NextResponse.json(
+      { message: "Failed to send email", error: msg },
+      { status: 500 }
+    );
   }
 }
