@@ -8,6 +8,7 @@ export default function Footer() {
   return (
     
     <footer className="bg-black  text-sm text-white/90 py-12 px-6">
+      
         <div className="flex justify-center mb-20">
       <Image
             src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6815f5f9c4f106f73030c696_file.svg" // Replace with your actual image path

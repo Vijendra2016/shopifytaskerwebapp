@@ -32,12 +32,31 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     return {
       title: 'City Not Found | ShopifyTasker',
       description: 'This city page is not available.',
+      alternates: {
+        canonical: "https://shopifytasker.com/shopify-expert-near-me",
+      },
     };
   }
 
+  const canonicalUrl = `https://shopifytasker.com/shopify-expert-near-me/${city}`;
+
   return {
-    title: `Hire  Top Rated Shopify Expert in ${cityData.city} | ShopifyTasker  `,
-    description: `Hire Top Rated Shopify expert in ${cityData.city} prices start from $10/hr,pay after work done`  ,
+    title: `Hire Top Rated Shopify Expert in ${cityData.city} | ShopifyTasker`,
+    description: `Hire top-rated Shopify expert in ${cityData.city}. Prices start from $10/hr. Pay after work done.`,
+
+    // ✅ Canonical
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
+    // ✅ OpenGraph (helps sharing & reinforces canonical)
+    openGraph: {
+      title: `Shopify Expert in ${cityData.city} | ShopifyTasker`,
+      description: `Hire top-rated Shopify expert in ${cityData.city}. No upfront payment.`,
+      url: canonicalUrl,
+      siteName: "ShopifyTasker",
+      type: "website",
+    },
   };
 }
 
