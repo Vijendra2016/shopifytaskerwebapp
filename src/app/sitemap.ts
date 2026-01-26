@@ -26,6 +26,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/industries/hair-extension-shopify-web-design`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/industries/cdb-shopify-web-design`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/industries/shopify-auto-parts-website-design-development`, lastModified: new Date(), priority: 0.8 },
+    { url: `${baseUrl}/industries/shopify-health-wellness-website-design-development`, lastModified: new Date(), priority: 0.8 },
+
     { url: `${baseUrl}/our-tech-stack`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/shopify-small-task`, lastModified: new Date(), priority: 0.8 },
     { url: `${baseUrl}/shopify-virtual-assistant-services`, lastModified: new Date(), priority: 0.8 },
