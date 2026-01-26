@@ -56,6 +56,7 @@ export default function BrandEditorial({ brands }: Props) {
               >
                 {brand.name}
               </a>
+              <p className="mt-3 text-gray-700 leading-relaxed"> Want something similar? </p>
 
               <p className="mt-3 text-gray-700 leading-relaxed">
                 {brand.description}
