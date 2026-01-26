@@ -86,12 +86,111 @@ const offerCatalog: OfferCatalog = {
       "@type": "OfferCatalog",
       name: "Strategy",
       itemListElement: [
-        { "@type": "Offer", name: "Market & Competitor Analysis" } as Offer,
+        { "@type": "Offer", name: "Health & Wellness Market Research" } as Offer,
+        { "@type": "Offer", name: "Competitor & Funnel Analysis" } as Offer,
         { "@type": "Offer", name: "Store Architecture & UX Planning" } as Offer,
+        { "@type": "Offer", name: "Conversion & Retention Strategy" } as Offer,
+      ],
+    },
+
+    {
+      "@type": "OfferCatalog",
+      name: "Shopify Website Development",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: "Custom Shopify Website Development for Health & Wellness Brands",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Shopify Plus Development for Supplement & Wellness Stores",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Subscription & Membership Setup",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Performance & Speed Optimization",
+        } as Offer,
+      ],
+    },
+
+    {
+      "@type": "OfferCatalog",
+      name: "Migration to Shopify",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: "WooCommerce to Shopify Migration",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Magento to Shopify Migration",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "BigCommerce to Shopify Migration",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Custom Platform to Shopify Migration",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "SEO-Safe Shopify Migration (301 Redirects & Metadata)",
+        } as Offer,
+      ],
+    },
+
+    {
+      "@type": "OfferCatalog",
+      name: "Redesign & Optimization",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: "Shopify Store Redesign for Health & Wellness Brands",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "UX & CRO Optimization",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Mobile-First Redesign",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Checkout Optimization & Funnel Improvements",
+        } as Offer,
+      ],
+    },
+
+    {
+      "@type": "OfferCatalog",
+      name: "Ongoing Support & Growth",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: "Monthly Shopify Maintenance & Support",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Dedicated Shopify Developer Retainer",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "App Integrations & Automation",
+        } as Offer,
+        {
+          "@type": "Offer",
+          name: "Ongoing CRO & A/B Testing",
+        } as Offer,
       ],
     },
   ],
 };
+
 
 const serviceJsonLd: WithContext<Service> = {
   "@context": "https://schema.org",
