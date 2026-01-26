@@ -1,8 +1,8 @@
+import type { Metadata } from "next";
 import Hero from "../Hero";
 import Intro from "../Intro";
 import SplitSection from "../SplitSection";
 import CaseStudyAccordion from "../CaseStudyAccordion";
-import type { Metadata } from "next";
 import GeoMessage from "@/app/components/GeoMessage";
 import BrandEditorial from "../BrandEditorial";
 import { healthEditorialBrands } from "../data/healthEditorialBrands";
@@ -38,8 +38,7 @@ const breadcrumbId = `${pageUrl}#breadcrumbs`;
 const serviceId = `${pageUrl}#service`;
 const faqId = `${pageUrl}#faq`;
 
-/** 0) (Optional but good) WebSite */
-export const websiteJsonLd: WithContext<WebSite> = {
+const websiteJsonLd: WithContext<WebSite> = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": websiteId,
@@ -48,8 +47,7 @@ export const websiteJsonLd: WithContext<WebSite> = {
   publisher: { "@id": orgId },
 };
 
-/** 1) Organization */
-export const orgJsonLd: WithContext<Organization> = {
+const orgJsonLd: WithContext<Organization> = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": orgId,
@@ -57,8 +55,7 @@ export const orgJsonLd: WithContext<Organization> = {
   url: "https://www.shopifytasker.com/",
 };
 
-/** 2) WebPage */
-export const pageJsonLd: WithContext<WebPage> = {
+const pageJsonLd: WithContext<WebPage> = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": pageId,
@@ -70,8 +67,7 @@ export const pageJsonLd: WithContext<WebPage> = {
   about: { "@id": orgId },
 };
 
-/** 3) Breadcrumbs */
-export const breadcrumbsJsonLd: WithContext<BreadcrumbList> = {
+const breadcrumbsJsonLd: WithContext<BreadcrumbList> = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "@id": breadcrumbId,
@@ -82,7 +78,6 @@ export const breadcrumbsJsonLd: WithContext<BreadcrumbList> = {
   ],
 };
 
-/** 4) Offer catalog (typed, no any) */
 const offerCatalog: OfferCatalog = {
   "@type": "OfferCatalog",
   name: "Health & Wellness Shopify Services",
@@ -91,54 +86,14 @@ const offerCatalog: OfferCatalog = {
       "@type": "OfferCatalog",
       name: "Strategy",
       itemListElement: [
-        { "@type": "Offer", name: "Brand & Store Research for Health & Wellness" } as Offer,
         { "@type": "Offer", name: "Market & Competitor Analysis" } as Offer,
-        { "@type": "Offer", name: "Conversion & Retention Strategy Planning" } as Offer,
         { "@type": "Offer", name: "Store Architecture & UX Planning" } as Offer,
-        { "@type": "Offer", name: "Migration & Replatforming Strategy" } as Offer,
-        { "@type": "Offer", name: "Growth Roadmap & Monthly Retainer Planning" } as Offer,
-      ],
-    },
-    {
-      "@type": "OfferCatalog",
-      name: "Identity",
-      itemListElement: [
-        { "@type": "Offer", name: "Health & Wellness Brand Positioning" } as Offer,
-        { "@type": "Offer", name: "Logo & Visual Identity Setup" } as Offer,
-        { "@type": "Offer", name: "Typography & Color Systems" } as Offer,
-        { "@type": "Offer", name: "Product & Lifestyle Visual Direction" } as Offer,
-        { "@type": "Offer", name: "Brand Guidelines for Consistency" } as Offer,
-      ],
-    },
-    {
-      "@type": "OfferCatalog",
-      name: "Experience",
-      itemListElement: [
-        { "@type": "Offer", name: "New Shopify Store Design & Build" } as Offer,
-        { "@type": "Offer", name: "Shopify Store Redesign & UX Upgrade" } as Offer,
-        { "@type": "Offer", name: "High-Converting Product & Funnel Pages" } as Offer,
-        { "@type": "Offer", name: "Subscription & Replenishment Experience" } as Offer,
-        { "@type": "Offer", name: "Mobile-First & Speed Optimization" } as Offer,
-        { "@type": "Offer", name: "Conversion Rate Optimization (CRO)" } as Offer,
-      ],
-    },
-    {
-      "@type": "OfferCatalog",
-      name: "Technology",
-      itemListElement: [
-        { "@type": "Offer", name: "Shopify & Shopify Plus Development" } as Offer,
-        { "@type": "Offer", name: "Migration from WooCommerce, Magento or Custom Platforms" } as Offer,
-        { "@type": "Offer", name: "Custom Theme & Section Building" } as Offer,
-        { "@type": "Offer", name: "App Integrations & Store Automation" } as Offer,
-        { "@type": "Offer", name: "Dedicated Shopify Developer Support" } as Offer,
-        { "@type": "Offer", name: "Monthly Maintenance & Growth Retainers" } as Offer,
       ],
     },
   ],
 };
 
-/** 4) Service */
-export const serviceJsonLd: WithContext<Service> = {
+const serviceJsonLd: WithContext<Service> = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": serviceId,
@@ -150,8 +105,7 @@ export const serviceJsonLd: WithContext<Service> = {
   hasOfferCatalog: offerCatalog,
 };
 
-/** 5) FAQPage (IMPORTANT: better to use only FAQs that appear on THIS page) */
-export const faqJsonLd: WithContext<FAQPage> = {
+const faqJsonLd: WithContext<FAQPage> = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": faqId,
@@ -169,8 +123,7 @@ export const faqJsonLd: WithContext<FAQPage> = {
   ],
 };
 
-/** Combine for one script */
-export const combinedJsonLd = [
+const combinedJsonLd = [
   websiteJsonLd,
   orgJsonLd,
   pageJsonLd,
