@@ -60,7 +60,7 @@ export default function BrandEditorial({ brands }: Props) {
               <p className="mt-3 text-gray-700 leading-relaxed">
                 {brand.description}
               </p> 
-              <p className="mt-3 text-gray-700  text-xl font-semibold leading-relaxed">Standout store features:</p>
+              <p className="mt-3 text-gray-700  text-lg font-semibold leading-relaxed">Standout store features:</p>
 
               {brand.features && (
                 <ul className="mt-2 list-disc list-inside text-gray-700 space-y-1">
