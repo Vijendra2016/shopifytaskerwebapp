@@ -43,5 +43,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }))
 
-  return [...staticPages, ...cityPages]
+  // 2️⃣ Shopify Web Designer pages
+  const webDesignerPages: MetadataRoute.Sitemap = cities.map((c) => ({
+    url: `${baseUrl}/shopify-web-designer/${c.slug}`,
+    lastModified: new Date(),
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...cityPages, ...webDesignerPages]
 }
