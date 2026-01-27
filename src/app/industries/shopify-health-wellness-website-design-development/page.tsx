@@ -6,6 +6,7 @@ import CaseStudyAccordion from "../CaseStudyAccordion";
 import GeoMessage from "@/app/components/GeoMessage";
 import BrandEditorial from "../BrandEditorial";
 import { healthEditorialBrands } from "../data/healthEditorialBrands";
+import FaqSection from "./FaqSection";
 
 import type {
   WithContext,
@@ -284,6 +285,7 @@ export default function IndustryPage() {
       />
 
       <BrandEditorial brands={healthEditorialBrands} />
+      <FaqSection/>
       <GeoMessage />
     </>
   );
