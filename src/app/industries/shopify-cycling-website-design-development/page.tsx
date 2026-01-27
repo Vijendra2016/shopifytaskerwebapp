@@ -5,7 +5,8 @@ import SplitSection from "../SplitSection";
 import CaseStudyAccordion from "../CaseStudyAccordion";
 import GeoMessage from "@/app/components/GeoMessage";
 import BrandEditorial from "../BrandEditorial";
-import { healthEditorialBrands } from "../data/healthEditorialBrands";
+// TODO: replace with cycling brands data
+import { healthEditorialBrands as cyclingEditorialBrands } from "../data/healthEditorialBrands";
 
 import type {
   WithContext,
@@ -19,45 +20,47 @@ import type {
   Offer,
 } from "schema-dts";
 
+// ✅ Cycling page URL (use www consistently)
+const pageUrl =
+  "https://www.shopifytasker.com/industries/shopify-cycling-website-design-development/";
+
 export const metadata: Metadata = {
-  title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+  metadataBase: new URL("https://www.shopifytasker.com"),
+  title: "Shopify Cycling Website Design & Development for Bike & E-Bike Brands",
   description:
-    "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
+    "Custom Shopify website design and development for cycling and e-bike brands. High-performance storefronts for bikes, accessories, apparel, and parts.",
   alternates: {
-    canonical:
-      "https://shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
+    canonical: pageUrl,
   },
   openGraph: {
     type: "website",
     siteName: "ShopifyTasker",
-    url: "https://www.shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
-    title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+    url: pageUrl,
+    title: "Shopify Cycling Website Design & Development for Bike & E-Bike Brands",
     description:
-      "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
+      "Custom Shopify website design and development for cycling and e-bike brands. High-performance storefronts for bikes, accessories, apparel, and parts.",
     images: [
       {
-        // ✅ Use a stable, public URL (best if hosted on your domain)
-        url: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg",
+        url: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69785d617e6be4fdcc7449a5_coen-van-de-broek-OFyh9TpMyM8-unsplash.jpg",
         width: 1200,
         height: 630,
-        alt: "Health & Wellness Shopify Store Design, Redesign & Migration",
+        alt: "Shopify website design and development for cycling & e-bike brands",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+    title: "Shopify Cycling Website Design & Development for Bike & E-Bike Brands",
     description:
-      "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
-    images: ["https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg"],
+      "Custom Shopify website design and development for cycling and e-bike brands. High-performance storefronts for bikes, accessories, apparel, and parts.",
+    images: [
+      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69785d617e6be4fdcc7449a5_coen-van-de-broek-OFyh9TpMyM8-unsplash.jpg",
+    ],
   },
 };
 
 const orgId = "https://www.shopifytasker.com/#organization";
 const websiteId = "https://www.shopifytasker.com/#website";
-const pageUrl =
-  "https://www.shopifytasker.com/industries/shopify-health-wellness-website-design-development/";
 const pageId = `${pageUrl}#webpage`;
 const breadcrumbId = `${pageUrl}#breadcrumbs`;
 const serviceId = `${pageUrl}#service`;
@@ -85,9 +88,9 @@ const pageJsonLd: WithContext<WebPage> = {
   "@type": "WebPage",
   "@id": pageId,
   url: pageUrl,
-  name: "Health & Wellness Shopify Website Design & Development | ShopifyTasker",
+  name: "Shopify Cycling Website Design & Development | ShopifyTasker",
   description:
-    "High-performance eCommerce solutions for Health & Wellness brands—conversion-focused Shopify design, development, optimization, and migration.",
+    "High-performance Shopify solutions for cycling and e-bike brands—conversion-focused design, development, SEO, speed optimization, and migration.",
   isPartOf: { "@id": websiteId },
   about: { "@id": orgId },
 };
@@ -99,131 +102,74 @@ const breadcrumbsJsonLd: WithContext<BreadcrumbList> = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shopifytasker.com/" },
     { "@type": "ListItem", position: 2, name: "Industries", item: "https://www.shopifytasker.com/industries" },
-    { "@type": "ListItem", position: 3, name: "Health & Wellness", item: pageUrl },
+    { "@type": "ListItem", position: 3, name: "Cycling", item: pageUrl },
   ],
 };
 
 const offerCatalog: OfferCatalog = {
   "@type": "OfferCatalog",
-  name: "Health & Wellness Shopify Services",
+  name: "Cycling & E-Bike Shopify Services",
   itemListElement: [
     {
       "@type": "OfferCatalog",
-      name: "Strategy",
+      name: "Strategy & UX",
       itemListElement: [
-        { "@type": "Offer", name: "Health & Wellness Market Research" } as Offer,
-        { "@type": "Offer", name: "Competitor & Funnel Analysis" } as Offer,
-        { "@type": "Offer", name: "Store Architecture & UX Planning" } as Offer,
+        { "@type": "Offer", name: "Cycling Market & Competitor Research" } as Offer,
+        { "@type": "Offer", name: "Store Architecture for Bikes & Accessories" } as Offer,
+        { "@type": "Offer", name: "Product Page UX for High-AOV Bikes" } as Offer,
         { "@type": "Offer", name: "Conversion & Retention Strategy" } as Offer,
       ],
     },
-
     {
       "@type": "OfferCatalog",
-      name: "Shopify Website Development",
+      name: "Shopify Design & Development",
       itemListElement: [
-        {
-          "@type": "Offer",
-          name: "Custom Shopify Website Development for Health & Wellness Brands",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Shopify Plus Development for Supplement & Wellness Stores",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Subscription & Membership Setup",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Performance & Speed Optimization",
-        } as Offer,
+        { "@type": "Offer", name: "Custom Shopify Website Development for Cycling Brands" } as Offer,
+        { "@type": "Offer", name: "Shopify Plus Development for E-Bike Companies" } as Offer,
+        { "@type": "Offer", name: "Bike Product Templates (sizes, specs, accessories)" } as Offer,
+        { "@type": "Offer", name: "Performance & Speed Optimization" } as Offer,
       ],
     },
-
     {
       "@type": "OfferCatalog",
       name: "Migration to Shopify",
       itemListElement: [
-        {
-          "@type": "Offer",
-          name: "WooCommerce to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Magento to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "BigCommerce to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Custom Platform to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "SEO-Safe Shopify Migration (301 Redirects & Metadata)",
-        } as Offer,
+        { "@type": "Offer", name: "WooCommerce to Shopify Migration for Bike Stores" } as Offer,
+        { "@type": "Offer", name: "Magento to Shopify Migration" } as Offer,
+        { "@type": "Offer", name: "BigCommerce to Shopify Migration" } as Offer,
+        { "@type": "Offer", name: "SEO-Safe Migration (301 Redirects & Metadata)" } as Offer,
       ],
     },
-
     {
       "@type": "OfferCatalog",
-      name: "Redesign & Optimization",
+      name: "Optimization & Growth",
       itemListElement: [
-        {
-          "@type": "Offer",
-          name: "Shopify Store Redesign for Health & Wellness Brands",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "UX & CRO Optimization",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Mobile-First Redesign",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Checkout Optimization & Funnel Improvements",
-        } as Offer,
+        { "@type": "Offer", name: "Shopify Store Redesign for Cycling & E-Bike Brands" } as Offer,
+        { "@type": "Offer", name: "UX & CRO Optimization (PDP, cart, checkout)" } as Offer,
+        { "@type": "Offer", name: "Mobile-First Redesign" } as Offer,
+        { "@type": "Offer", name: "SEO for Cycling & E-Bike Keywords" } as Offer,
       ],
     },
-
     {
       "@type": "OfferCatalog",
-      name: "Ongoing Support & Growth",
+      name: "Ongoing Support",
       itemListElement: [
-        {
-          "@type": "Offer",
-          name: "Monthly Shopify Maintenance & Support",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Dedicated Shopify Developer Retainer",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "App Integrations & Automation",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Ongoing CRO & A/B Testing",
-        } as Offer,
+        { "@type": "Offer", name: "Monthly Shopify Maintenance & Support" } as Offer,
+        { "@type": "Offer", name: "Dedicated Shopify Developer Retainer" } as Offer,
+        { "@type": "Offer", name: "App Integrations & Automation" } as Offer,
+        { "@type": "Offer", name: "Ongoing CRO Experiments" } as Offer,
       ],
     },
   ],
 };
 
-
 const serviceJsonLd: WithContext<Service> = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": serviceId,
-  name: "Health & Wellness Shopify Website Design & Development",
+  name: "Shopify Website Design & Development for Cycling & E-Bike Brands",
   serviceType:
-    "Conversion-focused Shopify solutions for Health & Wellness brands (design, development, optimization, migration).",
+    "Conversion-focused Shopify solutions for cycling and e-bike brands (design, development, SEO, speed optimization, and migration).",
   provider: { "@id": orgId },
   areaServed: "Worldwide",
   hasOfferCatalog: offerCatalog,
@@ -234,14 +180,46 @@ const faqJsonLd: WithContext<FAQPage> = {
   "@type": "FAQPage",
   "@id": faqId,
   url: pageUrl,
-  name: "Health & Wellness Shopify FAQ",
+  name: "Cycling & E-Bike Shopify FAQ",
   mainEntity: [
     {
       "@type": "Question",
-      name: "Do you build Shopify stores for Health & Wellness brands?",
+      name: "Do you build Shopify stores for cycling and e-bike brands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes—ShopifyTasker designs and develops high-performance Shopify stores for Health & Wellness brands with a focus on UX, SEO, and conversions.",
+        text: "Yes. We design and develop high-performance Shopify stores for cycling brands selling bikes, e-bikes, parts, accessories, and apparel—with a focus on speed, UX, SEO, and conversions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can Shopify handle high-ticket bike products and complex variants?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We structure catalogs and product pages for high-AOV bikes and variants (sizes, specs, bundles, accessories), and optimize the buying journey for mobile and checkout conversions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you migrate bike stores from WooCommerce or Magento to Shopify?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We migrate products, collections, content, key SEO elements, and implement 301 redirects to keep traffic stable when moving to Shopify.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you provide Shopify SEO for cycling keywords?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We implement technical and on-page SEO foundations (metadata, schema, internal linking, speed, image optimization) and help build landing pages for cycling and e-bike searches.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer ongoing Shopify support for cycling brands?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We provide monthly support retainers for improvements, new sections, CRO experiments, performance tuning, and ongoing development.",
       },
     },
   ],
@@ -265,26 +243,26 @@ export default function IndustryPage() {
       />
 
       <Hero
-        title="Cycling Store Shopify Website Design & Development | ShopifyTasker"
-        subtitle="High-performance eCommerce solutions for Cycling brands"
+        title="Shopify Cycling Website Design & Development | ShopifyTasker"
+        subtitle="High-performance eCommerce for bike & e-bike brands (bikes, parts, accessories, apparel)"
         image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69785d617e6be4fdcc7449a5_coen-van-de-broek-OFyh9TpMyM8-unsplash.jpg"
       />
 
       <CaseStudyAccordion />
 
       <Intro
-        heading="If you looking to update your shopify theme or you looking  for Health Wellness Stores setup"
-        text="We create fast, conversion-focused Shopify experiences for Health Wellness businesses."
+        heading="Shopify storefronts built for cycling & e-bike growth"
+        text="We create fast, conversion-focused Shopify experiences for bike brands—optimized for high-ticket products, mobile UX, SEO, and performance."
       />
 
       <SplitSection
-        title="Built for Performance"
-        text="Lightning-fast storefronts optimized for SEO, CRO and mobile."
-        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69785d617e6be4fdcc7449a5_coen-van-de-broek-OFyh9TpMyM8-unsplash.jpg"
+        title="Built for High-AOV Products"
+        text="From product specs and size/fit guidance to accessories and bundles, we design the buying journey to reduce friction and increase conversions."
+        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697890a89e4f4dff082b982b_kbo-bike-kXP41LVdcv0-unsplash%20(1).jpg"
       />
 
-      <BrandEditorial brands={healthEditorialBrands} />
-      
+      <BrandEditorial brands={cyclingEditorialBrands} />
+
       <GeoMessage />
     </>
   );
