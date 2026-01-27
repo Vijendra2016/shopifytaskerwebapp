@@ -126,7 +126,7 @@ export default function CaseStudySection() {
                 <li>Bug fixes, updates & maintenance</li>
                 <li>Priority support & faster turnarounds</li>
                 <li>Ongoing CRO + growth improvements</li>
-                 <li>Support Marketing your team </li>
+                 <li>Support Marketing your Marketing team </li>
               </ul>
 
             </div>
