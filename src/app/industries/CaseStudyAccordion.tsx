@@ -47,10 +47,10 @@ export default function CaseStudySection() {
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-16">
             {/* 1) SETUP & LAUNCH */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">
+              <h3 className="text-xl text-black font-semibold mb-5">
                 Health & Wellness Shopify Setup & Launch
               </h3>
-              <ul className="space-y-2 text-black text-lg">
+              <ul className="space-y-2 text-black text-sm">
                 <li>Shopify store setup for Health & Wellness brands (end-to-end)</li>
                 <li>Theme setup & conversion-focused customization</li>
                 <li>Payments, shipping & tax configuration</li>
@@ -61,10 +61,10 @@ export default function CaseStudySection() {
 
             {/* 2) MIGRATION */}
             <div>
-              <h3 className="text-2xl font-semibold text-black mb-5">
+              <h3 className="text-xl font-semibold text-black mb-5">
                 Health & Wellness Brands Shopify Migration
               </h3>
-              <ul className="space-y-2 text-black text-lg">
+              <ul className="space-y-2 text-black text-sm">
                 <li>Migration for Health & Wellness brands</li>
                 <li>Migration from WooCommerce, Magento & custom platforms</li>
                 <li>SEO-safe redirects (301s) & URL mapping</li>
@@ -75,10 +75,10 @@ export default function CaseStudySection() {
 
             {/* 3) REDESIGN & CRO */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">
+              <h3 className="text-xl text-black font-semibold mb-5">
                 Health & Wellness Brands Shopify Redesign & CRO
               </h3>
-              <ul className="space-y-2 text-black text-lg">
+              <ul className="space-y-2 text-black text-sm">
                 <li>Shopify website redesign for Health & Wellness brands</li>
                 <li>High-converting product pages & funnels</li>
                 <li>Subscription & replenishment experience</li>
@@ -89,10 +89,10 @@ export default function CaseStudySection() {
 
             {/* 4) SEO & PERFORMANCE */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">
+              <h3 className="text-xl text-black font-semibold mb-5">
                 Shopify Website SEO & Performance for Health & Wellness Brands
               </h3>
-              <ul className="space-y-2 text-black text-lg">
+              <ul className="space-y-2 text-black text-sm">
                 <li>SEO optimization for Health & Wellness Shopify websites</li>
                 <li>On-page SEO for collections & products</li>
                 <li>Core Web Vitals & speed optimization</li>
@@ -103,10 +103,10 @@ export default function CaseStudySection() {
 
             {/* 5) CUSTOM DEVELOPMENT */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">
+              <h3 className="text-xl text-black font-semibold mb-5">
                 Custom Shopify Development for Health & Wellness Brands
               </h3>
-              <ul className="space-y-2 text-black text-lg">
+              <ul className="space-y-2 text-black text-sm">
                 <li>Shopify & Shopify Plus development</li>
                 <li>Custom theme & section building for Health & Wellness brands</li>
                 <li>App integrations & store automation</li>
@@ -127,6 +127,7 @@ export default function CaseStudySection() {
                 <li>Priority support & faster turnarounds</li>
                 <li>Ongoing CRO + growth improvements</li>
               </ul>
+
             </div>
           </div>
         </div>
