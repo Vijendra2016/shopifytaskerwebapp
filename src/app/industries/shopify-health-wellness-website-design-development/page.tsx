@@ -27,6 +27,31 @@ export const metadata: Metadata = {
     canonical:
       "https://shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
   },
+  openGraph: {
+    type: "website",
+    siteName: "ShopifyTasker",
+    url: "https://www.shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
+    title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+    description:
+      "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
+    images: [
+      {
+        // ✅ Use a stable, public URL (best if hosted on your domain)
+        url: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Health & Wellness Shopify Store Design, Redesign & Migration",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+    description:
+      "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
+    images: ["https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg"],
+  },
 };
 
 const orgId = "https://www.shopifytasker.com/#organization";
@@ -248,7 +273,7 @@ export default function IndustryPage() {
       <CaseStudyAccordion />
 
       <Intro
-        heading="Driving Growth for Health Wellness Stores"
+        heading="If you looking to update your shopify theme or you looking  for Health Wellness Stores setup"
         text="We create fast, conversion-focused Shopify experiences for Health Wellness businesses."
       />
 
