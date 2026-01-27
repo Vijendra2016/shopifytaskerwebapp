@@ -278,14 +278,15 @@ export default function ServicesAtlantiser() {
                       type="button"
                       className=" cursor-pointer 
                         mt-6 inline-flex items-center gap-3
-                        rounded-full border border-white/15 bg-white/10
-                        px-5 py-2.5 text-sm font-medium text-neutral-50
-                        transition hover:bg-white/15
+                         bg-[#DFF976]  rounded-full text-black
+                        rounded-full border border-white/15 
+                        px-5 py-2.5 text-sm font-medium 
+                        transition hover:bg-teal-500
                         focus:outline-none focus:ring-2 focus:ring-white/30
                       "
                       onClick={() => setShowModal(true)}
                     >
-                      <span aria-hidden className="text-neutral-300">
+                      <span aria-hidden className="text-black">
                         →
                       </span>
                       Let’s Begin
