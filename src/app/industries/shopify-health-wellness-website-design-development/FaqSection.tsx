@@ -43,6 +43,10 @@ const faqs = [
     q: "Do you provide ongoing Shopify support and monthly maintenance?",
     a: "Yes. We offer monthly support retainers for health & wellness stores—bug fixes, app updates, new sections, CRO experiments, speed improvements, SEO upkeep, and ongoing feature development.",
   },
+   {
+    q: "Do you provide dedicated developer support for health & wellness stores?",
+    a: "Yes. We offer  dedicated develope support for health & wellness stores—bug fixes, app updates, new sections, CRO experiments, speed improvements, SEO upkeep, and ongoing feature development.",
+  },
 ];
 
 export default function FaqSection() {
