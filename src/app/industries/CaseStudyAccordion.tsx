@@ -38,7 +38,7 @@ export default function CaseStudySection() {
             </h2>
 
             <p className="text-lg max-w-3xl mt-4">
-              Whether you’re launching a new brand, upgrading an existing store, or migrating to Shopify — we design, develop, and
+              Whether you launching a new brand, upgrading an existing store, or migrating to Shopify — we design, develop, and
               optimize Shopify experiences that build trust, increase repeat revenue, and scale with your growth.
             </p>
           </div>
@@ -126,6 +126,7 @@ export default function CaseStudySection() {
                 <li>Bug fixes, updates & maintenance</li>
                 <li>Priority support & faster turnarounds</li>
                 <li>Ongoing CRO + growth improvements</li>
+                 <li>Support Marketing your team </li>
               </ul>
 
             </div>
