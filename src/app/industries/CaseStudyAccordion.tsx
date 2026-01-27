@@ -47,10 +47,12 @@ export default function CaseStudySection() {
           <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-16">
             {/* 1) SETUP & LAUNCH */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">Shopify setup & launch</h3>
+              <h3 className="text-2xl text-black font-semibold mb-5">
+                Health & Wellness Shopify Setup & Launch
+              </h3>
               <ul className="space-y-2 text-black text-lg">
-                <li>New Shopify store setup (end-to-end)</li>
-                <li>Theme setup & customization</li>
+                <li>Shopify store setup for Health & Wellness brands (end-to-end)</li>
+                <li>Theme setup & conversion-focused customization</li>
                 <li>Payments, shipping & tax configuration</li>
                 <li>Essential app setup (reviews, email, subscriptions)</li>
                 <li>Launch checklist, QA & handover</li>
@@ -59,10 +61,12 @@ export default function CaseStudySection() {
 
             {/* 2) MIGRATION */}
             <div>
-              <h3 className="text-2xl font-semibold text-black mb-5">Shopify migration</h3>
+              <h3 className="text-2xl font-semibold text-black mb-5">
+                Health & Wellness Brands Shopify Migration
+              </h3>
               <ul className="space-y-2 text-black text-lg">
+                <li>Migration for Health & Wellness brands</li>
                 <li>Migration from WooCommerce, Magento & custom platforms</li>
-                <li>Products, customers & orders migration</li>
                 <li>SEO-safe redirects (301s) & URL mapping</li>
                 <li>Theme rebuild + UX improvements during migration</li>
                 <li>Post-migration QA & support</li>
@@ -71,9 +75,11 @@ export default function CaseStudySection() {
 
             {/* 3) REDESIGN & CRO */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">Redesign & CRO</h3>
+              <h3 className="text-2xl text-black font-semibold mb-5">
+                Health & Wellness Brands Shopify Redesign & CRO
+              </h3>
               <ul className="space-y-2 text-black text-lg">
-                <li>Shopify store redesign & UX upgrade</li>
+                <li>Shopify website redesign for Health & Wellness brands</li>
                 <li>High-converting product pages & funnels</li>
                 <li>Subscription & replenishment experience</li>
                 <li>Cart & checkout optimization</li>
@@ -83,9 +89,11 @@ export default function CaseStudySection() {
 
             {/* 4) SEO & PERFORMANCE */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">SEO & performance</h3>
+              <h3 className="text-2xl text-black font-semibold mb-5">
+                Shopify Website SEO & Performance for Health & Wellness Brands
+              </h3>
               <ul className="space-y-2 text-black text-lg">
-                <li>Shopify technical SEO</li>
+                <li>SEO optimization for Health & Wellness Shopify websites</li>
                 <li>On-page SEO for collections & products</li>
                 <li>Core Web Vitals & speed optimization</li>
                 <li>Structured data & search-friendly setup</li>
@@ -95,10 +103,12 @@ export default function CaseStudySection() {
 
             {/* 5) CUSTOM DEVELOPMENT */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">Custom Shopify development</h3>
+              <h3 className="text-2xl text-black font-semibold mb-5">
+                Custom Shopify Development for Health & Wellness Brands
+              </h3>
               <ul className="space-y-2 text-black text-lg">
                 <li>Shopify & Shopify Plus development</li>
-                <li>Custom theme & section building</li>
+                <li>Custom theme & section building for Health & Wellness brands</li>
                 <li>App integrations & store automation</li>
                 <li>Custom bundles, upsells & promotions</li>
                 <li>Ongoing feature enhancements</li>
@@ -107,13 +117,15 @@ export default function CaseStudySection() {
 
             {/* 6) DEDICATED SUPPORT */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">Dedicated developer & monthly support</h3>
+              <h3 className="text-2xl text-black font-semibold mb-5">
+                Dedicated Shopify Developer for Health & Wellness Brands
+              </h3>
               <ul className="space-y-2 text-black text-lg">
                 <li>Dedicated Shopify developer (monthly)</li>
+                <li>Monthly support for Health & Wellness Shopify websites</li>
                 <li>Bug fixes, updates & maintenance</li>
                 <li>Priority support & faster turnarounds</li>
                 <li>Ongoing CRO + growth improvements</li>
-                <li>Monthly reporting & roadmap planning</li>
               </ul>
             </div>
           </div>
