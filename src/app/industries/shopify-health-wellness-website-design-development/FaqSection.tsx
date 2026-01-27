@@ -23,9 +23,10 @@ export default function FaqSection() {
             FAQs
           </p>
 
-          <h2 className="text-[40px] leading-[1.02] font-thin text-black">
-            Why Hire Shopify web designer in Chesapeake, VA
-          </h2>
+          <h4 className="text-lg leading-[1.02] font-semibold  text-black">
+           Most common Question regarding
+Health & Wellness Shopify Website Design & Development
+          </h4>
         </div>
 
         {/* Right Side */}
