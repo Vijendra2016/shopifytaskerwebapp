@@ -117,10 +117,10 @@ export default function CaseStudySection() {
 
             {/* 6) DEDICATED SUPPORT */}
             <div>
-              <h3 className="text-2xl text-black font-semibold mb-5">
+              <h3 className="text-xl text-black font-semibold mb-5">
                 Dedicated Shopify Developer for Health & Wellness Brands
               </h3>
-              <ul className="space-y-2 text-black text-lg">
+              <ul className="space-y-2 text-black text-sm">
                 <li>Dedicated Shopify developer (monthly)</li>
                 <li>Monthly support for Health & Wellness Shopify websites</li>
                 <li>Bug fixes, updates & maintenance</li>
