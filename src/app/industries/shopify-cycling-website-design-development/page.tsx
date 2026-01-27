@@ -265,8 +265,8 @@ export default function IndustryPage() {
       />
 
       <Hero
-        title="Health & Wellness Shopify Website Design & Development | ShopifyTasker"
-        subtitle="High-performance eCommerce solutions for Health Wellness brands"
+        title="Cycling Store Shopify Website Design & Development | ShopifyTasker"
+        subtitle="High-performance eCommerce solutions for Cycling brands"
         image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69785d617e6be4fdcc7449a5_coen-van-de-broek-OFyh9TpMyM8-unsplash.jpg"
       />
 
@@ -280,7 +280,7 @@ export default function IndustryPage() {
       <SplitSection
         title="Built for Performance"
         text="Lightning-fast storefronts optimized for SEO, CRO and mobile."
-        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg"
+        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69785d617e6be4fdcc7449a5_coen-van-de-broek-OFyh9TpMyM8-unsplash.jpg"
       />
 
       <BrandEditorial brands={healthEditorialBrands} />

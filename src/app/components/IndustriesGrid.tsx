@@ -23,9 +23,9 @@ const industries: Industry[] = [
     image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/682719eda8c781d89c98050d_heath-and-wellness-shopify-website-development.png",
   },
    {
-    title: "Fashion",
+    title: "Cycling",
     tags: "Shopify Website Design, Shopify Hair Extension",
-    url: "/industries/hair-extension",
+    url: "/industries/shopify-cycling-website-design-development",
     image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/682723ec805c496bf9be5338_Shopify-fashion-websites.png",
   },
   {
