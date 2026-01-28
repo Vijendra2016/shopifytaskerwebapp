@@ -26,7 +26,7 @@ export default function CaseStudiesCraftberry() {
       {
         brand: "fitspo",
         title:
-          "Leading European Supplement Brand Shopify Migration, Redesign and Internationalization",
+          "AG1’s Shopify experience focuses on conversion-led landing pages, educational video content, and subscription-first checkout flows.",
         tags: ["Migration", "Internationalization", "Store Build", "UI/UX Design"],
         href: "/case-studies/fitspo",
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697890a89e4f4dff082b982b_kbo-bike-kXP41LVdcv0-unsplash%20(1).jpg", alt: "fitspo" },
@@ -37,7 +37,7 @@ export default function CaseStudiesCraftberry() {
           "DTC Shopify Build for a Google Ventures-Backed Platform Supporting Women in Menopause",
         tags: ["Custom Theme Development", "Store Build", "UI/UX Design"],
         href: "/case-studies/midi",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697890a89e4f4dff082b982b_kbo-bike-kXP41LVdcv0-unsplash%20(1).jpg", alt: "MidiHealth" },
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697662f65259031cc0ee3be3_testimage.jpeg", alt: "MidiHealth" },
       },
       {
         brand: "INNERMOST",
@@ -130,8 +130,9 @@ export default function CaseStudiesCraftberry() {
         {/* Optional header */}
         <div className="py-10">
           <div className="flex items-center justify-between">
+            <h3>Best Health & Wellness Brands store in Shopify</h3>
             <p className="text-xs font-medium tracking-[0.22em] text-white/45">
-              CASE STUDIES
+              we gether list of top best auto part website build in shopify
             </p>
             <p className="text-xs font-medium tracking-[0.22em] text-white/45">
               {pad3(active + 1)}/{pad3(CASES.length)}
@@ -161,7 +162,7 @@ export default function CaseStudiesCraftberry() {
                         {c.brand}
                       </div>
 
-                      <h3 className="mt-6 text-pretty text-2xl font-semibold leading-tight tracking-tight text-white sm:text-3xl">
+                      <h3 className="mt-6 text-pretty text-lg font-semibold leading-tight tracking-tight text-white sm:text-lg">
                         {c.title}
                       </h3>
 
@@ -212,7 +213,7 @@ export default function CaseStudiesCraftberry() {
                 </div>
 
                 {/* RIGHT image */}
-                <div className="relative lg:col-span-7 xl:col-span-8">
+                <div className="relative m-10 lg:col-span-7 xl:col-span-8">
                   <div className="relative h-[42vh] w-full lg:h-full">
                     <Image
                       src={c.image.src}
