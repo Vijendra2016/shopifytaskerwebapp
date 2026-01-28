@@ -32,12 +32,12 @@ export default function CaseStudiesCraftberry() {
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6979fd5030c5a4c2e2f7cdbf_Omorovicza.png", alt: "Omorovicza" },
       },
       {
-        brand: "MidiHealth",
+        brand: "Neom Organics",
         title:
           "DTC Shopify Build for a Google Ventures-Backed Platform Supporting Women in Menopause",
         tags: ["Custom Theme Development", "Store Build", "UI/UX Design"],
         href: "/case-studies/midi",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697662f65259031cc0ee3be3_testimage.jpeg", alt: "MidiHealth" },
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a04a22c40cf94cb626de4_Nicola%20Elliott.png", alt: "MidiHealth" },
       },
       {
         brand: "INNERMOST",
