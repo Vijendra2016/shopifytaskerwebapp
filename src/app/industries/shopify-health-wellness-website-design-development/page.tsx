@@ -7,7 +7,7 @@ import GeoMessage from "@/app/components/GeoMessage";
 import BrandEditorial from "../BrandEditorial";
 import { healthEditorialBrands } from "../data/healthEditorialBrands";
 import FaqSection from "./FaqSection";
-
+import CaseStudiesCraftberry from "./CaseStudiesCraftberry";
 import type {
   WithContext,
   Service,
@@ -285,6 +285,7 @@ export default function IndustryPage() {
       />
 
       <BrandEditorial brands={healthEditorialBrands} />
+       < CaseStudiesCraftberry/>
       <FaqSection/>
       <GeoMessage />
     </>
