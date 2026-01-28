@@ -72,7 +72,7 @@ export default function FaqSection() {
             <div key={index} className="border-b border-gray-300 py-5">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between text-left"
+                className="cursor-pointer w-full flex items-center justify-between text-left"
                 aria-expanded={openIndex === index}
               >
                 <span className="text-[18px] font-bold text-black pr-8">

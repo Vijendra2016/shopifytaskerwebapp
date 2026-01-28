@@ -242,7 +242,7 @@ export default function CaseStudiesCraftberry() {
                   key={`${c.brand}-row`}
                   onClick={() => scrollTo(idx)}
                   className={[
-                    "w-full text-left px-6 py-5 sm:px-8",
+                    " cursor-pointer w-full text-left px-6 py-5 sm:px-8",
                     "border-t border-white/10 first:border-t-0",
                     "bg-neutral-950 hover:bg-white/[0.03] transition",
                   ].join(" ")}
