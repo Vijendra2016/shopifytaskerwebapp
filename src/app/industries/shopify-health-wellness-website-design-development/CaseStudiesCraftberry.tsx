@@ -130,7 +130,7 @@ export default function CaseStudiesCraftberry() {
         {/* Optional header */}
         <div className="py-10">
           <div className="flex items-center justify-between">
-            <h3>Best Health & Wellness Brands store in Shopify</h3>
+            <h3>Top Health & Wellness Brands on Shopify</h3>
             <p className="text-xs font-medium tracking-[0.22em] text-white/45">
               we gether list of top best auto part website build in shopify
             </p>
@@ -162,7 +162,7 @@ export default function CaseStudiesCraftberry() {
                         {c.brand}
                       </div>
 
-                      <h3 className="mt-6 text-pretty text-lg font-semibold leading-tight tracking-tight text-white sm:text-lg">
+                      <h3 className="mt-6  text-lg font-thin leading-tight tracking-tight text-white/70 sm:text-lg">
                         {c.title}
                       </h3>
 
