@@ -59,11 +59,18 @@ export default function CaseStudiesCraftberry() {
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a11ce5b081fdffe818779_thenueco.png", alt: "The Nue Co." },
       },
       {
-        brand: "ArthroFill",
+        brand: "Neom Organics was founded in 2005 by former Glamour magazine editor Nicola Elliott, who retrained as an aromatherapist and nutritionist to create a wellbeing brand focused on natural solutions.",
         title: "Conversion-focused redesign and performance optimization for DTC",
-        tags: ["Redesign", "Performance", "CRO"],
-        href: "/case-studies/arthrofill",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697890a89e4f4dff082b982b_kbo-bike-kXP41LVdcv0-unsplash%20(1).jpg", alt: "ArthroFill" },
+       tags: [
+  "Video-led wellbeing storytelling",
+  "Cut-out imagery highlighting product detail",
+  "Loyalty and referral-driven retention",
+  "Quick add-to-bag shopping experience",
+  "Clear benefits and delivery transparency",
+],
+
+        href: "https://neomwellbeing.com/",
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a13f21ac7e0f9a1036f01_Neom.png", alt: "ArthroFill" },
       },
     ],
     []
