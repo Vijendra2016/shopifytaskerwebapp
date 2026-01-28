@@ -27,7 +27,7 @@ export default function CaseStudiesCraftberry() {
         brand: "Omorovicza. ",
         title:
           "Omorovicza is a luxury skincare brand built around Hungary’s mineral-rich thermal waters and cutting-edge formulation science.Founded in 2006, the brand now serves customers globally through a premium ecommerce experience, international retailers, and dedicated treatment institutions.",
-        tags: ["Migration", "Internationalization", "Store Build", "UI/UX Design"],
+        tags: ["Editorial lifestyle visuals", "Detail-focused product imagery", "Fast add-to-bag functionality", "UI/UX Design"],
         href: "https://www.omorovicza.co.uk/",
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6979fd5030c5a4c2e2f7cdbf_Omorovicza.png", alt: "Omorovicza" },
       },
@@ -162,12 +162,12 @@ export default function CaseStudiesCraftberry() {
                         {c.brand}
                       </div>
 
-                      <h3 className="mt-6  text-lg font-thin leading-tight tracking-tight text-white/70 sm:text-lg">
+                      <h3 className="mt-6  text-sm font-thin leading-tight tracking-tight text-white/70 sm:text-sm">
                         {c.title}
                       </h3>
                      
-                     <h6 className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-white/90">Store Standout Features:</h6>
-                      <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm text-white/60">
+                     <h6 className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-white/90">Store Standout Features:</h6>
+                      <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-sm text-white/60">
                         {c.tags.map((t) => (
                           <span key={t}>{t}</span>
                         ))}
