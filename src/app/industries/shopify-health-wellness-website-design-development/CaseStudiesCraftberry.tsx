@@ -24,12 +24,12 @@ export default function CaseStudiesCraftberry() {
   const CASES = useMemo<CaseStudy[]>(
     () => [
       {
-        brand: "fitspo",
+        brand: "Omorovicza. ",
         title:
-          "AG1’s Shopify experience focuses on conversion-led landing pages, educational video content, and subscription-first checkout flows.",
+          "Omorovicza is a luxury skincare brand built around Hungary’s mineral-rich thermal waters and cutting-edge formulation science.Founded in 2006, the brand now serves customers globally through a premium ecommerce experience, international retailers, and dedicated treatment institutions.",
         tags: ["Migration", "Internationalization", "Store Build", "UI/UX Design"],
-        href: "/case-studies/fitspo",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697890a89e4f4dff082b982b_kbo-bike-kXP41LVdcv0-unsplash%20(1).jpg", alt: "fitspo" },
+        href: "https://www.omorovicza.co.uk/",
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6979fd5030c5a4c2e2f7cdbf_Omorovicza.png", alt: "Omorovicza" },
       },
       {
         brand: "MidiHealth",
@@ -165,7 +165,8 @@ export default function CaseStudiesCraftberry() {
                       <h3 className="mt-6  text-lg font-thin leading-tight tracking-tight text-white/70 sm:text-lg">
                         {c.title}
                       </h3>
-
+                     
+                     <h6 className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-white/90">Store Standout Features:</h6>
                       <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm text-white/60">
                         {c.tags.map((t) => (
                           <span key={t}>{t}</span>
