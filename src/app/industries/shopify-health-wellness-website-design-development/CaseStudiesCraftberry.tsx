@@ -59,9 +59,9 @@ export default function CaseStudiesCraftberry() {
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a11ce5b081fdffe818779_thenueco.png", alt: "The Nue Co." },
       },
       {
-        brand: "Neom Organics was founded in 2005 by former Glamour magazine editor Nicola Elliott, who retrained as an aromatherapist and nutritionist to create a wellbeing brand focused on natural solutions.",
-        title: "Conversion-focused redesign and performance optimization for DTC",
-       tags: [
+        brand: "Neom Organics",
+        title: "Neom Organics was founded in 2005 by former Glamour magazine editor Nicola Elliott, who retrained as an aromatherapist and nutritionist to create a wellbeing brand focused on natural solutions.",
+        tags: [
   "Video-led wellbeing storytelling",
   "Cut-out imagery highlighting product detail",
   "Loyalty and referral-driven retention",
