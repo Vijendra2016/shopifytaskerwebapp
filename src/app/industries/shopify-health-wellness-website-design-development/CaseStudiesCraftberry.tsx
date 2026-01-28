@@ -32,7 +32,7 @@ export default function CaseStudiesCraftberry() {
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6979fd5030c5a4c2e2f7cdbf_Omorovicza.png", alt: "Omorovicza" },
       },
       {
-        brand: "Neom Organics",
+        brand: "Two Islands ",
         title:
           "DTC Shopify Build for a Google Ventures-Backed Platform Supporting Women in Menopause",
         tags: ["Custom Theme Development", "Store Build", "UI/UX Design"],
