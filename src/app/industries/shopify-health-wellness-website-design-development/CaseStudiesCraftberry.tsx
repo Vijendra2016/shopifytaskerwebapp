@@ -47,11 +47,16 @@ export default function CaseStudiesCraftberry() {
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a04a22c40cf94cb626de4_Nicola%20Elliott.png", alt: "MidiHealth" },
       },
       {
-        brand: "INNERMOST",
-        title: "Shopify Plus rebuild for subscriptions and international expansion",
-        tags: ["Shopify Plus", "Subscriptions", "Internationalization"],
-        href: "/case-studies/innermost",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697890a89e4f4dff082b982b_kbo-bike-kXP41LVdcv0-unsplash%20(1).jpg", alt: "INNERMOST" },
+        brand: "The Nue Co.",
+        title: "The Nue Co. was founded by husband-and-wife team Jules Miller and Charlie Gower. The Nue Co. store is designed to create a seamless and informative shopping journey by combining strong visual storytelling with user-friendly functionality,",
+        tags: [
+  "Lifestyle-led visual storytelling",
+  "Cut-out imagery highlighting product details",
+  "Fast quick add-to-bag shopping flow",
+  "Subscription programme for repeat purchase ease",
+],
+        href: "https://uk.thenueco.com/",
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a11ce5b081fdffe818779_thenueco.png", alt: "The Nue Co." },
       },
       {
         brand: "ArthroFill",

@@ -4,8 +4,7 @@ import Intro from "../Intro";
 import SplitSection from "../SplitSection";
 import CaseStudyAccordion from "../CaseStudyAccordion";
 import GeoMessage from "@/app/components/GeoMessage";
-import BrandEditorial from "../BrandEditorial";
-import { healthEditorialBrands } from "../data/healthEditorialBrands";
+
 import FaqSection from "./FaqSection";
 import CaseStudiesCraftberry from "./CaseStudiesCraftberry";
 import type {
@@ -284,7 +283,7 @@ export default function IndustryPage() {
         image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg"
       />
 
-      <BrandEditorial brands={healthEditorialBrands} />
+     
        < CaseStudiesCraftberry/>
       <FaqSection/>
       <GeoMessage />
