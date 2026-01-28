@@ -34,9 +34,16 @@ export default function CaseStudiesCraftberry() {
       {
         brand: "Two Islands ",
         title:
-          "DTC Shopify Build for a Google Ventures-Backed Platform Supporting Women in Menopause",
-        tags: ["Custom Theme Development", "Store Build", "UI/UX Design"],
-        href: "/case-studies/midi",
+          "Two Islands was launched by Nutrition graduate Julia Matthews, who created a nutrient-packed protein powder to complement her student lifestyle.",
+        tags: [
+  "Lifestyle-first product presentation",
+  "Detail-focused cut-out imagery",
+  "Smart related product journeys",
+  "Quick add-to-bag shopping flow",
+  "Ingredient education and glossary support",
+  "Shop-by-ingredient discovery experience",
+],
+        href: "https://twoislandsco.com",
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a04a22c40cf94cb626de4_Nicola%20Elliott.png", alt: "MidiHealth" },
       },
       {
