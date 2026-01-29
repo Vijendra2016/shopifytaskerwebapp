@@ -47,63 +47,36 @@ export async function POST(req: NextRequest) {
       to: email,
       subject: 'ShopifyTasker: Your task is in review',
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; background-color: #ffffff; border: 1px solid #e5e5e5; border-radius: 10px; overflow: hidden;">
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #fafafa;">
+          <h2 style="color: #2c3e50;">Hi ${name},</h2>
+          <p style="font-size: 16px; color: #333;">
+            Thanks for submitting your task on ShopifyTasker!</p>
 
-  <!-- Header -->
-  <div style="background-color: #0d6efd; padding: 20px; text-align: center;">
-    <h1 style="color: #ffffff; margin: 0; font-size: 22px;">
-      ShopifyTasker
-    </h1>
-    <p style="color: #e6f0ff; margin: 5px 0 0; font-size: 14px;">
-      On-demand Shopify Development
-    </p>
-  </div>
+          <p style="font-size: 16px; color: #333;">
+            We received your request successfully, and our team is reviewing it now. You can expect a response from us within a few hours.
+          </p>
+          <p style="font-size: 16px; color: #333;">Here a summary of what you submitted:</p>
+          <ul style="font-size: 16px; color: #333; padding-left: 20px;">
+            <li><strong>Website:</strong> ${url || 'Not provided'}</li>
+            <li><strong>Message:</strong> ${message}</li>
+          </ul>
+          <p style="font-size: 16px; color: #333; line-height: 1.6;">
+  If you have any extra details or files, just reply to this email — it helps us deliver faster.
+  <br><br>
+  We’re excited to work on your Shopify store 🚀
+</p>
 
-  <!-- Body -->
-  <div style="padding: 25px 22px;">
+<p style="font-size: 16px; color: #2c3e50; margin-top: 25px; font-weight: 500;">
+  — Team <strong>ShopifyTasker</strong><br>
+  <span style="font-size: 14px; color: #555;">
+    On-demand Shopify Development<br>
+    <a href="https://shopifytasker.com" style="color: #1a73e8; text-decoration: none;">
+      https://shopifytasker.com
+    </a>
+  </span>
+</p>
 
-    <h2 style="color: #2c3e50; margin-top: 0;">Hi ${name}, 👋</h2>
-
-    <p style="font-size: 15px; color: #333; line-height: 1.6;">
-      Thanks for submitting your task on <strong>ShopifyTasker</strong>!  
-      We’ve received your request successfully, and our team is reviewing it now.
-      You can expect a response from us within a few hours.
-    </p>
-
-    <!-- Summary Box -->
-    <div style="background-color: #f7f9fc; border: 1px solid #e1e6ef; border-radius: 8px; padding: 15px; margin: 18px 0;">
-      <p style="margin: 0 0 8px; font-weight: bold; color: #2c3e50;">
-        Your submitted details:
-      </p>
-      <p style="margin: 4px 0; font-size: 15px;">
-        <strong>Website:</strong> ${url || 'Not provided'}
-      </p>
-      <p style="margin: 4px 0; font-size: 15px;">
-        <strong>Message:</strong> ${message}
-      </p>
-    </div>
-
-    <p style="font-size: 15px; color: #333; line-height: 1.6;">
-      If you have any extra details or files, simply reply to this email — it helps us deliver faster.
-    </p>
-
-    <p style="font-size: 15px; color: #333;">
-      We’re excited to work on your Shopify store 🚀
-    </p>
-
-    <!-- Signature -->
-    <p style="margin-top: 22px; font-size: 15px; color: #2c3e50;">
-      — Team <strong>ShopifyTasker</strong><br>
-      <span style="font-size: 13px; color: #666;">
-        On-demand Shopify Development<br>
-        <a href="https://shopifytasker.com" style="color: #0d6efd; text-decoration: none;">
-          shopifytasker.com
-        </a>
-      </span>
-    </p>
-
-  </div>
-</div>
+        </div>
       `,
     });
 
