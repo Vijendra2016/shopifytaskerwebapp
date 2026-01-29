@@ -272,12 +272,12 @@ export default function IndustryPage() {
       />
 
       <CaseStudyAccordion />
-
+<TestimonialCard />
       <Intro
         heading="If you looking to update your shopify theme or you looking  for Health Wellness Stores setup"
         text="We create fast, conversion-focused Shopify experiences for Health Wellness businesses."
       />
-          <TestimonialCard />
+         
       <SplitSection
         title="Built for Performance"
         text="Lightning-fast storefronts optimized for SEO, CRO and mobile."
