@@ -11,6 +11,8 @@ import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
 import dynamic from 'next/dynamic'
 import SchemaOrganization from "./components/SchemaOrganization";
+import Script from "next/script";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -43,7 +45,20 @@ export default function RootLayout({
 
       <Head>
         <meta name="theme-color" content="#000000" />
-        
+         <Script
+          id="clarity-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;
+                t.src="https://www.clarity.ms/tag/" + i;
+                y=l.getElementsByTagName(r)[0].parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "v90f2ilxad");
+            `,
+          }}
+        />
 
       </Head>
       
