@@ -25,13 +25,16 @@ export async function POST(req: NextRequest) {
     // (optional but helpful)
     await transporter.verify();
 
+    const inboxList = process.env.ZOHO_INBOX_TO
+  ? process.env.ZOHO_INBOX_TO.split(',').map(e => e.trim())
+  : [process.env.ZOHO_EMAIL_USER!];
     // ✅ Email to you (internal notification)
     await transporter.sendMail({
       // IMPORTANT: "from" should be your Zoho mailbox to avoid spam/rejection.
       // Use replyTo so you can reply to the customer's address.
       from: `Shopify Tasker <${process.env.ZOHO_EMAIL_USER}>`,
       replyTo: `"${name}" <${email}>`,
-      to: process.env.ZOHO_INBOX_TO || process.env.ZOHO_EMAIL_USER, // where you want to receive
+      to: inboxList, // where you want to receive
       subject: `Shopify Tasker new task created for ${tasktitle}`,
       html: `<p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>
