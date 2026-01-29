@@ -273,8 +273,9 @@ export default function IndustryPage() {
       <CaseStudyAccordion />
 <TestimonialCard />
       <Intro
-        heading="If you looking to update your shopify theme or you looking  for Health Wellness Stores setup"
-        text="We create fast, conversion-focused Shopify experiences for Health Wellness businesses."
+        heading="Shopify Website Design & Development for Health & Wellness Stores"
+        text="ShopifyTasker specializes in Shopify design and development for health and wellness businesses.
+We create SEO-friendly, high-performing Shopify stores that help brands stand out and convert visitors into loyal customers."
       />
          
       
