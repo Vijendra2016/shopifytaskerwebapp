@@ -66,8 +66,9 @@ export async function POST(req: NextRequest) {
           </ul>
           <p style="font-size: 16px; color: #000000; line-height: 1.6;">
   If you have any extra details or files, just reply to this email — it helps us deliver faster.
-  <br><br>
-  We’re excited to work on your Shopify store 🚀
+</p>
+  <p style="font-size: 16px; color: #000000; line-height: 1.6;">
+  <strong>Your Shopify task is now in expert hands — we update you shortly.</strong>
 </p>
 
 <p style="font-size: 16px; color: #000000; margin-top: 25px; font-weight: 500;">
