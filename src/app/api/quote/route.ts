@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
       to: email,
       subject: 'ShopifyTasker: Your task is in review',
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 1000px; margin: auto; padding: 40px; border: 1px solid #000000; border-radius: 8px; background-color: #ffffff;">
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 10px; border: 1px solid #000000; border-radius: 8px; background-color: #ffffff;">
           <h2 style="color: #000000;">Hi ${name},</h2>
           <p style="font-size: 16px; color: #000000;">
             Thanks for submitting your task on ShopifyTasker!</p>
