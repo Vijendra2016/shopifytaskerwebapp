@@ -45,7 +45,11 @@ export default function RootLayout({
 
       <Head>
         <meta name="theme-color" content="#000000" />
-         <Script
+         
+
+      </Head>
+      
+      <Script
           id="clarity-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -59,9 +63,6 @@ export default function RootLayout({
             `,
           }}
         />
-
-      </Head>
-      
       <body
         className={`${geistSans.variable}  antialiased`}
       >
