@@ -50,31 +50,31 @@ export async function POST(req: NextRequest) {
       to: email,
       subject: 'ShopifyTasker: Your task is in review',
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #000000;">
-          <h2 style="color: #ffffff;">Hi ${name},</h2>
-          <p style="font-size: 16px; color: #ffffff;">
+        <div style="font-family: Arial, sans-serif; max-width: 1000px; margin: auto; padding: 40px; border: 1px solid #000000; border-radius: 8px; background-color: #ffffff;">
+          <h2 style="color: #000000;">Hi ${name},</h2>
+          <p style="font-size: 16px; color: #000000;">
             Thanks for submitting your task on ShopifyTasker!</p>
 
-          <p style="font-size: 16px; color: #ffffff;">
+          <p style="font-size: 16px; color: #000000;">
             We received your request successfully, and our team is reviewing it now. You can expect a response from us within a few hours.
           </p>
-          <p style="font-size: 16px; color: #ffffff;">Here a summary of what you submitted:</p>
-          <ul style="font-size: 16px; color: #ffffff; padding-left: 20px;">
+          <p style="font-size: 16px; color: #000000;">Here a summary of what you submitted:</p>
+          <ul style="font-size: 16px; color: #000000; padding-left: 20px;">
             <li><strong>Website:</strong> ${url || 'Not provided'}</li>
             <li><strong>Task /project Title:</strong> ${tasktitle || 'Not provided'}</li>
             <li><strong>Message:</strong> ${message}</li>
           </ul>
-          <p style="font-size: 16px; color: #ffffff; line-height: 1.6;">
+          <p style="font-size: 16px; color: #000000; line-height: 1.6;">
   If you have any extra details or files, just reply to this email — it helps us deliver faster.
   <br><br>
   We’re excited to work on your Shopify store 🚀
 </p>
 
-<p style="font-size: 16px; color: #ffffff; margin-top: 25px; font-weight: 500;">
+<p style="font-size: 16px; color: #000000; margin-top: 25px; font-weight: 500;">
   — Team <strong>ShopifyTasker</strong><br>
-  <span style="font-size: 14px; color: #ffffff;">
+  <span style="font-size: 14px; color: #000000;">
     On-demand Shopify Development<br>
-    <a href="https://shopifytasker.com" style="color: #1a73e8; text-decoration: none;">
+    <a href="https://shopifytasker.com" style="color: #000000; text-decoration: none;">
       https://shopifytasker.com
     </a>
   </span>
