@@ -3,6 +3,7 @@ import Hero from "../Hero";
 import Intro from "../Intro";
 import SplitSection from "../SplitSection";
 import CaseStudyAccordion from "../CaseStudyAccordion";
+import TestimonialCard from "@/app/components/TestimonialCard";
 import GeoMessage from "@/app/components/GeoMessage";
 
 import FaqSection from "./FaqSection";
@@ -276,7 +277,7 @@ export default function IndustryPage() {
         heading="If you looking to update your shopify theme or you looking  for Health Wellness Stores setup"
         text="We create fast, conversion-focused Shopify experiences for Health Wellness businesses."
       />
-
+          <TestimonialCard />
       <SplitSection
         title="Built for Performance"
         text="Lightning-fast storefronts optimized for SEO, CRO and mobile."
