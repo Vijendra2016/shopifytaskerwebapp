@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   try {
     // ✅ Zoho SMTP (recommended ports: 465 SSL or 587 STARTTLS)
     const transporter = nodemailer.createTransport({
-      host: process.env.ZOHO_SMTP_HOST || 'smtp.zoho.com',
+      host: process.env.ZOHO_SMTP_HOST || 'smtp.zoho.eu',
       port: Number(process.env.ZOHO_SMTP_PORT || 465),
       secure: (process.env.ZOHO_SMTP_PORT || '465') === '465', // true for 465, false for 587
       auth: {
