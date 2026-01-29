@@ -58,6 +58,8 @@ export async function POST(req: NextRequest) {
           <p style="font-size: 16px; color: #333;">Here a summary of what you submitted:</p>
           <ul style="font-size: 16px; color: #333; padding-left: 20px;">
             <li><strong>Website:</strong> ${url || 'Not provided'}</li>
+              <p><strong>Task /project Title:</strong> ${tasktitle}</p>
+               <li><strong>Task /project Title:</strong> ${tasktitle || 'Not provided'}</li>
             <li><strong>Message:</strong> ${message}</li>
           </ul>
           <p style="font-size: 16px; color: #333; line-height: 1.6;">
