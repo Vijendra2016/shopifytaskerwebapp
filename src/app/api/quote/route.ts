@@ -45,22 +45,38 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `Shopify Tasker <${process.env.ZOHO_EMAIL_USER}>`,
       to: email,
-      subject: 'Thanks for submitting your task!',
+      subject: 'ShopifyTasker: Your task is in review',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #fafafa;">
           <h2 style="color: #2c3e50;">Hi ${name},</h2>
           <p style="font-size: 16px; color: #333;">
-            Thanks for submitting your task. We received your request and will get back to you within <strong>5 hours</strong>.
+            Thanks for submitting your task on ShopifyTasker! We received your request and will get back to you within <strong>5 hours</strong>.
+          </p>
+
+          <p style="font-size: 16px; color: #333;">
+            We received your request successfully, and our team is reviewing it now. You can expect a response from us within a few hours.
           </p>
           <p style="font-size: 16px; color: #333;">Here a summary of what you submitted:</p>
           <ul style="font-size: 16px; color: #333; padding-left: 20px;">
             <li><strong>Website:</strong> ${url || 'Not provided'}</li>
             <li><strong>Message:</strong> ${message}</li>
           </ul>
-          <p style="font-size: 16px; color: #333;">We'll be in touch soon!</p>
-          <p style="font-size: 16px; color: #2c3e50; margin-top: 30px;">
-            — Your Team at <strong>ShopifyTasker</strong>
-          </p>
+          <p style="font-size: 16px; color: #333; line-height: 1.6;">
+  If you have any extra details or files, just reply to this email — it helps us deliver faster.
+  <br><br>
+  We’re excited to work on your Shopify store 🚀
+</p>
+
+<p style="font-size: 16px; color: #2c3e50; margin-top: 25px; font-weight: 500;">
+  — Team <strong>ShopifyTasker</strong><br>
+  <span style="font-size: 14px; color: #555;">
+    On-demand Shopify Development<br>
+    <a href="https://shopifytasker.com" style="color: #1a73e8; text-decoration: none;">
+      https://shopifytasker.com
+    </a>
+  </span>
+</p>
+
         </div>
       `,
     });
