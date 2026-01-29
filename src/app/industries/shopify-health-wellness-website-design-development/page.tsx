@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Hero from "../Hero";
 import Intro from "../Intro";
-import SplitSection from "../SplitSection";
 import CaseStudyAccordion from "../CaseStudyAccordion";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import GeoMessage from "@/app/components/GeoMessage";
@@ -278,12 +277,7 @@ export default function IndustryPage() {
         text="We create fast, conversion-focused Shopify experiences for Health Wellness businesses."
       />
          
-      <SplitSection
-        title="Built for Performance"
-        text="Lightning-fast storefronts optimized for SEO, CRO and mobile."
-        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69762bfba9a011d369307f41_reuben-mansell-oFgXybl7z3E-unsplash.jpg"
-      />
-
+      
      
        < CaseStudiesCraftberry/>
       <FaqSection/>
