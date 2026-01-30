@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Contactus() {
   return (
-    <main className="container mx-auto px-0 py-10 text-center pt-0">
+    <main className="w-full  mx-auto px-0 py-10 text-center pt-0">
         <ContactSection/>
         <GeoMessage/>
     </main>

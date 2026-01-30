@@ -9,32 +9,23 @@ type TeamMember = {
 };
 
 const team: TeamMember[] = [
+  
   {
-    name: "Antoine Stora",
-    role: "Partner",
-    email: "antoine@gunsmoke.fr",
-    image: "/images/antoine.jpg",
+    name: "Support",
+    role: "Any issue you facing Please email us",
+    email: "support@shopifytasker.com",
   },
   {
-    name: "Maxime Coisy",
-    role: "Partner",
-    email: "maxime@gunsmoke.fr",
+    name: "Sale",
+    role: "New project/ task",
+    email: "sales@shopifytasker.com",
   },
   {
-    name: "Anastasia Sebban",
-    role: "Brand content",
-    email: "anastasia@gunsmoke.fr",
+    name: "WhatsApp",
+    role: "For Quick Chat",
+    email: "+91-7014716631",
   },
-  {
-    name: "Christelle Lelievre",
-    role: "Corporate & Live content",
-    email: "christelle@gunsmoke.fr",
-  },
-  {
-    name: "Angèle Lemaire",
-    role: "Corporate & Live content",
-    email: "angele@gunsmoke.fr",
-  },
+  
 ];
 
 export default function ContactSection() {
@@ -42,18 +33,18 @@ export default function ContactSection() {
     <section className="bg-black text-white px-6 md:px-14 py-20">
       {/* Top Info Bar */}
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between border-b border-white/20 pb-6 mb-20 text-sm">
-        <span className="opacity-70">Paris 6:11 AM</span>
+        <span className="opacity-70">On demand Shopify Developer / Designer </span>
 
         <div className="flex items-center gap-4">
           <span className="border border-white/40 px-5 py-2 rounded-full">
-            contact@gunsmoke.fr
+           support@shopifytasker.com
           </span>
           <button className="bg-white text-black px-5 py-2 rounded-full hover:bg-gray-200 transition">
             Contact Us
           </button>
         </div>
 
-        <span className="opacity-70">1er rue Morère – Paris 14e</span>
+        
       </div>
 
       {/* Title */}
@@ -62,19 +53,10 @@ export default function ContactSection() {
       </h1>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
         {team.map((member) => (
           <div key={member.email} className="text-center">
-            {member.image && (
-              <div className="relative w-full h-72 mb-6 overflow-hidden">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            )}
+            
 
             <p className="font-medium">{member.name}</p>
             <p className="text-sm opacity-70 mb-2">{member.role}</p>
