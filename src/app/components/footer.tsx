@@ -1,9 +1,17 @@
+
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import GsapMarquee from "./GsapMarquee";
+import StartProjectModal from "./StartProjectModal";
+import { useState } from "react";
 
 export default function Footer() {
        
+  const [showModal, setShowModal] = useState(false);
+
+  const openStartProject = () => setShowModal(true);
 
   return (
     
@@ -36,11 +44,19 @@ export default function Footer() {
         {/* Column 2 */}
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base md:text-1xl font-thin">Our Services</h6>
-          <Link href="#">store setup and development</Link>
-          <Link href="#">Platform migration</Link>
-          <Link href="#">Custom app development</Link>
-          <Link href="#">Checkout extension Development</Link>
-          <Link href="#">Retainer</Link>
+           <button onClick={openStartProject} className="text-left cursor-pointer ">
+           store setup and development
+          </button>
+           <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Platform migration
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Custom app development
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Retainer
+          </button>
+          
           <Link href="/shopify-small-task">shopify small tasks</Link>
 
           
@@ -49,17 +65,29 @@ export default function Footer() {
         {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
         <div className="flex flex-col space-y-2">
           <h6 className="underline text-base md:text-1xl font-thin">Small Task</h6>
-          <Link href="#">Shopify Theme tweak</Link>
-          <Link href="#">Shopify App Development</Link>
-          <Link href="#">Shopify Hydrogen</Link>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Shopify Theme tweak
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Shopify App Development
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Shopify Hydrogen
+          </button>
+          
           <Link href="/shopify-virtual-assistant-services">Shopify VA Services</Link>
           
         </div>
          {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
          <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
-          <Link href="#">Shopify Hyrogen Store Setup</Link>
-          <Link href="#">Shopify Headless Store Managment</Link>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Shopify Hyrogen Store Setup
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Shopify Headless Store Managment
+          </button>
+          
            <Link href="/shopify-web-designer">Shopify Web Designer</Link>
             <Link href="/shopify-expert-near-me">Shopify Expert Near Me</Link>
           
@@ -72,11 +100,25 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Platform Migration</h6>
-          <Link href="#">Wordpress to Shopify Migration</Link>
-          <Link href="#">Salesfoce to Shopify Plus</Link>
-          <Link href="#">Squarespace to shopify</Link>
-          <Link href="#">Square to shopify</Link>
-          <Link href="#">Maganto to Shopify</Link>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          Wordpress to Shopify Migration
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          Salesfoce to Shopify Plus
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Squarespace to shopify          
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Square to shopify   
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Maganto to Shopify 
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer ">
+           Custom to Shopify 
+          </button>
+          
           
         </div>
 
@@ -106,6 +148,10 @@ export default function Footer() {
       <br>
       </br>
        <GsapMarquee />
+       <StartProjectModal
+      isOpen={showModal}
+      onClose={() => setShowModal(false)}
+    />
     </footer>
   );
 }
