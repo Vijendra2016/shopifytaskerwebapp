@@ -30,7 +30,7 @@ export default function Footer() {
           <Link href="/our-tech-stack">our tech stack</Link>
           <Link href="https://www.trustpilot.com/review/shopifytasker.com" target="_blank">reviews</Link>
           <Link href="#">pricing</Link>
-          <Link href="#">contact</Link>
+          <Link href="/contact">contact</Link>
         </div>
 
         {/* Column 2 */}
