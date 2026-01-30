@@ -3,11 +3,12 @@ import GeoMessage from "../components/GeoMessage";
 import ContactSection from "./ContactSection";
 
 export const metadata: Metadata = {
-  title: "Freelancer Shopify developer | Your Trusted Shopify Development Partner",
+  title: "Contact Shopify Developer | ShopifyTasker – Get Expert Help Today",
   description:
-    "Learn more about ShopifyTasker, a trusted name in Shopify development. We help businesses build, customize, and scale their online stores effectively.",
-    themeColor: '#d9e1eb',  
-  };
+    "Get in touch with ShopifyTasker to discuss your Shopify store needs. Contact a freelance Shopify developer for custom development, fixes, speed optimization, or ongoing support.",
+  themeColor: "#d9e1eb",
+};
+
 
 export default function Contactus() {
   return (
