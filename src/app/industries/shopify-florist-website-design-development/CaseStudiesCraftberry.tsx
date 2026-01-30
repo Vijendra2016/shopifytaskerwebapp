@@ -32,19 +32,19 @@ export default function CaseStudiesCraftberry() {
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c5bb887763e4b9325294a_ZitaElze.png", alt: "florist shopify development" },
       },
       {
-        brand: "Two Islands ",
+        brand: "Davinci Flowers ",
         title:
-          "Two Islands was launched by Nutrition graduate Julia Matthews, who created a nutrient-packed protein powder to complement her student lifestyle.",
+          "Davinci Flower is a floral and lifestyle brand offering fresh bouquets, handcrafted decor, modern vases, aromatic diffusers, and same-day flower delivery from their Plainview, NY shop",
         tags: [
-  "Lifestyle-first product presentation",
-  "Detail-focused cut-out imagery",
-  "Smart related product journeys",
+  "Clear category navigation for bouquets, vases, and decor",
+  "Same-day and next-day local delivery with custom arrangement options",
+  "Prominent “Shop Now” and product calls-to-action",
   "Quick add-to-bag shopping flow",
-  "Ingredient education and glossary support",
-  "Shop-by-ingredient discovery experience",
+  "Testimonials and brand story sections to build trust and credibility",
+  
 ],
-        href: "https://twoislandsco.com",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a04a22c40cf94cb626de4_Nicola%20Elliott.png", alt: "MidiHealth" },
+        href: "https://davinciflower.com/",
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c5fec48ea3198cd9d13f8_Davinci.png", alt: "flower website design shopify" },
       },
       {
         brand: "The Nue Co.",
