@@ -32,7 +32,7 @@ export default function Footer() {
        
         <div className="flex flex-col space-y-2">
         
-          <h6 className="underline text-base md:text-1xl font-thin">About</h6>
+          <h6 className="text-sm md:text-sm text-base  uppercase font-extrabold">About</h6>
           <Link href="/" className="underline">who we are</Link>
           <Link href="/how-this-work">how it works</Link>
           <Link href="/our-tech-stack">our tech stack</Link>
@@ -43,7 +43,7 @@ export default function Footer() {
 
         {/* Column 2 */}
         <div className="flex flex-col space-y-2">
-          <h6 className=" underline text-base md:text-1xl font-thin">Our Services</h6>
+          <h6 className=" text-sm md:text-sm text-base  uppercase font-extrabold">Our Services</h6>
            <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition">
            store setup and development
           </button>
@@ -64,7 +64,7 @@ export default function Footer() {
 
         {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
         <div className="flex flex-col space-y-2">
-          <h6 className="underline text-base md:text-1xl font-thin">Small Task</h6>
+          <h6 className="text-sm md:text-sm text-base  uppercase font-extrabold">Small Task</h6>
           <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Shopify Theme tweak
           </button>
@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
          {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
          <div className="flex flex-col space-y-2">
-          <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
+          <h6 className=" text-sm md:text-sm text-base  uppercase font-extrabold">Headless Shopify Development</h6>
           <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Shopify Hyrogen Store Setup
           </button>
@@ -93,13 +93,13 @@ export default function Footer() {
           
         </div>
         <div className="flex flex-col space-y-2">
-          <h6 className=" underline text-base font-thin">Shopify Developer Near Me</h6>
+          <h6 className=" text-sm md:text-sm text-base  uppercase font-extrabold">Shopify Developer Near Me</h6>
           <Link href="/shopify-developer-near-me/newyork">New York City</Link>
           <Link href="/shopify-developer-near-me/los-angeles-ca">Los Angeles</Link>
           
         </div>
         <div className="flex flex-col space-y-2">
-          <h6 className=" underline text-base font-thin">Platform Migration</h6>
+          <h6 className=" text-sm md:text-sm text-base  uppercase font-extrabold">Platform Migration</h6>
           <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition">
           Wordpress to Shopify Migration
           </button>
@@ -123,7 +123,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col space-y-2">
-          <h6 className=" text-xl md:text-lg text-base font-regular">Theme Customization & Update Service</h6>
+          <h6 className=" text-sm md:text-sm text-base  uppercase font-extrabold">Theme Customization & Update Service</h6>
           <Link href="/shopify-themes/impulse-customization-update">Impulse theme Customization & Update</Link>
           <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Shopify Headless Store Managment
@@ -135,7 +135,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col space-y-2">
-        <Link href="/industries" className="text-white text-lg font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Industries</Link>
+        <Link href="/industries" className="text-sm md:text-sm text-base  uppercase font-extrabold  hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Industries</Link>
 
           <Link href="/industries/hair-extension-shopify-web-design" className="text-white text-sm font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Hair Extensions</Link>
           <Link href="/industries/shopify-auto-parts-website-design-development">Auto Parts</Link>
