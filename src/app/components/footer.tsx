@@ -125,8 +125,12 @@ export default function Footer() {
         <div className="flex flex-col space-y-2">
           <h6 className=" text-xl md:text-lg text-base font-regular">Theme Customization & Update Service</h6>
           <Link href="/shopify-themes/impulse-customization-update">Impulse theme Customization & Update</Link>
-          <Link href="#">Shopify Headless Store Managment</Link>
-          <Link href="#">start a project</Link>
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
+           Shopify Headless Store Managment
+          </button>
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
+           start a project
+          </button>
           
         </div>
 
