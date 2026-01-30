@@ -4,8 +4,8 @@ import Intro from "../Intro";
 import CaseStudyAccordion from "../CaseStudyAccordion";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import GeoMessage from "@/app/components/GeoMessage";
-
 import FaqSection from "./FaqSection";
+
 import CaseStudiesCraftberry from "./CaseStudiesCraftberry";
 import type {
   WithContext,
@@ -265,9 +265,9 @@ export default function IndustryPage() {
       />
 
       <Hero
-        title="Health & Wellness Shopify Website Design & Development | ShopifyTasker"
-        subtitle="High-performance eCommerce solutions for Health Wellness brands"
-        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg"
+        title="Shopify Website Design & Development for Retail Florists"
+        subtitle="Shopify Website for Retail Florists | Design & Development Experts"
+        image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c64a164079bf96470b7ee_pjh-kMzDfWWojsU-unsplash%20(1).jpg"
       />
 
       <CaseStudyAccordion />

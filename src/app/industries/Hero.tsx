@@ -29,10 +29,10 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
 
           {/* Text */}
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
-            <h1 className="text-4xl md:text-6xl font-bold">
+            <h1 className="text-2xl md:text-2xl font-thin">
               {title}
             </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-2xl">
+            <p className="mt-4 text-lg md:text-lg max-w-2xl">
               {subtitle}
             </p>
           </div>
