@@ -44,16 +44,16 @@ export default function Footer() {
         {/* Column 2 */}
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base md:text-1xl font-thin">Our Services</h6>
-           <button onClick={openStartProject} className="text-left cursor-pointer ">
+           <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition">
            store setup and development
           </button>
-           <button onClick={openStartProject} className="text-left cursor-pointer ">
+           <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Platform migration
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Custom app development
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Retainer
           </button>
           
@@ -65,13 +65,13 @@ export default function Footer() {
         {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
         <div className="flex flex-col space-y-2">
           <h6 className="underline text-base md:text-1xl font-thin">Small Task</h6>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Shopify Theme tweak
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition">
            Shopify App Development
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Shopify Hydrogen
           </button>
           
@@ -81,10 +81,10 @@ export default function Footer() {
          {/* Column 3 - Duplicate of Column 2 (you may want to change heading/content) */}
          <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Headless Shopify Development</h6>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Shopify Hyrogen Store Setup
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Shopify Headless Store Managment
           </button>
           
@@ -100,22 +100,22 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-2">
           <h6 className=" underline text-base font-thin">Platform Migration</h6>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition">
           Wordpress to Shopify Migration
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
           Salesfoce to Shopify Plus
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Squarespace to shopify          
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Square to shopify   
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Maganto to Shopify 
           </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer ">
+          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Custom to Shopify 
           </button>
           
