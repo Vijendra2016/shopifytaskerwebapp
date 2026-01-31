@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import cities from '@/lib/cities.json';
 import CitiesCta from '@/app/components/CitiesCta';
-import TestimonialCard from '@/app/components/TestimonialCard';
+import TestimonialCardGrid from '@/app/components/TestimonialCardGrid';
 import TrustedSection from '@/app/components/TrustedSection';
 import FaqSchema from '@/app/components/FaqSchema';
 
@@ -128,7 +128,7 @@ Get Submit Project we will be back to you with proper cost .
       </section>
       
       <TrustedSection />
-      <TestimonialCard />
+      <TestimonialCardGrid />
 <CitiesCta/>
     </main>
   );
