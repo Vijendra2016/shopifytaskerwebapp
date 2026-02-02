@@ -203,6 +203,8 @@ export default function CaseStudiesCraftberry() {
                            →
                         </span>
                       </a>
+
+                      <span>Want something similar?</span>
                     </div>
 
                     <div className="mt-8 flex items-center gap-2 text-xs text-white/40">
