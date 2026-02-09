@@ -213,11 +213,25 @@ export default function CaseStudiesCraftberry() {
                      
                     </div>
 
-<button         
-        onClick={() => setShowModal(true)}      
-      >  
-      Want something similar? 
-      </button>
+<button
+  onClick={() => setShowModal(true)}
+  className="
+    inline-flex w-fit
+    cursor-pointer
+    items-center
+    bg-white/95
+    text-black
+    px-4 py-2
+    rounded-full
+    text-sm font-thin
+    uppercase
+    hover:bg-white/90
+    transition
+  "
+>
+  Want something similar?
+</button>
+
                     <div className="mt-8 flex items-center gap-2 text-xs text-white/40">
                       <span className="h-px flex-1 bg-white/10" />
                       <span className="uppercase tracking-widest">
