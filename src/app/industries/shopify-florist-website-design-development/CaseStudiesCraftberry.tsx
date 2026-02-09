@@ -50,30 +50,29 @@ export default function CaseStudiesCraftberry() {
         image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c5fec48ea3198cd9d13f8_Davinci.png", alt: "flower website design shopify" },
       },
       {
-        brand: "The Nue Co.",
-        title: "The Nue Co. was founded by husband-and-wife team Jules Miller and Charlie Gower. The Nue Co. store is designed to create a seamless and informative shopping journey by combining strong visual storytelling with user-friendly functionality,",
+        brand: "Found",
+        title: "Fond was created to make gifting stress-free, beautiful, and unforgettable — simplifying the experience of buying flowers by combining thoughtful design with seamless service.",
         tags: [
-  "Lifestyle-led visual storytelling",
-  "Cut-out imagery highlighting product details",
-  "Fast quick add-to-bag shopping flow",
-  "Subscription programme for repeat purchase ease",
+  "Fresh, seasonal flowers delivered with purpose",
+  "Next-day delivery to make last-minute gifting effortless",
+  "Thoughtful touches like in-house designed greeting cards",
+  "Bright, photogenic packaging built for sharing memories",
 ],
-        href: "https://uk.thenueco.com/",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a11ce5b081fdffe818779_thenueco.png", alt: "The Nue Co." },
+        href: "https://fond.co.uk/",
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69898f06a69f7738722e24dd_found-website-shopify-flower-website-design.png", alt: "Found florist website shopify" },
       },
       {
-        brand: "Neom Organics",
-        title: "Neom Organics was founded in 2005 by former Glamour magazine editor Nicola Elliott, who retrained as an aromatherapist and nutritionist to create a wellbeing brand focused on natural solutions.",
+        brand: "Farm Nine",
+        title: "Farm Nine is a family-run cut flower farm born from a backyard dream, where founders Niesa and Flor cultivate beautiful, fragrant blooms on their 13-acre homestead. They hand-grow and design unique floral arrangements for weddings, events, and weekly markets, bringing farm-fresh flowers straight from field to vase with love and care.",
         tags: [
-  "Video-led wellbeing storytelling",
-  "Cut-out imagery highlighting product detail",
-  "Loyalty and referral-driven retention",
-  "Quick add-to-bag shopping experience",
-  "Clear benefits and delivery transparency",
+  "Seasonal, farm-fresh flowers grown and arranged in-house",
+  "Local delivery eligibility clearly displayed in the cart",
+  "Fast, friction-free add-to-cart and checkout experience",
+  "Authentic, story-led brand that builds trust and repeat orders",
 ],
 
-        href: "https://neomwellbeing.com/",
-        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697a13f21ac7e0f9a1036f01_Neom.png", alt: "ArthroFill" },
+        href: "https://farmnine.com/",
+        image: { src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/698991eccd2accb35d3bf8e4_farmenine-shopify-website-design-development.png", alt: "Farme Nine Shopify website Design" },
       },
     ],
     []
@@ -189,11 +188,12 @@ export default function CaseStudiesCraftberry() {
                       </h3>
                      
                      <h6 className="mt-1 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-white/90">Store Standout Features:</h6>
-                      <div className="mt-1 flex flex-wrap gap-x-4 gap-y-2 text-sm text-white/60">
-                        {c.tags.map((t) => (
-                          <span key={t}>{t}</span>
-                        ))}
-                      </div>
+                      <ul className="mt-1 list-disc pl-5 text-sm text-white/60 space-y-1">
+  {c.tags.map((t) => (
+    <li key={t}>{t}</li>
+  ))}
+</ul>
+
 
                       <a
                         href={c.href}
