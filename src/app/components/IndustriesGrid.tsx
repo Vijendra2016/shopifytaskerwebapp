@@ -23,10 +23,10 @@ const industries: Industry[] = [
     image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/682719eda8c781d89c98050d_heath-and-wellness-shopify-website-development.png",
   },
    {
-    title: "Cycling",
-    tags: "Shopify Website Design, Shopify Hair Extension",
+    title: "Bike & e-bike brands",
+    tags: "Shopify Website Design & Development for bike & e-bike brands",
     url: "/industries/shopify-cycling-website-design-development",
-    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/682723ec805c496bf9be5338_Shopify-fashion-websites.png",
+    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697890a89e4f4dff082b982b_kbo-bike-kXP41LVdcv0-unsplash%20(1).jpg",
   },
   {
     title: "Florists",
@@ -76,7 +76,7 @@ const industries: Industry[] = [
 const IndustryGrid: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {industries.map((industry, index) => (
           <div
             key={index}
@@ -94,7 +94,7 @@ const IndustryGrid: React.FC = () => {
             <p className="text-sm text-gray-500 mb-4">
               {industry.tags}
             </p>
-            <Link            className=" cursor-pointer   inline-flex items-center bg-black  text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-400  transition" href={industry.url}>
+            <Link            className=" cursor-pointer   inline-flex items-center bg-black  text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black/90  transition" href={industry.url}>
               
                 View Industry
              

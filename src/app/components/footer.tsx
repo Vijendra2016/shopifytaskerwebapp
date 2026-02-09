@@ -139,7 +139,7 @@ export default function Footer() {
 
           <Link href="/industries/hair-extension-shopify-web-design" className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Hair Extensions</Link>
           <Link href="/industries/shopify-auto-parts-website-design-development" className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Auto Parts</Link>
-          <Link href="#">Gym & Fitness</Link>
+          <Link href="/industries/shopify-florist-website-design-development" className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Florists</Link>
           <Link href="#">Fashion</Link>
           <Link href="/industries/shopify-health-wellness-website-design-development" className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Health & Wellness</Link>
           <Link href="#">Custom and fine jewelery </Link>
