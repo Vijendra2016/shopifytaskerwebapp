@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Hero from "../Hero";
 import Intro from "../Intro";
-import CaseStudyAccordion from "../CaseStudyAccordion";
+import ServiceSection from "./ServiceSection";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import GeoMessage from "@/app/components/GeoMessage";
 import FaqSection from "./FaqSection";
@@ -254,7 +254,7 @@ export default function IndustryPage() {
         image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c64a164079bf96470b7ee_pjh-kMzDfWWojsU-unsplash%20(1).jpg"
       />
 
-      <CaseStudyAccordion />
+      <ServiceSection />
       <TestimonialCard />
 
       <Intro
