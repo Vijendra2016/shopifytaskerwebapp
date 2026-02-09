@@ -5,8 +5,8 @@ import CaseStudyAccordion from "../CaseStudyAccordion";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import GeoMessage from "@/app/components/GeoMessage";
 import FaqSection from "./FaqSection";
-
 import CaseStudiesCraftberry from "./CaseStudiesCraftberry";
+
 import type {
   WithContext,
   Service,
@@ -19,49 +19,61 @@ import type {
   Offer,
 } from "schema-dts";
 
+/* ============================
+   META DATA
+============================ */
+
 export const metadata: Metadata = {
-  title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+  title: "Shopify Florist Website Design & Development | Flower Shop Experts",
   description:
-    "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
+    "Custom Shopify website design & development for florists and flower shops. Local delivery, subscriptions, SEO, redesigns, and Shopify Plus support.",
   alternates: {
     canonical:
-      "https://shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
+      "https://www.shopifytasker.com/industries/shopify-florist-website-design-development/",
   },
   openGraph: {
     type: "website",
     siteName: "ShopifyTasker",
-    url: "https://www.shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
-    title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+    url: "https://www.shopifytasker.com/industries/shopify-florist-website-design-development/",
+    title: "Shopify Florist Website Design & Development",
     description:
-      "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
+      "High-converting Shopify websites for florists, flower shops, and floral brands. Built for local delivery and subscriptions.",
     images: [
       {
-        // ✅ Use a stable, public URL (best if hosted on your domain)
-        url: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg",
+        url: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c64a164079bf96470b7ee_pjh-kMzDfWWojsU-unsplash%20(1).jpg",
         width: 1200,
         height: 630,
-        alt: "Health & Wellness Shopify Store Design, Redesign & Migration",
+        alt: "Shopify Florist Website Design & Development",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-    title: "Health & Wellness Shopify Store Design, Redesign & Migration",
+    title: "Shopify Florist Website Design & Development",
     description:
-      "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
-    images: ["https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6975a2fbcd94a67b75206290_glenna-haug-DuNXXPScbJM-unsplash.jpg"],
+      "Shopify experts for florists. Local delivery, bouquet subscriptions, SEO, redesigns & Shopify Plus.",
+    images: [
+      "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c64a164079bf96470b7ee_pjh-kMzDfWWojsU-unsplash%20(1).jpg",
+    ],
   },
 };
+
+/* ============================
+   SCHEMA IDS
+============================ */
 
 const orgId = "https://www.shopifytasker.com/#organization";
 const websiteId = "https://www.shopifytasker.com/#website";
 const pageUrl =
-  "https://www.shopifytasker.com/industries/shopify-health-wellness-website-design-development/";
+  "https://www.shopifytasker.com/industries/shopify-florist-website-design-development/";
 const pageId = `${pageUrl}#webpage`;
 const breadcrumbId = `${pageUrl}#breadcrumbs`;
 const serviceId = `${pageUrl}#service`;
 const faqId = `${pageUrl}#faq`;
+
+/* ============================
+   SCHEMA: WEBSITE
+============================ */
 
 const websiteJsonLd: WithContext<WebSite> = {
   "@context": "https://schema.org",
@@ -72,6 +84,10 @@ const websiteJsonLd: WithContext<WebSite> = {
   publisher: { "@id": orgId },
 };
 
+/* ============================
+   SCHEMA: ORGANIZATION
+============================ */
+
 const orgJsonLd: WithContext<Organization> = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -80,168 +96,134 @@ const orgJsonLd: WithContext<Organization> = {
   url: "https://www.shopifytasker.com/",
 };
 
+/* ============================
+   SCHEMA: WEBPAGE
+============================ */
+
 const pageJsonLd: WithContext<WebPage> = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": pageId,
   url: pageUrl,
-  name: "Health & Wellness Shopify Website Design & Development | ShopifyTasker",
+  name: "Shopify Florist Website Design & Development | ShopifyTasker",
   description:
-    "High-performance eCommerce solutions for Health & Wellness brands—conversion-focused Shopify design, development, optimization, and migration.",
+    "Conversion-focused Shopify website design and development for florists, flower shops, and floral brands.",
   isPartOf: { "@id": websiteId },
   about: { "@id": orgId },
 };
+
+/* ============================
+   SCHEMA: BREADCRUMBS
+============================ */
 
 const breadcrumbsJsonLd: WithContext<BreadcrumbList> = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "@id": breadcrumbId,
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shopifytasker.com/" },
-    { "@type": "ListItem", position: 2, name: "Industries", item: "https://www.shopifytasker.com/industries" },
-    { "@type": "ListItem", position: 3, name: "Health & Wellness", item: pageUrl },
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.shopifytasker.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Industries",
+      item: "https://www.shopifytasker.com/industries",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Florists",
+      item: pageUrl,
+    },
   ],
 };
 
+/* ============================
+   SCHEMA: OFFER CATALOG
+============================ */
+
 const offerCatalog: OfferCatalog = {
   "@type": "OfferCatalog",
-  name: "Health & Wellness Shopify Services",
+  name: "Shopify Florist Website Services",
   itemListElement: [
     {
       "@type": "OfferCatalog",
-      name: "Strategy",
+      name: "Strategy & UX",
       itemListElement: [
-        { "@type": "Offer", name: "Health & Wellness Market Research" } as Offer,
-        { "@type": "Offer", name: "Competitor & Funnel Analysis" } as Offer,
-        { "@type": "Offer", name: "Store Architecture & UX Planning" } as Offer,
-        { "@type": "Offer", name: "Conversion & Retention Strategy" } as Offer,
+        { "@type": "Offer", name: "Florist UX & Store Architecture Planning" } as Offer,
+        { "@type": "Offer", name: "Local Delivery & Cutoff Strategy" } as Offer,
+        { "@type": "Offer", name: "Wedding & Event Funnel Planning" } as Offer,
       ],
     },
-
     {
       "@type": "OfferCatalog",
       name: "Shopify Website Development",
       itemListElement: [
-        {
-          "@type": "Offer",
-          name: "Custom Shopify Website Development for Health & Wellness Brands",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Shopify Plus Development for Supplement & Wellness Stores",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Subscription & Membership Setup",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Performance & Speed Optimization",
-        } as Offer,
+        { "@type": "Offer", name: "Custom Shopify Website for Florists" } as Offer,
+        { "@type": "Offer", name: "Bouquet & Collection Template Design" } as Offer,
+        { "@type": "Offer", name: "Flower Subscription Setup" } as Offer,
+        { "@type": "Offer", name: "Performance & Speed Optimization" } as Offer,
       ],
     },
-
     {
       "@type": "OfferCatalog",
-      name: "Migration to Shopify",
+      name: "Migration & Redesign",
       itemListElement: [
-        {
-          "@type": "Offer",
-          name: "WooCommerce to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Magento to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "BigCommerce to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Custom Platform to Shopify Migration",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "SEO-Safe Shopify Migration (301 Redirects & Metadata)",
-        } as Offer,
+        { "@type": "Offer", name: "WooCommerce / Wix / Squarespace to Shopify Migration" } as Offer,
+        { "@type": "Offer", name: "SEO-Safe Shopify Redesign" } as Offer,
+        { "@type": "Offer", name: "URL Mapping & 301 Redirects" } as Offer,
       ],
     },
-
     {
       "@type": "OfferCatalog",
-      name: "Redesign & Optimization",
+      name: "Ongoing Support",
       itemListElement: [
-        {
-          "@type": "Offer",
-          name: "Shopify Store Redesign for Health & Wellness Brands",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "UX & CRO Optimization",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Mobile-First Redesign",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Checkout Optimization & Funnel Improvements",
-        } as Offer,
-      ],
-    },
-
-    {
-      "@type": "OfferCatalog",
-      name: "Ongoing Support & Growth",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          name: "Monthly Shopify Maintenance & Support",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Dedicated Shopify Developer Retainer",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "App Integrations & Automation",
-        } as Offer,
-        {
-          "@type": "Offer",
-          name: "Ongoing CRO & A/B Testing",
-        } as Offer,
+        { "@type": "Offer", name: "Monthly Shopify Support for Florists" } as Offer,
+        { "@type": "Offer", name: "Dedicated Shopify Developer" } as Offer,
+        { "@type": "Offer", name: "Seasonal Campaign & CRO Updates" } as Offer,
       ],
     },
   ],
 };
 
+/* ============================
+   SCHEMA: SERVICE
+============================ */
 
 const serviceJsonLd: WithContext<Service> = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": serviceId,
-  name: "Health & Wellness Shopify Website Design & Development",
+  name: "Shopify Florist Website Design & Development",
   serviceType:
-    "Conversion-focused Shopify solutions for Health & Wellness brands (design, development, optimization, migration).",
+    "Shopify website design, development, migration, and optimization for florists and flower shops.",
   provider: { "@id": orgId },
   areaServed: "Worldwide",
   hasOfferCatalog: offerCatalog,
 };
+
+/* ============================
+   SCHEMA: FAQ
+============================ */
 
 const faqJsonLd: WithContext<FAQPage> = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "@id": faqId,
   url: pageUrl,
-  name: "Health & Wellness Shopify FAQ",
+  name: "Shopify Florist Website FAQs",
   mainEntity: [
     {
       "@type": "Question",
-      name: "Do you build Shopify stores for Health & Wellness brands?",
+      name: "Do you build Shopify websites for florists?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes—ShopifyTasker designs and develops high-performance Shopify stores for Health & Wellness brands with a focus on UX, SEO, and conversions.",
+        text:
+          "Yes. ShopifyTasker designs and develops custom Shopify websites for florists, flower shops, and floral brands optimized for local delivery and conversions.",
       },
     },
   ],
@@ -256,6 +238,10 @@ const combinedJsonLd = [
   faqJsonLd,
 ];
 
+/* ============================
+   PAGE COMPONENT
+============================ */
+
 export default function IndustryPage() {
   return (
     <>
@@ -265,23 +251,21 @@ export default function IndustryPage() {
       />
 
       <Hero
-        title="Shopify Website Design & Development for Retail Florists"
-        subtitle="Shopify Website for Retail Florists | Design & Development Experts"
+        title="Shopify Website Design & Development for Florists"
+        subtitle="High-converting Shopify websites for flower shops & floral brands"
         image="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c64a164079bf96470b7ee_pjh-kMzDfWWojsU-unsplash%20(1).jpg"
       />
 
       <CaseStudyAccordion />
-<TestimonialCard />
+      <TestimonialCard />
+
       <Intro
-        heading="Shopify Website Design & Development for Health & Wellness Stores"
-        text="ShopifyTasker specializes in Shopify design and development for health and wellness businesses.
-We create SEO-friendly, high-performing Shopify stores that help brands stand out and convert visitors into loyal customers."
+        heading="Shopify Website Design & Development for Florists & Flower Shops"
+        text="ShopifyTasker builds high-performance Shopify websites for florists, flower shops, and floral brands. From local delivery and subscriptions to SEO and conversion optimization, we help florists grow online."
       />
-         
-      
-     
-       < CaseStudiesCraftberry/>
-      <FaqSection/>
+
+      <CaseStudiesCraftberry />
+      <FaqSection />
       <GeoMessage />
     </>
   );
