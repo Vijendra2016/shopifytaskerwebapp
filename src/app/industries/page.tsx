@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function pricing() {
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-20">
-        <h1 className="text-3xl md:text-6xl font-regular">Industries we work  </h1>
+        <h1 className="text-3xl  text-black md:text-6xl font-regular">Industries we work  </h1>
       
           <p className="text-gray-600 text-lg">
           We offer a wide range of services for any industry those who want to enhance their  Online Presence and sell online via shopify.
@@ -23,7 +23,7 @@ export default function pricing() {
 
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-regular">Some of the featured industries we work with</h2>
+        <h2 className="text-3xl md:text-4xl  text-black font-regular">Some of the featured industries we work with</h2>
         < IndustryGrid/>
 <HowItWorks/>
 <GeoMessage/>
