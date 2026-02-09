@@ -13,7 +13,7 @@ const industries: Industry[] = [
   {
     title: "Hair Extension",
     tags: "Shopify Website Design, Shopify Hair Extension",
-    url: "/industries/hair-extension",
+    url: "/industries/hair-extension-shopify-web-design",
     image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6827175e5ab4aae9c7a45403_hair-extension-shopify-website-design.png",
   },
   {
