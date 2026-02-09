@@ -6,6 +6,7 @@ import TestimonialCard from "@/app/components/TestimonialCard";
 import GeoMessage from "@/app/components/GeoMessage";
 import FaqSection from "./FaqSection";
 import CaseStudiesCraftberry from "./CaseStudiesCraftberry";
+import { Faqs } from "./FaqsSchema";
 
 import type {
   WithContext,
@@ -216,17 +217,14 @@ const faqJsonLd: WithContext<FAQPage> = {
   "@id": faqId,
   url: pageUrl,
   name: "Shopify Florist Website FAQs",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Do you build Shopify websites for florists?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text:
-          "Yes. ShopifyTasker designs and develops custom Shopify websites for florists, flower shops, and floral brands optimized for local delivery and conversions.",
-      },
+  mainEntity: Faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
     },
-  ],
+  })),
 };
 
 const combinedJsonLd = [
