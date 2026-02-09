@@ -29,10 +29,10 @@ const industries: Industry[] = [
     image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/682723ec805c496bf9be5338_Shopify-fashion-websites.png",
   },
   {
-    title: "Kids Clothing ",
-    tags: " shopify store development for kids clothing brands",
-    url: "/industries/nordic-design",
-    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/682724f1598128ac093b0ca4_Shopify%20Kids%20clothing%20websites.png",
+    title: "Florists",
+    tags: " Shopify Website Design & Development for Florists",
+    url: "/industries/shopify-florist-website-design-development",
+    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/697c64a164079bf96470b7ee_pjh-kMzDfWWojsU-unsplash%20(1).jpg",
   },
    {
     title: "Hair Extension",
