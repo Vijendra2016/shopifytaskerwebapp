@@ -4,6 +4,8 @@ import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import StartProjectModal from "@/app/components/StartProjectModal";
+
 
 type CaseStudy = {
   brand: string;
@@ -20,6 +22,9 @@ function pad3(n: number) {
 export default function CaseStudiesCraftberry() {
   const rootRef = useRef<HTMLElement | null>(null);
   const [active, setActive] = useState(0);
+
+   const [showModal, setShowModal] = useState(false);
+
 
   const CASES = useMemo<CaseStudy[]>(
     () => [
@@ -204,9 +209,15 @@ export default function CaseStudiesCraftberry() {
                         </span>
                       </a>
 
-                      <span>Want something similar?</span>
+ 
+                     
                     </div>
 
+<button         
+        onClick={() => setShowModal(true)}      
+      >  
+      Want something similar? 
+      </button>
                     <div className="mt-8 flex items-center gap-2 text-xs text-white/40">
                       <span className="h-px flex-1 bg-white/10" />
                       <span className="uppercase tracking-widest">
@@ -270,6 +281,7 @@ export default function CaseStudiesCraftberry() {
           </div>
         </div>
       </div>
+        <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </section>
   );
 }
