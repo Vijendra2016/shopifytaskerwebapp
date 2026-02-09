@@ -4,50 +4,55 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "Do you build Shopify stores for health & wellness and supplement brands?",
-    a: "Yes. We design and develop conversion-focused Shopify (and Shopify Plus) stores for health & wellness brands—supplements, fitness, beauty, skincare, and wellness products—optimized for UX, mobile, speed, and revenue.",
+    q: "Do you build Shopify websites specifically for florists and flower shops?",
+    a: "Yes. We design and develop Shopify websites specifically for florists, flower shops, and floral brands—covering local delivery florists, wedding & event florists, subscription flower businesses, and luxury floral studios.",
   },
   {
-    q: "What’s included in your Health & Wellness Shopify website design & development service?",
-    a: "Typically: store strategy + UX planning, custom theme development, product/collection templates, conversion optimization (CRO), performance improvements, SEO setup (titles, meta, schema), app integrations, and a launch checklist.",
+    q: "What’s included in your Shopify florist website design & development service?",
+    a: "Our florist-focused service typically includes UX planning, custom Shopify theme design, bouquet and collection templates, delivery date & location logic, CRO optimization, mobile performance, SEO setup, app integrations, and a smooth launch process.",
   },
   {
-    q: "Can you redesign an existing Shopify health & wellness store without losing SEO?",
-    a: "Yes. We handle Shopify redesigns with an SEO-safe approach—URL mapping, 301 redirects when needed, metadata preservation, technical SEO checks, and performance optimization so rankings and traffic are protected during the transition.",
+    q: "Can you redesign an existing florist Shopify store without losing SEO?",
+    a: "Yes. We follow an SEO-safe redesign process—preserving URLs where possible, setting up 301 redirects, keeping metadata intact, and optimizing performance so your florist website retains rankings and local visibility.",
   },
   {
-    q: "Do you handle migrations to Shopify from WooCommerce, Magento, or custom platforms?",
-    a: "Yes. We migrate products, collections, customers, orders (when required), content pages, and SEO elements. We also set up redirects and validate tracking so your health & wellness store launches cleanly on Shopify.",
+    q: "Do you support flower delivery scheduling and local delivery setup on Shopify?",
+    a: "Absolutely. We configure delivery date pickers, local delivery zones, same-day or next-day delivery rules, cutoff times, and checkout logic tailored for florist operations.",
   },
   {
-    q: "Can you set up subscriptions for supplements and wellness products on Shopify?",
-    a: "Absolutely. We can implement Shopify subscriptions (or subscription apps), configure recurring plans, customer portal flows, bundle options, and subscription-first UX to increase retention and LTV.",
+    q: "Can you build subscription-based flower delivery on Shopify?",
+    a: "Yes. We set up flower subscription models such as weekly, bi-weekly, or monthly deliveries using Shopify subscriptions or trusted apps, with customer portals and retention-focused UX.",
   },
   {
-    q: "Do you optimize Shopify stores for conversion rate (CRO) and mobile performance?",
-    a: "Yes. We improve key conversion elements like navigation, PDP layout, trust signals, reviews, bundles, sticky add-to-cart UX, cart/checkout friction, and speed—especially on mobile where most health & wellness traffic happens.",
+    q: "Do you migrate florist websites from WooCommerce, Wix, Squarespace, or custom platforms?",
+    a: "Yes. We handle full Shopify migrations for florists—products, collections, customer data, content pages, SEO elements, and redirects—ensuring a clean and reliable launch.",
   },
   {
-    q: "Do you work with Shopify Plus for high-volume health & wellness brands?",
-    a: "Yes. We support Shopify Plus builds and improvements, including advanced integrations, performance tuning, and scalable storefront architecture for fast growth and larger catalogs.",
+    q: "Do you optimize florist Shopify stores for conversion rate and mobile users?",
+    a: "Yes. We optimize key florist conversion elements like bouquet presentation, product photography layouts, trust signals, delivery clarity, sticky add-to-cart flows, cart & checkout UX, and mobile speed.",
   },
   {
-    q: "Can you help with SEO for health & wellness Shopify websites?",
-    a: "Yes. We implement technical and on-page Shopify SEO: clean site structure, metadata, internal linking, schema markup, speed, image optimization, and indexation best practices—plus guidance for content and landing pages.",
+    q: "Do you work with high-volume florists or Shopify Plus stores?",
+    a: "Yes. We support growing and high-volume florists on Shopify Plus, including advanced customizations, performance optimization, integrations, and scalable storefront architecture.",
   },
   {
-    q: "How long does a Shopify website build or redesign usually take?",
-    a: "Most projects take 2–4 weeks depending on scope (design depth, number of templates, integrations, migration complexity, and content readiness). We’ll provide a clear timeline after reviewing your current store and goals.",
+    q: "Can you help with SEO for florist Shopify websites?",
+    a: "Yes. We implement florist-specific Shopify SEO, including local SEO structure, optimized collection pages, metadata, schema markup, internal linking, image optimization, and best practices for indexing and speed.",
   },
   {
-    q: "Do you provide ongoing Shopify support and monthly maintenance?",
-    a: "Yes. We offer monthly support retainers for health & wellness stores—bug fixes, app updates, new sections, CRO experiments, speed improvements, SEO upkeep, and ongoing feature development.",
+    q: "How long does a Shopify florist website build or redesign take?",
+    a: "Most florist Shopify projects take around 2–4 weeks, depending on design complexity, number of templates, delivery logic, integrations, and content readiness. We provide a clear timeline upfront.",
   },
-   {
-    q: "Do you provide dedicated developer support for health & wellness stores?",
-    a: "Yes. We offer  dedicated develope support for health & wellness stores—bug fixes, app updates, new sections, CRO experiments, speed improvements, SEO upkeep, and ongoing feature development.",
+  {
+    q: "Do you provide ongoing Shopify support and maintenance for florists?",
+    a: "Yes. We offer monthly Shopify support for florists, including bug fixes, app updates, seasonal landing pages, CRO improvements, performance tuning, SEO upkeep, and ongoing feature enhancements.",
+  },
+  {
+    q: "Do you offer dedicated Shopify developer support for florist businesses?",
+    a: "Yes. We provide dedicated Shopify developer support for florists who need ongoing help with new features, delivery updates, promotional campaigns, design tweaks, and technical maintenance.",
   },
 ];
+
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0); // open first by default (optional)
@@ -62,7 +67,7 @@ export default function FaqSection() {
           <h4 className="text-lg leading-[1.02] font-semibold text-black">
             Most common questions about
             <br />
-            Health & Wellness Shopify Website Design & Development
+             Florist Shopify Website Design & Development
           </h4>
         </div>
 
