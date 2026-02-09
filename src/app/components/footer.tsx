@@ -135,13 +135,13 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col space-y-2">
-        <Link href="/industries" className="text-sm md:text-sm text-base  uppercase font-extrabold  hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Industries</Link>
+        <Link href="/industries" className=" text-sm md:text-sm text-base  uppercase font-extrabold text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Industries</Link>
 
-          <Link href="/industries/hair-extension-shopify-web-design" className="text-white text-sm font-medium hover:underline hover:decoration-teal-500 underline-offset-4 transition duration-200">Hair Extensions</Link>
-          <Link href="/industries/shopify-auto-parts-website-design-development">Auto Parts</Link>
+          <Link href="/industries/hair-extension-shopify-web-design" className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Hair Extensions</Link>
+          <Link href="/industries/shopify-auto-parts-website-design-development" className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Auto Parts</Link>
           <Link href="#">Gym & Fitness</Link>
           <Link href="#">Fashion</Link>
-          <Link href="/industries/shopify-health-wellness-website-design-development">Health & Wellness</Link>
+          <Link href="/industries/shopify-health-wellness-website-design-development" className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">Health & Wellness</Link>
           <Link href="#">Custom and fine jewelery </Link>
 
           
