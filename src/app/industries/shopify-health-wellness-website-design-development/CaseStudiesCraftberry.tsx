@@ -199,7 +199,7 @@ export default function CaseStudiesCraftberry() {
                         rel="noopener noreferrer"
                       >
                         <span>Visit The website</span>
-                        <span className="grid h-5 w-5 place-items-center rounded-full bg-[#DFF976]">
+                        <span className="grid h-5 w-5  text-black place-items-center rounded-full bg-[#DFF976]">
                            →
                         </span>
                       </a>
