@@ -90,7 +90,7 @@ const IndustryGrid: React.FC = () => {
                 objectFit="cover"
               />
             </div>
-            <h3 className="text-lg font-semibold mb-2">{industry.title}</h3>
+            <h3 className="text-lg text-black font-semibold mb-2">{industry.title}</h3>
             <p className="text-sm text-gray-500 mb-4">
               {industry.tags}
             </p>
