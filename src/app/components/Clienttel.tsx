@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const ClientTell = () =>  {
     return (
-        <div className="container  min-h-[30vh] bg-black mx-auto px-4 py-18">
+        <div className="w-full  min-h-[30vh] bg-black mx-auto px-4 py-18">
           <div className="services  flex flex-col items-center justify-center text-center text-black px-6 py-16 space-y-6 max-w-5xl mx-auto">
   <h3 className="text-3xl text-white tracking-tight md:text-6xl font-regular ">
   Chosen by brands of every size
