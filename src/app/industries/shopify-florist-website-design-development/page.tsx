@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Custom Shopify website design & development for florists and flower shops. Local delivery, subscriptions, SEO, redesigns, and Shopify Plus support.",
   alternates: {
     canonical:
-      "https://www.shopifytasker.com/industries/shopify-florist-website-design-development/",
+      "https://shopifytasker.com/industries/shopify-florist-website-design-development/",
   },
   openGraph: {
     type: "website",
