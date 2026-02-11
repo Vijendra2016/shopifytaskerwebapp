@@ -12,12 +12,12 @@ const articles = [
     slug: "shopify-editions-renaissance",
   },
   {
-    title: "Twenty four health and wellness brands on Shopify",
+    title: "Shopify Fragrances , perfumes and colognes online Shop - Shopify is Best eCommerce solution for selling Fragrances , perfumes and colognes online.",
     excerpt:
-      "From food-grown supplements to science-backed medical technology, we showcase 24 health and wellness brands using Shopify.",
+      "Sell fragrances, perfumes, and colognes online using Shopify — a powerful and scalable eCommerce solution.",
     image: "https://cdn.prod.website-files.com/61eeae68059cd4f3157a61e0/669524377862f7dffa4fdbfb_An%20evening%20with%20By%20Association%20Only%20and%20friends%20-%20Share%20(1)%20(1).jpg",
     author: "Vijendra Singh",
-    date: "09 Feb 2026",
+    date: "14 June 2022",
     slug: "health-wellness-brands",
   },
 ];
