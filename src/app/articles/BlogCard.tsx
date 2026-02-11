@@ -19,12 +19,12 @@ export default function ArticleCard({
   slug,
 }: ArticleCardProps) {
   return (
-    <article className="py-28 border-b border-neutral-200">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+    <article className="py-18 border-b border-neutral-200">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* IMAGE */}
         <Link href={`/articles/${slug}`} className="block">
-          <div className="relative w-full h-half  overflow-hidden">
+<div className="relative w-full aspect-[16/9] rounded-[2px] overflow-hidden">
             <Image
               src={image}
               alt={title}
@@ -39,12 +39,12 @@ export default function ArticleCard({
         <div className="max-w-[520px]">
 
           <Link href={`/articles/${slug}`}>
-            <h2 className="text-[46px] leading-[1.15] font-serif font-normal tracking-[-0.02em] text-neutral-900 transition-opacity hover:opacity-70">
+            <h2 className="text-2xl leading-[1.15]  font-thin tracking-[-0.02em] text-black transition-opacity hover:opacity-70">
               {title}
             </h2>
           </Link>
 
-          <p className="mt-6 text-[18px] leading-[1.75] text-neutral-500">
+          <p className="mt-3 text-sm leading-[1.75] text-black">
             {excerpt}
           </p>
 
@@ -58,7 +58,7 @@ export default function ArticleCard({
           {/* READ ARTICLE */}
           <Link
             href={`/articles/${slug}`}
-            className="mt-10 flex items-center gap-3 text-[14px] text-black"
+            className="mt-20 flex items-center gap-3 text-[14px] text-black"
           >
             <span className="w-[6px] h-[6px] bg-black rounded-full"></span>
             Read article
