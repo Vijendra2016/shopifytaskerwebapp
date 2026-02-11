@@ -7,7 +7,7 @@ const articles = [
     title: "Checkout A/B Testing for Shopify: How to Increase Conversions & Revenue",
     excerpt:
       "We break down proven checkout A/B testing strategies that help Shopify brands increase conversion rates and maximize revenue at the final step of the buying journey.",
-    image: "https://cdn.prod.website-files.com/61eeae68059cd4f3157a61e0/6724f5340c62db5a86bdfdb1_P448%20wins%20Awwwards%20site%20of%20the%20day%20award%20-%20Share%20Image.jpg",
+    image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/698c6dd4117985f9f9dbf85f_shopify-checkout-ab-test.png",
     author: "Vijendra Singh",
     date: "11 Feb 2026",
     slug: "shopify-checkout-ab-testing",

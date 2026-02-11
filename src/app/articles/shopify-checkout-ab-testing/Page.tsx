@@ -23,8 +23,8 @@ export default function ArticlePagecheckout() {
 
         <div className="relative w-full h-[400px] md:h-[600px]">
           <Image
-            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/698c5bce32a0604ff46d9a7e_chandradas-balan-NGSOdAaTS68-unsplash.jpg" // put your image inside public folder
-            alt="Bridal wear brands"
+            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/698c6dd4117985f9f9dbf85f_shopify-checkout-ab-test.png" // put your image inside public folder
+            alt="Checkout A/B Testing for Shopify"
             fill
             priority
             className="object-cover"
