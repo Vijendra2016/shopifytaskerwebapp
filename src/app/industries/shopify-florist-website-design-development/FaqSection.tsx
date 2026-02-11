@@ -58,7 +58,7 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0); // open first by default (optional)
 
   return (
-    <section className="bg-[#eeeeee] pt-28 pb-20">
+    <section className="bg-[#eeeeee]  pt-28 pb-20">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-[0.9fr_2.4fr] gap-20">
         {/* Left Side */}
         <div className="pt-2">
