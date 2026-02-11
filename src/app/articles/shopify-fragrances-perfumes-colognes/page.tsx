@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 
 export default function ArticlePage({ params }: Props) {
   return (
-    <article className="bg-white text-neutral-900">
+    <article className="bg-[#eeeeee] text-black">
       
       {/* Hero Section */}
       <section className="w-full">
-        <div className="max-w-6xl mx-auto px-6 pt-20 pb-10">
-          <h1 className="text-4xl md:text-6xl font-serif font-light leading-tight tracking-tight">
-            Thirteen bridal wear brands on Shopify
+        <div className="mx-auto px-6 pt-60 pb-10">
+          <h1 className="text-2xl md:text-3xl  font-light leading-tight tracking-tight">
+            Shopify Fragrances , perfumes and colognes online Shop - Shopify is Best eCommerce solution for selling Fragrances , perfumes and colognes online.
           </h1>
         </div>
 

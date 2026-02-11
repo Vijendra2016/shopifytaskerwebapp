@@ -18,7 +18,7 @@ const articles = [
     image: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/698c5bce32a0604ff46d9a7e_chandradas-balan-NGSOdAaTS68-unsplash.jpg",
     author: "Vijendra Singh",
     date: "14 June 2022",
-    slug: "health-wellness-brands",
+    slug: "shopify-fragrances-perfumes-colognes",
   },
 ];
 
