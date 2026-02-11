@@ -19,7 +19,7 @@ export default function ArticleCard({
   slug,
 }: ArticleCardProps) {
   return (
-    <article className="py-18 border-b border-neutral-200">
+    <article className="py-18 border-b border-black/10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* IMAGE */}
