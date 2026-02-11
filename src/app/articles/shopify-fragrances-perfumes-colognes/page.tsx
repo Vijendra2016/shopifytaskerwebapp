@@ -1,14 +1,10 @@
 import Image from "next/image";
 import { Metadata } from "next";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
+
 
 export const metadata: Metadata = {
-  title: "Thirteen bridal wear brands on Shopify",
+  title: "Shopify Fragrances , perfumes and colognes online Shop",
   description:
     "Explore inspiring bridal wear brands built on Shopify and discover what makes them successful.",
 };
