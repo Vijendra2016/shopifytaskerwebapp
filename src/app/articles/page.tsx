@@ -1,15 +1,16 @@
 import ArticleCard from "./BlogCard";
 import HeaderSection from "./HeaderSection";
 
+
 const articles = [
   {
-    title: "A spotlight on Shopify Editions, The Renaissance Edition",
+    title: "Checkout A/B Testing for Shopify: How to Increase Conversions & Revenue",
     excerpt:
-      "We unpack the most impactful updates for brands and retailers and assess their potential to reshape your business.",
+      "We break down proven checkout A/B testing strategies that help Shopify brands increase conversion rates and maximize revenue at the final step of the buying journey.",
     image: "https://cdn.prod.website-files.com/61eeae68059cd4f3157a61e0/6724f5340c62db5a86bdfdb1_P448%20wins%20Awwwards%20site%20of%20the%20day%20award%20-%20Share%20Image.jpg",
-    author: "Vidi Patel",
+    author: "Vijendra Singh",
     date: "11 Feb 2026",
-    slug: "shopify-editions-renaissance",
+    slug: "shopify-checkout-ab-testing",
   },
   {
     title: "Shopify Fragrances , perfumes and colognes online Shop - Shopify is Best eCommerce solution for selling Fragrances , perfumes and colognes online.",
