@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Explore inspiring bridal wear brands built on Shopify and discover what makes them successful.",
 };
 
-export default function ArticlePage({ params }: Props) {
+export default function ArticlePage() {
   return (
     <article className="bg-[#eeeeee] text-black">
       
