@@ -1,4 +1,5 @@
 import ArticleCard from "./BlogCard";
+import HeaderSection from "./HeaderSection";
 
 const articles = [
   {
@@ -14,8 +15,8 @@ const articles = [
     title: "Twenty four health and wellness brands on Shopify",
     excerpt:
       "From food-grown supplements to science-backed medical technology, we showcase 24 health and wellness brands using Shopify.",
-    image: "https://cdn.prod.website-files.com/61eeae68059cd4f3157a61e0/6724f5340c62db5a86bdfdb1_P448%20wins%20Awwwards%20site%20of%20the%20day%20award%20-%20Share%20Image.jpg",
-    author: "Vidi Patel",
+    image: "https://cdn.prod.website-files.com/61eeae68059cd4f3157a61e0/669524377862f7dffa4fdbfb_An%20evening%20with%20By%20Association%20Only%20and%20friends%20-%20Share%20(1)%20(1).jpg",
+    author: "Vijendra Singh",
     date: "09 Feb 2026",
     slug: "health-wellness-brands",
   },
@@ -23,7 +24,9 @@ const articles = [
 
 export default function ArticlesPage() {
   return (
-    <section className="bg-[#f3f2ef]">
+    
+    <section className="bg-[#eeeeee]">
+      <HeaderSection />
   <div className="w-full mx-auto px-8">
     {articles.map((article) => (
       <ArticleCard key={article.slug} {...article} />
