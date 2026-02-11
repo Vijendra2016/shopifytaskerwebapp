@@ -25,9 +25,9 @@ type HeroSearchFirstProps = {
 
 export default function HeroSearchFirst({
   eyebrow = "Top Rated Shopify Developer & Designer",
-  titleBottom = "Hire Shopify Expert & Developer, on demand",
+  titleBottom = "Shopify Store Setup, Redesign & Fixes — Risk Free",
   description =
-    "No upfront payment required. Pay only after your task is completed to your satisfaction.",
+    "No upfront payment. Pay only when your satisfied with the work.",
 
   backgroundImageUrl,
   backgroundImageUrls,
@@ -83,7 +83,7 @@ export default function HeroSearchFirst({
           )}
 
           <h1 className="font-thin tracking-tight leading-[1.05]">
-            <span className="block text-4xl md:text-7xl text-white/90">
+            <span className="block text-4xl md:text-6xl text-white/90">
               {titleBottom}
             </span>
           </h1>
