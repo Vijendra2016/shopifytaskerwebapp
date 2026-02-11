@@ -17,7 +17,7 @@ export default function ArticlePagecheckout() {
       <section className="w-full">
         <div className="mx-auto px-6 pt-60 pb-10">
           <h1 className="text-2xl md:text-3xl  font-light leading-tight tracking-tight">
-            Checkout A/B Testing for Shopify: How to Increase Conversions & Revenue
+            Checkout A/B Testing for Shopify: How to Increase Conversions & Revenue 
                </h1>
         </div>
 
