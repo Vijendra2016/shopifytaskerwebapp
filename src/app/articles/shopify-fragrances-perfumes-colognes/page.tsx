@@ -61,7 +61,7 @@ export default function ArticlePage({ params }: Props) {
         </p>
 
         <blockquote className="border-l-4 border-neutral-900 pl-6 italic text-xl my-12">
-          “Luxury is in each detail.” – Hubert de Givenchy
+          
         </blockquote>
 
         <h2 className="text-2xl md:text-3xl font-serif mt-12 mb-6">
@@ -69,7 +69,7 @@ export default function ArticlePage({ params }: Props) {
         </h2>
 
         <p className="text-neutral-700 leading-relaxed">
-          Whether you're launching a bridal boutique or scaling an established
+          Whether you launching a bridal boutique or scaling an established
           fashion house, Shopify provides the foundation for a premium online
           presence.
         </p>
