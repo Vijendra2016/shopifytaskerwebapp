@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Metadata } from "next";
-
+import GeoMessage from "@/app/components/GeoMessage";
 
 
 export const metadata: Metadata = {
@@ -70,6 +70,7 @@ export default function ArticlePage() {
           presence.
         </p>
       </section>
+      <GeoMessage />
     </article>
   );
 }
