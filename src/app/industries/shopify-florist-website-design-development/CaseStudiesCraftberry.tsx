@@ -198,6 +198,8 @@ export default function CaseStudiesCraftberry() {
                       <a
                         href={c.href}
                         className="mt-3 inline-flex items-center gap-3 text-sm font-semibold text-white/85 hover:text-white"
+                      target="_blank" 
+                      rel="noopener noreferrer"
                       >
                         <span>Visit The website</span>
                         <span className="grid h-5 w-5  text-black place-items-center rounded-full bg-[#DFF976]">

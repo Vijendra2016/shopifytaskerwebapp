@@ -24,7 +24,7 @@ export default function ArticleCard({
         
         {/* IMAGE */}
         <Link href={`/articles/${slug}`} className="block">
-          <div className="relative w-full h-[380px] rounded-[28px] overflow-hidden">
+          <div className="relative w-full h-half  overflow-hidden">
             <Image
               src={image}
               alt={title}
