@@ -24,7 +24,7 @@ const WhyShopifyTasker = () => {
           </span>
         </h2>
         <p className="text-gray-600 text-lg">
-          Inhouse Team of Shopify Developer & Expert, 10+ years Shopify custom development experience.
+          Inhouse Team of Shopify Developer & Expert,10+ years Shopify custom development experience.
           Easy to use platform to hire a Shopify expert to solve your Shopify-related problems.
         </p>
         <a
