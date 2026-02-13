@@ -306,7 +306,7 @@ You can also share links or screenshots."
       <div className="mb-5 text-sm text-gray-700 space-y-1">
         <p>✔ No upfront payment</p>
         <p>✔ Free initial review</p>
-        <p>✔ We’ll reply with next steps</p>
+        <p>✔ We reply with next steps</p>
       </div>
 
       {/* CTA Footer */}
