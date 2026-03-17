@@ -384,12 +384,7 @@ export default async function CityPage(props: Props) {
             <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-8 py-4 rounded-full hover:bg-white/90 transition cursor-pointer">
               Get a Free Quote →
             </CreateTaskButton>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 text-white text-[15px] font-medium px-8 py-4 rounded-full border border-white/25 hover:border-white/60 transition"
-            >
-              Talk to a Designer
-            </Link>
+            
           </div>
         </div>
       </section>
