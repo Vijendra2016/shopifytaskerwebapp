@@ -5,7 +5,7 @@ type Props = {
   state?: string;
 };
 
-export default function MigrationSection({ city, state }: Props = {}) {
+export default function MigrationSection({ city }: Props = {}) {
   return (
     <section className="bg-white px-6 py-20 border-b border-black/10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">

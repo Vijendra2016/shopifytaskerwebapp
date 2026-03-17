@@ -1,15 +1,18 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function HeroImageSection() {
   return (
     <section className="relative h-[70vh] w-full overflow-hidden">
       {/* Background Image */}
-      <img
+      <Image
         src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/695b5c7a517bcce3c046a407_Homebannerimage.png"
         alt="eCommerce growth"
-        className="absolute inset-0 w-full h-full object-cover"
+        fill
+        className="object-cover"
+        priority
       />
 
       {/* Dark Overlay */}
