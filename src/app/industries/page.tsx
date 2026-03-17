@@ -3,9 +3,9 @@ import HowItWorks from "../components/HowItWorks";
 import IndustryGrid from "../components/IndustriesGrid";
 import GeoMessage from "../components/GeoMessage";
 export const metadata: Metadata = {
-  title: "Shopify Development services for industry ",
+  title: "Shopify Development Services by Industry | ShopifyTasker",
   description:
-    "Hire freelance shopify developer hourly rate start from $10 per hour",
+    "ShopifyTasker provides tailored Shopify development services for every industry — from fashion and beauty to health, automotive, and more. Hire a specialist today.",
 };
 
 export default function pricing() {

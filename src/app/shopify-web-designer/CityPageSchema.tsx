@@ -15,24 +15,65 @@ export default function CityPageSchema({
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
+      // Organization
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: "ShopifyTasker",
+        url: siteUrl,
+        logo: {
+          "@type": "ImageObject",
+          url: `${siteUrl}/logo.png`,
+          width: 200,
+          height: 60,
+        },
+        description:
+          "ShopifyTasker is a top-rated Shopify development and web design agency offering theme customization, custom development, store setup, SEO, and ongoing support for Shopify stores worldwide.",
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "customer support",
+          url: `${siteUrl}/contact`,
+        },
+        sameAs: [
+          "https://www.facebook.com/shopifytasker",
+          "https://twitter.com/shopifytasker",
+          "https://www.linkedin.com/company/shopifytasker",
+        ],
+      },
+
+      // WebSite
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        url: siteUrl,
+        name: "ShopifyTasker",
+        publisher: {
+          "@id": `${siteUrl}/#organization`,
+        },
+      },
+
       // WebPage
       {
         "@type": "WebPage",
         "@id": pageUrl,
         url: pageUrl,
-        name: `Hire Shopify Web Designer in ${city}, ${state}`,
-        description: `Top Rated Shopify Web Designer in ${city}, ${state}. Prices start from $10/hr. Pay after work done.`,
+        name: `Hire Shopify Web Designer in ${city}, ${state} | ShopifyTasker`,
+        description: `Top-rated Shopify web designers in ${city}, ${state}. Custom store design, theme customization, mobile-first layouts, and ongoing support. Pay after work is done.`,
         isPartOf: {
-  "@type": "WebSite",
-  "@id": "https://www.shopifytasker.com/#website",
-  "url": "https://www.shopifytasker.com",
-  "name": "ShopifyTasker"
-},
+          "@id": `${siteUrl}/#website`,
+        },
+        breadcrumb: {
+          "@id": `${pageUrl}#breadcrumb`,
+        },
+        about: {
+          "@id": `${pageUrl}#service`,
+        },
       },
 
-      // Breadcrumb
+      // BreadcrumbList
       {
         "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
         itemListElement: [
           {
             "@type": "ListItem",
@@ -59,8 +100,8 @@ export default function CityPageSchema({
       {
         "@type": "Service",
         "@id": `${pageUrl}#service`,
-        name: `Hire Shopify Web Designer in ${city}, ${state}`,
-        description: `Hire a Shopify web designer in ${city}, ${state}. Custom Shopify store design, theme setup, speed optimization, and ongoing Shopify support.`,
+        name: `Shopify Web Designer in ${city}, ${state}`,
+        description: `Hire a top-rated Shopify web designer in ${city}, ${state}. We offer custom Shopify store design, theme customization, mobile-first UX, speed optimization, and ongoing design support.`,
         provider: {
           "@id": `${siteUrl}/#organization`,
         },
@@ -72,13 +113,64 @@ export default function CityPageSchema({
             name: state,
           },
         },
-        serviceType: "Hire Shopify Web Designer",
+        serviceType: "Shopify Web Design",
         url: pageUrl,
+        offers: {
+          "@type": "Offer",
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            priceCurrency: "USD",
+            description:
+              "Starting from $20/hr. Fixed-price project packages also available.",
+          },
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Shopify Web Design Services",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Custom Shopify Store Design",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Shopify Theme Customization",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Shopify Store Redesign",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Mobile-First Shopify Design",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Shopify Speed & Performance Optimization",
+              },
+            },
+          ],
+        },
       },
 
-      // FAQ
+      // FAQPage
       {
         "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,

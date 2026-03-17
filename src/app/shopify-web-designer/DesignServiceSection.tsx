@@ -1,67 +1,48 @@
-// components/CharleStyleSection.tsx
 import Image from "next/image";
 import Link from "next/link";
-export default function CharleStyleSection() {
+
+export default function DesignServiceSection() {
   return (
-    <section className="bg-black text-white pt-50 pb-50  overflow-hidden">
-      <div className=" mx-auto px-3 lg:px-12 grid lg:grid-cols-2 gap-8 items-center">
+    <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        {/* IMAGE STACK */}
-        <div className="relative w-full h-[520px]">
-
-          {/* Back image */}
-          <div className="absolute left-0 top-0 w-[460px] h-[480px] rounded-[32px] overflow-hidden">
-            <Image
-              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/696dcbeb8d05bb84b09c39db_feature-3-1.webp"
-              alt="Shopify support service"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-
-          {/* Front image */}
-          <div className="absolute left-[200px] top-[140px] w-[300px] h-[420px] rounded-[32px] overflow-hidden shadow-2xl">
-            <Image
-              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/696dcbeb8d05bb84b09c39db_feature-3-1.webp"
-              alt="Shopify expert"
-              fill
-              className="object-cover"
-            />
-          </div>
+        {/* Image */}
+        <div className="relative h-[420px] md:h-[520px] overflow-hidden rounded-xl hidden lg:block">
+          <Image
+            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/696dcbeb8d05bb84b09c39db_feature-3-1.webp"
+            alt="Shopify support and maintenance service"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
 
-        {/* TEXT CONTENT */}
+        {/* Text */}
         <div>
-          <p className="text-sm  font-light  tracking-widest text-[#DFF976] mb-4">
-            Common Shopify Problems We Solve
+          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">
+            Shopify Support
           </p>
-
-          <h2 className="text-5xl font-light  text-white leading-tight mb-6">
-            Fixing Issues Fast, Protecting Performance, and Keeping Stores
-            Trading
+          <h2 className="font-display text-[clamp(2rem,4vw,3.2rem)] font-normal leading-[1.1] tracking-tight text-white mb-6">
+            Fixing Issues Fast and Keeping Your Store Trading
           </h2>
-
-          <p className="text-gray-300 leading-relaxed mb-5">
-            Most Shopify and Shopify Plus stores face recurring issues as they
-            scale. Apps introduce conflicts, theme updates create unexpected
-            bugs, and small changes can have a disproportionate impact on
-            functionality, user experience, and conversions.
+          <p className="text-[15px] text-white/60 leading-[1.7] mb-5">
+            Most Shopify stores encounter recurring issues as they grow — app
+            conflicts, theme bugs after updates, and small changes that
+            unexpectedly impact performance, user experience, and conversions.
           </p>
-
-          <p className="text-gray-300 leading-relaxed mb-8">
-            Our Shopify support and maintenance services are built to
-            troubleshoot problems quickly, reduce disruption, and keep your
-            store performing.
+          <p className="text-[15px] text-white/60 leading-[1.7] mb-8">
+            Our Shopify support and maintenance services are built to resolve
+            problems quickly, minimise disruption, and keep your store
+            performing at its best.
           </p>
-
           <Link
-  href="/services/shopify-support"
-  className="inline-flex items-center gap-3 bg-white text-black px-7 py-3 rounded-full font-medium hover:bg-gray-200 transition"
->
-  Explore Support Services →
-</Link>
+            href="/ongoing-support"
+            className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition"
+          >
+            Explore Support Services →
+          </Link>
         </div>
+
       </div>
     </section>
   );

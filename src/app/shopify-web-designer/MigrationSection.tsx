@@ -1,47 +1,64 @@
 import Link from "next/link";
 
+type Props = {
+  city?: string;
+  state?: string;
+};
 
-export default function MigrationSection() {
+export default function MigrationSection({ city, state }: Props = {}) {
   return (
-    <section className="w-full bg-white  pt-30 pb-30 py-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <section className="bg-white px-6 py-20 border-b border-black/10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
-        {/* Left Heading */}
-        <h2 className="text-4xl md:text-5xl font-thin text-black leading-tight">
-ShopifyTasker provide best shopify developer         
-        </h2>
-
-        {/* Right Content */}
-        <div className="space-y-8 text-lg text-gray-900">
-
-          <p>
-            Hire Shopify Web designer and developers  form shopifyTaskeryouis a trusted and experienced Shopify migration agency. We support our merchants to
-            migrate or re-platform from{" "}
-            <span className="underline underline-offset-4">Magento</span>,{" "}
-            <span className="underline underline-offset-4">WooCommerce</span>,{" "}
-            <span className="underline underline-offset-4">BigCommerce</span>,{" "}
-            <span className="underline underline-offset-4">Salesforce</span>,{" "}
-            <span className="underline underline-offset-4">Visualsoft</span>{" "}
-            and more to Shopify or Shopify Plus.
+        <div>
+          <p className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-5">
+            Platform Migration
           </p>
-
-          <ul className="space-y-3 list-disc list-inside">
-            <li>Magento, WooCommerce, BigCommerce & custom platform migrations</li>
-            <li>Product, customer & order data migration</li>
-            <li>Shopify theme rebuilds or template customisation</li>
-            <li>SEO migration, redirects & URL structure management</li>
-            <li>Third party app & system integrations</li>
-          </ul>
-
+          <h2 className="text-3xl md:text-5xl font-light text-black leading-tight">
+            Moving to Shopify from Another Platform?
+            {city ? (
+              <>
+                {" "}
+                We Handle It{" "}
+                <span className="font-semibold">in {city}</span>.
+              </>
+            ) : null}
+          </h2>
+          <p className="text-gray-500 mt-6 text-lg leading-relaxed">
+            ShopifyTasker is a trusted Shopify migration agency. We help
+            merchants move from Magento, WooCommerce, BigCommerce, Salesforce,
+            and Visualsoft to Shopify or Shopify Plus — without losing data,
+            rankings, or revenue.
+          </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition"
+            className="inline-flex items-center gap-2 mt-8 bg-black text-white px-6 py-3 text-sm font-semibold hover:bg-gray-900 transition"
           >
-           Get the Your free Quotation
-            <span className="text-xl">→</span>
+            Discuss Your Migration →
           </Link>
-
         </div>
+
+        <ul className="border-t border-black/10 space-y-0">
+          {[
+            "Magento, WooCommerce, BigCommerce & custom platform migrations",
+            "Full product, customer, and order data migration",
+            "Shopify theme rebuild or custom design from scratch",
+            "SEO migration — 301 redirects, URL structures, and metadata",
+            "Third-party app and system integrations",
+            "Post-launch QA, speed testing, and performance review",
+          ].map((item, i) => (
+            <li
+              key={i}
+              className="flex items-start gap-4 py-4 border-b border-black/10 text-gray-700 text-sm"
+            >
+              <span className="font-mono text-xs text-gray-300 shrink-0 mt-0.5">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              {item}
+            </li>
+          ))}
+        </ul>
+
       </div>
     </section>
   );

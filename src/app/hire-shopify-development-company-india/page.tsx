@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Hire shopify development company india ",
+  title: "Hire Shopify Development Company in India | Affordable Experts",
   description:
-    "shopify development company india",
+    "Looking for a reliable Shopify development company in India? ShopifyTasker offers expert Shopify design, development, and support services at competitive rates. Pay after work is done.",
 };
 
 export default function smallTask() {

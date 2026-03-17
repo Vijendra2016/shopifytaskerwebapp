@@ -1,5 +1,12 @@
+import { Metadata } from "next";
 import ArticleCard from "./BlogCard";
 import HeaderSection from "./HeaderSection";
+
+export const metadata: Metadata = {
+  title: "Shopify Articles & Tips | ShopifyTasker Blog",
+  description:
+    "Explore expert articles, guides, and insights on Shopify development, store design, SEO, and eCommerce growth strategies from the ShopifyTasker team.",
+};
 
 
 const articles = [

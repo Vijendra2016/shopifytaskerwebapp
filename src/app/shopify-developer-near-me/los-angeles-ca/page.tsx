@@ -3,9 +3,9 @@ import TestimonialCardGrid from "@/app/components/TestimonialCardGrid";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Shopify Developer in New York | Hire Shopify Expert",
+  title: "Shopify Developer in Los Angeles | Hire Shopify Expert in LA",
   description:
-    "Looking to hire a Shopify developer in New York? Our expert team offers affordable Shopify development services tailored to your business needs. Get started today!",
+    "Looking to hire a Shopify developer in Los Angeles? Our expert team offers affordable Shopify development services tailored to your business needs. Get started today!",
 };
 
 

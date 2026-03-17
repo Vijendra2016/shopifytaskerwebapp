@@ -5,9 +5,9 @@ import FAQSection , { FAQ }  from "@/app/components/FAQSectionind";
 
 import GeoMessage from "@/app/components/GeoMessage";
 export const metadata: Metadata = {
-  title: "Shopify auto parts website Design & Development| Expert Shopify Developer ",
-  description: 
-    " Looking Shopify expert for design and development Shopify auto parts website? Hire a top-rated freelance Shopify developer to build beautiful, conversion-focused Shopify stores.",
+  title: "Shopify Fine Jewelry Website Design & Development | Expert Shopify Developer",
+  description:
+    "Looking for a Shopify expert for fine jewelry website design and development? Hire a top-rated freelance Shopify developer to build a stunning, conversion-focused jewelry store.",
 };
 
 

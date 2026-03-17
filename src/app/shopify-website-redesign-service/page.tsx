@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import TestimonialCardGrid from "../components/TestimonialCardGrid";
 export const metadata: Metadata = {
-  title: "shopify website design company",
+  title: "Shopify Website Redesign Service | Refresh Your Store's Look & Speed",
   description:
-    "We are top rated shopify website design company, our shopify developer and expert provide you quality work.pay after work done",
+    "Give your Shopify store a modern makeover with our website redesign service. We improve UX, speed, mobile responsiveness, and conversions — all with a fresh, branded design.",
 };
 
 export default function pricing() {

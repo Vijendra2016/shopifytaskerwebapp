@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import TestimonialCardGrid from "../components/TestimonialCardGrid";
 import GeoMessage from "../components/GeoMessage";
 export const metadata: Metadata = {
-  title: "ShopifyTasker Reviews",
+  title: "ShopifyTasker Reviews | Trusted by 500+ Shopify Store Owners",
   description:
-    "ShopifyTasker Reviews based developer",
+    "Read verified reviews from ShopifyTasker clients. See why hundreds of Shopify store owners trust us for expert development, fast turnarounds, and reliable ongoing support.",
 };
 
 export default function pricing() {

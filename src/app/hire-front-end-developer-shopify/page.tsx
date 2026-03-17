@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Hire shopify front end developer  ",
+  title: "Hire a Shopify Front-End Developer | Expert UI & Theme Specialists",
   description:
-    "hire dedicated shopify front end developer @10 per hours",
+    "Hire a dedicated Shopify front-end developer from ShopifyTasker. We specialize in theme customization, Liquid templating, and pixel-perfect UI builds starting from $20/hr.",
 };
 
 export default function smallTask() {

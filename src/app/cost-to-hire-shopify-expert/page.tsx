@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import CenteredSlider from "../components/CenteredSlider";
 import TestimonialCard from "../components/TestimonialCard";
 export const metadata: Metadata = {
-  title: "Cost to hire shopify expert",
+  title: "Cost to Hire a Shopify Expert | Transparent Shopify Pricing",
   description:
-    "our pricing is start from $20/H we will be give you fix cost , once task done pay ",
+    "Discover the cost to hire a Shopify expert at ShopifyTasker. Hourly rates start from $20/hr with fixed-price options available. Pay only after the work is done.",
 };
 
 export default function pricing() {

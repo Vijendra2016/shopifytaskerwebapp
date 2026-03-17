@@ -19,6 +19,7 @@ const geistSans = Geist({
 });
 
 
+
 export const viewport: Viewport = {
   themeColor: 'black',
 }
@@ -64,7 +65,7 @@ export default function RootLayout({
           }}
         />
       <body
-        className={`${geistSans.variable}  antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
 
          {/* ✅ Organization Schema – MUST be inside body */}

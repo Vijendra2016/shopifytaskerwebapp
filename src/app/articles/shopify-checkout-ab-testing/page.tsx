@@ -4,9 +4,9 @@ import GeoMessage from "@/app/components/GeoMessage";
 
 
 export const metadata: Metadata = {
-  title: "Shopify Fragrances , perfumes and colognes online Shop",
+  title: "Shopify Checkout A/B Testing | Increase Conversions & Revenue",
   description:
-    "Explore inspiring bridal wear brands built on Shopify and discover what makes them successful.",
+    "Learn proven Shopify checkout A/B testing strategies to boost conversion rates and maximize revenue. Expert tips on optimizing every step of the buying journey.",
 };
 
 export default function ArticlePagecheckout() {

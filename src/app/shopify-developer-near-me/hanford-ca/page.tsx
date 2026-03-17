@@ -3,9 +3,9 @@ import Image from "next/image";
 import GeoMessage from "@/app/components/GeoMessage";
 
 export const metadata: Metadata = {
-  title: "Hire Shopify Virtual Assistant | Top-Rated Shopify VA",
+  title: "Shopify Developer in Hanford, CA | Hire Local Shopify Expert",
   description:
-    "Hire top expert shopify Virtual Assistant just $5/hr from most trusted shopify expert VA team",
+    "Looking to hire a Shopify developer in Hanford, CA? ShopifyTasker connects you with expert Shopify developers offering affordable, reliable services for your online store.",
 };
 
 export default function smallTask() {

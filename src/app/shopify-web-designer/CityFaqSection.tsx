@@ -2,11 +2,6 @@
 
 import { useState } from "react";
 
-export type CityFaq = {
-  question: string;
-  answer: string;
-};
-
 type Props = {
   city: string;
   state: string;
@@ -15,77 +10,84 @@ type Props = {
 export default function CityFaqSection({ city, state }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  // ✅ Human-written, city + state optimized FAQs
-  const faqs: CityFaq[] = [
+  const faqs = [
     {
       question: `Why hire a Shopify web designer in ${city}, ${state}?`,
-      answer: `Because your store should feel like it truly belongs in ${city}. We design Shopify websites that reflect your brand, connect with local customers, and build trust from the first click — not just cookie-cutter templates.`,
+      answer: `Hiring a Shopify specialist in ${city} means working with someone who understands both the Shopify platform and your local market. At ShopifyTasker, we design stores that reflect your brand identity, connect with your target audience, and are built to convert — not generic templates with your logo dropped in.`,
     },
     {
-      question: `Can you create a custom Shopify design for my brand?`,
-      answer: `Absolutely. Whether you're launching a new brand or upgrading an existing store in ${city}, ${state}, we craft custom Shopify designs that match your identity, style, and business goals.`,
+      question: `Can you create a fully custom Shopify design for my brand?`,
+      answer: `Yes. Whether you are launching a new brand or upgrading an existing store in ${city}, ${state}, we build fully custom Shopify designs from scratch — custom Liquid sections, unique layouts, branded typography, and imagery. Every design is unique to your business.`,
     },
     {
       question: `Will my Shopify store be mobile-friendly?`,
-      answer: `Yes. Every Shopify store we design is fully responsive. Your customers in ${city} and across ${state} will enjoy a smooth shopping experience on mobile, tablet, and desktop.`,
+      answer: `Absolutely. Every Shopify store we design is built mobile-first. Over 70% of eCommerce traffic comes from mobile devices, so we ensure your ${city} store delivers a fast, smooth, and conversion-ready experience on every screen.`,
     },
     {
-      question: `Do you redesign existing Shopify stores?`,
-      answer: `Definitely. If your current Shopify store looks outdated or isn’t converting well, we’ll redesign it with modern UI, improved UX, and faster performance — giving your ${city} business a fresh start.`,
+      question: `Can you redesign my existing Shopify store?`,
+      answer: `Yes. If your current store looks outdated, loads slowly, or is not converting well, we will redesign it completely — new UI/UX, faster load times, and a look that gives your ${city} business a competitive edge. We also handle data and SEO migration.`,
     },
     {
-      question: `Will my Shopify website be optimized for sales?`,
-      answer: `Yes. We design Shopify stores that don’t just look good — they guide visitors toward checkout, improve product discovery, and increase conversions for businesses in ${city}, ${state}.`,
+      question: `Will my Shopify store be optimised for sales?`,
+      answer: `Conversion-focused design is at the core of everything we build. We structure your navigation, product pages, and checkout flow to reduce friction and guide visitors in ${city}, ${state} toward completing a purchase — not just browsing.`,
     },
     {
-      question: `How long does a Shopify web design project take in ${city}?`,
-      answer: `Most Shopify web design projects take about 2–5 weeks. We follow a clear, collaborative process so your ${city} store launches smoothly and on time.`,
+      question: `How long does a Shopify web design project take?`,
+      answer: `Most projects take 2–5 weeks from brief to launch. A theme customisation can be completed in a few days, while a full custom store design typically takes 3–5 weeks. We provide a clear timeline with milestones before we start any work.`,
     },
     {
       question: `Do you offer ongoing Shopify support after launch?`,
-      answer: `Yes. We provide continuous Shopify support, updates, and growth assistance for stores in ${city}, ${state}, so your website keeps improving long after launch.`,
+      answer: `Yes. We offer monthly retainer plans that include ongoing design updates, new landing pages, seasonal banners, speed monitoring, and any Shopify-related work your ${city} business needs after launch.`,
+    },
+    {
+      question: `What does Shopify web design cost in ${city}?`,
+      answer: `Our pricing is transparent and task-based. Hourly rates start from $20/hr, and we offer fixed-price quotes for defined projects. All pricing is agreed upfront — and you pay only after the work is delivered to your satisfaction.`,
     },
   ];
 
   return (
-    <section className="bg-white pt-24 pb-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[0.6fr_2.4fr] gap-20">
+    <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-16">
 
-        {/* Left Side */}
-        <div>
-          <p className="text-sm tracking-[0.3em] text-black mb-10 uppercase">
+        {/* Left */}
+        <div className="lg:sticky lg:top-28 lg:self-start">
+          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">
             FAQs
           </p>
-
-          <h2 className="text-4xl leading-tight font-light text-black">
-            Hire Shopify
-            Web
-            Designer <br />
-            in {city}
+          <h2 className="font-display text-[clamp(1.8rem,3.5vw,2.8rem)] font-normal leading-[1.1] tracking-tight text-white">
+            Frequently Asked
+            <br />
+            Questions — Shopify
+            <br />
+            Web Design in{" "}
+            <span className="italic">{city}</span>
           </h2>
+          <p className="text-[14px] text-white/50 leading-[1.7] mt-5">
+            Everything you need to know before hiring a Shopify web designer in{" "}
+            {city}, {state}.
+          </p>
         </div>
 
-        {/* Right Side */}
-        <div>
+        {/* Right — Accordion */}
+        <div className="border-t border-white/[0.08]">
           {faqs.map((faq, index) => (
-            <div key={index} className=" py-2">
+            <div key={index} className="border-b border-white/[0.08]">
               <button
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="w-full flex items-center justify-between text-left"
+                className="w-full flex items-start justify-between gap-8 py-6 text-left group"
+                aria-expanded={openIndex === index}
               >
-                <span className="text-[28px] font-thin leading-[1.3] text-black pr-2">
+                <span className="text-[15px] md:text-[16px] font-medium text-white/80 group-hover:text-white leading-snug transition">
                   {faq.question}
                 </span>
-
-                <span className="text-[30px] font-bold text-black">
-                  {openIndex === index ? "–" : "+"}
+                <span className="text-[22px] font-light text-white/40 group-hover:text-white/70 shrink-0 mt-0.5 transition">
+                  {openIndex === index ? "−" : "+"}
                 </span>
               </button>
-
               {openIndex === index && (
-                <p className="mt-1 text-sm font-thin text-black max-w-2xl">
+                <p className="pb-7 text-[14px] text-white/55 leading-[1.75] max-w-2xl">
                   {faq.answer}
                 </p>
               )}

@@ -1,411 +1,419 @@
-// src/app/shopify-expert-near-me/[city]/page.tsx
-
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import cities from "@/lib/cities.json";
-import CitiesCta from "@/app/components/CitiesCta";
-import TestimonialCard from "@/app/components/TestimonialCard";
-import FAQSection, { FAQ } from "@/app/components/FAQSectionind";
 import Link from "next/link";
-import DesignServiceSection from "../DesignServiceSection";
-import MigrationSection from "../MigrationSection";
+import Image from "next/image";
+import TestimonialCard from "@/app/components/TestimonialCard";
 import CityPageSchema from "../CityPageSchema";
-import FaqSection from "../FaqSection";
 import CityFaqSection from "../CityFaqSection";
+import CreateTaskButton from "../CreateTaskButton";
+
 type Props = {
-  params: Promise<{
-    city: string;
-  }>;
+  params: Promise<{ city: string }>;
 };
 
-// ✅ generateStaticParams
 export function generateStaticParams() {
-  return cities.map((city) => ({
-    city: city.slug,
-  }));
+  return cities.map((city) => ({ city: city.slug }));
 }
 
-// ✅ generateMetadata with proper async param handling
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const params = await props.params;
-  const { city } = params;
-
-  const cityData = cities.find((c) => c.slug === city);
-
+  const cityData = cities.find((c) => c.slug === params.city);
   if (!cityData) {
     return {
       title: "City Not Found | ShopifyTasker",
       description: "This city page is not available.",
     };
   }
-
   return {
-    title: `Hire  Top Rated Shopify Web Designer in ${cityData.city} | ShopifyTasker  `,
-    description: `Hire Top Rated Shopify Web Designer in ${cityData.city} prices start from $10/hr,pay after work done`,
+    title: `Hire a Shopify Web Designer in ${cityData.city}, ${cityData.state} | ShopifyTasker`,
+    description: `Looking for a top-rated Shopify web designer in ${cityData.city}, ${cityData.state}? ShopifyTasker builds custom Shopify stores, redesigns, and theme customizations. Pay only after work is done.`,
   };
 }
 
-// ✅ Page Component with proper async param handling
+const services = [
+  {
+    title: "Custom Shopify Store Design",
+    body: "We design Shopify stores from scratch — brand-aligned, mobile-first, and built to convert. Every element is crafted to reflect your identity and guide customers to checkout.",
+    href: "/shopify-store-design",
+  },
+  {
+    title: "Shopify Theme Customization",
+    body: "We go beyond the theme editor — custom Liquid sections, bespoke layouts, and precise brand styling that makes your store look and perform exactly as you need it to.",
+    href: "/theme-customization",
+  },
+  {
+    title: "Shopify Store Redesign",
+    body: "Underperforming or outdated store? We redesign it with modern UI, improved user flows, and faster load times — a complete refresh that drives measurable improvements.",
+    href: "/shopify-website-redesign-service",
+  },
+  {
+    title: "Mobile-First Design",
+    body: "Over 70% of Shopify traffic is mobile. Every store we design is built mobile-first — responsive, touch-friendly, and optimized for the screens your customers actually use.",
+    href: "/shopify-store-design",
+  },
+  {
+    title: "Shopify SEO & Speed Optimization",
+    body: "We fix Core Web Vitals, compress assets, implement structured data, and build pages that search engines reward with higher rankings and more organic traffic.",
+    href: "/shopify-seo",
+  },
+  {
+    title: "Ongoing Design Support",
+    body: "Monthly retainer plans covering design updates, new landing pages, seasonal banners, and any ongoing Shopify design work your business needs post-launch.",
+    href: "/ongoing-support",
+  },
+];
+
+const processSteps = [
+  {
+    num: "01",
+    title: "Discovery & Brief",
+    body: "We start with a detailed intake — your brand, goals, competitors, and design preferences. The more context you give us, the more tailored the outcome.",
+  },
+  {
+    num: "02",
+    title: "Wireframes & Mockups",
+    body: "Before any code is written, we create visual mockups for you to review and approve. You see exactly what your store will look like before we build it.",
+  },
+  {
+    num: "03",
+    title: "Build & Development",
+    body: "We build your Shopify store using Liquid, custom sections, and performance best practices — implementing the approved design pixel-perfectly.",
+  },
+  {
+    num: "04",
+    title: "Review & Refinement",
+    body: "You review the live staging store, request changes, and we refine until everything meets your standard. No rush, no limitations on feedback rounds.",
+  },
+  {
+    num: "05",
+    title: "Launch & Handover",
+    body: "We run final QA checks across devices, launch your store, and hand over full documentation. You own everything — code, assets, and access.",
+  },
+  {
+    num: "06",
+    title: "Post-Launch Support",
+    body: "After launch, we remain available for updates, fixes, and growth-focused improvements. Our retainer plans keep your store evolving month by month.",
+  },
+];
+
 export default async function CityPage(props: Props) {
   const params = await props.params;
-  const { city } = params;
-
-  const cityData = cities.find((c) => c.slug === city);
-
+  const cityData = cities.find((c) => c.slug === params.city);
   if (!cityData) return notFound();
-  const wigFaqs: FAQ[] = [
+
+  const faqsForSchema = [
     {
-      question: `What services do you provide in ${cityData.city}?`,
-      answer:
-        "We offer Shopify auto parts website design and development, store management, Shopify support, SEO, and digital marketing services.",
+      question: `What Shopify web design services do you offer in ${cityData.city}?`,
+      answer: `We offer custom Shopify store design, theme customization, store redesign, mobile-first layouts, Shopify SEO, speed optimization, and ongoing monthly design support for businesses in ${cityData.city}, ${cityData.state}.`,
     },
     {
-      question: "What is your process?",
+      question: "What is your Shopify web design process?",
       answer:
-        "Just tell us your requirements. We handle all types of Shopify development and app-related tasks at affordable rates.",
+        "We start with a discovery call, create mockups for approval, build the design in Shopify, gather feedback, refine, and launch — with clear milestones and communication throughout.",
     },
     {
-      question: "I already have a website. Can you improve it?",
-      answer:
-        "Yes! If you already have a Shopify website and want improvements, feel free to contact us.",
+      question: `Can you redesign my existing Shopify store in ${cityData.city}?`,
+      answer: `Yes. If your Shopify store looks outdated, is slow, or is not converting well, we will redesign it completely — new UI/UX, faster performance, and a design that gives your ${cityData.city} business a competitive edge.`,
     },
     {
-      question: "Do you provide monthly Shopify website support?",
+      question: "Do you offer monthly Shopify design support?",
       answer:
-        "Absolutely. Our monthly support includes custom development, store management, SEO, and more.",
+        "Yes. Our monthly retainer plans cover ongoing design updates, new pages, seasonal changes, speed monitoring, and any design-related Shopify work you need each month.",
     },
     {
-      question: "Why should I hire the ShopifyTasker team?",
+      question: "Why should I hire ShopifyTasker instead of a freelancer?",
       answer:
-        "We work on a pay-after-delivery model, have over 10 years of Shopify experience, and charge fair prices—not $150/hr like others.",
+        "ShopifyTasker gives you a full-service team — designers, developers, SEO specialists — at freelancer rates. We work on a pay-after-delivery model, charge fair prices starting at $20/hr, and have 10+ years of Shopify experience.",
     },
     {
-      question: "How many Shopify developers and experts are on your team?",
-      answer:
-        "Our team includes 25+ professionals, including Shopify developers, SEO specialists, and digital marketing experts.",
+      question: `How long does a Shopify web design project in ${cityData.city} take?`,
+      answer: `Most projects take 2–5 weeks. A theme customization can take a few days, while a full custom store design from scratch takes 3–5 weeks. We agree on a clear timeline before starting.`,
     },
   ];
+
   return (
-    <main>
-
+    <main className="bg-[#0a0a0a] text-white">
       <CityPageSchema
-    city={cityData.city}
-    state={cityData.state}
-    slug={cityData.slug}
-    faqs={wigFaqs}
-  />
-       
-      <section className="px-6 md:px-30  h-[60vh] md:h-[80vh] py-30 bg-black text-white">
-        <div className="services flex flex-col items-center justify-center text-center text-black ">
-          <h1 className="text-3xl md:text-9xl text-white font-medium tracking-tight ">
-            Hire Shopify web designer in {cityData.city}, {cityData.state}
-          </h1>
-          <h3 className="text-lg md:text-3xl text-white  font-medium tracking-tight p-10">
-            {" "}
-            Shopify Website Development | Shopify Tasks | Shopify Retainer |
-            Shopify SEO
-          </h3>
+        city={cityData.city}
+        state={cityData.state}
+        slug={cityData.slug}
+        faqs={faqsForSchema}
+      />
+
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" className="border-b border-white/[0.08] px-6 py-3">
+        <ol className="max-w-7xl mx-auto flex items-center gap-2 text-[13px] text-white/40">
+          <li><Link href="/" className="hover:text-white/70 transition">Home</Link></li>
+          <li aria-hidden>/</li>
+          <li><Link href="/shopify-web-designer" className="hover:text-white/70 transition">Shopify Web Designer</Link></li>
+          <li aria-hidden>/</li>
+          <li className="text-white/70" aria-current="page">{cityData.city}, {cityData.state}</li>
+        </ol>
+      </nav>
+
+      {/* ─── HERO ─── */}
+      <section className="px-6 pt-20 pb-0 md:pt-28">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+          <div className="pb-16 md:pb-24">
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-6">
+              Shopify Web Design &nbsp;·&nbsp; {cityData.city}, {cityData.state}
+            </p>
+            <h1 className="text-[clamp(2.6rem,6vw,5.5rem)] font-semibold leading-[1.08] tracking-tight text-white mb-6">
+              Hire a Shopify Web Designer in {cityData.city}, {cityData.state}
+            </h1>
+            <p className="text-[15px] text-white/60 leading-[1.7] max-w-lg mb-10">
+              Custom Shopify store design, theme customisation, and store
+              redesigns for businesses in {cityData.city}. Pay only after the
+              work is done — no upfront costs.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">
+                Get a Free Quote
+              </CreateTaskButton>
+              <Link
+                href="/shopify-store-design"
+                className="inline-flex items-center gap-2 text-white text-[15px] font-medium px-7 py-3.5 rounded-full border border-white/25 hover:border-white/60 transition"
+              >
+                View Our Work
+              </Link>
+            </div>
+          </div>
+
+          {/* Right — Image */}
+          <div className="hidden lg:block relative h-[520px] overflow-hidden rounded-t-2xl">
+            <Image
+              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/696dcbeb8d05bb84b09c39db_feature-3-1.webp"
+              alt={`Shopify web designer working on a store for a ${cityData.city} business`}
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
         </div>
       </section>
-      <MigrationSection />
 
-     <DesignServiceSection/>
-     < FaqSection/>
+      {/* ─── TRUST BAR ─── */}
+      <section className="border-y border-white/[0.08]">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-white/[0.08]">
+          {[
+            { value: "500+", label: "Shopify Stores Designed" },
+            { value: "10+", label: "Years of Shopify Experience" },
+            { value: "25+", label: "In-House Specialists" },
+            { value: "$0 upfront", label: "Pay After Work is Done" },
+          ].map((s, i) => (
+            <div key={i} className="text-center px-6 py-8">
+              <p className="text-3xl md:text-4xl font-bold text-white">{s.value}</p>
+              <p className="text-[13px] text-white/40 mt-1.5">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-     <CityFaqSection 
-  city={cityData.city} 
-  state={cityData.state} 
-/>
+      {/* ─── INTRO ─── */}
+      <section className="px-6 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">
+              About Our Work in {cityData.city}
+            </p>
+            <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">
+              Top-Rated Shopify Web Designer Serving {cityData.city}, {cityData.state}
+            </h2>
+          </div>
+          <div className="space-y-5 text-[15px] text-white/60 leading-[1.7]">
+            <p>{cityData.intro}</p>
+            <p>
+              Whether you are launching a new Shopify store in {cityData.city}{" "}
+              or refreshing an existing one, ShopifyTasker gives you access to a
+              full team of Shopify designers, developers, and SEO specialists —
+              without the overhead of a traditional agency.
+            </p>
+            <p className="text-white/80">{cityData.cta}</p>
+            <CreateTaskButton className="inline-flex items-center gap-2 mt-2 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">
+              Start Your Project →
+            </CreateTaskButton>
+          </div>
+        </div>
+      </section>
 
-      <section className="bg-[#fefaf6] py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-thin text-black-900 leading-tight">
-            Explore our {cityData.city} <br />
-            Shopify Expert services
+      {/* ─── SERVICES ─── */}
+      <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-14">
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What We Do</p>
+            <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">
+              Shopify Web Design Services in {cityData.city}
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((s, i) => (
+              <div key={i} className="border border-white/[0.08] p-8 flex flex-col justify-between -mt-px -ml-px group hover:bg-white/[0.04] transition">
+                <div>
+                  <p className="text-[11px] font-mono text-white/20 mb-6 tracking-widest">
+                    {String(i + 1).padStart(2, "0")}
+                  </p>
+                  <h3 className="text-[17px] font-semibold text-white mb-3 leading-snug">{s.title}</h3>
+                  <p className="text-[14px] text-white/55 leading-[1.7] mb-6">{s.body}</p>
+                </div>
+                <Link href={s.href} className="text-[13px] text-white/50 underline underline-offset-4 hover:text-white transition w-fit">
+                  Learn more
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── WHY US ─── */}
+      <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-14">
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Why Us</p>
+            <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white max-w-2xl">
+              Why {cityData.city} Businesses Choose ShopifyTasker
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-white/[0.08]">
+            {[
+              { title: "Pay After Delivery", body: "We never ask for upfront payment. You pay only once your Shopify store is delivered and you are satisfied. No risk, no surprises." },
+              { title: "10+ Years of Shopify", body: "Our team has over a decade of hands-on Shopify experience — across hundreds of stores, every industry, from startups to Shopify Plus brands." },
+              { title: "Full-Service Team", body: "Designers, developers, SEO specialists, and support staff — all in-house. A complete agency team at transparent rates starting at $20/hr." },
+              { title: "Fixed Pricing", body: "Before we start, you receive a detailed fixed-price quote. We stick to it — no hidden fees, no scope creep charges, no surprises at the end." },
+              { title: "Fast Turnarounds", body: "Design tasks are typically completed in 24–72 hours. Full store designs go live in 2–5 weeks, with clear milestones throughout." },
+              { title: "Conversion-Focused", body: "Every design decision is guided by what drives sales. Your store will look great and be structured to turn visitors into buyers." },
+            ].map((item, i) => (
+              <div key={i} className="border-b border-r border-white/[0.08] py-8 pr-8 last:border-r-0">
+                <p className="text-[11px] font-mono text-white/20 mb-5 tracking-widest">{String(i + 1).padStart(2, "0")}</p>
+                <h3 className="text-[16px] font-semibold text-white mb-3">{item.title}</h3>
+                <p className="text-[14px] text-white/55 leading-[1.7]">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PROCESS ─── */}
+      <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-16 items-start">
+          <div className="lg:sticky lg:top-28">
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Our Process</p>
+            <h2 className="text-[clamp(2rem,3.5vw,3rem)] font-semibold leading-[1.1] tracking-tight text-white">
+              How We Design Your {cityData.city} Shopify Store
+            </h2>
+            <p className="text-[14px] text-white/55 leading-[1.7] mt-5">
+              A clear, collaborative process from brief to launch — so you always know what happens next.
+            </p>
+            <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">
+              Get Started →
+            </CreateTaskButton>
+          </div>
+          <div className="border-t border-white/[0.08]">
+            {processSteps.map((step, i) => (
+              <div key={i} className="flex gap-8 py-8 border-b border-white/[0.08]">
+                <span className="text-[11px] font-mono text-white/20 shrink-0 pt-1 tracking-widest">{step.num}</span>
+                <div>
+                  <h3 className="text-[16px] font-semibold text-white mb-2">{step.title}</h3>
+                  <p className="text-[14px] text-white/55 leading-[1.7]">{step.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── MIGRATIONS ─── */}
+      <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Platform Migration</p>
+            <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">
+              Migrating to Shopify? We Handle Everything.
+            </h2>
+            <p className="text-[15px] text-white/60 leading-[1.7] mt-6 max-w-md">
+              ShopifyTasker supports full platform migrations from Magento, WooCommerce,
+              BigCommerce, Salesforce, and Visualsoft to Shopify or Shopify Plus —
+              including design, data, SEO, and redirects.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition"
+            >
+              Discuss Your Migration →
+            </Link>
+          </div>
+          <ul className="border-t border-white/[0.08]">
+            {[
+              "Magento, WooCommerce, BigCommerce & custom platform migrations",
+              "Full product, customer, and order data migration",
+              "Shopify theme rebuild or custom design from scratch",
+              "SEO migration — 301 redirects, URL structure, metadata",
+              "Third-party app and system integrations",
+              "Post-launch QA, performance testing, and speed review",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-5 py-5 border-b border-white/[0.08] text-[14px] text-white/60 leading-[1.6]">
+                <span className="font-mono text-[11px] text-white/20 shrink-0 mt-0.5 tracking-widest">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ─── TESTIMONIALS ─── */}
+      <section className="border-t border-white/[0.08]">
+        <TestimonialCard />
+      </section>
+
+      {/* ─── FAQ ─── */}
+      <CityFaqSection city={cityData.city} state={cityData.state} />
+
+      {/* ─── FINAL CTA ─── */}
+      <section className="border-t border-white/[0.08] px-6 py-24 md:py-32">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-6">Get Started</p>
+          <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.08] tracking-tight text-white mb-6">
+            Ready to Build Your <em className="not-italic font-normal">{cityData.city}</em> Shopify Store?
           </h2>
-          <p className="text-lg text-black mt-2">
-            This is {cityData.city} Shopify Expert at its best.
+          <p className="text-[15px] text-white/60 leading-[1.7] max-w-xl mx-auto mb-10">
+            Tell us what you need. We will send a fixed quote, start work, and you pay only when you are satisfied.
           </p>
-        </div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-          <div className="bg-[#FFFFFF] p-8 rounded-2xl shadow-md flex flex-col justify-between">
-            <div>
-              <div className="text-green-900 text-5xl mb-8">🎨</div>
-              <h3 className="text-2xl font-bold text-black mb-2">
-                Shopify Store Design
-              </h3>
-              <p className="text-black mb-10">
-                We craft clean, user-friendly Shopify stores that truly reflect
-                your brand and keep your customers engaged.
-              </p>
-            </div>
-
+          <div className="flex flex-wrap gap-4 justify-center">
+            <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-8 py-4 rounded-full hover:bg-white/90 transition cursor-pointer">
+              Get a Free Quote →
+            </CreateTaskButton>
             <Link
-              href="/shopify-store-design"
-              className="mt-auto w-fit bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black border border-black transition duration-200"
+              href="/contact"
+              className="inline-flex items-center gap-2 text-white text-[15px] font-medium px-8 py-4 rounded-full border border-white/25 hover:border-white/60 transition"
             >
-              Learn More
-            </Link>
-          </div>
-
-          <div className="bg-[#FFFFFF] p-8 rounded-2xl shadow-md flex flex-col justify-between">
-            <div>
-              <div className="text-green-900 text-5xl mb-8">🖌️</div>
-              <h3 className="text-2xl font-bold text-black mb-2">
-                Theme Customization
-              </h3>
-              <p className="text-black mb-10">
-                We customize your Shopify theme or create custom layouts to
-                improve functionality and match your brand perfectly.
-              </p>
-            </div>
-            <Link
-              href="/theme-customization"
-              className="mt-auto w-fit bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black border border-black transition duration-200"
-            >
-              Learn More
-            </Link>
-          </div>
-
-          <div className="bg-[#FFFFFF] p-8 rounded-2xl shadow-md flex flex-col justify-between">
-            <div>
-              <div className="text-green-900 text-5xl mb-8">🛠️</div>
-              <h3 className="text-2xl font-bold text-black mb-2">
-                Custom Development
-              </h3>
-              <p className="text-black mb-10">
-                Build custom features, integrations, or functionalities to take
-                your Shopify store to the next level.
-              </p>
-            </div>
-            <Link
-              href="/custom-development"
-              className="mt-auto w-fit bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black border border-black transition duration-200"
-            >
-              Learn More
-            </Link>
-          </div>
-
-          <div className="bg-[#FFFFFF] p-8 rounded-2xl shadow-md flex flex-col justify-between">
-            <div>
-              <div className="text-green-900 text-5xl mb-8">🔌</div>
-              <h3 className="text-2xl font-bold text-black mb-2">
-                App Integration
-              </h3>
-              <p className="text-black mb-10">
-                Connect essential apps like CRM, shipping tools, analytics, and
-                marketing platforms with ease.
-              </p>
-            </div>
-            <Link
-              href="/app-integration"
-              className="mt-auto w-fit bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black border border-black transition duration-200"
-            >
-              Learn More
-            </Link>
-          </div>
-
-          <div className="bg-[#FFFFFF] p-8 rounded-2xl shadow-md flex flex-col justify-between">
-            <div>
-              <div className="text-green-900 text-5xl mb-8">⚙️</div>
-              <h3 className="text-2xl font-bold text-black mb-2">
-                Ongoing Support
-              </h3>
-              <p className="text-black mb-10">
-                Keep your Shopify store running smoothly with regular updates,
-                fixes, and enhancements.
-              </p>
-            </div>
-            <Link
-              href="/ongoing-support"
-              className="mt-auto w-fit bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black border border-black transition duration-200"
-            >
-              Learn More
-            </Link>
-          </div>
-
-          <div className="bg-[#FFFFFF] p-8 rounded-2xl shadow-md flex flex-col justify-between">
-            <div>
-              <div className="text-green-900 text-5xl mb-8">📈</div>
-              <h3 className="text-2xl font-bold text-black mb-2">
-                Shopify SEO
-              </h3>
-              <p className="text-black mb-10">
-                Optimize your store with technical SEO and keyword strategies to
-                boost visibility and sales.
-              </p>
-            </div>
-            <Link
-              href="/shopify-seo"
-              className="mt-auto w-fit bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black border border-black transition duration-200"
-            >
-              Learn More
+              Talk to a Designer
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#fefaf6] py-20 px-4">
-        <div className="max-w-5xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-black-900 leading-tight">
-            Premium Shopify Experts in {cityData.city} for Seamless Online
-            Growth
-          </h2>
-          <p className="mt-4 text-lg text-gray-700">
-            Launch faster, sell smarter. Our Shopify developers in{" "}
-            {cityData.city} design, build, and scale stores that convert
-            visitors into loyal customers.{" "}
-          </p>
-        </div>
-
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="flex gap-5">
-            <div className="bg-[#f3fca8] w-16 h-16 flex items-center justify-center rounded-xl p-5">
-              <span className="text-3xl">🛒</span>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-semibold text-black mb-2">
-                Custom Shopify Store Development
-              </h3>
-              <p className="text-gray-800">
-                Custom Shopify Store Development We design and develop Shopify
-                stores from scratch—built to be fast, mobile-friendly, and
-                tailored to your business in California. From setup to advanced
-                features, everything is crafted to help your store grow and
-                reflect your brand, down to the last detail.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="flex gap-5">
-            <div className="bg-[#f3fca8] w-16 h-16 flex items-center justify-center rounded-xl p-5">
-              <span className="text-3xl">🎨</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-black mb-2">
-                Branded UI/UX & Theme Customization
-              </h3>
-              <p className="text-gray-800">
-                We craft visually stunning and intuitive designs that elevate
-                your brand. Our UI/UX team in {cityData.city} customizes themes
-                or creates bespoke layouts that guide customers toward making a
-                purchase, resulting in higher engagement and conversions.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="flex gap-5">
-            <div className="bg-[#f3fca8] w-16 h-16 flex items-center justify-center rounded-xl p-5">
-              <span className="text-3xl">⚙️</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-black mb-2">
-                Advanced Shopify Functionalities & APIs
-              </h3>
-              <p className="text-gray-800">
-                Looking to do more than just install apps? We create custom
-                features, build API-based workflows, and integrate your Shopify
-                store with tools like ERP, CRM, and other third-party systems —
-                all tailored to how your business operates.{" "}
-              </p>{" "}
-            </div>
-          </div>
-
-          {/* Card 4 */}
-          <div className="flex gap-5">
-            <div className="bg-[#f3fca8] w-16 h-16 flex items-center justify-center rounded-xl p-5">
-              <span className="text-3xl">🚀</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-black mb-2">
-                Launch Strategy & Final QA
-              </h3>
-              <p className="text-gray-800">
-                Before we launch your store, we carefully check everything—how
-                it looks, how it works, and how it feels on all devices. No
-                rushed jobs here. We make sure everything runs smoothly so when
-                your store goes live, it’s ready to go from day one—no
-                surprises, no stress.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 5 */}
-          <div className="flex gap-5">
-            <div className="bg-[#f3fca8] w-16 h-16 flex items-center justify-center rounded-xl p-5">
-              <span className="text-3xl">🔍</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-black mb-2">
-                Shopify SEO & Speed Optimization
-              </h3>
-              <p className="text-gray-800">
-                We help your store show up better on Google and load faster for
-                your visitors. That means going through your site, fixing the
-                little things that slow it down, and making sure your pages are
-                set up properly so the right people can find you and stick
-                around.{" "}
-              </p>
-            </div>
-          </div>
-
-          {/* Card 6 */}
-          <div className="flex gap-5">
-            <div className="bg-[#f3fca8] w-16 h-16 flex items-center justify-center rounded-xl p-5">
-              <span className="text-3xl">📈</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-black mb-2">
-                Ongoing Store Growth & Analytics Insights
-              </h3>
-              <p className="text-gray-800">
-                Post-launch, we help you grow. From setting up event tracking to
-                interpreting metrics and offering growth suggestions — our team
-                provides proactive monthly support for your Shopify store’s
-                success in {cityData.state}.{" "}
-              </p>
-            </div>
+      {/* ─── RELATED CITIES ─── */}
+      <section className="border-t border-white/[0.08] px-6 py-14">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-8">Other Locations</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-y-3 gap-x-6">
+            {cities
+              .filter((c) => c.slug !== cityData.slug)
+              .slice(0, 36)
+              .map((c, i) => (
+                <Link
+                  key={i}
+                  href={`/shopify-web-designer/${c.slug}`}
+                  className="text-[13px] text-white/40 hover:text-white/80 hover:underline underline-offset-2 transition"
+                >
+                  {c.city}, {c.state}
+                </Link>
+              ))}
           </div>
         </div>
       </section>
-
-      <section className="max-w-4xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold mb-4">
-          Why hire Shopify expert in {cityData.city} from shopifyTasker ?
-        </h2>
-        <p className="mb-4 text-gray-700 leading-relaxed">{cityData.intro}</p>
-        <p className="font-semibold text-blue-600">{cityData.cta}</p>
-      </section>
-
-      <section className="max-w-4xl mx-auto px-4 py-10">
-        <h3 className="text-3xl font-bold mb-4">
-          How do i hire a shopify expert near {cityData.city} on ShopifyTasker
-        </h3>
-        <p className="mb-4 text-gray-700 leading-relaxed">
-          Hire shopify expert on shopifytasker is three step process. Click on
-          Get Free Quote Write your project scope Get Submit Project we will be
-          back to you with proper cost .
-        </p>
-
-        <h3 className="text-3xl font-bold mb-4">
-          Why Hire a shopify expert near {cityData.city} on ShopifyTasker
-        </h3>
-
-        <p className="font-semibold text-blue-600">
-          we have 10 years experience on shopify ecosystem , we work on real
-          prices not much price like $150/hr our hourly prices is fixed $20 and
-          we dont take any upfront payment .
-        </p>
-      </section>
-       <DesignServiceSection/>
-
-      <TestimonialCard />
-      <CitiesCta />
-      <FAQSection faqs={wigFaqs} />
     </main>
   );
 }

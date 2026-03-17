@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import ClientTell from "./components/Clienttel";
 import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
@@ -6,6 +7,12 @@ import WhySwitchSection from "./components/whysection";
 import StepsSection from "./components/StepsSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
 import ServicesPinned from "./components/ServicesPinned";
+
+export const metadata: Metadata = {
+  title: "ShopifyTasker: Hire Top-Rated Shopify Experts | On-Demand Help",
+  description:
+    "ShopifyTasker connects you with trusted Shopify experts for theme customization, store design, speed optimization, and ongoing support. Pay after work is done. Get started today.",
+};
 
 export default function Home() {
   return (

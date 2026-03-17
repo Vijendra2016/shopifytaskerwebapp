@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import TestimonialCardGrid from "../components/TestimonialCardGrid";
 export const metadata: Metadata = {
-  title: "shopify website design company",
+  title: "Top-Rated Shopify Website Design Company | ShopifyTasker",
   description:
-    "We are top rated shopify website design company, our shopify developer and expert provide you quality work.pay after work done",
+    "ShopifyTasker is a top-rated Shopify website design company. Our expert designers and developers deliver beautiful, conversion-focused Shopify stores. Pay only after work is done.",
 };
 
 export default function pricing() {

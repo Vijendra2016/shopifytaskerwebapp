@@ -6,9 +6,9 @@ import ShopifytaskerServices from "../components/ShopifytaskerServices";
 import GeoMessage from "../components/GeoMessage";
 
 export const metadata: Metadata = {
-  title: "shopify expert services",
+  title: "Shopify Expert Services | Design, Development & Support",
   description:
-    "shopify expert services from the india based developer",
+    "Explore the full range of Shopify expert services at ShopifyTasker — from store design and custom development to SEO, speed optimization, and ongoing support.",
 };
 
 
