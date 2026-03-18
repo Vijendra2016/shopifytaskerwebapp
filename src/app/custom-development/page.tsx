@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 import ShopifyExpertServices from "../components/ShopifyExpertServices";
+import ServicePageSchema from "../components/ServicePageSchema";
 
 export const metadata: Metadata = {
   title: "Shopify Custom Development Services | Built for Your Business",
@@ -12,6 +13,17 @@ export const metadata: Metadata = {
 export default function ShopifyCustomDevelopment() {
   return (
     <main>
+      <ServicePageSchema
+        serviceName="Shopify Custom Development Services"
+        serviceDescription="ShopifyTasker builds custom Shopify apps, private scripts, API integrations, advanced cart logic, and backend automations tailored to your unique business workflows. Pay after delivery."
+        pageUrl="https://www.shopifytasker.com/custom-development"
+        breadcrumbs={[{ name: "Custom Development", url: "https://www.shopifytasker.com/custom-development" }]}
+        faqs={[
+          { question: "What does Shopify custom development include?", answer: "Shopify custom development at ShopifyTasker covers private app development, custom Liquid sections, API integrations with third-party platforms, advanced checkout logic, custom discount rules, webhooks, backend automations, and middleware solutions." },
+          { question: "Can ShopifyTasker build a custom Shopify app?", answer: "Yes. ShopifyTasker develops private Shopify apps and custom public apps using the Shopify API. This includes embedded admin apps, custom storefronts, and apps that extend Shopify functionality beyond what standard themes and settings allow." },
+          { question: "How much does Shopify custom development cost?", answer: "Shopify custom development pricing depends on the scope and complexity of the project. ShopifyTasker provides a fixed-price quote before work begins. Rates start at $20 per hour and custom project quotes are available for larger builds." },
+        ]}
+      />
       {/* Hero Section */}
       <section className="px-6 md:px-30 h-[60vh] md:h-[80vh] py-16 bg-black text-white">
         <div className="services flex flex-col items-center justify-center text-center">

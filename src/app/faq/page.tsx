@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import GeoMessage from "../components/GeoMessage";
 import FaqBlacksmith from "../components/FaqBlacksmith";
 import Image from "next/image";
+import ServicePageSchema from "../components/ServicePageSchema";
 
 
 const faqItems = [

@@ -11,6 +11,7 @@ import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
 import dynamic from 'next/dynamic'
 import SchemaOrganization from "./components/SchemaOrganization";
+import GlobalFaqSchema from "./components/GlobalFaqSchema";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -70,6 +71,7 @@ export default function RootLayout({
 
          {/* ✅ Organization Schema – MUST be inside body */}
         <SchemaOrganization />
+        <GlobalFaqSchema />
 
          
       

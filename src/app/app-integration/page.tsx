@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Metadata } from "next";
 import ShopifyExpertServices from "../components/ShopifyExpertServices";
+import ServicePageSchema from "../components/ServicePageSchema";
 
 export const metadata: Metadata = {
   title: "Shopify App Integration Services | CRM, Shipping & More",
@@ -12,6 +13,17 @@ export const metadata: Metadata = {
 export default function ShopifyAppIntegration() {
   return (
     <main>
+      <ServicePageSchema
+        serviceName="Shopify App Integration Services"
+        serviceDescription="ShopifyTasker integrates CRMs, shipping platforms, analytics tools, ERP systems, and marketing apps into your Shopify store. Seamless, conflict-free integrations with no upfront payment required."
+        pageUrl="https://www.shopifytasker.com/app-integration"
+        breadcrumbs={[{ name: "App Integration", url: "https://www.shopifytasker.com/app-integration" }]}
+        faqs={[
+          { question: "What apps can ShopifyTasker integrate with Shopify?", answer: "ShopifyTasker integrates a wide range of tools including CRMs like HubSpot, email platforms like Klaviyo and Mailchimp, shipping providers like ShipStation and EasyShip, analytics tools like Google Analytics and Hotjar, and ERP systems like NetSuite, Zoho, and QuickBooks." },
+          { question: "How long does a Shopify app integration take?", answer: "Most standard Shopify app integrations are completed within 1 to 5 business days depending on the complexity. A fixed-price quote with a timeline is provided before any work begins." },
+          { question: "Will app integrations affect my live store?", answer: "ShopifyTasker performs all integrations in a staged manner to avoid disruption. Testing is done thoroughly before changes go live, so your store continues running without downtime during the integration process." },
+        ]}
+      />
       {/* Hero Section */}
       <section className="px-6 md:px-30 h-[60vh] md:h-[80vh] py-16 bg-black text-white">
         <div className="services flex flex-col items-center justify-center text-center">

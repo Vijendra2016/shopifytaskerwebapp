@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import CTAQuote from "../components/Cta-Quote";
+import ServicePageSchema from "../components/ServicePageSchema";
 
 export const metadata: Metadata = {
   title: "Shopify Website Development Company in United States | Top-Rated Shopify Developers",
@@ -12,6 +13,17 @@ export const metadata: Metadata = {
 export default function smallTask() {
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-0">
+      <ServicePageSchema
+        serviceName="Shopify Website Development Company in United States"
+        serviceDescription="ShopifyTasker is a top-rated Shopify website development company in the United States delivering custom Shopify stores, theme development, migrations, and ongoing support. Rates start at $20/hr. Pay after delivery."
+        pageUrl="https://www.shopifytasker.com/shopify-website-development-usa"
+        breadcrumbs={[{ name: "Shopify Website Development USA", url: "https://www.shopifytasker.com/shopify-website-development-usa" }]}
+        faqs={[
+          { question: "Is ShopifyTasker a US-based Shopify development company?", answer: "Yes. ShopifyTasker is a US-based Shopify development company serving clients across the United States. The team operates with US business hours for communication and project management while delivering development services at competitive rates." },
+          { question: "What Shopify development services does ShopifyTasker offer in the USA?", answer: "ShopifyTasker offers full Shopify website development services in the USA including custom store design, theme development, Shopify Plus builds, platform migrations, technical SEO, app integrations, and ongoing support retainers." },
+          { question: "How much does Shopify website development cost in the USA?", answer: "ShopifyTasker Shopify development rates start at $20 per hour for the USA market. Fixed-price project quotes are available for full store builds and redesigns. All pricing is confirmed before work begins with no hidden fees." },
+        ]}
+      />
 
        <section className="relative flex items-center justify-center h-[60vh] md:h-[80vh] overflow-hidden">
         {/* Background image (optimized by Next.js) */}

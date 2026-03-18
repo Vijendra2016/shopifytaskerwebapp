@@ -2,6 +2,7 @@ import Link from "next/link";
 import cities from "@/lib/cities.json";
 import { Metadata } from "next";
 import CreateTaskButton from "./CreateTaskButton";
+import ServicePageSchema from "../components/ServicePageSchema";
 
 export const metadata: Metadata = {
   title: "Hire a Shopify Web Designer Near You | ShopifyTasker",
@@ -51,6 +52,17 @@ const services = [
 export default function ShopifyWebDesignerPage() {
   return (
     <main className="bg-[#0a0a0a] text-white">
+      <ServicePageSchema
+        serviceName="Shopify Web Designer"
+        serviceDescription="ShopifyTasker provides top-rated Shopify web designers across the United States. Custom store design, theme customization, store redesigns, and mobile-first builds. Pay only after work is done."
+        pageUrl="https://www.shopifytasker.com/shopify-web-designer"
+        breadcrumbs={[{ name: "Shopify Web Designer", url: "https://www.shopifytasker.com/shopify-web-designer" }]}
+        faqs={[
+          { question: "How much does it cost to hire a Shopify web designer?", answer: "ShopifyTasker Shopify web design services start at $20 per hour. Fixed-price packages are available for full store designs and redesigns. A detailed quote is provided before any work begins and you pay only after the work is complete." },
+          { question: "What does a Shopify web designer do?", answer: "A ShopifyTasker Shopify web designer creates custom Shopify store designs, customizes themes using Liquid, builds mobile-first layouts, improves user experience, implements brand-specific styling, and optimizes pages for conversion and speed." },
+          { question: "Can ShopifyTasker redesign my existing Shopify store?", answer: "Yes. ShopifyTasker specializes in Shopify store redesigns. The process includes reviewing your current design, identifying UX and performance issues, proposing a new design direction, and delivering a fully redesigned store with faster load times and improved conversion." },
+        ]}
+      />
 
       {/* ─── HERO ─── */}
       <section className="px-6 pt-20 pb-20 md:pt-28 md:pb-28 border-b border-white/[0.08]">

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import GeoMessage from "../components/GeoMessage";
+import ServicePageSchema from "../components/ServicePageSchema";
 
 export const metadata: Metadata = {
   title: "Hire Shopify Virtual Assistant | Top-Rated Shopify VA",
@@ -11,6 +12,17 @@ export const metadata: Metadata = {
 export default function smallTask() {
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-0">
+      <ServicePageSchema
+        serviceName="Shopify Virtual Assistant Services"
+        serviceDescription="ShopifyTasker provides expert Shopify virtual assistant services covering order management, store management, product listing, SEO, email marketing, and customer support. Experienced VAs for day-to-day Shopify operations."
+        pageUrl="https://www.shopifytasker.com/shopify-virtual-assistant-services"
+        breadcrumbs={[{ name: "Shopify Virtual Assistant Services", url: "https://www.shopifytasker.com/shopify-virtual-assistant-services" }]}
+        faqs={[
+          { question: "What does a Shopify virtual assistant do?", answer: "A ShopifyTasker Shopify virtual assistant handles day-to-day store operations including order processing, inventory management, product listing and optimization, customer support, SEO tasks, email marketing via Klaviyo, and social media management." },
+          { question: "How much does a Shopify virtual assistant cost?", answer: "ShopifyTasker Shopify virtual assistant services start from $5 per hour. Rates vary based on the tasks required and the hours needed. A custom quote is provided based on your specific requirements." },
+          { question: "Can a Shopify VA handle store management and marketing?", answer: "Yes. ShopifyTasker VAs are experienced across both operational and marketing tasks. They can manage your Shopify store, handle customer inquiries, run Klaviyo email campaigns, optimize product listings, and support your overall store growth." },
+        ]}
+      />
 
        <section className="relative flex items-center justify-center h-[60vh] md:h-[80vh] overflow-hidden">
         {/* Background image (optimized by Next.js) */}

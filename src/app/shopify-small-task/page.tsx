@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import CTAQuote from "../components/Cta-Quote";
+import ServicePageSchema from "../components/ServicePageSchema";
 
 export const metadata: Metadata = {
   title: "Shopify Small Tasks by Shopify Expert | Top-Rated Shopify Developer",
@@ -11,6 +12,17 @@ export const metadata: Metadata = {
 export default function smallTask() {
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-0">
+      <ServicePageSchema
+        serviceName="Shopify Small Tasks by Shopify Expert"
+        serviceDescription="ShopifyTasker handles small Shopify tasks starting at $20/hr including theme tweaks, bug fixes, cart page customization, third-party app setup, and speed enhancements. No upfront payment required."
+        pageUrl="https://www.shopifytasker.com/shopify-small-task"
+        breadcrumbs={[{ name: "Shopify Small Task", url: "https://www.shopifytasker.com/shopify-small-task" }]}
+        faqs={[
+          { question: "What counts as a small Shopify task?", answer: "Small Shopify tasks include theme tweaks, layout fixes, bug resolution, banner updates, product page edits, cart page customization, navigation changes, third-party app configuration, speed improvements, and any other focused change that does not require a full project." },
+          { question: "How much do small Shopify tasks cost?", answer: "Small Shopify tasks at ShopifyTasker start from $20. Simple fixes like text changes or image swaps may cost less. More involved tweaks with custom Liquid coding are quoted at a fixed price before work begins. No payment is required upfront." },
+          { question: "How quickly can ShopifyTasker complete a small Shopify task?", answer: "Most small Shopify tasks are completed within 24 to 48 hours. Urgent tasks can often be prioritized. A timeline is confirmed in the quote before work begins." },
+        ]}
+      />
 
        <section className="relative flex items-center justify-center h-[60vh] md:h-[70vh] overflow-hidden">
         {/* Background image (optimized by Next.js) */}
