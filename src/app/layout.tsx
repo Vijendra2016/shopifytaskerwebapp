@@ -9,7 +9,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
 import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
-import dynamic from 'next/dynamic'
 import SchemaOrganization from "./components/SchemaOrganization";
 import GlobalFaqSchema from "./components/GlobalFaqSchema";
 import Script from "next/script";
@@ -31,9 +30,7 @@ export const metadata: Metadata = {
   themeColor: '#d9e1eb',
 };
 
-const CrispWithNoSSR = dynamic(
-    () => import('./components/crisp')
-  )
+import RotatingWhatsAppLoader from './components/RotatingWhatsAppLoader';
 
 export default function RootLayout({
   children,
@@ -42,8 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <CrispWithNoSSR />
-            <GoogleTagManager gtmId="G-RH64BGD6GT" />
+      <GoogleTagManager gtmId="G-RH64BGD6GT" />
 
       <Head>
         <meta name="theme-color" content="#000000" />
@@ -87,6 +83,7 @@ export default function RootLayout({
       
       <Analytics/>
       <WelcomeCard/>
+      <RotatingWhatsAppLoader />
      
       </body>
       <GoogleAnalytics gaId="G-RH64BGD6GT" />
