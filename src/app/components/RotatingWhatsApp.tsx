@@ -47,7 +47,7 @@ export default function RotatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contact us on WhatsApp"
-      className="fixed bottom-6 right-6 z-50 w-[96px] h-[96px] group"
+      className="fixed bottom-6 right-6 z-30 w-[96px] h-[96px] group"
     >
       {/* Black circular background — does not rotate */}
       <div className="absolute inset-0 rounded-full bg-black" />
