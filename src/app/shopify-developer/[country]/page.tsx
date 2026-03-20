@@ -85,7 +85,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const canonicalUrl = `https://www.shopifytasker.com/shopify-developer/${params.country}`;
   return {
     title: `Shopify Developer ${meta.name} | ShopifyTasker`,
-    description: `Hire expert Shopify developers in ${meta.name}. Custom apps, theme builds, API integrations & Shopify Plus. ${meta.name}-specific compliance, payments & tax. Pay after delivery.`,
+    description: `Hire expert Shopify developers in ${meta.name}. Custom apps, themes & integrations. Local payments, tax & compliance. Pay after delivery — no upfront cost.`,
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title: `Shopify Developer ${meta.name} | ShopifyTasker`,

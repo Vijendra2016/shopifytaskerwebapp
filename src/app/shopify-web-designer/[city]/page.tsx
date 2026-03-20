@@ -26,8 +26,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     };
   }
   return {
-    title: `Hire a Shopify Web Designer in ${cityData.city}, ${cityData.state} | ShopifyTasker`,
-    description: `Looking for a top-rated Shopify web designer in ${cityData.city}, ${cityData.state}? ShopifyTasker builds custom Shopify stores, redesigns, and theme customizations. Pay only after work is done.`,
+    title: `Shopify Web Designer in ${cityData.city}, ${cityData.state} | ShopifyTasker`,
+    description: `Top-rated Shopify web designer in ${cityData.city}. Custom stores, redesigns & theme customization. Pay only after work is done — no upfront cost.`,
   };
 }
 

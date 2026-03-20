@@ -31,10 +31,22 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     };
   }
   const canonicalUrl = `https://www.shopifytasker.com/shopify-developer/${cityData.countrySlug}/${cityData.slug}`;
+  const countryCodeMap: Record<string, string> = {
+    australia: "en-AU", uk: "en-GB", canada: "en-CA", germany: "en-DE",
+    uae: "en-AE", singapore: "en-SG", netherlands: "en-NL",
+    france: "en-FR", "new-zealand": "en-NZ", ireland: "en-IE",
+  };
+  const langCode = countryCodeMap[cityData.countrySlug] ?? "en";
   return {
-    title: `Hire a Shopify Developer in ${cityData.city}, ${cityData.country} | ShopifyTasker`,
-    description: `Expert Shopify developers in ${cityData.city}, ${cityData.country}. Custom app development, Liquid theme builds, API integrations & Shopify Plus. ${cityData.currency}-configured. Pay after delivery.`,
-    alternates: { canonical: canonicalUrl },
+    title: `Shopify Developer in ${cityData.city} | ShopifyTasker`,
+    description: `Hire expert Shopify developers in ${cityData.city}. Custom apps, Liquid themes & API integrations. ${cityData.currency}-configured. Pay after delivery — no upfront cost.`,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        [langCode]: canonicalUrl,
+        "x-default": "https://www.shopifytasker.com/shopify-developer",
+      },
+    },
     openGraph: {
       title: `Shopify Developer in ${cityData.city}, ${cityData.country} | ShopifyTasker`,
       description: `Expert Shopify developers in ${cityData.city}. Custom development, ${cityData.currency}-configured, local payment integrations. No upfront payment.`,
@@ -344,7 +356,7 @@ export default async function IntlCityPage(props: Props) {
             ].map((item, i) => (
               <div key={i} className="border-b border-r border-white/[0.08] py-8 pr-8 last:border-r-0">
                 <p className="text-[11px] font-mono text-white/20 mb-5 tracking-widest">{String(i + 1).padStart(2, "0")}</p>
-                <h3 className="text-[16px] font-semibold text-white mb-3">{item.title}</h3>
+                <p className="text-[16px] font-semibold text-white mb-3">{item.title}</p>
                 <p className="text-[14px] text-white/55 leading-[1.7]">{item.body}</p>
               </div>
             ))}
@@ -372,7 +384,7 @@ export default async function IntlCityPage(props: Props) {
               <div key={i} className="flex gap-8 py-8 border-b border-white/[0.08]">
                 <span className="text-[11px] font-mono text-white/20 shrink-0 pt-1 tracking-widest">{step.num}</span>
                 <div>
-                  <h3 className="text-[16px] font-semibold text-white mb-2">{step.title}</h3>
+                  <p className="text-[16px] font-semibold text-white mb-2">{step.title}</p>
                   <p className="text-[14px] text-white/55 leading-[1.7]">{step.body}</p>
                 </div>
               </div>

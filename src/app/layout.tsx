@@ -10,7 +10,6 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import WelcomeCard from "./components/WelcomeCard";
 import { Viewport } from "next";
 import SchemaOrganization from "./components/SchemaOrganization";
-import GlobalFaqSchema from "./components/GlobalFaqSchema";
 import Script from "next/script";
 
 const geistSans = Geist({
@@ -30,6 +29,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.shopifytasker.com"),
   alternates: {
     canonical: "https://www.shopifytasker.com",
+    languages: {
+      "en": "https://www.shopifytasker.com",
+      "en-US": "https://www.shopifytasker.com",
+      "x-default": "https://www.shopifytasker.com",
+    },
   },
   openGraph: {
     title: "ShopifyTasker — Hire Shopify Experts. Pay After Work is Done.",
@@ -82,7 +86,6 @@ export default function RootLayout({
 
          {/* ✅ Organization Schema – MUST be inside body */}
         <SchemaOrganization />
-        <GlobalFaqSchema />
 
          
       

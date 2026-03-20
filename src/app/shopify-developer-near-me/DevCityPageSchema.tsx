@@ -22,7 +22,7 @@ export default function DevCityPageSchema({
         url: siteUrl,
         logo: {
           "@type": "ImageObject",
-          url: `${siteUrl}/logo.png`,
+          url: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/67ee05feb6ce7c89fe4deabf_blackgackground.png",
           width: 200,
           height: 60,
         },
@@ -34,9 +34,11 @@ export default function DevCityPageSchema({
           url: `${siteUrl}/contact`,
         },
         sameAs: [
+          "https://www.linkedin.com/company/shopifytasker/",
           "https://www.facebook.com/shopifytasker",
           "https://twitter.com/shopifytasker",
-          "https://www.linkedin.com/company/shopifytasker",
+          "https://www.instagram.com/shopifytasker",
+          "https://www.youtube.com/@shopifytasker",
         ],
       },
       {

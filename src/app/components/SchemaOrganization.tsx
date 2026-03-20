@@ -94,6 +94,10 @@ export default function SchemaOrganization() {
         },
         sameAs: [
           "https://www.linkedin.com/company/shopifytasker/",
+          "https://www.facebook.com/shopifytasker",
+          "https://twitter.com/shopifytasker",
+          "https://www.instagram.com/shopifytasker",
+          "https://www.youtube.com/@shopifytasker",
           "https://github.com/ShopifyTasker",
         ],
         contactPoint: {

@@ -35,7 +35,10 @@ export default function ExpertCityPageSchema({
         },
         sameAs: [
           "https://www.linkedin.com/company/shopifytasker/",
-          "https://github.com/ShopifyTasker",
+          "https://www.facebook.com/shopifytasker",
+          "https://twitter.com/shopifytasker",
+          "https://www.instagram.com/shopifytasker",
+          "https://www.youtube.com/@shopifytasker",
         ],
       },
       {

@@ -27,8 +27,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
   const canonicalUrl = `https://www.shopifytasker.com/shopify-developer-near-me/${cityData.slug}`;
   return {
-    title: `Hire a Shopify Developer in ${cityData.city}, ${cityData.state} | ShopifyTasker`,
-    description: `Looking for a Shopify developer in ${cityData.city}, ${cityData.state}? ShopifyTasker builds custom Shopify stores, apps, and integrations. 10+ years experience. Pay only after work is done.`,
+    title: `Shopify Developer in ${cityData.city}, ${cityData.state} | ShopifyTasker`,
+    description: `Expert Shopify developer in ${cityData.city}. Custom stores, apps & integrations. 10+ years Shopify experience. Pay only after work is done.`,
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title: `Shopify Developer in ${cityData.city}, ${cityData.state} | ShopifyTasker`,

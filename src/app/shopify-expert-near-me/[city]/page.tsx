@@ -28,8 +28,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
   const canonicalUrl = `https://www.shopifytasker.com/shopify-expert-near-me/${cityData.slug}`;
   return {
-    title: `Hire a Shopify Expert in ${cityData.city}, ${cityData.state} | ShopifyTasker`,
-    description: `Looking for a top-rated Shopify expert in ${cityData.city}, ${cityData.state}? ShopifyTasker covers store design, development, SEO, migrations, and ongoing support. Pay only after work is done.`,
+    title: `Shopify Expert in ${cityData.city}, ${cityData.state} | ShopifyTasker`,
+    description: `Top-rated Shopify expert in ${cityData.city}. Store design, development, SEO, migrations & ongoing support. Pay only after work is done.`,
     alternates: { canonical: canonicalUrl },
     openGraph: {
       title: `Shopify Expert in ${cityData.city}, ${cityData.state} | ShopifyTasker`,

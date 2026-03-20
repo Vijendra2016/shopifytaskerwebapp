@@ -149,6 +149,15 @@ export default function Footer() {
 
 
       </div>
+      {/* Social Media Links */}
+      <div className="max-w-7xl mx-auto mt-10 pt-8 border-t border-white/10 flex flex-wrap items-center gap-6">
+        <span className="text-xs uppercase tracking-widest text-white/40 font-semibold">Follow Us</span>
+        <a href="https://www.linkedin.com/company/shopifytasker/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/50 hover:text-white transition text-sm">LinkedIn</a>
+        <a href="https://www.facebook.com/shopifytasker" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/50 hover:text-white transition text-sm">Facebook</a>
+        <a href="https://twitter.com/shopifytasker" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="text-white/50 hover:text-white transition text-sm">X (Twitter)</a>
+        <a href="https://www.instagram.com/shopifytasker" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/50 hover:text-white transition text-sm">Instagram</a>
+        <a href="https://www.youtube.com/@shopifytasker" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-white/50 hover:text-white transition text-sm">YouTube</a>
+      </div>
       <br>
       </br>
        <GsapMarquee />
