@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import cities from '@/lib/states.json';
 import FAQSection , { FAQ }  from "@/app/components/FAQSectionind";
+import BreadcrumbSchema from '@/app/components/BreadcrumbSchema';
 
 
 
@@ -84,6 +85,7 @@ export default async function CityPage(props: Props) {
 
   return (
     <main>
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: `Shopify Expert in ${cityData.city}` }]} />
       <section className="relative h-[60vh] md:h-[80vh] overflow-hidden">
         <Image
           src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/685a270f4b652a6b3c6ec851_hustong%20-ca-shopify-developer.jpg"

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import GeoMessage from "../components/GeoMessage";
 import FaqBlacksmith from "../components/FaqBlacksmith";
 import Image from "next/image";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 
 const faqItems = [
@@ -75,6 +76,7 @@ export const metadata: Metadata = {
 export default function faq() {
   return (
     <main className="bg-black mx-auto  py-0 text-center pt-20" >
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "FAQ", href: "/faq" }]} />
       <section className="relative flex items-center justify-center h-[70vh] md:h-[60vh] overflow-hidden">
       {/* Background image */}
       <Image

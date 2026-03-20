@@ -4,6 +4,7 @@ import QuoteRequestForm from "@/app/components/QuoteRequestForm";
 import Image from "next/image";
 import { TfiArrowTopRight } from 'react-icons/tfi';
 import GeoMessage from "@/app/components/GeoMessage";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Impulse Theme Customization & Update Services | Shopify Experts",
   description:
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function Pricing() {
   return (
     <div className="newtest">
+    <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Shopify Themes", href: "/shopify-themes" }, { name: "Impulse Theme Customization", href: "/shopify-themes/impulse-customization-update" }]} />
     <div className="flex min-h-screen ">
         
       {/* Left Sidebar */}

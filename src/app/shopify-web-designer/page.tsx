@@ -3,6 +3,7 @@ import cities from "@/lib/cities.json";
 import { Metadata } from "next";
 import CreateTaskButton from "./CreateTaskButton";
 import ServicePageSchema from "../components/ServicePageSchema";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Hire a Shopify Web Designer Near You | ShopifyTasker",
@@ -52,6 +53,12 @@ const services = [
 export default function ShopifyWebDesignerPage() {
   return (
     <main className="bg-[#0a0a0a] text-white">
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Shopify Web Designer" },
+        ]}
+      />
       <ServicePageSchema
         serviceName="Shopify Web Designer"
         serviceDescription="ShopifyTasker provides top-rated Shopify web designers across the United States. Custom store design, theme customization, store redesigns, and mobile-first builds. Pay only after work is done."

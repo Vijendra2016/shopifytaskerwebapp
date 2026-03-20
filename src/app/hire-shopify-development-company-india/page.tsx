@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Hire Shopify Development Company in India | Affordable Experts",
   description:
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
 export default function smallTask() {
   return (
     <main className="container mx-auto px-4 py-10 text-center pt-20">
+        <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Hire Shopify Development Company India", href: "/hire-shopify-development-company-india" }]} />
         <h1>shopify development company india   </h1>
        
     <p>We can help you with shopify development company india </p>

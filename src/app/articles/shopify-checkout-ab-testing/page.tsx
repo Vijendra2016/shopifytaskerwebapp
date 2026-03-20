@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Metadata } from "next";
 import GeoMessage from "@/app/components/GeoMessage";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 export default function ArticlePagecheckout() {
   return (
     <article className="bg-[#eeeeee] text-black">
-      
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Articles", href: "/articles" }, { name: "Shopify Checkout A/B Testing", href: "/articles/shopify-checkout-ab-testing" }]} />
       {/* Hero Section */}
       <section className="w-full">
         <div className="mx-auto px-6 pt-60 pb-10">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import HowItWorks from "../components/HowItWorks";
 import IndustryGrid from "../components/IndustriesGrid";
 import GeoMessage from "../components/GeoMessage";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Shopify Development Services by Industry | ShopifyTasker",
   description:
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function pricing() {
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-20">
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Industries" }]} />
         <h1 className="text-3xl  text-black md:text-6xl font-regular">Industries we work  </h1>
       
           <p className="text-gray-600 text-lg">

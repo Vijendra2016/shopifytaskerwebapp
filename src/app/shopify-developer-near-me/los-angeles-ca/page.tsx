@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import TestimonialCardGrid from "@/app/components/TestimonialCardGrid";
 import Image from "next/image";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Shopify Developer in Los Angeles | Hire Shopify Expert in LA",
@@ -14,6 +15,7 @@ export default function city() {
   return (
 
     <main className="container mx-auto px-4 py-10 text-center pt-20">
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Shopify Developer Near Me", href: "/shopify-developer-near-me" }, { name: "Shopify Developer in Los Angeles, CA" }]} />
       
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27426128936!2d-118.69192063653582!3d34.020730499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c6e9d7d7df%3A0x9db6d9dc15b81d07!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1717431320001!5m2!1sen!2sus"

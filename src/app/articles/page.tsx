@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import ArticleCard from "./BlogCard";
 import HeaderSection from "./HeaderSection";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Shopify Articles & Tips | ShopifyTasker Blog",
@@ -34,6 +35,7 @@ export default function ArticlesPage() {
   return (
     
     <section className="bg-[#eeeeee]">
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Articles", href: "/articles" }]} />
       <HeaderSection />
   <div className="w-full mx-auto px-8">
     {articles.map((article) => (

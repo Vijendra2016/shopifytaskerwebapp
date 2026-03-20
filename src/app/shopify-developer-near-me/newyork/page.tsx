@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import TestimonialCardGrid from "@/app/components/TestimonialCardGrid";
 import Image from "next/image";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Shopify Developer in New York | Hire Shopify Expert",
   description:
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function city() {
   return (
     <main className="container mx-auto px-4 py-10 text-center pt-20">
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Shopify Developer Near Me", href: "/shopify-developer-near-me" }, { name: "Shopify Developer in New York" }]} />
 
         <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 lg:py-20 max-w-7xl mx-auto">
               {/* Left: Text content */}

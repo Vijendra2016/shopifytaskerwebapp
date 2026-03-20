@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import FAQSection , { FAQ }  from "@/app/components/FAQSectionind";
-
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 import GeoMessage from "@/app/components/GeoMessage";
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ const wigFaqs: FAQ[] = [
 export default function pricing() {
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-0">
-
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Industries", href: "/industries" }, { name: "Shopify Auto Parts Website", href: "/industries/shopify-auto-parts-website-design-development" }]} />
       <section className="relative flex items-center justify-center h-[60vh] md:h-[100vh] overflow-hidden">
         {/* Background image (optimized by Next.js) */}
         <Image

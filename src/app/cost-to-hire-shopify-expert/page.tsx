@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import CenteredSlider from "../components/CenteredSlider";
 import TestimonialCard from "../components/TestimonialCard";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Cost to Hire a Shopify Expert | Transparent Shopify Pricing",
   description:
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function pricing() {
   return (
     <main className="container mx-auto px-4 py-10 text-center pt-20">
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Cost to Hire a Shopify Expert", href: "/cost-to-hire-shopify-expert" }]} />
 <CenteredSlider/>
 <br>
 </br>

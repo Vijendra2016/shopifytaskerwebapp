@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import cities from "@/lib/cities.json";
 import TestimonialCard from "@/app/components/TestimonialCard";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 import CreateTaskButton from "./CreateTaskButton";
 
 export const metadata: Metadata = {
@@ -29,6 +30,12 @@ const groupedByState = usStates.reduce<Record<string, typeof cities>>((acc, stat
 export default function ShopifyDeveloperNearMe() {
   return (
     <main className="bg-[#0a0a0a] text-white">
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Shopify Developer Near Me" },
+        ]}
+      />
 
       {/* ─── HERO ─── */}
       <section className="px-6 pt-24 pb-20 md:pt-32 md:pb-28 border-b border-white/[0.08]">

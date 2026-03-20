@@ -25,9 +25,24 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "ShopifyTasker: Get Shopify Tasks Done by Top-Rated Shopify Shopify Experts",
-  description: "ShopifyTasker connects you with trusted Shopify experts for theme customization, store design, speed optimization, and ongoing support. Reliable help for every Shopify project—big or small.",
-  themeColor: '#d9e1eb',
+  title: "ShopifyTasker: Get Shopify Tasks Done by Top-Rated Shopify Experts",
+  description: "ShopifyTasker connects you with trusted Shopify experts for theme customization, store design, speed optimization, and ongoing support. Reliable help for every Shopify project — big or small.",
+  metadataBase: new URL("https://www.shopifytasker.com"),
+  alternates: {
+    canonical: "https://www.shopifytasker.com",
+  },
+  openGraph: {
+    title: "ShopifyTasker — Hire Shopify Experts. Pay After Work is Done.",
+    description: "Top-rated Shopify experts for store design, development, SEO, migrations, and ongoing support. Transparent pricing. No upfront payment.",
+    url: "https://www.shopifytasker.com",
+    siteName: "ShopifyTasker",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ShopifyTasker — Hire Shopify Experts",
+    description: "Top-rated Shopify experts for design, development & SEO. Pay after delivery.",
+  },
 };
 
 import RotatingWhatsAppLoader from './components/RotatingWhatsAppLoader';

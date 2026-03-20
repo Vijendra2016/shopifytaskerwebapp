@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import GeoMessage from "@/app/components/GeoMessage";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Shopify Developer in Austin, TX | Hire Local Shopify Expert",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function smallTask() {
   return (
     <main className="container bg-[#fefdf9] mx-auto px-0 py-0 text-center pt-0">
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Shopify Developer Near Me", href: "/shopify-developer-near-me" }, { name: "Shopify Developer in Austin, TX" }]} />
 
        <section className="relative flex items-center justify-center h-[60vh] md:h-[80vh] overflow-hidden">
         {/* Background image (optimized by Next.js) */}

@@ -4,6 +4,7 @@ import intlCities from "@/lib/international-cities.json";
 import Link from "next/link";
 import TestimonialCard from "@/app/components/TestimonialCard";
 import CreateTaskButton from "../CreateTaskButton";
+import BreadcrumbSchema from "@/app/components/BreadcrumbSchema";
 
 type Props = {
   params: Promise<{ country: string }>;
@@ -106,7 +107,7 @@ export default async function CountryPage(props: Props) {
 
   return (
     <main className="bg-[#0a0a0a] text-white">
-
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Shopify Developer", href: "/shopify-developer" }, { name: meta.name }]} />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="border-b border-white/[0.08] px-6 py-3">
         <ol className="max-w-7xl mx-auto flex items-center gap-2 text-[13px] text-white/40">
