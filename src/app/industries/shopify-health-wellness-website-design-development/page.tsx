@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Launch, redesign or migrate your health & wellness Shopify store. Expert Shopify design, development, subscriptions and monthly support.",
   alternates: {
     canonical:
-      "https://shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
+      "https://www.shopifytasker.com/industries/shopify-health-wellness-website-design-development/",
   },
   openGraph: {
     type: "website",

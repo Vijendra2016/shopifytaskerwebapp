@@ -33,12 +33,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       title: 'City Not Found | ShopifyTasker',
       description: 'This city page is not available.',
       alternates: {
-        canonical: "https://shopifytasker.com/shopify-expert-near-me",
+        canonical: "https://www.shopifytasker.com/shopify-expert-near-me",
       },
     };
   }
 
-  const canonicalUrl = `https://shopifytasker.com/shopify-expert-near-me/${city}`;
+  const canonicalUrl = `https://www.shopifytasker.com/shopify-expert-near-me/${city}`;
 
   return {
     title: `Hire Top Rated Shopify Expert in ${cityData.city} | ShopifyTasker`,
