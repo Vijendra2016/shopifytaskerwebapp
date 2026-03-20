@@ -155,7 +155,6 @@ export default async function IntlCityPage(props: Props) {
     <main className="bg-[#0a0a0a] text-white">
       <IntlCityPageSchema
         city={cityData.city}
-        region={cityData.region}
         country={cityData.country}
         countrySlug={cityData.countrySlug}
         slug={cityData.slug}

@@ -1,6 +1,5 @@
 export default function IntlCityPageSchema({
   city,
-  region,
   country,
   countrySlug,
   slug,
@@ -8,7 +7,6 @@ export default function IntlCityPageSchema({
   faqs,
 }: {
   city: string;
-  region: string;
   country: string;
   countrySlug: string;
   slug: string;
