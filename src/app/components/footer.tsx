@@ -44,9 +44,8 @@ export default function Footer() {
         {/* Column 2 */}
         <div className="flex flex-col space-y-2">
           <h6 className=" text-sm md:text-sm text-base  uppercase font-extrabold">Our Services</h6>
-           <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition">
-           store setup and development
-          </button>
+          <Link href="/shopify-store-setup">store setup and development</Link>
+           
            <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
            Platform migration
           </button>

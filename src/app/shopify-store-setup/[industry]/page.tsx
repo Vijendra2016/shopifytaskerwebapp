@@ -2,12 +2,15 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { industries, getIndustry, industrySlug } from "@/lib/shopify-store-setup-industries";
+import { getReviews } from "@/lib/industry-reviews";
 import CreateTaskButton from "../CreateTaskButton";
-import TestimonialCard from "@/app/components/TestimonialCard";
+
 import GsapScrollReveal from "../GsapScrollReveal";
 import GsapStaggerReveal from "../GsapStaggerReveal";
 import GsapCountUp from "../GsapCountUp";
 import IndustrySetupMarquee from "../IndustrySetupMarquee";
+import IndustryReviewsSwiper from "../IndustryReviewsSwiper";
+import GeoPriceBadge from "../GeoPriceBadge";
 import type {
   WithContext,
   Service,
@@ -47,6 +50,8 @@ export default async function IndustrySetupPage(props: Props) {
   const websiteId = "https://www.shopifytasker.com/#website";
   const pageUrl = `https://www.shopifytasker.com/shopify-store-setup/${data.slug}/`;
 
+  const reviewData = getReviews(data.slug);
+
   const combinedJsonLd = [
     { "@context": "https://schema.org", "@type": "WebSite", "@id": websiteId, url: "https://www.shopifytasker.com/", name: "ShopifyTasker", publisher: { "@id": orgId } } as WithContext<WebSite>,
     { "@context": "https://schema.org", "@type": "Organization", "@id": orgId, name: "ShopifyTasker", url: "https://www.shopifytasker.com/" } as WithContext<Organization>,
@@ -64,6 +69,37 @@ export default async function IndustrySetupPage(props: Props) {
       "@context": "https://schema.org", "@type": "FAQPage", "@id": `${pageUrl}#faq`,
       mainEntity: data.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
     } as WithContext<FAQPage>,
+    ...(reviewData ? [{
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": `${pageUrl}#reviewed-service`,
+      name: `Shopify Store Setup for ${data.name}`,
+      provider: { "@id": orgId },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: reviewData.aggregateRating.toFixed(1),
+        reviewCount: reviewData.reviewCount,
+        bestRating: "5",
+        worstRating: "1",
+      },
+      review: reviewData.reviews.map((r) => {
+        const reviewDate = new Date();
+        reviewDate.setDate(reviewDate.getDate() - r.daysAgo);
+        return {
+          "@type": "Review",
+          author: { "@type": "Person", name: r.name },
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: r.rating.toString(),
+            bestRating: "5",
+            worstRating: "1",
+          },
+          name: r.title,
+          reviewBody: r.body,
+          datePublished: reviewDate.toISOString().split("T")[0],
+        };
+      }),
+    }] : []),
   ];
 
   const relatedIndustries = industries.filter((i) => i.slug !== data.slug).slice(0, 6);
@@ -137,6 +173,9 @@ export default async function IndustrySetupPage(props: Props) {
               <span>1-hour response</span>
               <span className="text-white/10">—</span>
               <span>Pay after delivery</span>
+            </div>
+            <div className="mt-5">
+              <GeoPriceBadge />
             </div>
           </GsapScrollReveal>
         </div>
@@ -321,8 +360,10 @@ export default async function IndustrySetupPage(props: Props) {
         </div>
       </section>
 
-      {/* ─── TESTIMONIAL ──────────────────────────────────────────────── */}
-      <TestimonialCard />
+      {/* ─── REVIEWS ──────────────────────────────────────────────────── */}
+      {reviewData && (
+        <IndustryReviewsSwiper data={reviewData} industryName={data.name} />
+      )}
 
       {/* ─── CTA BAND ─────────────────────────────────────────────────── */}
       <section className="bg-[#DFF976] px-6 md:px-14 py-14">
@@ -346,6 +387,7 @@ export default async function IndustrySetupPage(props: Props) {
         </div>
       </section>
 
+      
       {/* ─── FAQ ──────────────────────────────────────────────────────── */}
       <section className="bg-white px-6 md:px-14 py-20">
         <div className="max-w-6xl mx-auto grid md:grid-cols-[280px_1fr] gap-16 items-start">
