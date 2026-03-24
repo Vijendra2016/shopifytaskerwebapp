@@ -71,10 +71,13 @@ export default async function IndustrySetupPage(props: Props) {
     } as WithContext<FAQPage>,
     ...(reviewData ? [{
       "@context": "https://schema.org",
-      "@type": "Service",
-      "@id": `${pageUrl}#reviewed-service`,
-      name: `Shopify Store Setup for ${data.name}`,
-      provider: { "@id": orgId },
+      "@type": "LocalBusiness",
+      "@id": `${pageUrl}#business`,
+      name: "ShopifyTasker",
+      url: "https://www.shopifytasker.com/",
+      description: `Shopify store setup and development services for ${data.name} businesses.`,
+      priceRange: "$$",
+      areaServed: "Worldwide",
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: reviewData.aggregateRating.toFixed(1),
