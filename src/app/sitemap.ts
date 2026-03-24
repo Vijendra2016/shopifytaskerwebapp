@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import path from 'path'
 import { promises as fs } from 'fs'
+import { industries } from '@/lib/shopify-store-setup-industries'
 
 type City = {
   slug: string
@@ -46,7 +47,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Main service pages
     { url: `${baseUrl}/shopify-expert-services`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
     { url: `${baseUrl}/shopify-store-design`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
-    { url: `${baseUrl}/shopify-store-setup`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
     { url: `${baseUrl}/shopify-website-redesign-service`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
     { url: `${baseUrl}/shopify-plus-development-agency`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
     { url: `${baseUrl}/shopify-seo`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
@@ -67,6 +67,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Themes
     { url: `${baseUrl}/shopify-themes`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
     { url: `${baseUrl}/shopify-themes/impulse-customization-update`, lastModified: new Date(), priority: 0.7, changeFrequency: 'monthly' },
+
+    // Shopify Store Setup hub (already present below — high priority)
+    { url: `${baseUrl}/shopify-store-setup/`, lastModified: new Date(), priority: 0.9, changeFrequency: 'weekly' },
 
     // Industries hub + sub-pages
     { url: `${baseUrl}/industries`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
@@ -146,11 +149,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: 'monthly' as const,
   }))
 
+  // ─── SHOPIFY STORE SETUP — INDUSTRY PAGES ──────────────────────────────────
+  // Dynamically generated from the industries data file.
+  // Adding a new industry to /src/lib/shopify-store-setup-industries.ts
+  // automatically includes it here — no manual sitemap edits needed.
+  const storeSetupIndustryPages: MetadataRoute.Sitemap = industries.map((industry) => ({
+    url: `${baseUrl}/shopify-store-setup/${industry.slug}/`,
+    lastModified: new Date(),
+    priority: 0.85,
+    changeFrequency: 'monthly' as const,
+  }))
+
   return [
     ...staticPages,
     ...expertNearMePages,
     ...webDesignerPages,
     ...developerNearMePages,
     ...intlCityPages,
+    ...storeSetupIndustryPages,
   ]
 }
