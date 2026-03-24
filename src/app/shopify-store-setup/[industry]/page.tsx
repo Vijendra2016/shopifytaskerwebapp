@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { industries, getIndustry, industrySlug } from "@/lib/shopify-store-setup-industries";
 import { getReviews } from "@/lib/industry-reviews";
+import { getEnhancement } from "@/lib/industry-enhancements";
 import CreateTaskButton from "../CreateTaskButton";
 
 import GsapScrollReveal from "../GsapScrollReveal";
@@ -51,6 +52,7 @@ export default async function IndustrySetupPage(props: Props) {
   const pageUrl = `https://www.shopifytasker.com/shopify-store-setup/${data.slug}/`;
 
   const reviewData = getReviews(data.slug);
+  const enhancement = getEnhancement(data.slug);
 
   const combinedJsonLd = [
     { "@context": "https://schema.org", "@type": "WebSite", "@id": websiteId, url: "https://www.shopifytasker.com/", name: "ShopifyTasker", publisher: { "@id": orgId } } as WithContext<WebSite>,
@@ -137,14 +139,14 @@ export default async function IndustrySetupPage(props: Props) {
           {/* Headline */}
           <GsapScrollReveal y={50} delay={0.05}>
             <h1 className="text-[clamp(2.4rem,6vw,5.5rem)] font-bold leading-[1.05] tracking-tight mb-6 max-w-4xl">
-              {data.headline}
+              {enhancement?.heroHeadline ?? data.headline}
             </h1>
           </GsapScrollReveal>
 
           {/* Subheadline */}
           <GsapScrollReveal y={30} delay={0.12}>
             <p className="text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed mb-3">
-              {data.subheadline}
+              {enhancement?.heroSub ?? data.subheadline}
             </p>
             <p className="text-white/30 text-sm max-w-xl leading-relaxed mb-10">
               Shopify website setup &amp; development for {data.name.toLowerCase()} businesses — end-to-end, fixed price, pay after delivery.
@@ -242,6 +244,35 @@ export default async function IndustrySetupPage(props: Props) {
         </div>
       </section>
 
+      {/* ─── CHALLENGES ───────────────────────────────────────────────── */}
+      {enhancement && (
+        <section className="bg-white px-6 md:px-14 py-20 border-t border-gray-100">
+          <div className="max-w-6xl mx-auto">
+            <GsapScrollReveal>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-gray-400 mb-4 font-medium">Common problems we solve</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-3">
+                The real challenges of selling {data.name.toLowerCase()} online
+              </h2>
+              <p className="text-gray-400 max-w-xl mb-14 text-base leading-relaxed">
+                Generic Shopify setups miss these. We&apos;ve built for {data.name.toLowerCase()} businesses specifically — so we solve these before they become problems.
+              </p>
+            </GsapScrollReveal>
+
+            <GsapStaggerReveal className="grid sm:grid-cols-2 gap-px bg-gray-100 border border-gray-100 rounded-2xl overflow-hidden">
+              {enhancement.challenges.map((c, idx) => (
+                <div key={c.title} className="bg-white p-8 hover:bg-gray-50 transition-colors">
+                  <span className="text-[10px] font-bold text-gray-300 uppercase tracking-widest mb-4 block">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-black font-bold text-base mb-3 leading-snug">{c.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{c.desc}</p>
+                </div>
+              ))}
+            </GsapStaggerReveal>
+          </div>
+        </section>
+      )}
+
       {/* ─── WHY SHOPIFY ──────────────────────────────────────────────── */}
       <section className="bg-[#0a0a0a] text-white px-6 md:px-14 py-20">
         <div className="max-w-6xl mx-auto">
@@ -317,6 +348,67 @@ export default async function IndustrySetupPage(props: Props) {
           <GsapScrollReveal className="mt-10 text-center">
             <CreateTaskButton className="inline-flex items-center gap-2 bg-[#DFF976] text-black px-8 py-4 rounded-full font-semibold text-base hover:bg-[#d4f065] transition-colors cursor-pointer">
               Start My Store Setup
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </CreateTaskButton>
+          </GsapScrollReveal>
+        </div>
+      </section>
+
+      {/* ─── COMPARISON TABLE ─────────────────────────────────────────── */}
+      <section className="bg-[#0a0a0a] text-white px-6 md:px-14 py-20">
+        <div className="max-w-6xl mx-auto">
+          <GsapScrollReveal>
+            <p className="text-[10px] uppercase tracking-[0.2em] text-white/30 mb-4 font-medium">Why ShopifyTasker</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
+              ShopifyTasker vs Fiverr &amp; Upwork developers
+            </h2>
+            <p className="text-white/40 max-w-xl mb-12 text-base leading-relaxed">
+              Anyone can list themselves as a Shopify expert on Fiverr or Upwork. Very few understand what a {data.name.toLowerCase()} business actually needs to convert and grow.
+            </p>
+          </GsapScrollReveal>
+
+          <GsapScrollReveal>
+            <div className="overflow-x-auto rounded-2xl border border-white/10">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-white/10">
+                    <th className="text-left px-6 py-4 text-white/30 font-medium text-xs uppercase tracking-widest w-1/2">Feature</th>
+                    <th className="text-center px-6 py-4 text-white/30 font-medium text-xs uppercase tracking-widest">Fiverr / Upwork</th>
+                    <th className="text-center px-6 py-4 text-[#DFF976] font-medium text-xs uppercase tracking-widest">ShopifyTasker</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ...(enhancement?.comparisonRows ?? []),
+                    { label: `${data.name} industry knowledge` },
+                    { label: "Pay after delivery — zero upfront risk" },
+                    { label: "Fixed-price quote — no hourly billing surprises" },
+                    { label: "1-hour response time (no timezone delays)" },
+                    { label: "10+ years dedicated Shopify expertise" },
+                    { label: "Ongoing support included after launch" },
+                    { label: "No disappearing after delivery" },
+                    { label: "No fake reviews or inflated portfolios" },
+                  ].map((row, idx) => (
+                    <tr key={row.label} className={`border-b border-white/5 last:border-0 ${idx < (enhancement?.comparisonRows.length ?? 0) ? "bg-white/[0.03]" : ""}`}>
+                      <td className="px-6 py-4 text-white/70">{row.label}</td>
+                      <td className="px-6 py-4 text-center">
+                        <span className="text-red-400/70 text-base">✕</span>
+                      </td>
+                      <td className="px-6 py-4 text-center">
+                        <span className="text-[#DFF976] text-base">✓</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </GsapScrollReveal>
+
+          <GsapScrollReveal className="mt-10 text-center">
+            <CreateTaskButton className="inline-flex items-center gap-2 bg-[#DFF976] text-black px-8 py-4 rounded-full font-semibold text-base hover:bg-[#d4f065] transition-colors cursor-pointer">
+              Work With ShopifyTasker
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
