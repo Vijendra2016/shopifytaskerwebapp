@@ -165,9 +165,9 @@ export const industries: IndustryData[] = [
         a: "We provide a recorded walkthrough video showing you how to manage orders, add products, and update content. Ongoing support retainers are also available.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Florists & Flower Shops | ShopifyTasker",
+    metaTitle: "Florist & Flower Shop Shopify Setup | ShopifyTasker",
     metaDescription:
-      "Get your Shopify flower shop set up by experts. Local delivery zones, same-day cutoffs, bouquet subscriptions & full launch ready in 3–5 days. Pay after delivery.",
+      "Shopify setup for florists. Delivery zones, bouquet subscriptions & same-day cutoffs. Live in 3–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -317,9 +317,9 @@ export const industries: IndustryData[] = [
         a: "3–5 business days for stores with up to 100 products. Larger catalogues may take up to 7–10 days.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Kids Fashion & Children's Clothing | ShopifyTasker",
+    metaTitle: "Shopify Store Setup for Kids Fashion Brands | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for kids fashion brands. Size guides, age collections, variant management & gift options. Launch in 3–5 days. Pay after delivery.",
+      "Shopify setup for kids fashion brands. Age collections, size guides & gift options. Launch in 3–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -469,9 +469,9 @@ export const industries: IndustryData[] = [
         a: "A standard setup takes 2–4 business days depending on product count and the features required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Handmade Soap & Natural Beauty | ShopifyTasker",
+    metaTitle: "Handmade Soap & Beauty Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for handmade soap and natural beauty brands. Ingredient display, bundles, wholesale & subscriptions. Launch in 2–4 days. Pay after delivery.",
+      "Shopify setup for handmade soap brands. Ingredient display, bundles & subscriptions. Launch in 2–4 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -621,9 +621,9 @@ export const industries: IndustryData[] = [
         a: "Typically 3–6 business days depending on product count, personalisation complexity, and any custom functionality required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Custom Jewellery & Accessories | ShopifyTasker",
+    metaTitle: "Custom Jewellery Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for custom & fine jewellery. Personalisation fields, engraving, metal variants & luxury checkout. Launch in 3–6 days. Pay after delivery.",
+      "Shopify setup for jewellery brands. Personalisation fields, engraving & luxury checkout. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -773,9 +773,9 @@ export const industries: IndustryData[] = [
         a: "3–5 business days for a standard pet store setup. Larger catalogues or complex subscription setups may take up to 7 days.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Pet Stores & Pet Supply Brands | ShopifyTasker",
+    metaTitle: "Shopify Store Setup for Pet Stores & Brands | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for pet stores. Auto-ship subscriptions, breed filtering, bulk discounts & loyalty programmes. Launch in 3–5 days. Pay after delivery.",
+      "Shopify setup for pet stores. Auto-ship subscriptions, breed filtering & bulk discounts. Launch in 3–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -925,9 +925,9 @@ export const industries: IndustryData[] = [
         a: "4–7 business days depending on catalogue size and whether freight or custom shipping logic is required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Home Decor & Interior Brands | ShopifyTasker",
+    metaTitle: "Shopify Store Setup for Home Decor Brands | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for home decor and interiors brands. Room collections, lifestyle themes, freight shipping & wishlist. Launch in 4–7 days. Pay after delivery.",
+      "Shopify setup for home decor brands. Room collections, lifestyle themes & wishlist. Launch in 4–7 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1077,9 +1077,9 @@ export const industries: IndustryData[] = [
         a: "3–5 business days for a standard food store. Subscription, wholesale, or cold-chain requirements may extend this to 7 days.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Food & Beverage Brands | ShopifyTasker",
+    metaTitle: "Shopify Store Setup for Food & Drink Brands | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for food and drink brands. Allergen info, subscription boxes, cold-chain shipping & wholesale. Launch in 3–5 days. Pay after delivery.",
+      "Shopify setup for food brands. Allergen info, subscriptions & cold-chain shipping. Launch in 3–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1229,9 +1229,9 @@ export const industries: IndustryData[] = [
         a: "3–6 business days depending on catalogue size, variant complexity, and the number of additional apps required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Fashion & Clothing Brands | ShopifyTasker",
+    metaTitle: "Fashion & Clothing Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for fashion brands. Size guides, BNPL, lookbooks, influencer codes & returns portal. Launch in 3–6 days. Pay after delivery.",
+      "Shopify setup for fashion brands. Size guides, lookbooks & returns portal. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1381,9 +1381,9 @@ export const industries: IndustryData[] = [
         a: "3–6 business days depending on catalogue size and the number of compliance, subscription, and loyalty features required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Health & Wellness Brands | ShopifyTasker",
+    metaTitle: "Health & Wellness Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for health & wellness brands. Subscribe & save, compliance copy, bundle stacks & loyalty. Launch in 3–6 days. Pay after delivery.",
+      "Shopify setup for health & wellness brands. Subscribe & save, bundles & compliance copy. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1533,9 +1533,9 @@ export const industries: IndustryData[] = [
         a: "3–5 business days for a standard bakery setup. Custom order form complexity or large seasonal catalogues may extend this.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Bakeries & Confectionery | ShopifyTasker",
+    metaTitle: "Bakeries & Sweet Shops Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for bakeries and sweet shops. Custom cake forms, date picker, allergen info & click and collect. Launch in 3–5 days. Pay after delivery.",
+      "Shopify setup for bakeries. Custom cake forms, allergen info & click and collect. Launch in 3–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1685,9 +1685,9 @@ export const industries: IndustryData[] = [
         a: "2–4 business days for a standard candle store. Subscription or custom personalisation features may extend this slightly.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Candle & Home Fragrance Brands | ShopifyTasker",
+    metaTitle: "Candles & Fragrance Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for candle brands. Scent filtering, candle club subscriptions, custom labels & gift bundles. Launch in 2–4 days. Pay after delivery.",
+      "Shopify setup for candle brands. Scent filtering, subscriptions & gift bundles. Launch in 2–4 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1837,9 +1837,9 @@ export const industries: IndustryData[] = [
         a: "3–6 business days depending on product catalogue size and the number of personalisation features required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Skincare & Beauty Brands | ShopifyTasker",
+    metaTitle: "Skincare & Beauty Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for skincare & beauty brands. Ingredient transparency, skin type filtering, routine builder & refill subscriptions. Launch in 3–6 days.",
+      "Shopify setup for skincare brands. Ingredient pages, skin quiz & refill subscriptions. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1989,9 +1989,9 @@ export const industries: IndustryData[] = [
         a: "3–6 business days depending on the complexity of personalisation, booking features, and catalogue size.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Wedding & Bridal Businesses | ShopifyTasker",
+    metaTitle: "Wedding & Bridal Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for wedding businesses. Personalised stationery, bespoke orders, consultation booking & elegant design. Launch in 3–6 days. Pay after delivery.",
+      "Shopify setup for wedding brands. Bespoke orders, consultation booking & elegant design. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2143,7 +2143,7 @@ export const industries: IndustryData[] = [
     ],
     metaTitle: "Shopify Store Setup for Coffee & Tea Brands | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for coffee and tea brands. Bean subscriptions, grind variants, tasting notes, wholesale & gift sets. Launch in 2–4 days. Pay after delivery.",
+      "Shopify setup for coffee and tea brands. Bean subscriptions, grind variants & gift sets. Launch in 2–4 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2293,9 +2293,9 @@ export const industries: IndustryData[] = [
         a: "3–6 business days depending on catalogue size, freight configuration complexity, and trade/wholesale requirements.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Sports & Fitness Equipment | ShopifyTasker",
+    metaTitle: "Sports & Fitness Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for sports and fitness brands. Equipment specs, heavy goods shipping, bundle deals & wholesale. Launch in 3–6 days. Pay after delivery.",
+      "Shopify setup for sports and fitness brands. Equipment specs, bundle deals & wholesale. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2444,9 +2444,9 @@ export const industries: IndustryData[] = [
         a: "2–5 business days depending on catalogue size and whether print-on-demand or original artwork workflows are required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Artists, Prints & Photography | ShopifyTasker",
+    metaTitle: "Art Prints & Photography Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for artists and printmakers. Limited editions, POD integration, frame options & certificates of authenticity. Launch in 2–5 days.",
+      "Shopify setup for artists. Limited editions, POD integration & framing options. Launch in 2–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2596,9 +2596,9 @@ export const industries: IndustryData[] = [
         a: "3–5 business days for a standard baby store setup.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Baby & Nursery Products | ShopifyTasker",
+    metaTitle: "Baby & Nursery Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for baby and nursery brands. Age-stage filtering, safety certifications, gift registry & nursery bundles. Launch in 3–5 days.",
+      "Shopify setup for baby brands. Age filtering, safety certs & gift registry. Launch in 3–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2750,7 +2750,7 @@ export const industries: IndustryData[] = [
     ],
     metaTitle: "Shopify Store Setup for Hair Extensions | ShopifyTasker",
     metaDescription:
-      "Expert Shopify store setup for hair extension brands. Shade matching, texture filtering, length variants, bundle kits & before/after gallery. Launch in 3–5 days.",
+      "Shopify setup for hair extensions. Shade matching, bundle kits & before/after gallery. Launch in 3–5 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2900,9 +2900,9 @@ export const industries: IndustryData[] = [
         a: "3–6 business days depending on catalogue size and whether custom order workflows are required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Hair Wigs & Hairpieces | ShopifyTasker",
+    metaTitle: "Hair Wigs & Hairpieces Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify store setup for wig brands. Cap size filtering, lace type, density variants, colour customisation & custom order workflow. Launch in 3–6 days.",
+      "Shopify setup for wig brands. Cap size filtering, lace type & custom order flow. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -3052,9 +3052,9 @@ export const industries: IndustryData[] = [
         a: "3–6 business days depending on catalogue size, fitment complexity, and whether trade/wholesale features are required.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Car & Auto Accessories | ShopifyTasker",
+    metaTitle: "Car & Auto Accessories Shopify Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify store setup for car and auto accessory brands. Vehicle filtering, fitment guides, tech specs, subscriptions & wholesale. Launch in 3–6 days.",
+      "Shopify setup for car accessory brands. Vehicle filtering, fitment guides & wholesale. Launch in 3–6 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -3206,7 +3206,7 @@ export const industries: IndustryData[] = [
     ],
     metaTitle: "Shopify B2B & Wholesale Store Setup | ShopifyTasker",
     metaDescription:
-      "Expert Shopify B2B and wholesale store setup. Tiered pricing, MOQ, trade applications, net payment terms & bulk order forms. Launch in 4–7 days. Pay after delivery.",
+      "Shopify B2B store setup. Tiered pricing, MOQ rules & trade account portal. Launch in 4–7 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -3356,9 +3356,9 @@ export const industries: IndustryData[] = [
         a: "4–7 business days depending on the complexity of trade pricing, compliance requirements, and recurring delivery workflows.",
       },
     ],
-    metaTitle: "Shopify Store Setup for Food Supply & Distribution | ShopifyTasker",
+    metaTitle: "Shopify Store Setup for Food Supply Brands | ShopifyTasker",
     metaDescription:
-      "Expert Shopify setup for food supply businesses. Trade portal, bulk pricing, recurring deliveries, allergen compliance & cold chain shipping. Launch in 4–7 days.",
+      "Shopify setup for food supply brands. Trade portal, bulk pricing & allergen compliance. Launch in 4–7 days. Pay after delivery.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -3510,7 +3510,7 @@ export const industries: IndustryData[] = [
     ],
     metaTitle: "Shopify Store Setup for Candle Businesses | ShopifyTasker",
     metaDescription:
-      "Expert Shopify store setup for candle businesses. Scent collections, subscription clubs, corporate gifting, private label wholesale & personalised labels. Launch in 2–4 days.",
+      "Shopify setup for candle businesses. Subscriptions, corporate gifting & custom labels. Launch in 2–4 days. Pay after delivery.",
   },
 ];
 
