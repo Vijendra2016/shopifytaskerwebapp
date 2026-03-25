@@ -36,7 +36,14 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   return {
     title: data.metaTitle,
     description: data.metaDescription,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        "en": url,
+        "en-US": url,
+        "x-default": url,
+      },
+    },
     openGraph: { type: "website", siteName: "ShopifyTasker", url, title: data.metaTitle, description: data.metaDescription },
     twitter: { card: "summary_large_image", title: data.metaTitle, description: data.metaDescription },
   };
@@ -112,7 +119,7 @@ export default async function IndustrySetupPage(props: Props) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@graph": combinedJsonLd }) }} />
 
       {/* ─── BREADCRUMB ──────────────────────────────────────────────── */}
       <nav className="bg-white border-b border-gray-100 px-6 md:px-14 py-3">
@@ -464,9 +471,9 @@ export default async function IndustrySetupPage(props: Props) {
       <section className="bg-[#DFF976] px-6 md:px-14 py-14">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <GsapScrollReveal>
-            <h2 className="text-2xl md:text-4xl font-bold text-black leading-tight">
+            <p className="text-2xl md:text-4xl font-bold text-black leading-tight">
               Ready to launch your<br />{data.name} store?
-            </h2>
+            </p>
             <p className="text-black/60 mt-2 text-base">
               Fixed-price quote · {data.stats[0]?.value} delivery · Pay after completion
             </p>
@@ -524,9 +531,9 @@ export default async function IndustrySetupPage(props: Props) {
             <p className="text-[10px] uppercase tracking-[0.2em] text-white/30 mb-8 font-medium">
               {data.name} · Shopify Store Setup
             </p>
-            <h2 className="text-[clamp(2.4rem,5.5vw,5rem)] font-bold leading-[1.05] tracking-tight mb-6 max-w-4xl mx-auto">
+            <p className="text-[clamp(2.4rem,5.5vw,5rem)] font-bold leading-[1.05] tracking-tight mb-6 max-w-4xl mx-auto">
               Your {data.name} store<br />could be live in days.
-            </h2>
+            </p>
             <p className="text-white/40 text-lg mb-10 max-w-md mx-auto leading-relaxed">
               Expert setup, fixed price. We handle every detail so you can focus on your business.
             </p>

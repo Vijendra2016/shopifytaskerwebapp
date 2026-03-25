@@ -57,7 +57,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "custom-jewellery": {
-    heroHeadline: "Shopify for Custom Jewellery — Built for Personalisation & Premium Buyers",
+    heroHeadline: "Shopify for Custom Jewellery — Built for Premium Buyers",
     heroSub: "Engraving fields, ring size selectors, bespoke commission flows and high-end design — so your store converts the way a premium jewellery brand deserves.",
     challenges: [
       { title: "Personalisation fields at checkout are deceptively complex", desc: "Engraving text, ring size, metal choice, stone selection — each needs its own input with validation and clear pricing. Generic Shopify setups get this wrong. We build it properly." },
@@ -72,7 +72,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "pet-store": {
-    heroHeadline: "Pet Store Shopify Setup Built for Subscriptions, Bundles & Repeat Buyers",
+    heroHeadline: "Pet Store Shopify — Subscriptions, Bundles & Repeat Buyers",
     heroSub: "Auto-ship food subscriptions, breed-specific filtering, vet-recommended badges and bundle deals — the features pet store owners actually need to grow.",
     challenges: [
       { title: "Auto-ship subscriptions are complex to configure correctly", desc: "Pet food subscriptions with multiple billing frequencies, skip/pause controls and a customer portal aren't available by default. We set up the full auto-ship system so it just works." },
@@ -102,7 +102,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "food-beverage": {
-    heroHeadline: "Shopify for Food & Beverage — Built for Subscriptions, Bundles & Compliance",
+    heroHeadline: "Shopify for Food & Beverage — Subscriptions & Compliance",
     heroSub: "Subscription boxes, allergen filtering, hamper builders and international shipping — everything a food brand needs to sell online correctly from day one.",
     challenges: [
       { title: "Allergen and dietary filtering is a legal and UX requirement", desc: "Customers with dietary requirements need to quickly identify safe products. Without proper allergen labelling and dietary filters — vegan, gluten-free, nut-free — you face both a compliance risk and lost sales." },
@@ -132,7 +132,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "health-wellness": {
-    heroHeadline: "Shopify for Health & Wellness — Built for Trust, Compliance & Subscriptions",
+    heroHeadline: "Shopify for Health & Wellness — Trust, Compliance & Growth",
     heroSub: "Subscribe-and-save, product recommendation quizzes, compliance-ready product pages and a design that communicates trust — before a customer reads a word.",
     challenges: [
       { title: "Supplement pages need compliance-ready structure", desc: "FDA and ASA guidelines require specific disclaimer placement, claim restrictions and ingredient visibility. Getting this wrong is both a legal risk and a conversion killer. We structure every product page correctly." },
@@ -162,7 +162,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "candles-fragrance": {
-    heroHeadline: "Shopify for Candles — Scent Profiles, Personalisation & Bundles Built In",
+    heroHeadline: "Shopify for Candles — Scent Profiles & Personalisation",
     heroSub: "Top/middle/base note pages, personalised label engraving, gift set bundles and subscription candle boxes — built for candle brands that take their online presence seriously.",
     challenges: [
       { title: "Selling a scent online needs more than a description", desc: "Customers can't smell through a screen. Top, middle and base note descriptions, mood tags, wax type and burn time info all need to be structured cleanly into the product template to communicate the full experience." },
@@ -207,7 +207,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "coffee-tea": {
-    heroHeadline: "Shopify for Coffee & Tea — Subscriptions, Origin Stories & Repeat Buyers",
+    heroHeadline: "Shopify for Coffee & Tea — Subscriptions & Origin Stories",
     heroSub: "Weekly bean subscriptions, grind preference selectors, origin tasting notes and roast-level filtering — built for coffee brands that want to grow recurring revenue.",
     challenges: [
       { title: "Subscriptions are the backbone of coffee revenue", desc: "Weekly or monthly whole-bean subscriptions with grind preference, roast selection, delivery day choice and a proper customer portal are complex to configure. We set up the full system end to end." },
@@ -222,7 +222,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "sports-fitness": {
-    heroHeadline: "Shopify for Sports & Fitness — Equipment, Supplements & Sport-Specific Buyers",
+    heroHeadline: "Shopify for Sports & Fitness — Equipment & Supplements",
     heroSub: "Training bundle packs, sport-specific collections, subscribe-and-save supplements and weight/resistance variant setup — built for fitness brands that want higher AOV.",
     challenges: [
       { title: "Equipment variants — weight, resistance, size — need clean setup", desc: "Dumbbells in 8 weight options, resistance bands in 5 levels — without proper variant configuration, inventory management is a nightmare and customers can't see what's in stock. We configure it correctly." },
@@ -237,7 +237,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "art-prints": {
-    heroHeadline: "Shopify for Artists & Printmakers — Size Options, Commissions & Room Visualiser",
+    heroHeadline: "Shopify for Artists & Printmakers — Prints & Commissions",
     heroSub: "Print size and framing variants, room mockup visualiser, bespoke commission enquiry and artist collection pages — built so your art actually sells online.",
     challenges: [
       { title: "Print size, paper and framing variants are complex", desc: "A single artwork sold in 8 sizes, 3 paper types and with or without framing creates 48+ variants. Without clean variant setup and automatic pricing, the product page becomes confusing and the order fulfilment chaotic." },
@@ -252,7 +252,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "baby-nursery": {
-    heroHeadline: "Shopify for Baby & Nursery Brands — Safe, Trusted & Built for New Parents",
+    heroHeadline: "Shopify for Baby & Nursery — Safe, Trusted & Built Right",
     heroSub: "Safety certification display, age-range filtering, nursery bundle packs and gift registry — designed for the way new parents actually shop for their baby.",
     challenges: [
       { title: "Safety certification visibility is a purchase trigger", desc: "Parents buying for babies will not purchase without visible safety certifications. CE marks, OEKO-TEX labels and age-appropriate warnings need to be prominent on every product page, not buried in a description." },
@@ -282,7 +282,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "hair-wigs": {
-    heroHeadline: "Shopify for Hair Wigs — Cap Size, Lace Type & High-Converting Product Pages",
+    heroHeadline: "Shopify for Hair Wigs — Cap Size, Lace Type & Conversions",
     heroSub: "Density selectors, lace type education sections, virtual try-on and wig care guides — built so wig buyers get the right product and keep it.",
     challenges: [
       { title: "Cap size, density and lace type variants confuse buyers", desc: "Wig purchases involve multiple complex choices — cap size, density percentage, lace type, colour. Without clean, guided variant selection and clear explanations of each option, customers abandon before buying." },
@@ -327,7 +327,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "food-supply": {
-    heroHeadline: "Shopify for Food Supply — Trade Orders, Compliance & Standing Deliveries",
+    heroHeadline: "Shopify for Food Supply — Trade Orders & Compliance",
     heroSub: "Bulk ordering with MOQs, allergen compliance, recurring standing orders and cold chain delivery — built for food suppliers selling to restaurants, caterers and retailers.",
     challenges: [
       { title: "Allergen and nutritional compliance is legally required", desc: "Food businesses supplying restaurants and retailers must display allergen information, nutritional data and use-by guidance correctly. We build compliant product pages that meet UK and EU food labelling requirements." },
@@ -342,7 +342,7 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "candle-business": {
-    heroHeadline: "Shopify for Candle Businesses — Personalisation, Wholesale & Workshop Bookings",
+    heroHeadline: "Shopify for Candle Businesses — Personalisation & Wholesale",
     heroSub: "Custom label engraving, scent profile pages, B2B wholesale channel and candle-making workshop bookings — built for candle brands ready to scale beyond Etsy.",
     challenges: [
       { title: "Personalised candles need proper input and preview", desc: "Wedding favour candles with custom labels, personalised gift candles with engraved messages — these products need structured text input on the product page, ideally with a live preview so customers see what they're ordering." },

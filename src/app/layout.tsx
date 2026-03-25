@@ -3,7 +3,6 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
-import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
@@ -21,6 +20,8 @@ const geistSans = Geist({
 
 export const viewport: Viewport = {
   themeColor: 'black',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export const metadata: Metadata = {
@@ -60,15 +61,9 @@ export default function RootLayout({
     <html lang="en">
       <GoogleTagManager gtmId="G-RH64BGD6GT" />
 
-      <Head>
-        <meta name="theme-color" content="#000000" />
-         
-
-      </Head>
-      
       <Script
           id="clarity-script"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y){
@@ -103,8 +98,8 @@ export default function RootLayout({
       <WelcomeCard/>
       <RotatingWhatsAppLoader />
      
-      </body>
       <GoogleAnalytics gaId="G-RH64BGD6GT" />
+      </body>
       
     </html>
   );
