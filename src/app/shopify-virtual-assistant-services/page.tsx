@@ -4,7 +4,7 @@ import GeoMessage from "../components/GeoMessage";
 import ServicePageSchema from "../components/ServicePageSchema";
 
 export const metadata: Metadata = {
-  title: "Hire Shopify Virtual Assistant | Top-Rated Shopify VA",
+  title: "Hire Shopify Virtual Assistant | Top-Rated Shopify VA from india",
   description:
     "Hire top expert shopify Virtual Assistant just $5/hr from most trusted shopify expert VA team",
 };
