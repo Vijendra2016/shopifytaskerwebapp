@@ -70,16 +70,6 @@ const whatWeMigrate = [
   "SEO: 301 redirects & meta data from Square URLs",
 ];
 
-const keywords = [
-  "transfer square to shopify",
-  "move square online to shopify",
-  "switch from square to shopify",
-  "square to shopify transfer",
-  "move square store to shopify",
-  "migrate square to shopify",
-  "square online to shopify switch",
-];
-
 const otherMigrations = [
   { name: "WordPress to Shopify", href: "/wordpress-to-shopify-migration" },
   { name: "WooCommerce to Shopify", href: "/woocommerce-to-shopify-migration" },
@@ -155,7 +145,7 @@ export default function SquareToShopifyMigration() {
       <section className="px-6 py-20 md:py-28 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What's Included</p>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What&apos;s Included</p>
             <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">Everything Migrated from Square to Shopify</h2>
             <p className="text-[15px] text-white/60 leading-[1.7] mt-6 max-w-md">We transfer your entire Square Online operation to Shopify — inventory, customers, orders, and design — so you can hit the ground running on a more powerful platform.</p>
             <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">Start Your Migration →</CreateTaskButton>

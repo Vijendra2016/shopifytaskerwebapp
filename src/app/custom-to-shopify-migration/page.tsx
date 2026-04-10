@@ -63,16 +63,6 @@ const platformsWeHandle = [
   { name: "Bespoke CMS", desc: "Any custom-built content and commerce system" },
 ];
 
-const keywords = [
-  "transfer custom website to shopify",
-  "move website to shopify",
-  "migrate custom platform to shopify",
-  "move custom store to shopify",
-  "switch custom website to shopify",
-  "transfer legacy website to shopify",
-  "custom ecommerce to shopify migration",
-];
-
 const otherMigrations = [
   { name: "WordPress to Shopify", href: "/wordpress-to-shopify-migration" },
   { name: "WooCommerce to Shopify", href: "/woocommerce-to-shopify-migration" },
@@ -168,7 +158,7 @@ export default function CustomToShopifyMigration() {
       <section className="px-6 py-20 md:py-28 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What's Included</p>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What&apos;s Included</p>
             <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">Everything Migrated to Shopify — Whatever Your Platform</h2>
             <p className="text-[15px] text-white/60 leading-[1.7] mt-6 max-w-md">We extract your data from wherever it lives, map it accurately to Shopify's data model, and rebuild all your custom functionality — so you lose nothing in the move.</p>
             <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">Start Your Migration →</CreateTaskButton>

@@ -149,7 +149,7 @@ export default function WixToShopifyMigration() {
       <section className="px-6 py-20 md:py-28 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What's Included</p>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What&apos;s Included</p>
             <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">Everything Transferred from Wix to Shopify</h2>
             <p className="text-[15px] text-white/60 leading-[1.7] mt-6 max-w-md">From your Wix store products to your blog content and SEO authority — we move everything to Shopify accurately so you can keep growing without disruption.</p>
             <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">

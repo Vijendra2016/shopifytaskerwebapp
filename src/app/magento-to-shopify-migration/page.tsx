@@ -52,17 +52,6 @@ const whatWeMigrate = [
   "SEO: 301 redirects, meta data & structured data",
 ];
 
-const keywords = [
-  "transfer magento to shopify",
-  "move magento to shopify",
-  "switch from magento to shopify",
-  "magento to shopify transfer",
-  "migrate magento 2 to shopify",
-  "move magento store to shopify",
-  "magento 1 to shopify migration",
-  "magento to shopify plus migration",
-];
-
 const otherMigrations = [
   { name: "WordPress to Shopify", href: "/wordpress-to-shopify-migration" },
   { name: "WooCommerce to Shopify", href: "/woocommerce-to-shopify-migration" },
@@ -138,7 +127,7 @@ export default function MagentoToShopifyMigration() {
       <section className="px-6 py-20 md:py-28 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What's Included</p>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What&apos;s Included</p>
             <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">Everything Migrated from Magento to Shopify</h2>
             <p className="text-[15px] text-white/60 leading-[1.7] mt-6 max-w-md">Magento migrations require careful handling of complex EAV data, custom extensions, and third-party integrations. We manage every layer with precision.</p>
             <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">Start Your Migration →</CreateTaskButton>

@@ -101,16 +101,6 @@ const whatWeMigrate = [
   "Squarespace payment & shipping configuration",
 ];
 
-const keywords = [
-  "transfer squarespace to shopify",
-  "move squarespace to shopify",
-  "switch from squarespace to shopify",
-  "squarespace to shopify transfer",
-  "move squarespace store to shopify",
-  "migrate squarespace to shopify",
-  "squarespace to shopify switch",
-];
-
 const otherMigrations = [
   { name: "WordPress to Shopify", href: "/wordpress-to-shopify-migration" },
   { name: "WooCommerce to Shopify", href: "/woocommerce-to-shopify-migration" },
@@ -223,7 +213,7 @@ export default function SquarespaceToShopifyMigration() {
       <section className="px-6 py-20 md:py-28 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What's Included</p>
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">What&apos;s Included</p>
             <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-white">
               Everything Migrated from Squarespace to Shopify
             </h2>
