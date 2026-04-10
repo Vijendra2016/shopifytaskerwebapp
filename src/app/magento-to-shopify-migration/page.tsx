@@ -6,9 +6,9 @@ import ServicePageSchema from "../components/ServicePageSchema";
 import CreateTaskButton from "../components/CreateTaskButton";
 
 export const metadata: Metadata = {
-  title: "Magento to Shopify Migration | Expert Migration Service | ShopifyTasker",
+  title: "Magento to Shopify Migration Service | ShopifyTasker",
   description:
-    "Migrate from Magento 1 or Magento 2 to Shopify or Shopify Plus. Full product, customer, order, and SEO migration. Enterprise-grade process. Pay after delivery.",
+    "Magento 1 & 2 to Shopify migration. Products, orders, customers & SEO migrated. Enterprise-grade process. Pay after delivery.",
   alternates: {
     canonical: "https://www.shopifytasker.com/magento-to-shopify-migration",
   },
@@ -215,7 +215,7 @@ export default function MagentoToShopifyMigration() {
 
       <section className="px-6 py-14 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-8">Other Migration Services</p>
+          <h2 className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-8">Other Migration Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {otherMigrations.map((m, i) => (
               <Link key={i} href={m.href} className="border border-white/[0.08] px-5 py-4 text-[13px] text-white/50 hover:text-white hover:border-white/30 hover:bg-white/[0.04] transition rounded-sm">{m.name}</Link>

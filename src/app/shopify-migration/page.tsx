@@ -6,9 +6,9 @@ import ServicePageSchema from "../components/ServicePageSchema";
 import CreateTaskButton from "../components/CreateTaskButton";
 
 export const metadata: Metadata = {
-  title: "Shopify Migration Agency | Expert Shopify Migration Services | ShopifyTasker",
+  title: "Shopify Migration Agency & Services | ShopifyTasker",
   description:
-    "ShopifyTasker is a leading Shopify migration agency. We migrate from WooCommerce, WordPress, Magento, BigCommerce, Wix, Squarespace, and more to Shopify — with zero data loss. Pay after delivery.",
+    "Shopify migration agency. Move from WooCommerce, Magento, BigCommerce, Wix & more. Zero data loss guaranteed. Pay after delivery.",
   alternates: {
     canonical: "https://www.shopifytasker.com/shopify-migration",
   },
@@ -237,19 +237,6 @@ const allMigrationLinks = [
 ];
 
 export default function ShopifyMigrationAgency() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
@@ -272,10 +259,6 @@ export default function ShopifyMigrationAgency() {
         pageUrl={pageUrl}
         breadcrumbs={[{ name: "Shopify Migration", url: pageUrl }]}
         faqs={faqs}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <script
         type="application/ld+json"
@@ -598,7 +581,7 @@ export default function ShopifyMigrationAgency() {
       {/* Keywords */}
       <section className="px-6 py-12 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Also Searched As</p>
+          <h2 className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Also Searched As</h2>
           <div className="flex flex-wrap gap-2">
             {keywords.map((kw, i) => (
               <span
@@ -615,7 +598,7 @@ export default function ShopifyMigrationAgency() {
       {/* All Migration Services */}
       <section className="px-6 py-14 border-b border-white/[0.08]">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-8">All Migration Services</p>
+          <h2 className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-8">All Migration Services</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-3">
             {allMigrationLinks.map((m, i) => (
               <Link
