@@ -64,6 +64,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/shopify-website-development-usa`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
     { url: `${baseUrl}/shopify-theme-tweak`, lastModified: new Date(), priority: 0.7, changeFrequency: 'monthly' },
 
+    // Migration pages
+    { url: `${baseUrl}/shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/wordpress-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/woocommerce-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/salesforce-to-shopify-plus-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/squarespace-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/square-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/magento-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/bigcommerce-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/wix-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+    { url: `${baseUrl}/custom-to-shopify-migration`, lastModified: new Date(), priority: 0.9, changeFrequency: 'monthly' },
+
     // Themes
     { url: `${baseUrl}/shopify-themes`, lastModified: new Date(), priority: 0.8, changeFrequency: 'monthly' },
     { url: `${baseUrl}/shopify-themes/impulse-customization-update`, lastModified: new Date(), priority: 0.7, changeFrequency: 'monthly' },

@@ -99,26 +99,16 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-2">
           <h6 className=" text-sm md:text-sm text-base  uppercase font-extrabold">Platform Migration</h6>
-          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition">
-          Wordpress to Shopify Migration
-          </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
-          Salesfoce to Shopify Plus
-          </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
-           Squarespace to shopify          
-          </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
-           Square to shopify   
-          </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
-           Maganto to Shopify 
-          </button>
-          <button onClick={openStartProject} className="text-left cursor-pointer hover:underline hover:decoration-white/90 underline-offset-4 transition ">
-           Custom to Shopify 
-          </button>
-          
-          
+          <Link href="/shopify-migration">Shopify Migration Agency</Link>
+          <Link href="/wordpress-to-shopify-migration">WordPress to Shopify Migration</Link>
+          <Link href="/woocommerce-to-shopify-migration">WooCommerce to Shopify</Link>
+          <Link href="/salesforce-to-shopify-plus-migration">Salesforce to Shopify Plus</Link>
+          <Link href="/squarespace-to-shopify-migration">Squarespace to Shopify</Link>
+          <Link href="/square-to-shopify-migration">Square to Shopify</Link>
+          <Link href="/magento-to-shopify-migration">Magento to Shopify</Link>
+          <Link href="/bigcommerce-to-shopify-migration">BigCommerce to Shopify</Link>
+          <Link href="/wix-to-shopify-migration">Wix to Shopify</Link>
+          <Link href="/custom-to-shopify-migration">Custom to Shopify</Link>
         </div>
 
         <div className="flex flex-col space-y-2">
