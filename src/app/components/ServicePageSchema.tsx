@@ -36,10 +36,6 @@ export default function ServicePageSchema({
       isPartOf: { "@id": "https://www.shopifytasker.com/#website" },
       publisher: { "@id": "https://www.shopifytasker.com/#organization" },
       inLanguage: "en-US",
-      speakable: {
-        "@type": "SpeakableSpecification",
-        cssSelector: ["h1", "h2", "[data-speakable]"],
-      },
     },
     {
       "@type": "Service",
