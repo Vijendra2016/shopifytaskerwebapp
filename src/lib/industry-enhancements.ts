@@ -207,8 +207,8 @@ const enhancements: Record<string, IndustryEnhancement> = {
   },
 
   "coffee-tea": {
-    heroHeadline: "Shopify for Coffee & Tea — Subscriptions & Origin Stories",
-    heroSub: "Weekly bean subscriptions, grind preference selectors, origin tasting notes and roast-level filtering — built for coffee brands that want to grow recurring revenue.",
+    heroHeadline: "Shopify Store Setup for Coffee & Tea Brands That Drive Subscriptions",
+    heroSub: "Launch in 2–4 days with subscription systems, roast filters & wholesale setup.we not only build a beautiful store, we build the features that actually move the needle for coffee and tea brands.",
     challenges: [
       { title: "Subscriptions are the backbone of coffee revenue", desc: "Weekly or monthly whole-bean subscriptions with grind preference, roast selection, delivery day choice and a proper customer portal are complex to configure. We set up the full system end to end." },
       { title: "Origin storytelling needs structure in the product template", desc: "Farm name, altitude, processing method, tasting notes and brew guide — this content needs a structured product section, not just a long description paragraph. We build the template right." },
