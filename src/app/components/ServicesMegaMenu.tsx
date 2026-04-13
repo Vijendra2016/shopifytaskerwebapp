@@ -16,7 +16,7 @@ const categories = [
         title: "Shopify Store Design",
         desc: "Custom stores built from scratch — brand-aligned, mobile-first, conversion-optimised.",
         href: "/shopify-store-design",
-        image: BASE + "6827175e5ab4aae9c7a45403_hair-extension-shopify-website-design.png",
+        image: BASE + "69dccb71526cafe880af2c67_shopifyfashionwebsite.png",
       },
       {
         title: "Theme Customization",
