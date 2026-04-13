@@ -298,10 +298,10 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
               Get Started
             </p>
             <h3 className="text-[17px] font-bold text-white leading-snug">
-              Expert Shopify help, delivered fast.
+             Work with experienced Shopify Developer & Experts
             </h3>
             <p className="text-[12px] text-white/55 mt-3 leading-relaxed">
-              Tell us what you need — design, dev, SEO or support. We&apos;ll handle the rest.
+              From design to development and growth, we handle everything so you can focus on scaling your business.
             </p>
           </div>
 
