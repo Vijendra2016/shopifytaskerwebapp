@@ -306,19 +306,30 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
           </div>
 
           <div className="mt-6 space-y-2.5">
-            <button
-              onClick={() => { onClose(); onOpenModal(); }}
-              className="w-full bg-white text-black text-[12px] font-semibold py-2.5 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
-            >
-             Get a Free Estimate <TfiArrowRight />
-            </button>
-            <Link
-              href="/shopify-expert-services"
-              onClick={onClose}
-              className="w-full border border-white/20 text-white text-[12px] font-medium py-2.5 rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition"
-            >
-              Browse Services
-            </Link>
+            <div className="flex justify-center">
+              <Image
+                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680baca7a144a823c527edf7_shopifytasker-review.png"
+                alt="Logo"
+                width={140}
+                height={140}
+                className="object-contain"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <button
+                onClick={() => { onClose(); onOpenModal(); }}
+                className="w-full bg-white text-black text-[12px] font-semibold py-2.5 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
+              >
+                Get a Free Estimate <TfiArrowRight />
+              </button>
+              <Link
+                href="/shopify-expert-services"
+                onClick={onClose}
+                className="w-full border border-white/20 text-white text-[12px] font-medium py-2.5 rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition"
+              >
+                Browse Services
+              </Link>
+            </div>
           </div>
         </div>
 

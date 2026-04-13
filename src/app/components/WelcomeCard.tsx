@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { TfiArrowTopRight } from 'react-icons/tfi';
 import React, { useState } from "react";
 import StartProjectModal from "./StartProjectModal";
@@ -24,13 +25,22 @@ export default function WelcomeCard() {
         </p>
         <LocationMessage/>
         
-        <button
-          onClick={() => setShowModal(true)}
-          className=" cursor-pointer   inline-flex items-center bg-[#DFF976]  text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500   transition"
-        >
-          Get Started 
-          <TfiArrowTopRight className="ml-2" />
-        </button>
+        <div className="flex items-center justify-between gap-3 mt-2">
+          <Image
+            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680baca7a144a823c527edf7_shopifytasker-review.png"
+            alt="Logo"
+            width={100}
+            height={100}
+            className="object-contain"
+          />
+          <button
+            onClick={() => setShowModal(true)}
+            className="cursor-pointer inline-flex items-center bg-[#DFF976] text-black px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
+          >
+            Get Started
+            <TfiArrowTopRight className="ml-2" />
+          </button>
+        </div>
       </div>
 
       <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
