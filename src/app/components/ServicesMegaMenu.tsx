@@ -294,11 +294,19 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
         {/* ── CTA panel ── */}
         <div className="w-90 bg-black flex-shrink-0 flex flex-col justify-between py-7 px-6">
           <div>
-            <p className="text-[9px] uppercase tracking-[0.22em] text-white/40 mb-3">
+            
+            <p className="text-[9px] uppercase tracking-[0.22em] text-white/90 ">
               Get Started
             </p>
+            <Image
+                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69dce472b9d05292850a7040_startrating.png"
+                alt="Logo"
+                width={100}
+                height={20}
+                className="object-contain"
+              />
             <h3 className="text-[17px] font-bold text-white leading-snug">
-             Work with experienced Shopify Developer & Experts
+             Collaborate with Proven Shopify Developers & Experts Who Drive Growth
             </h3>
             <p className="text-[12px] text-white/55 mt-3 leading-relaxed">
               From design to development and growth, we handle everything so you can focus on scaling your business.
@@ -310,8 +318,8 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
               <Image
                 src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680baca7a144a823c527edf7_shopifytasker-review.png"
                 alt="Logo"
-                width={140}
-                height={140}
+                width={150}
+                height={150}
                 className="object-contain"
               />
             </div>
