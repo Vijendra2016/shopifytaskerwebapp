@@ -273,13 +273,21 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
             <p className="text-white text-[14px] font-bold leading-snug">
               {previewSvc.title}
             </p>
-            <Link
-              href={previewSvc.href}
-              onClick={onClose}
-              className="mt-2.5 inline-flex items-center gap-1.5 bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-[11px] font-medium px-3 py-1.5 rounded-full transition"
-            >
-              View service <TfiArrowRight className="text-[9px]" />
-            </Link>
+            <div className="mt-2.5 flex items-center gap-2">
+              <Link
+                href={previewSvc.href}
+                onClick={onClose}
+                className="inline-flex items-center gap-1.5 bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-[11px] font-medium px-3 py-1.5 rounded-full transition"
+              >
+                View service <TfiArrowRight className="text-[9px]" />
+              </Link>
+              <button
+                onClick={() => { onClose(); onOpenModal(); }}
+                className="inline-flex items-center gap-1.5 bg-white  hover:opacity-90 text-black text-[11px] font-semibold px-3 py-1.5 rounded-full transition cursor-pointer"
+              >
+                Get a Free Quote <TfiArrowRight className="text-[9px]" />
+              </button>
+            </div>
           </div>
         </div>
 
