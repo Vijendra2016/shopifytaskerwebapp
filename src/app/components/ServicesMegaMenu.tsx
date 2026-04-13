@@ -186,7 +186,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
 
         {/* ── Service list ── */}
         <div className="flex-1 flex flex-col justify-center px-7 py-6">
-          <p className="text-[9px] uppercase tracking-[0.26em] text-black/30 mb-3">
+          <p className="text-[9px] uppercase tracking-[0.26em] text-black/90 mb-3">
             {active.label}
           </p>
 
@@ -242,7 +242,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
         </div>
 
         {/* ── Image preview panel ── */}
-        <div className="w-72 flex-shrink-0 relative my-4 mr-4 rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.14)]">
+        <div className="w-96 flex-shrink-0 relative my-4 mr-4 rounded-lg overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.14)]">
           {/* Crossfading images — all stacked, only active one visible */}
           {active.services.map((svc, i) => (
             <div
@@ -257,7 +257,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
                 alt={svc.title}
                 fill
                 className="object-cover object-top"
-                sizes="288px"
+                sizes="384px"
               />
             </div>
           ))}
@@ -284,7 +284,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
         </div>
 
         {/* ── CTA panel ── */}
-        <div className="w-60 bg-black flex-shrink-0 flex flex-col justify-between py-7 px-6">
+        <div className="w-90 bg-black flex-shrink-0 flex flex-col justify-between py-7 px-6">
           <div>
             <p className="text-[9px] uppercase tracking-[0.22em] text-white/40 mb-3">
               Get Started
@@ -302,7 +302,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
               onClick={() => { onClose(); onOpenModal(); }}
               className="w-full bg-white text-black text-[12px] font-semibold py-2.5 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
             >
-              Create Task <TfiArrowRight />
+             Get a Free Estimate <TfiArrowRight />
             </button>
             <Link
               href="/shopify-expert-services"
