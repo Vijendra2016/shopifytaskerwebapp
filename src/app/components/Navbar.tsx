@@ -2,12 +2,16 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TfiAlignLeft, TfiClose, TfiArrowRight } from "react-icons/tfi";
 import StartProjectModal from "./StartProjectModal";
+import ServicesMegaMenu from "./ServicesMegaMenu";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showMegaMenu, setShowMegaMenu] = useState(false);
+  const megaMenuTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -21,6 +25,23 @@ export default function Navbar() {
   const openCreateTask = () => {
     closeMenu();
     setShowModal(true);
+  };
+
+  const handleServicesEnter = () => {
+    if (megaMenuTimeout.current) clearTimeout(megaMenuTimeout.current);
+    setShowMegaMenu(true);
+  };
+
+  const handleServicesLeave = () => {
+    megaMenuTimeout.current = setTimeout(() => setShowMegaMenu(false), 120);
+  };
+
+  const handleMegaMenuEnter = () => {
+    if (megaMenuTimeout.current) clearTimeout(megaMenuTimeout.current);
+  };
+
+  const handleMegaMenuLeave = () => {
+    megaMenuTimeout.current = setTimeout(() => setShowMegaMenu(false), 120);
   };
 
   return (
@@ -38,7 +59,7 @@ export default function Navbar() {
               priority
             />
           </Link>
-          
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
@@ -54,12 +75,48 @@ export default function Navbar() {
             >
               How it works
             </Link>
-            <Link
-              href="/shopify-expert-services"
-              className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition"
+
+            {/* Services with Mega Menu */}
+            <div
+              className="relative"
+              onMouseEnter={handleServicesEnter}
+              onMouseLeave={handleServicesLeave}
             >
-              Services
-            </Link>
+              <Link
+                href="/shopify-expert-services"
+                className={[
+                  "text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition flex items-center gap-1",
+                  showMegaMenu ? "underline decoration-white/90" : "",
+                ].join(" ")}
+              >
+                Services
+                <svg
+                  className={[
+                    "w-3 h-3 transition-transform duration-200",
+                    showMegaMenu ? "rotate-180" : "",
+                  ].join(" ")}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+
+              {showMegaMenu && (
+                <div
+                  onMouseEnter={handleMegaMenuEnter}
+                  onMouseLeave={handleMegaMenuLeave}
+                >
+                  <ServicesMegaMenu
+                    onClose={() => setShowMegaMenu(false)}
+                    onOpenModal={() => setShowModal(true)}
+                  />
+                </div>
+              )}
+            </div>
+
             <Link
               href="/faq"
               className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition"
