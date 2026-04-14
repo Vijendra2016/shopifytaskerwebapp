@@ -159,9 +159,9 @@ export default function Navbar() {
 
             <button
               onClick={() => setShowModal(true)}
-              className="cursor-pointer inline-flex items-center gap-2 bg-[#DFF976] text-black px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
+              className="cursor-pointer inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
-              Create Task <TfiArrowRight />
+             Get a Free Quote <TfiArrowRight />
             </button>
           </div>
 
@@ -172,9 +172,9 @@ export default function Navbar() {
           <div className="md:hidden flex items-center gap-3">
             <button
               onClick={openCreateTask}
-              className="inline-flex items-center gap-1.5 bg-[#DFF976] text-black px-3.5 py-1.5 rounded-full text-[12px] font-semibold hover:opacity-90 transition"
+              className="inline-flex items-center gap-1.5 bg-white text-black px-3.5 py-1.5 rounded-full text-[12px] font-semibold hover:opacity-90 transition"
             >
-              Create Task
+              Get a Free Quote
             </button>
             <button
               className="text-white p-1"
@@ -310,9 +310,9 @@ export default function Navbar() {
             <div className="mt-7">
               <button
                 onClick={openCreateTask}
-                className="w-full bg-[#DFF976] text-black py-3.5 rounded-full text-[15px] font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
+                className="w-full bg-white text-black py-3.5 rounded-full text-[15px] font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
               >
-                Create Task <TfiArrowRight />
+                Get a Free Quote<TfiArrowRight />
               </button>
 
               <div className="mt-5 flex items-center gap-3">

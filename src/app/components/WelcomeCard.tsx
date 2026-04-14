@@ -18,9 +18,15 @@ export default function WelcomeCard() {
     <>
       <div
         onClick={handleCardClick}
-        className="fixed bottom-1 righ-2 bg-black border  border-[#DFF976] shadow-lg p-4 rounded-xl z-40 max-w-sm cursor-pointer"
-      >
-        <p className="text-[#DFF976] text-lg mb-2">
+        className="fixed bottom-1 righ-2 bg-black border  border-white/90  shadow-lg p-2 rounded-sm z-40 max-w-sm cursor-pointer"
+      > <Image
+                                  src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69dce472b9d05292850a7040_startrating.png"
+                                  alt="Top Rated Shopify Web Designer in {cityData.city} - 5 Star Rating"
+                                  width={100}
+                                  height={20}
+                                  className="object-contain"
+                                />
+        <p className="text-white text-lg mb-1">
         Kickstart your first project with confidence
         </p>
         <LocationMessage/>
@@ -35,7 +41,7 @@ export default function WelcomeCard() {
           />
           <button
             onClick={() => setShowModal(true)}
-            className="cursor-pointer inline-flex items-center bg-[#DFF976] text-black px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
+            className="cursor-pointer inline-flex items-center bg-white/90  text-black px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
           >
             Get Started
             <TfiArrowTopRight className="ml-2" />

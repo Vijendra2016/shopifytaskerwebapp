@@ -174,12 +174,13 @@ export default async function CityPage(props: Props) {
               redesigns for businesses in {cityData.city}. Pay only after the
               work is done — no upfront costs.
             </p>
+            
              <div className="flex justify-left mb-4">
                           <Image
                             src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680baca7a144a823c527edf7_shopifytasker-review.png"
                             alt="Logo"
                             width={150}
-                            height={150}
+                            height={80}
                             className="object-contain "
                           />
                         </div>
