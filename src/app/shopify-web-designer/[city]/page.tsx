@@ -153,20 +153,36 @@ export default async function CityPage(props: Props) {
       </nav>
 
       {/* ─── HERO ─── */}
-      <section className="px-6 pt-20 pb-0 md:pt-28">
+      <section className="px-6 pt-5 pb-0 md:pt-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <div className="pb-16 md:pb-24">
-            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-6">
+            <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 ">
               Shopify Web Design &nbsp;·&nbsp; {cityData.city}, {cityData.state}
             </p>
-            <h1 className="text-[clamp(2.6rem,6vw,5.5rem)] font-semibold leading-[1.08] tracking-tight text-white mb-6">
-              Hire a Shopify Web Designer in {cityData.city}, {cityData.state}
+            <Image
+                            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69dce472b9d05292850a7040_startrating.png"
+                            alt="Top Rated Shopify Web Designer in {cityData.city} - 5 Star Rating"
+                            width={100}
+                            height={20}
+                            className="object-contain"
+                          />
+            <h1 className="text-[clamp(1.6rem,6vw,2.5rem)] font-semibold leading-[1.08] tracking-tight text-white mb-4">
+              Hire  Shopify Web Designer in {cityData.city}, {cityData.state}
             </h1>
-            <p className="text-[15px] text-white/60 leading-[1.7] max-w-lg mb-10">
+            <p className="text-[15px] text-white/60 leading-[1.7] max-w-lg mb-2">
               Custom Shopify store design, theme customisation, and store
               redesigns for businesses in {cityData.city}. Pay only after the
               work is done — no upfront costs.
             </p>
+             <div className="flex justify-left mb-4">
+                          <Image
+                            src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680baca7a144a823c527edf7_shopifytasker-review.png"
+                            alt="Logo"
+                            width={150}
+                            height={150}
+                            className="object-contain "
+                          />
+                        </div>
             <div className="flex flex-wrap gap-3">
               <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">
                 Get a Free Quote
@@ -181,9 +197,9 @@ export default async function CityPage(props: Props) {
           </div>
 
           {/* Right — Image */}
-          <div className="hidden lg:block relative h-[520px] overflow-hidden rounded-t-2xl">
+          <div className="hidden lg:block relative h-[520px] overflow-hidden   rounded-xl">
             <Image
-              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/696dcbeb8d05bb84b09c39db_feature-3-1.webp"
+              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69ddc8228d962e44081ff343_shopifywebdesignerservices.png"
               alt={`Shopify web designer working on a store for a ${cityData.city} business`}
               fill
               className="object-cover object-top"
