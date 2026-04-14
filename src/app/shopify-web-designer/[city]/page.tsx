@@ -166,7 +166,7 @@ export default async function CityPage(props: Props) {
                             height={20}
                             className="object-contain"
                           />
-            <h1 className="text-[clamp(1.6rem,6vw,2.5rem)] font-semibold leading-[1.08] tracking-tight text-white mb-4">
+            <h1 className="text-[clamp(2rem,4vw,3.5rem)]  font-semibold leading-[1.08] tracking-tight text-white mb-4">
               Hire  Shopify Web Designer in {cityData.city}, {cityData.state}
             </h1>
             <p className="text-[15px] text-white/60 leading-[1.7] max-w-lg mb-2">
