@@ -107,10 +107,10 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            <Link href="/" className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition">
+            <Link href="/" className="text-white text-[1rem]  hover:underline hover:decoration-white/90 underline-offset-4 transition">
               Home
             </Link>
-            <Link href="/how-this-work" className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition">
+            <Link href="/how-this-work" className="text-white text-[1rem]  hover:underline hover:decoration-white/90 underline-offset-4 transition">
               How it works
             </Link>
 
@@ -123,7 +123,7 @@ export default function Navbar() {
               <Link
                 href="/shopify-expert-services"
                 className={[
-                  "text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition flex items-center gap-1",
+                  "text-white text-sm  hover:underline hover:decoration-white/90 underline-offset-4 transition flex items-center gap-1",
                   showMegaMenu ? "underline decoration-white/90" : "",
                 ].join(" ")}
               >
@@ -146,20 +146,20 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href="/faq" className="text-white text-sm font-bold hover:underline hover:decoration-white/90 underline-offset-4 transition">
+            <Link href="/faq" className="text-white text-[1rem] hover:underline hover:decoration-white/90 underline-offset-4 transition">
               FAQ
             </Link>
             <Link
               href="https://www.trustpilot.com/review/shopifytasker.com"
               target="_blank"
-              className="text-white text-sm font-bold"
+              className="text-white text-[1rem] "
             >
               Reviews
             </Link>
 
             <button
               onClick={() => setShowModal(true)}
-              className="cursor-pointer inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
+              className="cursor-pointer inline-flex items-center gap-2 bg-white text-black px-4 py-2  text-sm font-medium hover:opacity-90 transition"
             >
              Get a Free Quote <TfiArrowRight />
             </button>
@@ -172,7 +172,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center gap-3">
             <button
               onClick={openCreateTask}
-              className="inline-flex items-center gap-1.5 bg-white text-black px-3.5 py-1.5 rounded-full text-[12px] font-semibold hover:opacity-90 transition"
+              className="inline-flex items-center gap-1.5 bg-white text-black px-3.5 py-1.5  text-[12px] font-semibold hover:opacity-90 transition"
             >
               Get a Free Quote
             </button>
@@ -310,7 +310,7 @@ export default function Navbar() {
             <div className="mt-7">
               <button
                 onClick={openCreateTask}
-                className="w-full bg-white text-black py-3.5 rounded-full text-[15px] font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
+                className="w-full bg-white text-black py-3.5  text-[15px] font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
               >
                 Get a Free Quote<TfiArrowRight />
               </button>

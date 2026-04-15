@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
@@ -11,9 +11,11 @@ import { Viewport } from "next";
 import SchemaOrganization from "./components/SchemaOrganization";
 import Script from "next/script";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const overusedGrotesk = localFont({
+  src: "./fonts/OverusedGrotesk-VF.woff2",
+  variable: "--font-overused-grotesk",
+  weight: "300 800",
+  display: "swap",
 });
 
 
@@ -76,7 +78,7 @@ export default function RootLayout({
           }}
         />
       <body
-        className={`${geistSans.variable} antialiased`}
+        className={`${overusedGrotesk.variable} antialiased`}
       >
 
          {/* ✅ Organization Schema – MUST be inside body */}
