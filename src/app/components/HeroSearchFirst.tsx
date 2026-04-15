@@ -129,7 +129,7 @@ export default function HeroSearchFirst({
 
         {/* ── MAIN CONTENT ── */}
         <div className="flex-1 flex items-center">
-          <div className="w-full max-w-7xl mx-auto px-6 md:px-16 py-28 md:py-36">
+          <div className="w-full max-w-7xl mx-auto px-2 md:px-3 py-28 md:py-16">
             {eyebrow && (
               <p className="mb-6 text-[11px] md:text-xs uppercase tracking-[0.28em] text-white/45 font-medium">
                 {eyebrow}
