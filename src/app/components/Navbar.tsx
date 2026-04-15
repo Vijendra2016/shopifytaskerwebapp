@@ -107,10 +107,10 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            <Link href="/" className="text-white text-[1rem]  hover:underline hover:decoration-white/90 underline-offset-4 transition">
+            <Link href="/" className="text-white text-[1rem]   hover:text-[#777]  underline-offset-4 transition">
               Home
             </Link>
-            <Link href="/how-this-work" className="text-white text-[1rem]  hover:underline hover:decoration-white/90 underline-offset-4 transition">
+            <Link href="/how-this-work" className="text-white text-[1rem]  hover:text-[#777]  underline-offset-4 transition">
               How it works
             </Link>
 
@@ -123,8 +123,8 @@ export default function Navbar() {
               <Link
                 href="/shopify-expert-services"
                 className={[
-                  "text-white text-sm  hover:underline hover:decoration-white/90 underline-offset-4 transition flex items-center gap-1",
-                  showMegaMenu ? "underline decoration-white/90" : "",
+                  "text-white  text-[1rem]  hover:text-[#777]  transition flex items-center gap-1",
+                  showMegaMenu ? "underline" : "",
                 ].join(" ")}
               >
                 Services
@@ -146,7 +146,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link href="/faq" className="text-white text-[1rem] hover:underline hover:decoration-white/90 underline-offset-4 transition">
+            <Link href="/faq" className="text-white text-[1rem]   hover:text-[#777]  underline-offset-4 transition">
               FAQ
             </Link>
             <Link
@@ -159,9 +159,9 @@ export default function Navbar() {
 
             <button
               onClick={() => setShowModal(true)}
-              className="cursor-pointer inline-flex items-center gap-2 bg-white text-black px-4 py-2  text-sm font-medium hover:opacity-90 transition"
+              className="cursor-pointer   h-[3.25rem] text-[14px] inline-flex items-center gap-2 bg-white text-black px-4 py-2  uppercase font-medium hover:opacity-90 transition"
             >
-             Get a Free Quote <TfiArrowRight />
+             GET A QUOTE <TfiArrowRight className=" animate-jump animate-infinite" />
             </button>
           </div>
 
@@ -312,7 +312,7 @@ export default function Navbar() {
                 onClick={openCreateTask}
                 className="w-full bg-white text-black py-3.5  text-[15px] font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
               >
-                Get a Free Quote<TfiArrowRight />
+                Get a Free Quote<TfiArrowRight className=" animate-jump animate-infinite" />
               </button>
 
               <div className="mt-5 flex items-center gap-3">
