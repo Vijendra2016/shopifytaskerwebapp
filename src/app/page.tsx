@@ -6,7 +6,6 @@ import GeoMessage from "./components/GeoMessage";
 import WhySwitchSection from "./components/whysection";
 import StepsSection from "./components/StepsSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
-import GsapMarquee from "./components/GsapMarquee";
 import ServicesPinned from "./components/ServicesPinned";
 
 export const metadata: Metadata = {
@@ -31,7 +30,7 @@ export default function Home() {
           { label: "Explore Services", variant: "secondary" },
         ]}
       />
-      <GsapMarquee />
+     
     
 
    

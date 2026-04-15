@@ -71,8 +71,8 @@ type HeroSearchFirstProps = {
 
 export default function HeroSearchFirst({
   eyebrow = "Top-Rated Shopify Experts",
-  titleBottom = "Shopify Store Setup, Redesign & Fixes — Risk Free",
-  description = "No upfront payment. Pay only when you're satisfied with the work.",
+  titleBottom = "Launch, Redesign & Fix Your Shopify Store",
+  description = "Work with experienced Shopify experts who handle everything — design, development, SEO, and ongoing support — so you can focus on growing your business.",
   videoUrl,
   videoWebmUrl,
   backgroundImageUrl,
@@ -136,14 +136,14 @@ export default function HeroSearchFirst({
               </p>
             )}
 
-            <h1 className="font-light tracking-tight leading-[1.05] max-w-[680px]">
+            <h1 className="font-[400] tracking-tight leading-[1.05] max-w-[880px]">
               <span className="block text-[2.6rem] md:text-[4.75rem] text-white">
                 {titleBottom}
               </span>
             </h1>
 
             {description && (
-              <p className="mt-6 max-w-sm text-sm md:text-base text-white/55 leading-relaxed">
+              <p className="mt-6 max-w-lg text-lg md:text-base text-white leading-relaxed">
                 {description}
               </p>
             )}
