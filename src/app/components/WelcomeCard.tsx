@@ -41,7 +41,7 @@ export default function WelcomeCard() {
           />
           <button
             onClick={() => setShowModal(true)}
-            className="cursor-pointer  uppercase h-[3.25rem] inline-flex items-center bg-white/90  text-black px-4 py-2  text-[14px] font-thin hover:opacity-90 transition"
+            className="cursor-pointer  uppercase h-[3.25rem] inline-flex items-center bg-white/90  text-black px-4 py-2  text-[14px] font-normal hover:opacity-90 transition"
           >
             Get Started
             <TfiArrowTopRight className="ml-2 animate-jump animate-infinite" />

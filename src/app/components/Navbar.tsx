@@ -159,7 +159,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setShowModal(true)}
-              className="cursor-pointer   h-[3.25rem] text-[14px] inline-flex items-center gap-2 bg-white text-black px-4 py-2  uppercase font-thin hover:opacity-90 transition"
+              className="cursor-pointer   h-[3.25rem] text-[14px] inline-flex items-center gap-2 bg-white text-black px-4 py-2  uppercase font-normal hover:opacity-90 transition"
             >
              GET A QUOTE <TfiArrowRight className=" animate-jump animate-infinite" />
             </button>
