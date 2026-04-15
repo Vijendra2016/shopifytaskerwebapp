@@ -87,6 +87,22 @@ body {
 }
 
 
+/* ── Logo marquee (hero trust bar) ── */
+@keyframes logo-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.logo-marquee {
+  width: max-content;
+  animation: logo-scroll 35s linear infinite;
+  will-change: transform;
+}
+
+.logo-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* Trust slider: make ALL Swiper layers green */
 .trust-swiper,
 .trust-swiper .swiper,

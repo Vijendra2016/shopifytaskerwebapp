@@ -6,6 +6,7 @@ import GeoMessage from "./components/GeoMessage";
 import WhySwitchSection from "./components/whysection";
 import StepsSection from "./components/StepsSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
+import GsapMarquee from "./components/GsapMarquee";
 import ServicesPinned from "./components/ServicesPinned";
 
 export const metadata: Metadata = {
@@ -23,13 +24,14 @@ export default function Home() {
 
 
       <HeroSearchFirst
-        backgroundImageUrl="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69735915890543ad82c6b89a_clem-onojeghuo-HpEDSZukJqk-unsplash.jpg"
+        videoWebmUrl="https://cdn.shopify.com/videos/c/o/v/cad2a7915fb8473b81b232e199c16e81.mp4"
+        videoUrl="https://cdn.shopify.com/videos/c/o/v/cad2a7915fb8473b81b232e199c16e81.mp4"
         ctas={[
-          { label: "Get free estimation", href: "#search-first", variant: "primary" },
-          { label: "Explore Services", href: "#services", variant: "secondary" },
+          { label: "Get a Clear Estimate", variant: "primary" },
+          { label: "Explore Services", variant: "secondary" },
         ]}
-        
       />
+      <GsapMarquee />
     
 
    
