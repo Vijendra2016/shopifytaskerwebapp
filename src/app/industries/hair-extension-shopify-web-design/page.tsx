@@ -20,34 +20,10 @@ export default function pricing() {
              videoUrl="https://cdn.shopify.com/videos/c/o/v/1688ca4044654bb6b23b188f5bfd14a1.mp4"
              ctas={[
                { label: "Get a Clear Estimate", variant: "primary" },
-               { label: "Explore Services", variant: "secondary" },
+               { label: "Get My Store Audit & Plan", variant: "secondary" },
              ]}
            />
-      <section className="relative flex items-center justify-center h-[60vh] md:h-[100vh] overflow-hidden">
-        {/* Background image (optimized by Next.js) */}
-        <Image
-          src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68346a2ebbcad1aabc32d4c8_hair-extension-shopify-web-design.png" // put the file in /public/images
-          alt="Hair extensions in different shades"
-          fill             // makes the image new iamge cover the parent <section>
-          sizes="100vw"     // tell Next how wide it can be
-          style={{ objectFit: "cover" }}
-          priority         // loads this image first
-        />
-
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-neutral-900/60" />
-
-        {/* Text */}
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-normal text-white">
-            We build beautiful <br>
-            </br>hair extensions shopify websites
-          </h1>
-          <p className="mt-4 text-lg md:text-2xl text-white/90">
-            Professional hair extension Shopify web design—crafted by experts since 2015.
-          </p>
-        </div>
-      </section>
+      
       <section className="flex flex-col items-center gap-2 pr-2 pl-2 lg:pr-20 lg:pl-20  md:pr-20 md:pl-20 pt-20 pb-20 text-black">
         <h2 className="text-3xl md:text-5xl font-regular"> Dedicated & experienced account manager and Shopify website designer for every Hair Extensions project .
 

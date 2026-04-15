@@ -72,7 +72,7 @@ type HeroSearchFirstProps = {
 export default function HeroSearchFirst({
   eyebrow = "Top-Rated Shopify Experts",
   titleBottom = "Hair Extension Shopify Website Design, Redesign & Migration",
-  description = "We build, redesign, and migrate hair extension Shopify websites from platforms like WooCommerce, Wix, and Magento—fully optimized for SEO, speed, and conversions, with ongoing site maintenance and dedicated Shopify developers.",
+  description = "We build, redesign, and migrate hair extension websites from platforms like WooCommerce, Wix, and Magento to Shopify —fully optimized for SEO, speed, and conversions, with ongoing site maintenance and dedicated Shopify developers.",
   videoUrl,
   videoWebmUrl,
   backgroundImageUrl,
@@ -131,19 +131,19 @@ export default function HeroSearchFirst({
         <div className="flex-1 flex items-center">
           <div className="w-full max-w-7xl mx-auto px-2 md:px-3 py-28 md:py-16">
             {eyebrow && (
-              <p className="mb-6 text-[11px] md:text-xs uppercase tracking-[0.28em] text-white/45 font-medium">
+              <p className="mb-6 text-left text-[11px] md:text-xs uppercase tracking-[0.28em] text-white/45 font-medium">
                 {eyebrow}
               </p>
             )}
 
-            <h1 className="font-[400] tracking-tight leading-[1.05] max-w-[880px]">
-              <span className="block text-[2.6rem] md:text-[4.75rem] text-white">
+            <h1 className="font-[400]  text-left tracking-tight leading-[1.05] max-w-[880px]">
+              <span className="block text-[1.6rem] md:text-[2.75rem] text-white">
                 {titleBottom}
               </span>
             </h1>
 
             {description && (
-              <p className="mt-6 max-w-lg text-lg md:text-base text-white leading-relaxed">
+              <p className="mt-6  text-left max-w-lg text-lg md:text-base text-white leading-relaxed">
                 {description}
               </p>
             )}
