@@ -23,8 +23,8 @@ export default function Home() {
 
 
       <HeroSearchFirst
-        videoWebmUrl="https://cdn.shopify.com/videos/c/o/v/cad2a7915fb8473b81b232e199c16e81.mp4"
-        videoUrl="https://cdn.shopify.com/videos/c/o/v/cad2a7915fb8473b81b232e199c16e81.mp4"
+        videoWebmUrl="https://cdn.shopify.com/videos/c/o/v/d3f74341c33d40d681c332bf595db1f3.mp4"
+        videoUrl="https://cdn.shopify.com/videos/c/o/v/d3f74341c33d40d681c332bf595db1f3.mp4"
         ctas={[
           { label: "Get a Clear Estimate", variant: "primary" },
           { label: "Explore Services", variant: "secondary" },
