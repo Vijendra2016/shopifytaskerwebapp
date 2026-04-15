@@ -156,11 +156,11 @@ export default function HeroSearchFirst({
                     key={cta.label}
                     type="button"
                     onClick={() => setShowModal(true)}
-                    className={`group inline-flex cursor-pointer items-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium transition-all active:scale-[0.98]
+                    className={`group inline-flex cursor-pointer items-center gap-2 uppercase px-7 py-3.5 h-[3.25rem] text-[14px] font-medium transition-all active:scale-[0.98]
                       ${
                         isSecondary
                           ? "border border-white/25 text-white hover:bg-white/10"
-                          : "bg-[#DFF976] text-black hover:brightness-105"
+                          : "bg-white text-black hover:brightness-105"
                       }`}
                   >
                     {cta.label}
