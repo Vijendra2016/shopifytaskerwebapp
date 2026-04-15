@@ -71,8 +71,8 @@ type HeroSearchFirstProps = {
 
 export default function HeroSearchFirst({
   eyebrow = "Top-Rated Shopify Experts",
-  titleBottom = "Launch, Redesign & Fix Your Shopify Store",
-  description = "Work with experienced Shopify experts who handle everything — design, development, SEO, and ongoing support — so you can focus on growing your business.",
+  titleBottom = "Hair Extension Shopify Website Design, Redesign & Migration",
+  description = "We build, redesign, and migrate hair extension Shopify websites from platforms like WooCommerce, Wix, and Magento—fully optimized for SEO, speed, and conversions, with ongoing site maintenance and dedicated Shopify developers.",
   videoUrl,
   videoWebmUrl,
   backgroundImageUrl,
