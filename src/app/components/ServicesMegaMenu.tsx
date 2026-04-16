@@ -335,7 +335,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
             <div className="flex flex-col gap-2">
               <button
                 onClick={() => { onClose(); onOpenModal(); }}
-                className="w-full bg-white text-black text-[12px] font-semibold py-2.5  flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
+                className="w-full bg-white text-black uppercase font-normal  text-[14px] py-2.5  flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
               >
                 Get a Free Estimate <TfiArrowRight />
               </button>
