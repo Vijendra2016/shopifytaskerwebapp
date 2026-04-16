@@ -70,7 +70,7 @@ type HeroSearchFirstProps = {
 };
 
 export default function HeroSearchFirst({
-  eyebrow = "Top-Rated Shopify Experts",
+  eyebrow = "No upfront payment • Avg. turnaround: 2–72 hours",
   titleBottom = "Your On-Demand Shopify Team",
   description = "From quick tasks to full store development and dedicated support — we handle it all, fast. Pay only after approval.",
   videoUrl,
@@ -136,7 +136,7 @@ export default function HeroSearchFirst({
               </p>
             )}
 
-            <h1 className="font-[400] tracking-tight leading-[1.05] max-w-[880px]">
+            <h1 className="font-[400] tracking-tight leading-[1.05] max-w-[680px]">
               <span className="block text-[2.6rem] md:text-[4.75rem] text-white">
                 {titleBottom}
               </span>

@@ -26,8 +26,8 @@ export default function Home() {
         videoWebmUrl="https://cdn.shopify.com/videos/c/o/v/d3f74341c33d40d681c332bf595db1f3.mp4"
         videoUrl="https://cdn.shopify.com/videos/c/o/v/d3f74341c33d40d681c332bf595db1f3.mp4"
         ctas={[
-          { label: "Get a Clear Estimate", variant: "primary" },
-          { label: "Explore Services", variant: "secondary" },
+          { label: "Start My Task", variant: "primary" },
+          { label: "Hire a Shopify Expert", variant: "secondary" },
         ]}
       />
      
