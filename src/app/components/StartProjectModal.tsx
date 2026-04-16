@@ -97,7 +97,7 @@ No upfront payment. Pay only after successful delivery.
                   value={formData.url}
                   onChange={handleChange}
                   placeholder="yourstore.com"
-                  className="w-full border text-black border-black p-2 rounded mb-4 placeholder-gray-400 placeholder:text-sm"
+                  className="w-full border text-black border-black p-2 rounded mb-2 placeholder-gray-400 placeholder:text-sm"
                 />
               </div>
                      
@@ -125,7 +125,7 @@ No upfront payment. Pay only after successful delivery.
         <label
           key={label}
           className={[
-            "cursor-pointer select-none rounded-full border px-4 py-2 text-sm font-medium transition",
+            "cursor-pointer select-none  border px-4 py-2 text-sm  font-normal transition",
             "hover:shadow-sm",
             "focus-within:ring-2 focus-within:ring-black focus-within:ring-offset-2",
             selected
@@ -154,7 +154,7 @@ No upfront payment. Pay only after successful delivery.
              <button
   type="button"
   onClick={() => setStep(2)}
-  className="px-8 py-2 text-lg cursor-pointer bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
+  className="px-8 py-2 text-lg cursor-pointer bg-black text-white uppercase  hover:bg-black transition-colors flex items-center"
 >
   Continue →
 </button>
@@ -217,7 +217,7 @@ You can also share links or screenshots."
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="cursor-pointer px-4 py-2 rounded-md border border-black/20 text-black hover:bg-black/5 transition-colors"
+                  className="cursor-pointer px-4 py-2  border border-black  text-black hover:bg-black/5 transition-colors"
                 >
                  
                 ← Back
@@ -225,7 +225,7 @@ You can also share links or screenshots."
                 <button
                   type="button"
                   onClick={() => setStep(3)}
-                  className="px-8 cursor-pointer text-lg py-2 bg-[#DFF976] text-black rounded-md hover:bg-[#DFF976] transition-colors flex items-center"
+                  className="px-8 cursor-pointer text-lg py-2 bg-black text-white  hover:bg-black transition-colors flex items-center"
                 >
                   <span>Next →</span>
                  
@@ -314,7 +314,7 @@ You can also share links or screenshots."
         <button
           type="button"
           onClick={() => setStep(2)}
-          className=" cursor-pointer px-4 py-2 rounded-md border border-black/20 text-black hover:bg-black/5 transition-colors"
+          className=" cursor-pointer px-4 py-2  border border-black text-white hover:bg-black/5 transition-colors"
         >
           ← Back
         </button>
@@ -322,7 +322,7 @@ You can also share links or screenshots."
         {/* IMPORTANT: still type="submit" so your email send works */}
         <button
           type="submit"
-          className="cursor-pointer px-5 py-2.5 bg-[#DFF976] text-black rounded-md hover:opacity-90 transition-colors flex items-center font-medium"
+          className="cursor-pointer uppercase px-5 py-2.5 bg-black text-white rounded-md hover:opacity-90 transition-colors flex items-center font-medium"
         >
           <span>Submit request →</span>
         </button>
