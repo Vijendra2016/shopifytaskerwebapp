@@ -54,12 +54,30 @@ export default function Navbar() {
   const [showModal, setShowModal] = useState(false);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [navHidden, setNavHidden] = useState(false);
   const megaMenuTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [isOpen]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      if (currentY < 10) {
+        setNavHidden(false);
+      } else if (currentY > lastScrollY.current) {
+        setNavHidden(true);   // scrolling down → hide
+      } else {
+        setNavHidden(false);  // scrolling up → show
+      }
+      lastScrollY.current = currentY;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -89,7 +107,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-black text-lg w-full fixed top-0 left-0 z-50">
+    <nav className={`bg-black text-lg w-full fixed top-0 left-0 z-50 transition-transform duration-300 ease-in-out ${navHidden ? "-translate-y-full" : "translate-y-0"}`}>
       <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex justify-between h-14 items-center">
 
