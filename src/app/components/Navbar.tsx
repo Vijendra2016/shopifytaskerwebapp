@@ -161,7 +161,7 @@ export default function Navbar() {
               onClick={() => setShowModal(true)}
               className="cursor-pointer   h-[3.25rem] text-[14px] inline-flex items-center gap-2 bg-white text-black px-4 py-2  uppercase font-normal hover:opacity-90 transition"
             >
-             GET A QUOTE <TfiArrowRight className=" animate-jump animate-infinite" />
+             Start My Task<TfiArrowRight className=" animate-jump animate-infinite" />
             </button>
           </div>
 
@@ -174,7 +174,7 @@ export default function Navbar() {
               onClick={openCreateTask}
               className="inline-flex items-center gap-1.5 bg-white text-black px-3.5 py-1.5  text-[12px] font-semibold hover:opacity-90 transition"
             >
-              Get a Free Quote
+               Start My Task
             </button>
             <button
               className="text-white p-1"
@@ -312,7 +312,7 @@ export default function Navbar() {
                 onClick={openCreateTask}
                 className="w-full bg-white text-black py-3.5  text-[15px] font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
               >
-                Get a Free Quote<TfiArrowRight className=" animate-jump animate-infinite" />
+                Start My Task<TfiArrowRight className=" animate-jump animate-infinite" />
               </button>
 
               <div className="mt-5 flex items-center gap-3">
