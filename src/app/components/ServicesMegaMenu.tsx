@@ -292,9 +292,18 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
         </div>
 
         {/* ── CTA panel ── */}
-        <div className="w-90 bg-black flex-shrink-0 flex flex-col justify-between py-7 px-6">
-          <div>
-            
+        <div className="w-90 relative overflow-hidden bg-black flex-shrink-0 flex flex-col justify-between py-7 px-6">
+          {/* Background image */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://cdn.shopify.com/s/files/1/0840/2934/1974/files/boliviainteligente-oUg80_20hdM-unsplash.jpg?v=1776320014"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
+          {/* Overlay so text stays readable */}
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="relative z-10">
+
             <p className="text-[9px] uppercase tracking-[0.22em] text-white/90 ">
               Get Started
             </p>
@@ -313,7 +322,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
             </p>
           </div>
 
-          <div className="mt-6 space-y-2.5">
+          <div className="relative z-10 mt-6 space-y-2.5">
             <div className="flex justify-center">
               <Image
                 src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680baca7a144a823c527edf7_shopifytasker-review.png"
