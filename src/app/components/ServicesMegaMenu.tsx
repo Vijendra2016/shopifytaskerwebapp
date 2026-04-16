@@ -148,11 +148,11 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
   };
 
   return (
-    <div className="fixed top-14 left-0 right-0 bg-[#FAFAFA] border-t border-black/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.12)] z-50">
+    <div className="fixed top-14 left-0 right-0 bg-black border-t border-black/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.12)] z-50">
       <div className="max-w-19xl mx-auto flex min-h-[300px]">
 
         {/* ── Category sidebar ── */}
-        <div className="w-52 border-r border-black/[0.08] py-6 flex-shrink-0 flex flex-col justify-center">
+        <div className="w-52 border-r-[0.5px] border-white py-6 flex-shrink-0 flex flex-col justify-center">
           {categories.map((cat) => (
             <button
               key={cat.id}
@@ -161,8 +161,8 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
               className={[
                 "w-full text-left px-5 py-2.5 text-[13px] font-medium flex items-center gap-2.5 transition-colors cursor-pointer",
                 activeId === cat.id
-                  ? "text-black bg-black/[0.05]"
-                  : "text-black/45 hover:text-black hover:bg-black/[0.03]",
+                  ? "text-white bg-white/[0.05]"
+                  : "text-white/45 hover:text-white hover:bg-white/[0.03]",
               ].join(" ")}
             >
               <span className={[
@@ -177,7 +177,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
             <Link
               href="/shopify-expert-services"
               onClick={onClose}
-              className="text-[12px] text-black/35 hover:text-black/70 transition flex items-center gap-1.5"
+              className="text-[12px] text-white/35 hover:text-white/70 transition flex items-center gap-1.5"
             >
               All services <TfiArrowRight className="text-[10px]" />
             </Link>
@@ -186,7 +186,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
 
         {/* ── Service list ── */}
         <div className="flex-1 flex flex-col justify-center px-7 py-6">
-          <p className="text-[9px] uppercase tracking-[0.26em] text-black/90 mb-3">
+          <p className="text-[9px] uppercase tracking-[0.26em] text-white/90 mb-3">
             {active.label}
           </p>
 
@@ -215,7 +215,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
                 <div className="flex-1 min-w-0">
                   <p className={[
                     "text-[13px] font-semibold leading-snug transition-colors duration-150",
-                    hoveredIdx === i ? "text-black" : "text-black/60",
+                    hoveredIdx === i ? "text-black" : "text-white/60",
                   ].join(" ")}>
                     {svc.title}
                   </p>
@@ -277,13 +277,13 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
               <Link
                 href={previewSvc.href}
                 onClick={onClose}
-                className="inline-flex items-center gap-1.5 bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-[11px] font-medium px-3 py-1.5 rounded-full transition"
+                className="inline-flex items-center gap-1.5 bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white text-[11px] font-medium px-3 py-1.5  transition"
               >
                 View service <TfiArrowRight className="text-[9px]" />
               </Link>
               <button
                 onClick={() => { onClose(); onOpenModal(); }}
-                className="inline-flex items-center gap-1.5 bg-white  hover:opacity-90 text-black text-[11px] font-semibold px-3 py-1.5 rounded-full transition cursor-pointer"
+                className="inline-flex items-center gap-1.5 bg-white  hover:opacity-90 text-black text-[11px] font-semibold px-3 py-1.5  transition cursor-pointer"
               >
                 Get a Free Quote <TfiArrowRight className="text-[9px]" />
               </button>
@@ -305,7 +305,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
                 height={20}
                 className="object-contain"
               />
-            <h3 className="text-[17px] font-bold text-white leading-snug">
+            <h3 className="text-[17px] font-[500] text-white leading-snug">
              Collaborate with Proven Shopify Developers & Experts Who Drive Growth
             </h3>
             <p className="text-[12px] text-white/55 mt-3 leading-relaxed">
@@ -326,17 +326,11 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
             <div className="flex flex-col gap-2">
               <button
                 onClick={() => { onClose(); onOpenModal(); }}
-                className="w-full bg-white text-black text-[12px] font-semibold py-2.5 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
+                className="w-full bg-white text-black text-[12px] font-semibold py-2.5  flex items-center justify-center gap-2 hover:opacity-90 transition cursor-pointer"
               >
                 Get a Free Estimate <TfiArrowRight />
               </button>
-              <Link
-                href="/shopify-expert-services"
-                onClick={onClose}
-                className="w-full border border-white/20 text-white text-[12px] font-medium py-2.5 rounded-full flex items-center justify-center gap-2 hover:bg-white/10 transition"
-              >
-                Browse Services
-              </Link>
+              
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import SplitSection from "../SplitSection";
 import CaseStudyAccordion from "../CaseStudyAccordion";
 import GeoMessage from "@/app/components/GeoMessage";
 import BrandEditorial from "../BrandEditorial";
+import HeroSearchFirst from "./HeroBanner";
 // TODO: replace with cycling brands data
 import { healthEditorialBrands as cyclingEditorialBrands } from "../data/healthEditorialBrands";
 
@@ -242,6 +243,14 @@ export default function IndustryPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
+<HeroSearchFirst
+             videoWebmUrl="https://cdn.shopify.com/videos/c/o/v/f4a38070e7334a6cb9eb8b69a2b72380.mp4"
+             videoUrl="https://cdn.shopify.com/videos/c/o/v/f4a38070e7334a6cb9eb8b69a2b72380.mp4"
+             ctas={[
+               { label: "Get a Clear Estimate", variant: "primary" },
+               { label: "Get My Store Audit & Plan", variant: "secondary" },
+             ]}
+           />
       <Hero
         title="Shopify Cycling Website Design & Development | ShopifyTasker"
         subtitle="High-performance eCommerce for bike & e-bike brands (bikes, parts, accessories, apparel)"
