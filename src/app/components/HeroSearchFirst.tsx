@@ -71,8 +71,8 @@ type HeroSearchFirstProps = {
 
 export default function HeroSearchFirst({
   eyebrow = "Top-Rated Shopify Experts",
-  titleBottom = "Launch, Redesign & Fix Your Shopify Store",
-  description = "Work with experienced Shopify experts who handle everything — design, development, SEO, and ongoing support — so you can focus on growing your business.",
+  titleBottom = "Your On-Demand Shopify Task Team",
+  description = "Submit Shopify tasks anytime. We fix, build, and optimize your store — fast. Pay only after approval.",
   videoUrl,
   videoWebmUrl,
   backgroundImageUrl,
