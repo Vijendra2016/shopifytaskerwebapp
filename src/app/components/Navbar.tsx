@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
 import { TfiAlignLeft, TfiClose, TfiArrowRight } from "react-icons/tfi";
 import StartProjectModal from "./StartProjectModal";
 import ServicesMegaMenu from "./ServicesMegaMenu";
@@ -50,21 +49,14 @@ const navLinks = [
   { label: "Reviews", href: "https://www.trustpilot.com/review/shopifytasker.com", external: true },
 ];
 
-// Pages where the navbar should be transparent over the hero video
-const TRANSPARENT_PAGES = ["/"];
-
 export default function Navbar() {
-  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
-  const [isAtTop, setIsAtTop] = useState(true);
   const megaMenuTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lastScrollY = useRef(0);
-
-  const isTransparentPage = TRANSPARENT_PAGES.includes(pathname);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -74,7 +66,6 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       const currentY = window.scrollY;
-      setIsAtTop(currentY < 50);
       if (currentY < 10) {
         setNavHidden(false);
       } else if (currentY > lastScrollY.current) {
@@ -117,7 +108,7 @@ export default function Navbar() {
 
   return (
     <>
-    <nav className={`text-lg w-full fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out ${navHidden ? "-translate-y-[4.5rem]" : "translate-y-0"} ${isTransparentPage && isAtTop ? "bg-transparent" : "bg-black"}`}>
+    <nav className={`bg-black text-lg w-full fixed top-0 left-0 z-50 transition-transform duration-300 ease-in-out ${navHidden ? "-translate-y-[4.5rem]" : "translate-y-0"}`}>
       <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="relative flex items-center h-18">
 

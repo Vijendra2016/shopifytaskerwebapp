@@ -30,6 +30,7 @@ export default function Home() {
           { label: "Hire a Shopify Expert", variant: "secondary" },
         ]}
       />
+
      
     
 
