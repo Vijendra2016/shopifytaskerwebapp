@@ -6,6 +6,7 @@ import GeoMessage from "../components/GeoMessage";
 
 import HowItWorks from "../components/HowItWorks";
 import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import TrustedBySection from "../components/TrustedBySection";
 
 export const metadata: Metadata = {
   title: "About ShopifyTasker | Your Trusted Shopify Development Partner",
@@ -19,12 +20,13 @@ export default function About() {
       <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "How It Works", href: "/how-this-work" }]} />
       <HowItWorks/>
 
+      <TrustedBySection />
 
-        
+
 <TestimonialCard/>
 
- 
- 
+
+
  <GeoMessage/>
     </main>
   );
