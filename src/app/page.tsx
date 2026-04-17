@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import ClientTell from "./components/Clienttel";
 import TestimonialCardGrid from "./components/TestimonialCardGrid";
 import TrustedBySection from "./components/TrustedBySection";
 import WhyShopifyTasker from "./components/WhyShopifyTasker";
@@ -63,10 +62,10 @@ export default function Home() {
     
  
 
-< ClientTell />
+<TrustedBySection />
 
 < WhyShopifyTasker />
-  <TrustedBySection />
+  
 <TestimonialCardGrid />
 <GeoMessage />
 
