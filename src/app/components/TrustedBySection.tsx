@@ -130,7 +130,7 @@ export default function TrustedBySection() {
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
-                  className="object-contain brightness-0 invert"
+                  className="object-contain brightness-0 invert w-14 h-7 md:w-auto md:h-auto"
                 />
               </div>
             ))}
