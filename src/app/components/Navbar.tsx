@@ -108,7 +108,7 @@ export default function Navbar() {
 
   return (
     <>
-    <nav className={`bg-black text-lg w-full fixed top-0 left-0 z-50 transition-transform duration-300 ease-in-out ${navHidden ? "-translate-y-full" : "translate-y-0"}`}>
+    <nav className={`bg-black text-lg w-full fixed top-8 left-0 z-50 transition-transform duration-300 ease-in-out ${navHidden ? "-translate-y-full" : "translate-y-0"}`}>
       <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex justify-between h-14 items-center">
 
