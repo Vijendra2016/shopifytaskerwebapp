@@ -141,5 +141,6 @@ export default function TrustedBySection() {
     </section>
 
       <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
+  </>
   );
 }
