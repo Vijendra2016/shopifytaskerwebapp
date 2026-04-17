@@ -83,7 +83,8 @@ export default function TrustedBySection() {
 
   return (
     <>
-    {/* ── Outer section: black bg, horizontal padding creates the side gap ── */}
+    {/* ── Outer section:
+     black bg, horizontal padding creates the side gap ── */}
     <section className="w-full bg-black py-6 px-4 md:px-10">
       {/* ── Inner card: background image lives here only ── */}
       <div className="relative w-full overflow-hidden py-14 md:py-20">
@@ -130,7 +131,7 @@ export default function TrustedBySection() {
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
-                  className="object-contain brightness-0 invert w-14 h-7 md:w-auto md:h-auto"
+                  className="object-contain brightness-0 invert"
                 />
               </div>
             ))}
@@ -139,7 +140,6 @@ export default function TrustedBySection() {
       </div>
     </section>
 
-    <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
-    </>
+      <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
   );
 }

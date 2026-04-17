@@ -17,7 +17,7 @@ const CLIENT_LOGOS = [
     alt: "Slumberpod",
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68031f65812cbc90dbb3ecad_Pi7_shopboxd_logo%20(1).webp",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6800a4dfa301a04d362e041b_shopboxuk.png",
     alt: "Shopboxd",
   },
   {

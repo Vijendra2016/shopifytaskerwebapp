@@ -119,6 +119,9 @@ export default function ServicesAtlantiser() {
   useLayoutEffect(() => {
     if (typeof window === "undefined") return;
 
+    // Disable pinning on mobile — let cards stack naturally
+    if (window.innerWidth < 768) return;
+
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
@@ -150,7 +153,7 @@ export default function ServicesAtlantiser() {
         });
       });
 
-      // Small depth motion (Atlantiser-ish subtlety)
+      // Small depth motion
       cards.forEach((card, i) => {
         const endTrigger = i < cards.length - 1 ? cards[i + 1] : card;
 
@@ -227,7 +230,7 @@ export default function ServicesAtlantiser() {
                 relative overflow-hidden rounded-2xl
                 border border-white/10 bg-neutral-950
                 shadow-[0_18px_70px_rgba(0,0,0,0.55)]
-                min-h-[82vh]
+                md:min-h-[82vh]
               "
             >
               {/* inner top rail */}
