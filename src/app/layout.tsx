@@ -53,6 +53,7 @@ export const metadata: Metadata = {
 };
 
 import RotatingWhatsAppLoader from './components/RotatingWhatsAppLoader';
+import AnnouncementBar from './components/Annocmentbar';
 
 export default function RootLayout({
   children,
@@ -86,6 +87,7 @@ export default function RootLayout({
 
          
       
+        <AnnouncementBar />
         <Navbar />
 
 
