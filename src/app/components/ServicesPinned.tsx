@@ -179,7 +179,7 @@ export default function ServicesAtlantiser() {
   }, []);
 
   return (
-    <section ref={rootRef} className="relative bg-neutral-950 text-neutral-50">
+    <section ref={rootRef} className="relative bg-black text-neutral-50">
       {/* ✅ Modal mounted once (not inside map) */}
       <StartProjectModal
         isOpen={showModal}
@@ -278,10 +278,10 @@ export default function ServicesAtlantiser() {
                       type="button"
                       className=" cursor-pointer 
                         mt-6 inline-flex items-center gap-3
-                         bg-[#DFF976]  rounded-full text-black
-                        rounded-full border border-white/15 
+                         bg-white   text-black
+                       border border-white/15 
                         px-5 py-2.5 text-sm font-medium 
-                        transition hover:bg-teal-500
+                        transition hover:bg-white
                         focus:outline-none focus:ring-2 focus:ring-white/30
                       "
                       onClick={() => setShowModal(true)}
