@@ -66,7 +66,7 @@ export default function StartProjectModal({ isOpen, onClose }: Props) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-[#000000cf] bg-opacity-50 flex justify-end z-50">
+    <div className="fixed inset-0 bg-[#000000cf] bg-opacity-50 flex justify-end z-[100]">
 
       
         

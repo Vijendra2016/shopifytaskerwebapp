@@ -108,32 +108,34 @@ export default function Navbar() {
 
   return (
     <>
-    <nav className={`bg-black text-lg w-full fixed top-8 left-0 z-50 transition-transform duration-300 ease-in-out ${navHidden ? "-translate-y-full" : "translate-y-0"}`}>
+    <nav className={`bg-black text-lg w-full fixed top-0 left-0 z-50 transition-transform duration-300 ease-in-out ${navHidden ? "-translate-y-[4.5rem]" : "translate-y-0"}`}>
       <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2">
-        <div className="flex justify-between h-14 items-center">
+        <div className="relative flex items-center h-18">
 
-          {/* Logo */}
-          <Link href="/" className="px-4 py-1" onClick={closeMenu}>
-            <Image
-              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6815f5f9c4f106f73030c696_file.svg"
-              alt="ShopifyTasker Logo"
-              width={200}
-              height={50}
-              className="h-auto"
-              priority
-            />
-          </Link>
+          {/* Left: Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/" className="px-4 py-1 block" onClick={closeMenu}>
+              <Image
+                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6815f5f9c4f106f73030c696_file.svg"
+                alt="ShopifyTasker Logo"
+                width={200}
+                height={50}
+                className="h-auto"
+                priority
+              />
+            </Link>
+          </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
-            <Link href="/" className="text-white text-[1rem]   hover:text-[#777]  underline-offset-4 transition">
+          {/* Center: Desktop nav links — absolutely centered */}
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-8">
+            <Link href="/" className="text-white text-[1rem] hover:text-[#777] underline-offset-4 transition">
               Home
             </Link>
-            <Link href="/how-this-work" className="text-white text-[1rem]  hover:text-[#777]  underline-offset-4 transition">
+            <Link href="/how-this-work" className="text-white text-[1rem] hover:text-[#777] underline-offset-4 transition">
               How it works
             </Link>
 
-            {/* Services — Desktop Mega Menu */}
+            {/* Services — Desktop Mega Menu trigger */}
             <div
               className="relative"
               onMouseEnter={handleServicesEnter}
@@ -142,7 +144,7 @@ export default function Navbar() {
               <Link
                 href="/shopify-expert-services"
                 className={[
-                  "text-white  text-[1rem]  hover:text-[#777]  transition flex items-center gap-1",
+                  "text-white text-[1rem] hover:text-[#777] transition flex items-center gap-1",
                   showMegaMenu ? "underline" : "",
                 ].join(" ")}
               >
@@ -154,47 +156,41 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </Link>
-
-              {showMegaMenu && (
-                <div onMouseEnter={handleMegaMenuEnter} onMouseLeave={handleMegaMenuLeave}>
-                  <ServicesMegaMenu
-                    onClose={() => setShowMegaMenu(false)}
-                    onOpenModal={() => setShowModal(true)}
-                  />
-                </div>
-              )}
             </div>
 
-            <Link href="/faq" className="text-white text-[1rem]   hover:text-[#777]  underline-offset-4 transition">
+            <Link href="/faq" className="text-white text-[1rem] hover:text-[#777] underline-offset-4 transition">
               FAQ
             </Link>
             <Link
               href="https://www.trustpilot.com/review/shopifytasker.com"
               target="_blank"
-              className="text-white text-[1rem] "
+              className="text-white text-[1rem]"
             >
               Reviews
             </Link>
-
-            <button
-              onClick={() => setShowModal(true)}
-              className="cursor-pointer   h-[3.25rem] text-[14px] inline-flex items-center gap-2 bg-white text-black px-4 py-2  uppercase font-normal hover:opacity-90 transition"
-            >
-             Start My Task<TfiArrowRight className=" animate-jump animate-infinite" />
-            </button>
           </div>
 
+          {/* Right: Desktop CTA + Mobile controls */}
+          <div className="ml-auto flex items-center gap-3">
+            {/* Desktop CTA — right side */}
+            <button
+              onClick={() => setShowModal(true)}
+              className="hidden md:inline-flex cursor-pointer h-[3.25rem] text-[14px] items-center gap-2 bg-white text-black px-5 py-2 uppercase font-normal hover:opacity-90 transition"
+            >
+              Start My Task<TfiArrowRight className="animate-jump animate-infinite" />
+            </button>
 
-          {/* Mobile — right side: CTA + hamburger */}
-          <div className="md:hidden flex items-center gap-3">
+            {/* Mobile CTA */}
             <button
               onClick={openCreateTask}
-              className="inline-flex items-center gap-1.5 bg-white text-black px-3.5 py-1.5  text-[12px] font-semibold hover:opacity-90 transition"
+              className="md:hidden inline-flex items-center gap-1.5 bg-white text-black px-3.5 py-1.5 text-[12px] font-semibold hover:opacity-90 transition"
             >
-               Start My Task
+              Start My Task
             </button>
+
+            {/* Mobile hamburger */}
             <button
-              className="text-white p-1"
+              className="md:hidden text-white p-1"
               onClick={() => setIsOpen((v) => !v)}
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
@@ -205,6 +201,16 @@ export default function Navbar() {
 
         </div>
       </div>
+
+      {/* Mega menu — rendered outside the transformed center div so fixed positioning spans full viewport width */}
+      {showMegaMenu && (
+        <div onMouseEnter={handleMegaMenuEnter} onMouseLeave={handleMegaMenuLeave}>
+          <ServicesMegaMenu
+            onClose={() => setShowMegaMenu(false)}
+            onOpenModal={() => setShowModal(true)}
+          />
+        </div>
+      )}
 
       {/* ── Mobile full-screen drawer ── */}
       <div

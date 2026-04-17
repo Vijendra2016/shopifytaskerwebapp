@@ -148,11 +148,11 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
   };
 
   return (
-    <div className="fixed top-14 left-0 right-0 bg-black border-t border-black/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.12)] z-50">
+    <div className="fixed top-[4.5rem] left-0 right-0 bg-black border-t border-white/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.45)] z-50">
       <div className="max-w-19xl mx-auto flex min-h-[300px]">
 
         {/* ── Category sidebar ── */}
-        <div className="w-52 border-r-[0.5px] border-white py-6 flex-shrink-0 flex flex-col justify-center">
+        <div className="w-52 border-r-[0.5px] border-white py-4 flex-shrink-0 flex flex-col justify-start">
           {categories.map((cat) => (
             <button
               key={cat.id}
@@ -167,13 +167,13 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
             >
               <span className={[
                 "w-1.5 h-1.5 rounded-full flex-shrink-0 transition-colors duration-150",
-                activeId === cat.id ? "bg-black" : "bg-black/15",
+                activeId === cat.id ? "bg-white" : "bg-white/20",
               ].join(" ")} />
               {cat.label}
             </button>
           ))}
 
-          <div className="mx-5 mt-5 pt-4 border-t border-black/[0.08]">
+          <div className="mx-5 mt-5 pt-4 border-t border-white/[0.08]">
             <Link
               href="/shopify-expert-services"
               onClick={onClose}
@@ -185,7 +185,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
         </div>
 
         {/* ── Service list ── */}
-        <div className="flex-1 flex flex-col justify-center px-7 py-6">
+        <div className="flex-1 flex flex-col justify-start px-7 py-4">
           <p className="text-[9px] uppercase tracking-[0.26em] text-white/90 mb-3">
             {active.label}
           </p>
@@ -242,7 +242,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
         </div>
 
         {/* ── Image preview panel ── */}
-        <div className="w-96 flex-shrink-0 relative my-4 mr-4 rounded-lg overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.14)]">
+        <div className="w-96 flex-shrink-0 relative my-2 mr-4 rounded-lg overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.14)]">
           {/* Crossfading images — all stacked, only active one visible */}
           {active.services.map((svc, i) => (
             <div
@@ -292,7 +292,7 @@ export default function ServicesMegaMenu({ onClose, onOpenModal }: ServicesMegaM
         </div>
 
         {/* ── CTA panel ── */}
-        <div className="w-90 relative overflow-hidden bg-black flex-shrink-0 flex flex-col justify-between py-7 px-6">
+        <div className="w-90 relative overflow-hidden bg-black flex-shrink-0 flex flex-col justify-between py-4 px-6">
           {/* Background image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
