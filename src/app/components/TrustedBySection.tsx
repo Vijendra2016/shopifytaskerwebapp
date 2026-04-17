@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import StartProjectModal from "./StartProjectModal";
 
 const logos = [
   {
@@ -79,8 +79,11 @@ const logos = [
 ];
 
 export default function TrustedBySection() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    /* ── Outer section: black bg, horizontal padding creates the side gap ── */
+    <>
+    {/* ── Outer section: black bg, horizontal padding creates the side gap ── */}
     <section className="w-full bg-black py-6 px-4 md:px-10">
       {/* ── Inner card: background image lives here only ── */}
       <div className="relative w-full overflow-hidden py-14 md:py-20">
@@ -104,15 +107,15 @@ export default function TrustedBySection() {
             <h2 className="text-white text-xl md:text-2xl font-light tracking-tight">
               They trusted us
             </h2>
-            <Link
-              href="/shopify-expert-services"
+            <button
+              onClick={() => setShowModal(true)}
               className="group flex items-center gap-1.5 text-white text-xs md:text-sm tracking-[0.15em] uppercase border-b border-white pb-0.5 hover:opacity-60 transition-opacity duration-200"
             >
-              OUR WORK
+              GET STARTED
               <span className="inline-block -translate-y-0.5 group-hover:translate-x-0.5 group-hover:-translate-y-1 transition-transform duration-200">
                 ↗
               </span>
-            </Link>
+            </button>
           </div>
 
           {/* Logo grid */}
@@ -135,5 +138,8 @@ export default function TrustedBySection() {
         </div>
       </div>
     </section>
+
+    <StartProjectModal isOpen={showModal} onClose={() => setShowModal(false)} />
+    </>
   );
 }
