@@ -5,7 +5,7 @@ import StartProjectModal from "./StartProjectModal";
 
 const CLIENT_LOGOS = [
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680adf6805e6630a2653f6ad_go-for-zero.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e228508da5dedaddf6ce8b_go_for_zero_logo-bw.png",
     alt: "Go For Zero",
   },
   {
