@@ -23,8 +23,8 @@ export default function Home() {
 
 
       <HeroSearchFirst
-        videoWebmUrl="https://cdn.shopify.com/videos/c/o/v/8ce3a3c8f8ee431caf66dc77c83385b4.mp4"
-        videoUrl="https://cdn.shopify.com/videos/c/o/v/8ce3a3c8f8ee431caf66dc77c83385b4.mp4"
+        videoWebmUrl="https://cdn.prod.website-files.com/68a42ed7e787a4a306819ed6%2F68d1a2d94ea79993a16b18aa_hero-video-c-transcode.mp4"
+        videoUrl="https://cdn.prod.website-files.com/68a42ed7e787a4a306819ed6%2F68d1a2d94ea79993a16b18aa_hero-video-c-transcode.mp4"
         ctas={[
           { label: "Start My Task", variant: "primary" },
           { label: "Hire a Shopify Expert", variant: "secondary" },
