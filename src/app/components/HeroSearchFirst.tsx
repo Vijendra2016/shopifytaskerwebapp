@@ -5,7 +5,7 @@ import StartProjectModal from "./StartProjectModal";
 
 const CLIENT_LOGOS = [
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e228508da5dedaddf6ce8b_go_for_zero_logo-bw.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e228d31b12b6460bf19060_goforzeroshopifyexpert.png",
     alt: "Go For Zero",
   },
   {
@@ -45,7 +45,7 @@ const CLIENT_LOGOS = [
     alt: "Farm Nine",
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68032bcaf9da9c3bc2fddc79_egclothing.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e228d31b12b6460bf19060_goforzeroshopifyexpert.png",
     alt: "EG Clothing",
   },
 ];
