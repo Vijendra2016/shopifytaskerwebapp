@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import StartProjectModal from "./StartProjectModal"; // <-- adjust path if needed
@@ -179,6 +179,35 @@ export default function ServicesAtlantiser() {
     }, rootRef);
 
     return () => ctx.revert();
+  }, []);
+
+  // Mobile: fade-up animation via IntersectionObserver
+  useEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth >= 768) return;
+
+    const cards = document.querySelectorAll<HTMLElement>("[data-service-card]");
+    cards.forEach((card) => {
+      card.style.opacity = "0";
+      card.style.transform = "translateY(32px)";
+      card.style.transition = "opacity 0.55s ease, transform 0.55s ease";
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target as HTMLElement;
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+            observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
   }, []);
 
   return (
