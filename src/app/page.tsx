@@ -7,6 +7,7 @@ import WhySwitchSection from "./components/whysection";
 import StepsSection from "./components/StepsSection";
 import HeroSearchFirst from "./components/HeroSearchFirst";
 import ServicesPinned from "./components/ServicesPinned";
+import TrustpilotSlider from "./components/TrustpilotSlider";
 
 export const metadata: Metadata = {
   title: "ShopifyTasker: Hire Top-Rated Shopify Experts | On-Demand Help",
@@ -68,6 +69,7 @@ export default function Home() {
 < WhyShopifyTasker />
   
 <TestimonialCardGrid />
+<TrustpilotSlider />
 <GeoMessage />
 
   </main>
