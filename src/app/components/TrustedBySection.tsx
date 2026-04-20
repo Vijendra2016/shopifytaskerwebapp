@@ -5,7 +5,7 @@ import StartProjectModal from "./StartProjectModal";
 
 const logos = [
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e228d31b12b6460bf19060_goforzeroshopifyexpert.png",
+    src: "https://cdn.shopify.com/s/files/1/0693/1185/6947/files/Mubu_footer_logo_2.svg",
     alt: "Go For Zero",
     width: 110,
     height: 44,
