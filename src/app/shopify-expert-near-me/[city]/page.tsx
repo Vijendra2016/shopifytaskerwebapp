@@ -7,6 +7,7 @@ import TestimonialCard from "@/app/components/TestimonialCard";
 import ExpertCityPageSchema from "../ExpertCityPageSchema";
 import ExpertCityFaqSection from "../ExpertCityFaqSection";
 import CreateTaskButton from "../CreateTaskButton";
+import TrustedBySection from "@/app/components/TrustedBySection";
 
 type Props = {
   params: Promise<{ city: string }>;
@@ -328,8 +329,9 @@ export default async function CityPage(props: Props) {
         </div>
       </section>
 
+<TrustedBySection/>
       {/* ─── MIGRATION ─── */}
-      <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
+      <section className="bg-black  px-6 py-20 md:py-28">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Platform Migration</p>

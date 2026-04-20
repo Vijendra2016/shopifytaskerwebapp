@@ -7,6 +7,7 @@ import TestimonialCard from "@/app/components/TestimonialCard";
 import CityPageSchema from "../CityPageSchema";
 import CityFaqSection from "../CityFaqSection";
 import CreateTaskButton from "../CreateTaskButton";
+import TrustedBySection from "@/app/components/TrustedBySection";
 
 type Props = {
   params: Promise<{ city: string }>;
@@ -309,7 +310,7 @@ export default async function CityPage(props: Props) {
           </div>
         </div>
       </section>
-
+<TrustedBySection />
       {/* ─── PROCESS ─── */}
       <section className="border-t border-white/[0.08] px-6 py-20 md:py-28">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-16 items-start">
