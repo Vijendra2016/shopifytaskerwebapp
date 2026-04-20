@@ -18,7 +18,7 @@ const steps: Step[] = [
     number: "01",
     title: "Share Your Task",
     description:
-      "Click 'Create Task' and describe what you need — from a quick tweak to a full custom build. You can also pick from our task catalogue.",
+      "Click 'Start My Task' and describe what you need — from a quick tweak to a full custom build. You can also pick from our task catalogue.",
     detail: "We analyse your request and get back within a few hours.",
     icon: <LuFilePen size={28} />,
     tag: "Takes 2 minutes",
@@ -53,7 +53,7 @@ const HowItWorks: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
             <div>
-              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-[#DFF976] mb-4">
+              <span className="inline-block text-xs font-semibold tracking-widest uppercase text-white mb-4">
                 Process
               </span>
               <h2 className="text-[48px] sm:text-[64px] lg:text-[80px] leading-[0.92] tracking-tight font-medium">
@@ -74,10 +74,10 @@ const HowItWorks: React.FC = () => {
               >
                 {/* Number + icon row */}
                 <div className="flex items-center justify-between">
-                  <span className="text-[64px] leading-none font-medium tracking-tighter text-white/10 group-hover:text-white/20 transition-colors">
+                  <span className="text-[64px] leading-none  text-white font-medium tracking-tighter text-white/10 group-hover:text-white/20 transition-colors">
                     {step.number}
                   </span>
-                  <div className="w-12 h-12 rounded-full bg-[#DFF976]/10 flex items-center justify-center text-[#DFF976]">
+                  <div className="w-12 h-12 rounded-full bg-[#31852f]/10 flex items-center justify-center text-white">
                     {step.icon}
                   </div>
                 </div>
@@ -98,13 +98,13 @@ const HowItWorks: React.FC = () => {
                 </p>
 
                 {/* Detail line */}
-                <p className="text-[#DFF976] text-sm font-medium border-t border-white/10 pt-5">
+                <p className="text-[#31852f] text-sm font-medium border-t border-white/10 pt-5">
                   {step.detail}
                 </p>
 
                 {/* Step connector dot for desktop */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3 h-3 rounded-full bg-[#DFF976] z-10" />
+                  <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-3 h-3 rounded-full bg-[#31852f] z-10" />
                 )}
               </div>
             ))}
@@ -117,7 +117,7 @@ const HowItWorks: React.FC = () => {
             </p>
             <button
               onClick={() => setShowModal(true)}
-              className="cursor-pointer inline-flex items-center gap-2 rounded-full bg-[#DFF976] text-black px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition whitespace-nowrap"
+              className="cursor-pointer inline-flex items-center gap-2  bg-white text-black px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition whitespace-nowrap"
             >
               Start My Task →
             </button>
