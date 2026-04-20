@@ -3,7 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { TfiAlignLeft, TfiClose, TfiArrowRight } from "react-icons/tfi";
+import { TfiAlignJustify, TfiClose, TfiArrowRight } from "react-icons/tfi";
+
 import StartProjectModal from "./StartProjectModal";
 import ServicesMegaMenu from "./ServicesMegaMenu";
 
@@ -180,22 +181,16 @@ export default function Navbar() {
               Start My Task<TfiArrowRight className="animate-jump animate-infinite" />
             </button>
 
-            {/* Mobile CTA */}
-            <button
-              onClick={openCreateTask}
-              className="md:hidden inline-flex items-center gap-1.5 bg-white text-black px-3.5 py-1.5 text-[12px] font-semibold hover:opacity-90 transition"
-            >
-              Start My Task
-            </button>
+            
 
             {/* Mobile hamburger */}
             <button
-              className="md:hidden text-white p-1"
+              className="md:hidden text-white p-1 bg-white"
               onClick={() => setIsOpen((v) => !v)}
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
             >
-              {isOpen ? <TfiClose className="text-2xl" /> : <TfiAlignLeft className="text-2xl" />}
+              {isOpen ? <TfiClose className="text-2xl" /> : <TfiAlignJustify className="text-2xl" />}
             </button>
           </div>
 

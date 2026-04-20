@@ -21,7 +21,7 @@ const overusedGrotesk = localFont({
 
 
 export const viewport: Viewport = {
-  themeColor: 'black',
+  themeColor: '#000000',
   width: 'device-width',
   initialScale: 1,
 }
@@ -60,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black">
       <GoogleTagManager gtmId="G-RH64BGD6GT" />
 
       <Script
