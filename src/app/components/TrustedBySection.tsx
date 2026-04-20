@@ -120,7 +120,7 @@ export default function TrustedBySection() {
           </div>
 
           {/* Logo grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-x-10 gap-y-10 items-center justify-items-center">
+          <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-x-10 gap-y-10 items-center justify-items-center">
             {logos.map((logo) => (
               <div
                 key={logo.alt}
