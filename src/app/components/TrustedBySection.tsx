@@ -47,7 +47,7 @@ const logos = [
     height: 44,
   },
   {
-    src: "https://dutchcargobike.com.au/cdn/shop/files/DGlogowhitelong.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b6144b0b99f79c222ecd_dutcargobike.png",
     alt: "Dutch Cargo",
     width: 130,
     height: 44,
@@ -59,7 +59,7 @@ const logos = [
     height: 44,
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680329f36fb4c212fad36c3d_farmninelogo.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b50d7d74c36c06aa7d2d_farmninewhitelogo.png",
     alt: "Farm Nine",
     width: 120,
     height: 44,
