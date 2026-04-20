@@ -47,7 +47,7 @@ const logos = [
     height: 44,
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68032003f33274c4f2eb5c8e_DGlogowhitelong%20(2).avif",
+    src: "https://dutchcargobike.com.au/cdn/shop/files/DGlogowhitelong.png",
     alt: "Dutch Cargo",
     width: 130,
     height: 44,
