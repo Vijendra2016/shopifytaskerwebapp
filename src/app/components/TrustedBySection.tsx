@@ -7,74 +7,74 @@ const logos = [
   {
     src: "https://cdn.shopify.com/s/files/1/0693/1185/6947/files/Mubu_footer_logo_2.svg",
     alt: "Go For Zero",
-    width: 110,
-    height: 44,
+    width: 70,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68031ebd655ad373b784e915_zenimallogo.png",
     alt: "Zenimal",
-    width: 110,
-    height: 44,
+    width: 70,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787659e9cf6149b7e933b63_Slumberpod-logo-main%20(1)%20(2).png",
     alt: "SlumberPod",
-    width: 130,
-    height: 44,
+    width: 85,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b35d967782c10e17e481_foodfoodnewlogo.png",
     alt: "ShopBoxed",
-    width: 110,
-    height: 44,
+    width: 70,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6788a798e7366fb245f83aae_smilingpetshopifytaskerclient.png",
     alt: "Smiling Pet",
-    width: 100,
-    height: 44,
+    width: 65,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68031db6ea8b298c0f178775_clickandcarry.png",
     alt: "Click and Carry",
-    width: 110,
-    height: 44,
+    width: 70,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68031cc3ab416829b3d8f1e4_blacktiecbd.png",
     alt: "Black Tie CBD",
-    width: 130,
-    height: 44,
+    width: 85,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b6144b0b99f79c222ecd_dutcargobike.png",
     alt: "Dutch Cargo",
-    width: 130,
-    height: 44,
+    width: 85,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680320f841c08a2cfa7d55c1_eleven44-white.webp",
     alt: "Eleven 44",
-    width: 110,
-    height: 44,
+    width: 70,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b50d7d74c36c06aa7d2d_farmninewhitelogo.png",
     alt: "Farm Nine",
-    width: 120,
-    height: 44,
+    width: 78,
+    height: 28,
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68032bcaf9da9c3bc2fddc79_egclothing.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5bdbc56aafe03651a70c6_egclothing.png",
     alt: "EG Clothing",
-    width: 120,
-    height: 44,
+    width: 78,
+    height: 28,
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6787503a333a8b082498d65d_shopify_logos-03_160x%20(1).avif",
     alt: "Shopify Partner",
-    width: 90,
-    height: 44,
+    width: 58,
+    height: 28,
   },
 ];
 
@@ -104,7 +104,7 @@ export default function TrustedBySection() {
         {/* ── Content wrapper ── */}
         <div className="relative z-10 px-6 md:px-12">
           {/* Header row */}
-          <div className="flex items-center justify-between mb-12 md:mb-16">
+          <div className="flex items-center justify-between mb-2 md:mb-3">
             <h2 className="text-white text-xl md:text-2xl font-light tracking-tight">
               They trusted us
             </h2>
@@ -117,8 +117,12 @@ export default function TrustedBySection() {
                 ↗
               </span>
             </button>
+          
           </div>
+          <div className=" items-left text-white justify-between mb-12 md:mb-16">
+              <p>Trusted by brands across industries for Shopify design, development, and growth.</p>
 
+          </div>
           {/* Logo grid */}
           <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-x-10 gap-y-10 items-center justify-items-center">
             {logos.map((logo) => (
