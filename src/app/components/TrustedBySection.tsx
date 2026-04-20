@@ -110,7 +110,7 @@ export default function TrustedBySection() {
             </h2>
             <button
               onClick={() => setShowModal(true)}
-              className="group flex items-center gap-1.5 text-white text-xs md:text-sm tracking-[0.15em] uppercase border-b border-white pb-0.5 hover:opacity-60 transition-opacity duration-200"
+              className="group cursor-pointer   flex items-center gap-1.5 text-white text-xs md:text-sm tracking-[0.15em] uppercase border-b border-white pb-0.5 hover:opacity-60 transition-opacity duration-200"
             >
               GET STARTED
               <span className="inline-block -translate-y-0.5 group-hover:translate-x-0.5 group-hover:-translate-y-1 transition-transform duration-200">
