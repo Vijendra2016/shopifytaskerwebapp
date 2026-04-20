@@ -23,7 +23,7 @@ const logos = [
     height: 44,
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68031f65812cbc90dbb3ecad_Pi7_shopboxd_logo%20(1).webp",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b35d967782c10e17e481_foodfoodnewlogo.png",
     alt: "ShopBoxed",
     width: 110,
     height: 44,
