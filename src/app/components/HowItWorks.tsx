@@ -117,7 +117,7 @@ const HowItWorks: React.FC = () => {
             </p>
             <button
               onClick={() => setShowModal(true)}
-              className="cursor-pointer inline-flex items-center gap-2  bg-white text-black px-8 py-4 text-sm font-semibold tracking-wide uppercase hover:opacity-90 transition whitespace-nowrap"
+              className="cursor-pointer inline-flex items-center gap-2  bg-white text-black px-8 py-4 text-sm font-normal tracking-wide uppercase hover:opacity-90 transition whitespace-nowrap"
             >
               Start My Task →
             </button>
