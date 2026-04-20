@@ -5,7 +5,7 @@ import StartProjectModal from "./StartProjectModal";
 
 const CLIENT_LOGOS = [
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e228d31b12b6460bf19060_goforzeroshopifyexpert.png",
+    src: "https://cdn.shopify.com/s/files/1/0693/1185/6947/files/Mubu_footer_logo_2.svg",
     alt: "Go For Zero",
   },
   {
@@ -17,8 +17,8 @@ const CLIENT_LOGOS = [
     alt: "Slumberpod",
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6800a4dfa301a04d362e041b_shopboxuk.png",
-    alt: "Shopboxd",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b35d967782c10e17e481_foodfoodnewlogo.png",
+    alt: "FoodFood",
   },
   {
     src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6788a798e7366fb245f83aae_smilingpetshopifytaskerclient.png",
@@ -33,7 +33,7 @@ const CLIENT_LOGOS = [
     alt: "Black Tie CBD",
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/68032003f33274c4f2eb5c8e_DGlogowhitelong%20(2).avif",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b6144b0b99f79c222ecd_dutcargobike.png",
     alt: "Dutch Cargo",
   },
   {
@@ -41,11 +41,11 @@ const CLIENT_LOGOS = [
     alt: "Eleven 44",
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/680329f36fb4c212fad36c3d_farmninelogo.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5b50d7d74c36c06aa7d2d_farmninewhitelogo.png",
     alt: "Farm Nine",
   },
   {
-    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e228d31b12b6460bf19060_goforzeroshopifyexpert.png",
+    src: "https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e5bdbc56aafe03651a70c6_egclothing.png",
     alt: "EG Clothing",
   },
 ];

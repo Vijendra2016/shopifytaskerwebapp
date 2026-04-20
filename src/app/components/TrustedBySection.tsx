@@ -104,7 +104,7 @@ export default function TrustedBySection() {
         {/* ── Content wrapper ── */}
         <div className="relative z-10 px-6 md:px-12">
           {/* Header row */}
-          <div className="flex items-center justify-between mb-2 md:mb-3">
+          <div className="flex items-center justify-between mb-10 md:mb-3">
             <h2 className="text-white text-xl md:text-2xl font-light tracking-tight">
               They trusted us
             </h2>
@@ -120,7 +120,7 @@ export default function TrustedBySection() {
           
           </div>
           <div className=" items-left text-white justify-between mb-12 md:mb-16">
-              <p>Trusted by brands across industries for Shopify design, development, and growth.</p>
+              <p>Trusted by brands across industries to design, build, and scale high-performing Shopify stores.</p>
 
           </div>
           {/* Logo grid */}
