@@ -116,7 +116,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="px-4 py-1 block" onClick={closeMenu}>
               <Image
-                src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e32c46a5a624790489d1bb_ShopifyTaskerlight.png"
+                src="https://cdn.prod.website-files.com/68a42ed7e787a4a306819ed6/690a41b3472c531801eacf5d_2e76b2c5c352ef09207d32ed7974b8ad_wecanfly-logo.svg"
                 alt="ShopifyTasker Logo"
                 width={200}
                 height={50}

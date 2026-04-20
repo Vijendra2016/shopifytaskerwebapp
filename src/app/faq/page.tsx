@@ -3,6 +3,7 @@ import GeoMessage from "../components/GeoMessage";
 import FaqBlacksmith from "../components/FaqBlacksmith";
 import Image from "next/image";
 import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import TrustedBySection from "../components/TrustedBySection";
 
 
 const faqItems = [
@@ -80,7 +81,7 @@ export default function faq() {
       <section className="relative flex items-center justify-center h-[70vh] md:h-[60vh] overflow-hidden">
       {/* Background image */}
       <Image
-        src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/6974b19b0ddc628c2ecc22c6_bp-miller-QcN42a1Okw4-unsplash.jpg"
+        src="https://cdn.prod.website-files.com/68a42ed7e787a4a306819ed6/68b8cc7ed6c5fd3ad833d3ee_cta-background.avif"
         alt="Dark abstract background"
         fill
         priority
@@ -115,6 +116,7 @@ export default function faq() {
         
       />
 
+<TrustedBySection/>
    
       <GeoMessage/> 
 
