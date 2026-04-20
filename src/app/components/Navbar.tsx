@@ -185,7 +185,7 @@ export default function Navbar() {
 
             {/* Mobile hamburger */}
             <button
-              className="md:hidden text-white p-1 bg-white"
+              className="md:hidden text-black p-1 bg-white"
               onClick={() => setIsOpen((v) => !v)}
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
