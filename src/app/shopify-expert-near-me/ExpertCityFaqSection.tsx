@@ -62,7 +62,7 @@ export default function ExpertCityFaqSection({ city, state }: { city: string; st
             <div key={index} className="border-b border-white/[0.08]">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-start justify-between gap-8 py-6 text-left group"
+                className="w-full flex items-start cursor-pointer justify-between gap-8 py-6 text-left group"
                 aria-expanded={openIndex === index}
               >
                 <span className="text-[15px] md:text-[16px] font-medium text-white/80 group-hover:text-white leading-snug transition">
