@@ -141,7 +141,7 @@ export default async function CityPage(props: Props) {
   ];
 
   return (
-    <main className="bg-[#0a0a0a] text-white">
+    <main className="bg-black text-white">
       <ExpertCityPageSchema
         city={cityData.city}
         state={cityData.state}
@@ -176,21 +176,21 @@ export default async function CityPage(props: Props) {
               after the work is done.
             </p>
             <div className="flex flex-wrap gap-3">
-              <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">
+              <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-normal px-7 py-3.5  uppercase hover:bg-white/90 transition cursor-pointer">
                 Get a Free Quote
               </CreateTaskButton>
               <Link
                 href="/shopify-expert-services"
-                className="inline-flex items-center gap-2 text-white text-[15px] font-medium px-7 py-3.5 rounded-full border border-white/25 hover:border-white/60 transition"
+                className="inline-flex items-center gap-2 text-white text-[15px] font-normal uppercase px-7 py-3.5  border border-white hover:border-white/60 transition"
               >
                 View All Services
               </Link>
             </div>
           </div>
 
-          <div className="hidden lg:block relative h-[520px] overflow-hidden rounded-t-2xl">
+          <div className="hidden lg:block relative h-[620px] overflow-hidden ">
             <Image
-              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/696dcbeb8d05bb84b09c39db_feature-3-1.webp"
+              src="https://cdn.prod.website-files.com/67860b0fa33a316e96823102/69e715cd268f8cdfac3cbac4_shopifyexpertinusa.png"
               alt={`Shopify expert working on a store for a ${cityData.city} business`}
               fill
               className="object-cover object-top"
@@ -237,7 +237,7 @@ export default async function CityPage(props: Props) {
               specialists — without the overhead of a traditional agency.
             </p>
             <p className="text-white/80">{cityData.cta}</p>
-            <CreateTaskButton className="inline-flex items-center gap-2 mt-2 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">
+            <CreateTaskButton className="inline-flex items-center gap-2 mt-2 bg-white text-black text-[15px] font-normal px-7 py-3.5 uppercase hover:bg-white/90 transition cursor-pointer">
               Start Your Project →
             </CreateTaskButton>
           </div>
@@ -311,7 +311,7 @@ export default async function CityPage(props: Props) {
             <p className="text-[14px] text-white/55 leading-[1.7] mt-5">
               A simple, transparent process from brief to delivery — no surprises, no delays.
             </p>
-            <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition cursor-pointer">
+            <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-normal uppercase px-7 py-3.5  hover:bg-white/90 transition cursor-pointer">
               Get Started →
             </CreateTaskButton>
           </div>
@@ -343,12 +343,10 @@ export default async function CityPage(props: Props) {
               Salesforce, and custom platforms to Shopify or Shopify Plus — data, design,
               SEO, and integrations fully handled.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-medium px-7 py-3.5 rounded-full hover:bg-white/90 transition"
-            >
+            
+            <CreateTaskButton className="inline-flex items-center gap-2 mt-8 bg-white text-black text-[15px] font-normal uppercase px-7 py-3.5  hover:bg-white/90 transition cursor-pointer">
               Discuss Your Migration →
-            </Link>
+            </CreateTaskButton>
           </div>
           <ul className="border-t border-white/[0.08]">
             {[
@@ -379,20 +377,35 @@ export default async function CityPage(props: Props) {
       <ExpertCityFaqSection city={cityData.city} state={cityData.state} />
 
       {/* ─── FINAL CTA ─── */}
-      <section className="border-t border-white/[0.08] px-6 py-24 md:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-6">Get Started</p>
-          <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.08] tracking-tight text-white mb-6">
-            Ready to Grow Your <em className="not-italic font-normal">{cityData.city}</em> Shopify Store?
-          </h2>
-          <p className="text-[15px] text-white/60 leading-[1.7] max-w-xl mx-auto mb-10">
-            Tell us what you need. We will send a fixed quote and you pay only when you are satisfied.
-          </p>
-          <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-8 py-4 rounded-full hover:bg-white/90 transition cursor-pointer">
-            Get a Free Quote →
-          </CreateTaskButton>
-        </div>
-      </section>
+     <section className="relative border-t border-white/[0.08] px-6 py-24 md:py-32">
+
+  {/* Background image — isolated overflow so fixed modal is unaffected */}
+  <div className="absolute inset-0 overflow-hidden">
+    <Image
+      src="https://cdn.prod.website-files.com/68a42ed7e787a4a306819ed6/68b8cc7ed6c5fd3ad833d3ee_cta-background.avif"
+      alt=""
+      fill
+      className="object-cover object-center"
+      priority
+      aria-hidden="true"
+    />
+  </div>
+
+  {/* Content sits above the image */}
+  <div className="relative max-w-4xl mx-auto text-center">
+    <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-6">Get Started</p>
+    <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[1.08] tracking-tight text-white mb-6">
+      Ready to Grow Your <em className="not-italic font-normal">{cityData.city}</em> Shopify Store?
+    </h2>
+    <p className="text-[15px] text-white/60 leading-[1.7] max-w-xl mx-auto mb-10">
+      Tell us what you need. We will send a fixed quote and you pay only when you are satisfied.
+    </p>
+    <CreateTaskButton className="inline-flex items-center gap-2 bg-white text-black text-[15px] font-medium px-8 py-4 rounded-full hover:bg-white/90 transition cursor-pointer">
+      Get a Free Quote →
+    </CreateTaskButton>
+  </div>
+
+</section>
 
       {/* ─── RELATED CITIES ─── */}
       <section className="border-t border-white/[0.08] px-6 py-14">
