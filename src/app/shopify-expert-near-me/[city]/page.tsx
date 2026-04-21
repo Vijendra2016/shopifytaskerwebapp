@@ -394,8 +394,8 @@ export default async function CityPage(props: Props) {
   {/* Content sits above the image */}
   <div className="relative max-w-4xl mx-auto text-center">
     <p className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-6">Get Started</p>
-    <h2 className="text-[clamp(2.5rem,3vw,4rem)] font-semibold leading-[1.08] tracking-tight text-white mb-6">
-    Need a Shopify Expert in {cityData.city}? Work With a Proven Remote Team
+    <h2 className="text-[clamp(2.5rem,4vw,7rem)] font-semibold leading-[1.08] tracking-tight text-white mb-6">
+    Need a Shopify Expert in {cityData.city}? <br></br>Work With a Proven Remote Team
       </h2>
     <p className="text-[15px] text-white/60 leading-[1.7] max-w-xl mx-auto mb-10">
     
